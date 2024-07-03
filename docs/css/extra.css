@@ -1,10 +1,11 @@
 .md-header {
-  background-color: rgb(30, 121, 249);
+  background: linear-gradient(180deg, #3370FF 0.85%, #7F3BF5 95.97%);
   top: 48px;
 }
 
 .md-footer {
-  background-color: rgb(37,43,60);
+  background-color: rgb(37,43,60);background: linear-gradient(180deg, #3370FF 0.85%, #7F3BF5 95.97%);
+
 }
 
 .md-tabs {

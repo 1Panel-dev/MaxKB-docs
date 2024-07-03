@@ -9,7 +9,7 @@
 }
 
 .md-tabs {
-  background-color: #0a7be0;
+  background-color:  #3370FF;
 }
 
 .md-footer-nav__link {
@@ -34,7 +34,7 @@
 .progress-bar {
   height: 1.2rem;
   float: left;
-  background-color: #2979ff;
+  background-color:  #3370FF;
 }
 
 .progress {
@@ -114,7 +114,7 @@
 }
 
 .x-pack-span {
-    background-color: #0a7be0;
+    background-color: #3370FF;
     padding: 2px 5px;
     color: #ffffff;
 }

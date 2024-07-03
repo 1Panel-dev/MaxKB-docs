@@ -1,5 +1,5 @@
 !!! Abstract ""
-    模型管理用于对接供应商的大语言模型，支持对接主流的大模型，包括本地私有大模型（如 Llama 2）、Azure OpenAI 和百度千帆大模型等；
+    模型管理用于对接供应商的大语言模型，支持对接主流的大模型，包括本地私有大模型（如 Llama 2）、Azure OpenAI 和百度千帆大模型等；           
     支持对接各种大语言模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 智谱 AI / 百度千帆 / Kimi / DeepSeek 等）和国外公共大模型（OpenAI / Azure OpenAI / Gemini 等）。
 ![模型管理](../../img/index/model.jpg)
 

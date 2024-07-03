@@ -2,11 +2,11 @@ site_name: 'MaxKB 文档'
 site_url: 'https://maxkb.cn'
 site_description: 'MaxKB 是一款基于大语言模型的智能知识库问答系统'
 site_author: 'MaxKB 项目组'
-google_analytics: ['UA-147297392-11', 'https://fit2cloud.com/maxkb/index.html']
+google_analytics: ['UA-147297392-11', 'https://maxkb.cn/']
 repo_name: 'MaxKB'
 repo_url: 'https://github.com/1Panel-dev/MaxKB'
 
-edit_uri: https://github.com/maxkb-dev/docs/edit/master/docs/
+edit_uri: https://github.com/1Panel-dev/MaxKB-docs/edit/main/docs/
 theme:
     name: 'material'
     logo: 'img/logo-white.png'
@@ -100,7 +100,7 @@ markdown_extensions:
 extra_css:
     - css/extra.css
 
-copyright: Copyright &copy; 2014-2023 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+copyright: Copyright &copy; 2014-2024 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
 
 plugins:
     - search:

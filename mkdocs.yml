@@ -1,0 +1,123 @@
+site_name: 'MaxKB 文档'
+site_url: 'https://maxkb.cn'
+site_description: 'MaxKB 是一款基于大语言模型的智能知识库问答系统'
+site_author: 'MaxKB 项目组'
+google_analytics: ['UA-147297392-11', 'https://fit2cloud.com/maxkb/index.html']
+repo_name: 'MaxKB'
+repo_url: 'https://github.com/1Panel-dev/MaxKB'
+
+edit_uri: https://github.com/maxkb-dev/docs/edit/master/docs/
+theme:
+    name: 'material'
+    logo: 'img/logo-white.png'
+    favicon: 'img/facio.ico'
+    language: 'zh'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+    palette:
+        - scheme: default
+          accent: blue
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+        - content.tabs.link
+    custom_dir: "theme"
+nav:
+    - 产品介绍: index.md
+    - 系统架构: system_arch.md
+    - 安装部署:
+        - 在线安装: installation/online_installtion.md
+        - 离线安装: installation/offline_installtion.md
+    - 快速入门: quick_start.md
+    - 功能手册: 
+        - 知识库: 
+            - 知识库: user_manual/dataset/dataset.md
+            - 文档: user_manual/dataset/doclist.md
+            - 问题: user_manual/dataset/problem.md
+            - 命中测试: user_manual/dataset/hit-testing.md
+        - 应用: 
+            - 应用: user_manual/app/app.md
+            - 概览: user_manual/app/app-view.md
+            - 命中测试: user_manual/app/hit-testing.md
+            - 对话日志: user_manual/app/log.md
+        - 模型管理: user_manual/model/model.md
+        - 团队管理: user_manual/team/team.md
+    - 开发文档:
+        - 开发环境搭建: dev_manual/dev_environment.md
+    - 更新日志: changelog.md
+    - 联系我们: contact.md
+    
+markdown_extensions:
+    - admonition
+    - codehilite:
+          guess_lang: True
+          linenums: False
+    - toc:
+          permalink: True
+    - footnotes
+    - attr_list
+    - def_list
+    - tables
+    - abbr
+    - md_in_html
+    - pymdownx.extra
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:pymdownx.emoji.to_png
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist
+    - pymdownx.tilde
+    - pymdownx.betterem
+    - pymdownx.progressbar
+    - lightgallery
+    - pymdownx.tabbed
+
+extra_css:
+    - css/extra.css
+
+copyright: Copyright &copy; 2014-2023 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+
+plugins:
+    - search:
+          lang:
+              - en
+              - ja
+          separator: '[\s\-\.]+'
+extra:
+    version:
+        method: mike
+    analytics:
+        provider: google
+        property: G-P2ER2N0NSN
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/1Panel-dev/MaxKB
+        - icon: fontawesome/solid/envelope
+          link: mailto:support@fit2cloud.com
+        - icon: fontawesome/solid/phone
+          link: tel://400-052-0755

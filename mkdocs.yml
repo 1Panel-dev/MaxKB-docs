@@ -2,7 +2,6 @@ site_name: 'MaxKB 文档'
 site_url: 'https://maxkb.cn'
 site_description: 'MaxKB 是一款基于大语言模型的智能知识库问答系统'
 site_author: 'MaxKB 项目组'
-google_analytics: ['UA-147297392-11', 'https://maxkb.cn/']
 repo_name: 'MaxKB'
 repo_url: 'https://github.com/1Panel-dev/MaxKB'
 
@@ -115,7 +114,7 @@ extra:
         method: mike
     analytics:
         provider: google
-        property: G-P2ER2N0NSN
+        property: G-NG51348CBW
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/1Panel-dev/MaxKB

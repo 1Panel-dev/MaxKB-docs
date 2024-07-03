@@ -13,38 +13,6 @@ cd docs
 pip install -r requirements/requirements.txt
 ```
 
-### 修改文档内容
-本文档的文档结构定义在 `mkdocs.yml` 文件中，文档的具体内容均在 `docs` 目录中。
-```yaml
-..........
-nav:
-- 产品介绍: index.md
-    - 系统架构: system_arch.md
-    - 安装部署:
-        - 在线安装: installation/online_installtion.md
-        - 离线安装: installation/offline_installtion.md
-    - 快速入门: quick_start.md
-    - 功能手册: 
-        - 知识库: 
-            - 知识库: user_manual/dataset/dataset.md
-            - 文档: user_manual/dataset/doclist.md
-            - 问题: user_manual/dataset/problem.md
-            - 命中测试: user_manual/dataset/hit-testing.md
-        - 应用: 
-            - 应用: user_manual/app/app.md
-            - 概览: user_manual/app/app-view.md
-            - 命中测试: user_manual/app/hit-testing.md
-            - 对话日志: user_manual/app/log.md
-        - 模型管理: user_manual/model/model.md
-        - 团队管理: user_manual/team/team.md
-    - 开发文档:
-        - 开发环境搭建: dev_manual/dev_environment.md
-    - 更新日志: changelog.md
-    - 联系我们: contact.md
-
-..........
-```
-
 文档内容使用 markdown 语法编写，若要添加新的文档，需要先在 `mkdocs.yml` 文件中的 `nav` 部分增加对应章节导航。
 
 ### 本地调试文档

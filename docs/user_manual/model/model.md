@@ -157,7 +157,9 @@
 !!! Abstract ""
     点击模型右上角的编辑icon，打开编辑模型表单，可以对模型的属性进行修改。
 ![编辑模型](../../img/model/edit_model.jpg)
+
 ## 3 删除模型
+
 !!! Abstract ""
     点击模型右上角的删除icon，这里仅会删除在MaxKB中模型的对接信息，不会物理删除供应商的模型。
 ![删除模型](../../img/model/del_model.jpg)

@@ -79,7 +79,7 @@
       ```
 
       启动项目
-      ``` bash
+      ```bash
       npm run dev
       ```
 
@@ -112,10 +112,12 @@
 
       启动项目
 
-      ``` bash
+      ```bash
       python main.py start
       ```
+
 ## 6 常见问题
+
 !!! Abstract "" 
       - 关于数据库版本
       ```

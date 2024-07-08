@@ -36,23 +36,25 @@
     **注意：升级前确认数据持久化目录（-v后的目录），创建新容器时要跟上一次数据持久化目录保持一致，否则启动后数据为空。**     
     执行以下命令：
 
-    1. 下载最新镜像
+    1 下载最新镜像
     ```
     docker pull cr2.fit2cloud.com/1panel/maxkb
     ```
-    2. 确认上一次数据持久化目录，复制保存，第4步使用
+    2 确认上一次数据持久化目录，复制保存，第4步使用
     ```
     docker inspect maxkb
     ```
-    ![企业微信截图_17143780546441](https://github.com/1Panel-dev/MaxKB/assets/52996290/c6a8a938-179c-4dd4-881a-64abc0bcb740)
 
-    3. 删除正在运行的 MaxKB 容器
+![获取pgsql目录](../img/index/mount_pgsqldir.png)
+
+!!! Abstract ""
+    3 删除正在运行的 MaxKB 容器
     ```
     docker rm -f maxkb 
     ```
-    4. 创建并启动 MaxKB 容器
+    4 创建并启动 MaxKB 容器
     ```
-    docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data cr2.fit2cloud.com/1panel/maxkb
+    docker run -d --name=maxkb -p 8080:8080 -v /opt/maxkb/pgsql/data:/var/lib/postgresql/data cr2.fit2cloud.com/1panel/maxkb
 
     # 注意：确认数据持久化目录（-v后的目录）要跟【第 2 步】的目录保持一致，否则启动后数据为空。
     ```

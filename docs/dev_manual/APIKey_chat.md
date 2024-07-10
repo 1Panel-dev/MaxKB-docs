@@ -1,7 +1,7 @@
 
 ## 1 打开swagger文档
 !!! Abstract ""
-    http://maxkb服务地址/doc/chat
+    http://maxkb服务地址/doc/chat/
 
 ![API doc](../img/FAQ/doc_chat.png)
 

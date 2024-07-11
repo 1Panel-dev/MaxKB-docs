@@ -6,7 +6,7 @@
     * 操作系统：Ubuntu 22.04 / CentOS 7 64 位系统；
     * CPU/内存： 推荐 2C/4GB 以上；
     * 磁盘空间：100GB；
-    * 浏览器要求：请使用 Chrome、FireFox、Safari、Edge等现代浏览器；
+    * 浏览器要求：请使用 Chrome、FireFox、Edge等现代浏览器；
     * **可访问互联网**。
 
 

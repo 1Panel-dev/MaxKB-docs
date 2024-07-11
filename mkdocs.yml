@@ -41,8 +41,9 @@ nav:
     - 产品介绍: index.md
     - 系统架构: system_arch.md
     - 安装部署:
-        - 在线安装: installation/online_installtion.md
         - 离线安装: installation/offline_installtion.md
+        - 在线安装: installation/online_installtion.md
+    
     - 快速入门: quick_start.md
     - 功能手册: 
         - 知识库: 

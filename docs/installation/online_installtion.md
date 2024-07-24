@@ -7,7 +7,7 @@
     * CPU/内存： 推荐 2C/4GB 以上；
     * 磁盘空间：100GB；
     * 浏览器要求：请使用 Chrome、FireFox、Edge等现代浏览器；
-    * **可访问互联网**。
+    * **可访问互联网**。     
 
 
 
@@ -18,7 +18,8 @@
     ```
     docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data cr2.fit2cloud.com/1panel/maxkb
     ```
-
+    **友情提示：社区版限制 1 个团队成员，5 个应用，50 个知识库。**     
+     
     安装成功后，可通过浏览器访问 MaxKB：
     ```
     http://目标服务器 IP 地址:目标端口

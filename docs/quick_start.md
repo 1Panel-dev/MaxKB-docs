@@ -83,7 +83,7 @@
 ![讯飞API](img/model/xunfei_api.png){width="800px"}
 
 !!! Abstract ""
-    APP ID、API Key、Secret Key 需要现在讯飞星火开放平台创建应用，并该应该的剩余tokens>0，才能添加成功。
+    APP ID、API Key、Secret Key 需要现在讯飞星火开放平台创建应用，并且应用的剩余tokens>0，才能添加成功。
 
 ![讯飞APP](img/model/xunfei_app.png)
 ![讯飞model](img/model/xunfei_model.png)

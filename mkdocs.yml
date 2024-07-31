@@ -43,6 +43,7 @@ nav:
     - 安装部署:
         - 离线安装: installation/offline_installtion.md
         - 在线安装: installation/online_installtion.md
+        - 1Panel安装: installation/1panel_installtion.md
         - 命令行工具: installation/cli.md
     - 快速入门: quick_start.md
     - 功能手册: 
@@ -58,6 +59,12 @@ nav:
             - 对话日志: user_manual/app/log.md
         - 模型管理: user_manual/model/model.md
         - 团队管理: user_manual/team/team.md
+        - X-Pack功能: 
+            - 用户管理: user_manual/X-Pack/user.md
+            - 应用: user_manual/X-Pack/app.md
+            - 外观设置: user_manual/X-Pack/theme_settings.md
+            - 登录认证: user_manual/X-Pack/ldap.md
+            - 系统API: user_manual/X-Pack/system_API.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md
         - 如何通过应用API KEY进行对话: dev_manual/APIKey_chat.md

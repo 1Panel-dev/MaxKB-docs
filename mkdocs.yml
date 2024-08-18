@@ -53,8 +53,8 @@ nav:
             - 问题: user_manual/dataset/problem.md
             - 命中测试: user_manual/dataset/hit-testing.md
         - 应用: 
-            - 应用: user_manual/app/app.md
-            - 概览: user_manual/app/app-view.md
+            - 应用创建: user_manual/app/app.md
+            - 应用概览: user_manual/app/app-view.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md
         - 模型管理: user_manual/model/model.md

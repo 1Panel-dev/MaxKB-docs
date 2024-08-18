@@ -4,27 +4,25 @@
 !!! Abstract ""
     **安装前请确保您的系统符合安装条件：**
 
-    * 操作系统：Ubuntu 22.04 / CentOS 7 64 位系统；
-    * CPU/内存： 推荐 2C/4GB 以上；
-    * 磁盘空间：100GB；
-    * 浏览器要求：请使用 Chrome、FireFox、Edge等现代浏览器；
-    * **生产环境推荐使用离线部署**。
+    * 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统；
+    * CPU/内存： 2C/4GB 以上；
+    * 磁盘空间：100GB。
+
+    生产环境推荐使用离线部署。
 
 
-## 2 离线部署 
+## 2 安装部署 
 
 !!! Abstract ""
-    **注意：离线包仅支持x86服务器。**
-
     打开社区网站下载 MaxKB 离线包
-    [社区版离线包](https://community.fit2cloud.com/#/products/maxkb/downloads)
+    [社区版离线包](https://community.fit2cloud.com/#/products/maxkb/downloads) (社区版本仅提供 x86架构安装包，如需 arm 架构安装包，可以[申请专业版](https://jsj.top/f/wQsdOJ))。
 
-    上传至服务器后进行解压缩，执行以下命令：
+    上传至服务器后执行以下命令进行解压缩：
     ```
     # maxkb-v1.2.0-offline.tar.gz替换成下载包的名字  
     tar -zxvf maxkb-v1.2.0-offline.tar.gz
     ```
-    安装 MaxKB， 执行以下命令：
+    解压完成后，执行以下命令进行安装：
     ```
     # 进入安装包解压缩后目录  
     cd maxkb-v1.2.0-offline

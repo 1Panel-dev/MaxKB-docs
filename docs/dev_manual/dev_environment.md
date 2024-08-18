@@ -50,6 +50,7 @@
       # 将config_example.yml配置文件 目录拷贝至 /opt/maxkb/conf目录下 如果是Windows D:\\opt\\maxkb\\conf
       cp config_example.yml /opt/maxkb/conf
       ```
+
       - 配置 /opt/maxkb/conf/config_example.yml 
 
       ```
@@ -62,9 +63,9 @@
       DB_ENGINE: django.db.backends.postgresql_psycopg2
       
       # 模型相关配置
-      # 模型路径 如果EMBEDDING_MODEL_NAME是绝对路径则无效,反之则会从https://huggingface.co/下载模型到当前目录
+      # 模型路径:如果EMBEDDING_MODEL_NAME是绝对路径则无效,反之则会从https://huggingface.co/下载模型到当前目录
       EMBEDDING_MODEL_PATH: /opt/maxkb/model/
-      # 模型名称 如果模型名称是绝对路径 则会加载目录下的模型,如果是模型名称,则会在https://huggingface.co/下载模型 模型的下载位置为EMBEDDING_MODEL_PATH
+      # 模型名称:如果模型名称是路径,则会加载目录下的模型,如果是模型名称,则会在https://huggingface.co/下载模型 模型的下载位置为EMBEDDING_MODEL_PATH
       EMBEDDING_MODEL_NAME: /opt/maxkb/model/shibing624_text2vec-base-chinese
       ```
 

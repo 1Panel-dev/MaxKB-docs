@@ -3,7 +3,7 @@
 !!! Abstract ""
     说明：以 GPU 模式运行 Ollama 需要有 NVIDIA 显卡支持。
 
-## 1. 安装英伟达容器安装包
+## 1 安装英伟达容器安装包
 
 !!! Abstract ""
     我们以 Ubuntu22.04 为例（其他系统请参考：[英伟达官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html)）
@@ -23,20 +23,20 @@
     ```
     sudo apt-get install -y nvidia-container-toolkit
     ```
-## 2. 使用 GPU 运行 Ollama
+## 2 使用 GPU 运行 Ollama
 
 !!! Abstract ""
     ```
     docker run --gpus all -d -v /opt/ai/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
     ```
 
-## 3. 使用 Ollama 下载模型
+## 3 使用 Ollama 下载模型
 
 !!! Abstract ""
     ```
     docker exec -it ollama ollama run qwen:7b
     ```
 
-## 4. 在 MaxKB 的模型设置中添加模型进行对接
+## 4 在 MaxKB 的模型设置中添加模型进行对接
 
 ![添加模型](../img/FAQ/addmodel.png)

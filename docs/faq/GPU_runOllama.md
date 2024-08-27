@@ -3,6 +3,7 @@
 !!! Abstract ""
     说明：以 GPU 模式运行 Ollama 需要有 NVIDIA 显卡支持。
 
+
 ## 1 安装英伟达容器安装包
 
 !!! Abstract ""
@@ -23,6 +24,7 @@
     ```
     sudo apt-get install -y nvidia-container-toolkit
     ```
+
 ## 2 使用 GPU 运行 Ollama
 
 !!! Abstract ""

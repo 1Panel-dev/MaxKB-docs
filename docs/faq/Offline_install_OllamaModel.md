@@ -6,6 +6,7 @@
     本文以在 Ollama 中 **离线部署**  qwen:0.5b 模型为例。
 
 ### 1 下载模型
+
 !!! Abstract ""
     访问 huggingface 下载 qwen1_5-0_5b-chat-q5_k_m.gguf 模型。
     ```
@@ -14,6 +15,7 @@
 ![下载模型](../img/FAQ/downModel.png)
 
 ### 2 上传模型
+
 !!! Abstract ""
     将下载好的 Qwen1.5-0.5B-Chat-GGUF 模型文件上传到 Ollama 所在服务器。
 
@@ -51,6 +53,7 @@
     ```
 
 ![ollama查看模型列表](../img/FAQ/ollamaList.png)
+
 ## 5 在 MaxKB中 添加 Ollama 模型 对接上面创建的 qwen:0.5b 模型
 
 ![MaxKB中添加模型](../img/FAQ/MaxKBaddModel.png)

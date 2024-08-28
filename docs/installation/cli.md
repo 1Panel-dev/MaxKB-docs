@@ -1,6 +1,6 @@
 # 命令行工具
 
-## kbctl 命令
+## mkctl 命令
 
 !!! Abstract ""
     MaxKB 离线安装包默认内置了命令行运维工具 mkctl，通过执行 mkctl help，可以查看相关的命令说明。    

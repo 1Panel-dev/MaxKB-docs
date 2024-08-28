@@ -164,11 +164,90 @@
     * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。     
     * 模型类型：大语言模型。   
     * 基础模型：为供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。  
-    A* PI Key：获取 API Key。
+    * API Key：获取 API Key。
 
     注意：使用 Gemini API 需要确保程序所在服务器位于 [Gemini API所支持的地区](https://ai.google.dev/gemini-api/docs/available-regions?hl=zh-cn) ，否则无法调用API，并且无法进入Google AI Studio。
 
 ![gemini 模型](../../img/model/gemini.png)
+
+### 1.11 添加 Xorbits Inference 大模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【 Xorbits Inference 】，直接进入下一步填写 Xorbits Inference 的模型表单。    
+    或者左侧供应商先选择【 Xorbits Inference 】，然后点击【添加模型】，则直接进入 Xorbits Inference 的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：大语言模型。   
+    * 基础模型：为供应商的大语言模型，支持自定义输入。    
+    * API 域名：为供应商的连接信息（Xorbits Inference 服务地址， 如：http://42.92.198.53:11434/v1 ）。 
+    * API Key：若没有 API Key 可以输入任意字母、数字。     
+![Xorbits Inference LLM模型](../../img/model/LLM_Xinference.jpg)
+
+### 1.12 添加 vLLM 大模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【 vLLM 】，直接进入下一步填写 vLLM 的模型表单。    
+    或者左侧供应商先选择【 vLLM 】，然后点击【添加模型】，则直接进入 vLLM 的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：大语言模型。   
+    * 基础模型：为供应商的大语言模型，支持自定义输入。    
+    * API 域名：为供应商的连接信息（vLLM 服务地址， 如：http://42.92.198.53:11434/v1 ）。 
+    * API Key：若没有 API Key 可以输入任意字母、数字。     
+![vLLM LLM模型](../../img/model/LLM_vLLM.jpg)
+
+### 1.13 添加 Amazon Bedrock 大模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【 Amazon Bedrock 】，直接进入下一步填写 Amazon Bedrock 的模型表单。    
+    或者左侧供应商先选择【 Amazon Bedrock 】，然后点击【添加模型】，则直接进入 Amazon Bedrock的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：大语言模型。   
+    * 基础模型：为供应商的大语言模型，支持自定义输入。     
+    * Region Name：模型开通的区域。    
+    * API 域名：为供应商的连接信息（vLLM 服务地址， 如：http://42.92.198.53:11434/v1 ）。 
+    * API Key：若没有 API Key 可以输入任意字母、数字。     
+![AWS LLM模型](../../img/model/AWS_LLM.jpg)
+
+### 1.14 添加腾讯混元大模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【腾讯混元】，直接进入下一步填写腾讯混元的模型表单。    
+    或者左侧供应商先选择【腾讯混元】，然后点击【添加模型】，则直接进入腾讯混元的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：大语言模型。   
+    * 基础模型：为供应商的大语言模型，支持自定义输入。       
+    * APPID：控制台-访问管理-API密钥管理中获取。 
+    * SecretId：控制台-访问管理-API密钥管理中获取
+    * SecretKey：控制台-访问管理-API密钥管理中新建密钥时下载的SecretKey。     
+![hunyuan LLM模型](../../img/model/hunyuan_LLM.jpg)
+
+### 1.15 添加豆包大模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【火山引擎】，直接进入下一步填写火山引擎的模型表单。    
+    或者左侧供应商先选择【火山引擎】，然后点击【添加模型】，则直接进入火山引擎的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：大语言模型。   
+    * 基础模型：在线推理的接入点ID。        
+    * API 域名：https://ark.cn-beijing.volces.com/api/v3
+    * API Key：接入点-> API调用 -> 通过API Key授权 -> 选择 API Key 并复制 中获取，如下图  
+![doubao LLM模型](../../img/model/doubao_LLM.jpg)
+
+!!! Abstract ""
+    基础模型获取方式如下：  
+![doubao基础模型](../../img/model/doubao_jieru.jpg)
+!!! Abstract ""
+    API Key获取方式如下图：  
+![doubaoAPIkey](../../img/model/doubao_APIkey.jpg)
 
 ## 2 添加向量模型
 
@@ -200,7 +279,7 @@
     * API Key：若没有 API Key 可以输入任意字母、数字。 
 ![Ollama 向量模型](../../img/model/Embedding_ollama.jpg)
 
-### 2.2 添加本地向量模型
+### 2.3 添加本地向量模型
 
 !!! Abstract ""
     **前提条件：将模型下载到服务器，并且挂在到 MaxKB 容器中。**
@@ -226,6 +305,19 @@
     * 基础模型：模型在MaxKB容器下的绝对路径。     
     * 模型目录：模型的目录（基础模型为名称时，该目录生效，基础模型若有绝对路径，则该参数不生效，建议与基础模型填写一致）。    
 ![本地向量模型](../../img/model/embedding_local.jpg)
+
+### 2.4 添加 Xorbits Inference 向量模型
+
+!!! Abstract ""
+    在模型管理中，点击供应商【 Xorbits Inference 】，直接进入下一步填写 Xorbits Inference 的模型表单。    
+    或者左侧供应商先选择【 Xorbits Inference 】，然后点击【添加模型】，则直接进入 Xorbits Inference 的模型表单。
+
+    * 模型名称：MaxKB 中自定义的模型名称。    
+    * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
+    * 模型类型：向量模型。   
+    * 基础模型：为供应商的向量模型，支持自定义输入。    
+    * API 域名：为供应商的连接信息（Xorbits Inference 服务地址， 如：http://42.92.198.53:11434/v1 ）。     
+![Xorbits Inference 向量模型](../../img/model/Embedding_Xinference.jpg)
 
 ## 3 编辑模型
 

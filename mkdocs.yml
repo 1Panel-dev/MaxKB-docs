@@ -57,13 +57,14 @@ nav:
             - 应用概览: user_manual/app/app-view.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md
+        - 函数库: user_manual/fx/fx.md
         - 模型管理: user_manual/model/model.md
         - 团队管理: user_manual/team/team.md
         - X-Pack功能: 
             - 用户管理: user_manual/X-Pack/user.md
             - 应用: user_manual/X-Pack/app.md
             - 外观设置: user_manual/X-Pack/theme_settings.md
-            - 登录认证: user_manual/X-Pack/ldap.md
+            - 登录认证: user_manual/X-Pack/login_auth.md
             - 系统API: user_manual/X-Pack/system_API.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md

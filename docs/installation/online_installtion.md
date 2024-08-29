@@ -16,7 +16,7 @@
 !!! Abstract ""
     MaxKB 支持一键启动，仅需执行以下命令：
     ```
-    docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data cr2.fit2cloud.com/1panel/maxkb
+    docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
     ``` 
      
     安装成功后，可通过浏览器访问 MaxKB：
@@ -51,7 +51,7 @@
     ```
     4 创建并启动 MaxKB 容器
     ```
-    docker run -d --name=maxkb -p 8080:8080 -v /opt/maxkb/pgsql/data:/var/lib/postgresql/data cr2.fit2cloud.com/1panel/maxkb
+    docker run -d --name=maxkb -p 8080:8080 -v /opt/maxkb/pgsql/data:/var/lib/postgresql/data -v /opt/maxkb/python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
 
     # 注意：确认数据持久化目录（-v后的目录）要跟【第 2 步】的目录保持一致，否则启动后数据为空。
     ```

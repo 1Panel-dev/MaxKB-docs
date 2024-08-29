@@ -316,7 +316,7 @@
     * 权限：私有（仅自己可用）；公用（所有用户可使用，不能编辑和删除）。    
     * 模型类型：向量模型。   
     * 基础模型：为供应商的向量模型，支持自定义输入。    
-    * API 域名：为供应商的连接信息（Xorbits Inference 服务地址， 如：http://42.92.198.53:11434/v1 ）。     
+    * API 域名：为供应商的连接信息（Xorbits Inference 服务地址， 如：http://42.92.198.53:11434 ）。     
 ![Xorbits Inference 向量模型](../../img/model/Embedding_Xinference.jpg)
 
 ## 3 编辑模型

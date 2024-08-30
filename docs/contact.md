@@ -14,6 +14,6 @@
 
 !!! Abstract ""
 
-    - 官网：https://fit2cloud.com/maxkb
+    - 官网：https://maxkb.cn
     - 微信交流群：     
     ![企业微信](<img/index/wechat.jpg>){ width="135px" }

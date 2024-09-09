@@ -1,14 +1,13 @@
 # 如何使用Ollama离线部署LLM大语言模型
 
 
-!!! Abstract ""
-    **说明：** 如果你没有离线部署 LLM 模型的需求，请直接查看[如何添加模型](https://maxkb.cn/docs/user_manual/model/model/)。      
-    本文以在 Ollama 中 **离线部署**  qwen:0.5b 模型为例。
+!!! Abstract "" 
+    以 qwen:0.5b 模型为例，详细说明 Ollama 离线部署 LLM 大语言模型的过程和步骤。
 
 ### 1 下载模型
 
 !!! Abstract ""
-    访问 huggingface 下载 qwen1_5-0_5b-chat-q5_k_m.gguf 模型。
+    访问 huggingface 并下载 qwen1_5-0_5b-chat-q5_k_m.gguf 模型文件。
     ```
     https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/main
     ```
@@ -40,20 +39,20 @@
 ![模型参数模版](../img/FAQ/modelSetting.png)
 
 
-## 4 在Ollama中创建模型
+## 4 在 Ollama 中创建模型
 
 !!! Abstract ""
     执行以下命令，创建模型：
     ```
     ollama create qwen:0.5b -f Modelfile
     ```
-    执行以下命令，确认模型存在：
+    执行以下命令，确认模型创建成功：
     ```
     ollama list
     ```
 
 ![ollama查看模型列表](../img/FAQ/ollamaList.png)
 
-## 5 在 MaxKB中 添加 Ollama 模型 对接上面创建的 qwen:0.5b 模型
+## 5 在 MaxKB 中添加已创建的私有模型
 
 ![MaxKB中添加模型](../img/FAQ/MaxKBaddModel.png)

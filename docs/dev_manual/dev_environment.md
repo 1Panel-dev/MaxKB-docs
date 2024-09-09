@@ -32,17 +32,15 @@
 ## 3 开发环境搭建
 
 !!! Abstract "" 
-    安装poetry包管理器
+    安装 poetry 包管理器
     ``` bash
     pip install poetry
     ```
 
-## 4 开发准备
-
-### 4.1 本地配置
+## 4 本地配置
 
 !!! Abstract "" 
-      若要项目启动，需要准备配置文件及目录
+      项目启动之前，需要准备配置文件及目录
 
       - 准备配置文件
 
@@ -90,30 +88,32 @@
       注意: 在项目根目录执行
 
       创建venv
-      ```bash
-      #win
+      ```
+      # win
       python -m venv venv
 
-      #linux/mac
+      # linux/mac
       python3 -m venv venv
       ```
-      激活venv
-      ```bash
-      #win  
+
+      激活 venv
+      ```
+      # win  
       .\venv\Scripts\activate
 
-      #linux/mac
+      # linux/mac
       source venv/bin/activate
       ```
+
       安装后端需要的依赖
 
-      ```bash
+      ```
       poetry install
       ```
 
       启动项目
 
-      ```bash
+      ```
       python main.py start
       ```
 
@@ -128,9 +128,9 @@
       ```
       python:3.11.x
       ```
-      - database "xxx" does not exist 
+      - database "maxkb" does not exist 
 
-      数据库不存在需要创建一个与配置文件相同的数据库, 这里我们创建一个maxkb的数据库
+      数据库不存在需要创建一个与配置文件相同的数据库，默认名称为 maxkb。
 
       ```
       CREATE DATABASE "maxkb";

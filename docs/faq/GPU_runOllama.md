@@ -7,9 +7,9 @@
 ## 1 安装英伟达容器安装包
 
 !!! Abstract ""
-    我们以 Ubuntu22.04 为例（其他系统请参考：[英伟达官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html)）
+    以 Ubuntu 22.04 为例（其它系统请参考：[英伟达官方文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html)）
 
-    - 配置apt源
+    - 配置 apt 源
     ```
     curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
     && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
@@ -39,6 +39,6 @@
     docker exec -it ollama ollama run qwen:7b
     ```
 
-## 4 在 MaxKB 的模型设置中添加模型进行对接
+## 4 在 MaxKB 中添加 Ollama 模型
 
 ![添加模型](../img/FAQ/addmodel.png)

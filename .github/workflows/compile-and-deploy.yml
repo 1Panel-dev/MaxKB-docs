@@ -1,0 +1,42 @@
+name: 编译并部署
+
+on:
+  workflow_dispatch:
+
+jobs:
+  compile-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出
+        uses: actions/checkout@v4
+      - name: 编译
+        run: |
+          sudo apt-get update 
+          sudo apt-get install -y --no-install-recommends zip
+          docker run --rm -v ${PWD}:/docs registry-hk.fit2cloud.com/public/mkdocs-material:latest build
+          zip -r -q -9 site.zip site
+          ls -la site.zip
+      - name: 上传
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.MAXKB_DOCS_HOST }}
+          username: ${{ secrets.MAXKB_DOCS_HOST_USERNAME }}
+          port: 22
+          key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
+          source: "site.zip"
+          target: /tmp
+      - name: 部署
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.MAXKB_DOCS_HOST }}
+          username: ${{ secrets.MAXKB_DOCS_HOST_USERNAME }}
+          key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
+          port: 22
+          script: |
+            cd /tmp
+            rm -rf site
+            unzip site.zip
+            rm -rf /opt/maxkb/docs/*
+            mv /tmp/site/* /opt/maxkb/docs
+            /opt/nginx/bin/reload-nginx.sh
+            rm -rf /tmp/site*

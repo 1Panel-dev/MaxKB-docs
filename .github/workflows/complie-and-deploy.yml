@@ -11,8 +11,6 @@ jobs:
         uses: actions/checkout@v4
       - name: 编译
         run: |
-          curl -L --connect-timeout 60 -m 1800 https://get.docker.com | sh
-          systemctl start docker
           apt-get update 
           apt-get install -y --no-install-recommends zip
           docker run --rm -v ${PWD}:/docs registry-hk.fit2cloud.com/public/mkdocs-material:latest build

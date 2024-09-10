@@ -14,8 +14,9 @@
 ## 2 安装部署 
 
 !!! Abstract ""
-    打开社区网站下载 MaxKB 离线包
-    [社区版离线包](https://community.fit2cloud.com/#/products/maxkb/downloads) (社区版本仅提供 x86架构安装包，如需 arm 架构安装包，可以[申请专业版](https://jsj.top/f/wQsdOJ))。
+    打开[飞致云开源社区](https://community.fit2cloud.com/#/products/maxkb/downloads) ，下载 MaxKB 离线安装包。
+
+    (社区版本仅提供 x86 架构安装包，如需 arm 架构安装包，请[申请专业版](https://jsj.top/f/wQsdOJ))
 
     上传至服务器后执行以下命令进行解压缩：
     ```

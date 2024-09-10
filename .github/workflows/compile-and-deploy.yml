@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo apt-get update 
           sudo apt-get install -y --no-install-recommends zip
-          docker run --rm -v ${PWD}:/docs registry-hk.fit2cloud.com/public/mkdocs-material:latest build
+          docker run --rm -v ${PWD}:/docs squidfunk/mkdocs-material build
           zip -r -q -9 site.zip site
           ls -la site.zip
       - name: 上传

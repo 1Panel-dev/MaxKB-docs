@@ -13,15 +13,17 @@
 ![1panel-maxkb](../img/index/1panel_maxkb.jpg)    
 
 
-!!! Abstract "" 
-    在应用详情页选择最新的 MaxKB 版本进行安装，进行相关参数设置。   
-    * 名称：要创建的 MaxKB 应用的名称。   
-    * 版本：选择 MaxKB 最新版本。   
-    * 端口：MaxKB 应用的服务端口。   
-    * 容器名称：MaxKB 应用容器名称。    
-    * CPU 限制：MaxKB 应用可以使用的 CPU 核心数。   
-    * 内存限制：MaxKB 应用可以使用的内存大小。    
-    * 端口外部访问：MaxKB 应用可以使用 IP:PORT 进行访问（MaxKB 应用必须打开外部端口访问）。    
+!!! Abstract ""  
+    在安装页面配置 MaxKB 应用参数：
+
+    - 名称：要创建的 MaxKB 应用的名称。   
+    - 版本：选择 MaxKB 的版本。   
+    - 端口：MaxKB 应用的服务端口。   
+    - 容器名称：MaxKB 应用容器名称。    
+    - CPU 限制：MaxKB 应用可以使用的 CPU 核心数。   
+    - 内存限制：MaxKB 应用可以使用的内存大小。    
+    - 端口外部访问：MaxKB 应用可以使用 IP:PORT 进行访问（MaxKB 应用必须打开外部端口访问）。   
+
 ![maxkb-setting](../img/index/maxkb_setting.jpg)
 
 !!! Abstract "" 
@@ -40,5 +42,5 @@
     ```
 
 !!! Abstract ""     
-    第一次登录需修改 admin 用户的密码，修改密码后，重新登录系统即可使用 MaxKB。   
+    为了安全，admin 第一次登录时将强制需修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
 ![登录成功](../img/index/UI.jpg)

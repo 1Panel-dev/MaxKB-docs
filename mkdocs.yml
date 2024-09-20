@@ -52,12 +52,12 @@ nav:
             - 文档: user_manual/dataset/doclist.md
             - 问题: user_manual/dataset/problem.md
             - 命中测试: user_manual/dataset/hit-testing.md
+        - 函数库: user_manual/fx/fx.md
         - 应用: 
             - 应用创建: user_manual/app/app.md
             - 应用概览: user_manual/app/app-view.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md
-        - 函数库: user_manual/fx/fx.md
         - 模型管理: user_manual/model/model.md
         - 团队管理: user_manual/team/team.md
         - X-Pack功能: 

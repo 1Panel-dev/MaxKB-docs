@@ -44,6 +44,7 @@ nav:
         - 离线安装: installation/offline_installtion.md
         - 在线安装: installation/online_installtion.md
         - 1Panel 安装: installation/1panel_installtion.md
+        - 阿里云安装: installation/aliyun.md
         - 命令行工具: installation/cli.md
     - 快速入门: quick_start.md
     - 功能手册: 

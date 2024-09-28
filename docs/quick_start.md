@@ -17,7 +17,7 @@
 !!! Abstract ""
     在供应商中选择【千帆大模型】，然后点击【添加模型】，则直接进入千帆大模型表单。
 
-![千帆大模型](img/model/qianfan-model.jpg)
+![千帆大模型](img/model/qianfan_model.jpg)
 !!! Abstract ""
     * 模型名称：MaxKB 中自定义的模型名称。   
     * 模型类型：大语言模型。    

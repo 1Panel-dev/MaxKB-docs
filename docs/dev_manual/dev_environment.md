@@ -8,12 +8,18 @@
     .          
     ├── LICENSE                 # License 申明        
     ├── README.md           
-    ├── apps                    #  后端项目根目录        
-    │ ├── common                # 项目公共资源目录         
+    ├── apps                    # 后端项目根目录        
+    │ ├── application           # 应用
+    │ ├── common                # 项目公共资源目录
+    │ ├── dataset               # 知识库
+    │ ├── embedding             # 向量化
+    │ ├── function_lib          # 函数库
+    │ ├── ops                   # 
+    │ ├── settting              # 设置
     │ ├── smartdoc              # 项目主目录          
     │ ├── users                 # 用户相关          
-    │ ├── manage.py             #  django项目入口         
-    │ └── sdk                   # 项目通用的前后端依赖/网关的前端          
+    │ └── manage.py             # django项目入口         
+    ├── installer               # 安装相关  
     ├── pyproject.toml          # 后端依赖 配置文件         
     └── ui                      # 前端项目根目录          
     ├── config_example.yml      # 项目配置示例             

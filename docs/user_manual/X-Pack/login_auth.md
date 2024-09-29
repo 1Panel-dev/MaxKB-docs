@@ -14,14 +14,14 @@
 
 !!! Abstract ""
     配置 CAS 的过程可参考下图，注意勾选下方"启用 CAS 认证"后开启此功能。         
-![CAS](../../img/system/CAS.jpg)
+![CAS](../../img/system/CAS.png)
 
 
 ## 3 OIDC
 
 !!! Abstract ""
     配置 OIDC 的过程可参考下图，注意勾选下方"启用 OIDC 认证"后开启此功能。         
-![OIDC](../../img/system/OIDC.jpg)
+![OIDC](../../img/system/OIDC.png)
 
 ## 4 登陆认证
 

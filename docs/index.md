@@ -31,3 +31,11 @@
 
     - **模型中立**     
       支持对接各种大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 腾讯混元 / 字节豆包 / 百度千帆 / 智谱 AI / Kimi 等）和国外公共大模型（OpenAI / Claude / Gemini 等）。
+
+## 3 了解更多
+
+!!! Abstract ""
+
+    - **如何向团队介绍 MaxKB？：** https://fit2cloud.com/maxkb/download/introduce-maxkb_202409.pdf
+    - **飞致云学堂：** https://edu.fit2cloud.com/index 
+    - **MaxKB 知识库：** https://kb.fit2cloud.com/categories/maxkb

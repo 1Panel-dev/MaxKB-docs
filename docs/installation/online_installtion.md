@@ -1,7 +1,9 @@
 ## 1 部署要求
 
 ### 1.1 服务器配置
+
 !!! Abstract ""
+
     **部署服务器要求：**
 
     * 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统
@@ -9,7 +11,9 @@
     * 磁盘空间：100GB
 
 ### 1.2 端口要求
+
 !!! Abstract ""
+
     在线部署 MaxKB 需要开通的访问端口说明如下：
 
 | 端口     |    作用    |            说明            |
@@ -21,6 +25,7 @@
 ## 2 在线快速部署
 
 !!! Abstract ""
+
     MaxKB 支持一键启动，仅需执行以下命令：
     ```
     docker run -d --name=maxkb -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
@@ -37,7 +42,8 @@
 
 ## 3 在线升级
 
-!!! Abstract "" 
+!!! Abstract ""
+
     根据以下步骤依次执行进行升级：
 
     （1） 下载最新镜像
@@ -52,6 +58,7 @@
 ![获取pgsql目录](../img/index/mount_pgsqldir.png)
 
 !!! Abstract ""
+
     （3）删除正在运行的 MaxKB 容器
     ```
     docker rm -f maxkb 

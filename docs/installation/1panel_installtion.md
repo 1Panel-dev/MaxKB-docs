@@ -1,7 +1,7 @@
-# 1Panel 安装
-
 ## 1 安装 1Panel
-!!! Abstract "" 
+
+!!! Abstract ""
+
     关于 1Panel 的安装部署与基础功能介绍，请参考 [1Panel 官方文档](https://1panel.cn/docs/) 。在完成了 1Panel 的安装部署后，根据提示网址打开浏览器进入 1Panel，界面如下。    
 
 ![1panel](../img/index/1panel.jpg)
@@ -10,10 +10,11 @@
 
 !!! Abstract "" 
     进入应用商店应用列表，在【AI/大模型】分类下找到 MaxKB 应用进行安装。    
+
 ![1panel-maxkb](../img/index/1panel_maxkb.jpg)    
 
-
 !!! Abstract ""  
+
     在安装页面配置 MaxKB 应用参数：
 
     - 名称：要创建的 MaxKB 应用的名称。   
@@ -27,13 +28,15 @@
 ![maxkb-setting](../img/index/maxkb_setting.jpg)
 
 !!! Abstract "" 
+
     点击确认开始安装，页面自将动跳转到已安装应用列表，等待 MaxKB 应用状态变为已启动。   
+
 ![maxkb启动](../img/index/maxkb-start.jpg)    
 
 ## 3 访问 MaxKB 
 
-
 !!! Abstract "" 
+
     安装成功后，通过浏览器访问如下页面登录 MaxKB：   
     ```
     地址: http://目标服务器IP地址:服务运行端口（默认 8080）     
@@ -42,5 +45,7 @@
     ```
 
 !!! Abstract ""     
+
     为了安全，admin 第一次登录时将强制需修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
+
 ![登录成功](../img/index/UI.jpg)

@@ -105,10 +105,12 @@
     ```
     # 进入新版本目录
     cd maxkb-v1.x.y-offline
+
     # 运行安装脚本
     /bin/bash install.sh
+
     # 查看 MaxKB 运行状态
     mkctl status
     ```
 
-    **注意**：升级前做好数据库的备份工作是一个良好的习惯。
+    **注意：** 升级前请先对数据库进行备份。

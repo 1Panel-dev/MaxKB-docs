@@ -11,153 +11,26 @@
 
 !!! Abstract ""
     登录 MaxKB 系统后，可以在【系统管理-模型设置】中添加模型，也可以在创建应用时再添加模型。
+    在供应商列表中选择指定供应商，然后点击【添加模型】，进入模型配置表单。
 
-### 2.1 添加千帆大模型
-
-!!! Abstract ""
-    在供应商中选择【千帆大模型】，然后点击【添加模型】，则直接进入千帆大模型表单。
-
-![千帆大模型](img/model/qianfan_model.jpg)
-!!! Abstract ""
     * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。    
-    * 基础模型：供应商的 LLM 模型，选项中已罗列一些常用的大语言模型，且支持自定义输入官方模型。
+    * 模型类型：包括大语言模型/向量模型/语音识别/语音合成，不同的供应商支持的模型种类不一样，详情见：[模型管理 ](./user_manual/model/model.md)
+    * 基础模型：模型名称，选项中显示执行模型类型的部分模型名称，支持自定义输入官方模型。
             注意自定义基础模型名称需保证与供应商平台的模型名称一致才能校验通过。   
-    * API Key 和 Secret Key：在千帆大模型中创建应用的API Key 和 Secret Key。   
-
-![百度影音](img/model/qianfan-app.png)
-
-
-### 2.2 添加 Ollama 模型
+    * API Key 和 Secret Key：在供应商智能平台中创建应用的API Key 和 Secret Key，不同的平台参数要求不同。
 
 !!! Abstract ""
-    在供应商中选择【 Ollama 】，然后点击【添加模型】，进入 Ollama 表单。  
+    以通义千问为例，配置如下，其它模型配置添加详情见：[模型管理-添加模型 ](./user_manual/model/model.md)
 
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型或向量模型。    
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，但需要与供应商的模型名称保持一致，系统会自动下载部署模型。   
-    * API 域名和 API Key: Ollama 服务地址，例如：http://42.92.198.53:11434 。若没有设置 API Key，可以输入任意字符。     
-    点击【添加】后校验通过则添加成功，便可以在应用的 AI 模型列表选择该模型。
-    
-![Ollama](img/model/ollama-model.png)
+![通义千问 APIkey](img/model/tongyi_model.png)
 
-### 2.3 添加 Azure OpenAI 模型
+
+## 3 创建知识库
 
 !!! Abstract ""
-    在模型管理中，点击供应商【 Azure OpenAI 】，直接进入下一步填写Azure OpenAI 的模型表单。    
-    或者左侧供应商先选择【 Azure OpenAI 】，然后点击【添加模型】，则直接进入 Azure OpenAI 的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：为供应商的 LLM 模型，支持自定义输入和下拉选项，当前可下拉选择的大语言模型如：gpt-3.5-turbo-0613、gpt-3.5-turbo-0301、gpt-3.5-turbo-16k-0613 等。    
 
-![Azure模型](img/model/Azure-model.png)
-!!! Abstract ""
-    * API 域名、API Key、部署名称: Azure OpenAI 的模型部署中提供的，需要填写一致，参考下图：
-![Azure Key](<img/model/Azure key.png>)
-
-### 2.4 添加 OpenAI 大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【 OpenAI 】，直接进入下一步填写 OpenAI 的模型表单。    
-    或者左侧供应商先选择【 OpenAI 】，然后点击【添加模型】，则直接进入 OpenAI 的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是 OpenAI 常用的一些大语言模型如：gpt-3.5-turbo-0613、gpt-3.5-turbo、gpt-4 等。    
-    * API 域名：国外服务器：https://api.openai.com/v1，国内服务器则填写：反向代理地址/v1。
-    * API Key：访问 OpenAI 的 Key。
-
-![OpenAI](img/model/OpenAI.png)
-
-### 2.5 添加讯飞星火大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【讯飞星火】，直接进入下一步填写讯飞星火的模型表单。    
-    或者左侧供应商先选择【讯飞星火】，然后点击【添加模型】，则直接进入讯飞星火的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：支持自定义输入，对应接口文档中 domain，下拉选项是讯飞星火常用的一些大语言模型。    
-    * API 域名：每个基础模型对应的API域名不同，请根据所选基础模型输入对应的API域名，参考[讯飞星火官方文档](https://www.xfyun.cn/doc/spark/Web.html#_1-%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)。
-
-![讯飞API](img/model/xunfei_api.png){width="800px"}
-
-!!! Abstract ""
-    APP ID、API Key、Secret Key 需要先在讯飞星火开放平台创建应用，并且应用的剩余 tokens>0，才能添加成功。
-
-![讯飞APP](img/model/xunfei_app.png)
-![讯飞model](img/model/xunfei_model.png)
-
-### 2.6 添加智谱 AI 大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【智谱AI】，直接进入下一步填写智谱AI的模型表单。    
-    或者左侧供应商先选择【智谱AI】，然后点击【添加模型】，则直接进入智谱AI的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。    
-    * API Key：需要先在智谱 AI 开放平台创建。
-
-![智谱APIKey](img/model/zhipu_apikey.png)
-![智谱模型](img/model/zhipu_model.png)
-
-### 2.7 添加通义千问大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【通义千问】，直接进入下一步填写通义千问的模型表单。    
-    或者左侧供应商先选择【通义千问】，然后点击【添加模型】，则直接进入通义千问的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。    
-    * API Key：需要在阿里云->DashScope灵积模型服务->API Key管理中获取。
-
-![通义千问 APIkey](img/model/tongyi_apikey.png)
-![通义千问模型](img/model/tongyi_model.png)
-
-### 2.8 添加 Kimi 大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【Kimi】，直接进入下一步填写 Kimi 的模型表单。    
-    或者左侧供应商先选择【Kimi】，然后点击【添加模型】，则直接进入 Kimi 的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。  
-    * API 域名：https://api.moonshot.cn/v1  
-    * API Key：在Kimi 账户中心的 API Key 管理中获取 key。
-
-
-![kimi APIkey](img/model/kimi_apikey.png)
-![KimiModel](img/model/kimi_model.png)
-
-### 2.9 添加 DeepSeek 大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【DeepSeek】，直接进入下一步填写 DeepSeek 的模型表单。    
-    或者左侧供应商先选择【DeepSeek】，然后点击【添加模型】，则直接进入 DeepSeek 的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。  
-    * API Key：在 [DeepSeek官方](https://www.deepseek.com) 获取 API Key。
-
-![DeepSeek](img/model/deepseek.png)
-
-###  2.10 添加 Gemini 大模型
-
-!!! Abstract ""
-    在模型管理中，点击供应商【Gemini】，直接进入下一步填写 Gemini 的模型表单。    
-    或者左侧供应商先选择【Gemini】，然后点击【添加模型】，则直接进入 Gemini 的模型表单。    
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 模型类型：大语言模型。   
-    * 基础模型：供应商的 LLM 模型，支持自定义输入，下拉选项是常用的一些大语言模型。  
-    * API Key：获取 API Key。
-
-    注意：使用 Gemini API 需要确保程序所在服务器位于 [Gemini API所支持的地区](https://ai.google.dev/gemini-api/docs/available-regions?hl=zh-cn) ，否则无法调用API，并且无法进入Google AI Studio。
-
-![Gemini](img/model/gemini.png)
-
-## 3 创建通用型知识库
-
-!!! Abstract ""
-    打开【知识库】页面，点击【创建知识库】，进入创建知识库页面。 输入知识库名称、知识库描述、选择通用型知识库类型。
-    然后将离线文档通过拖拽方式或选择文件上传方式进行上传。 
+    打开【知识库】页面，点击【创建知识库】，进入创建知识库页面。<br />
+    以通用知识库为例说明支持库创建过程。先输入知识库名称、知识库描述、选择通用型知识库类型，然后将离线文档通过拖拽方式或选择文件上传方式进行上传。 
 
 ### 3.1 上传文档
 
@@ -199,7 +72,7 @@
     * 按照标题# 进行分段，若没有#标题的则按照字符数4096个字符进行分段；
     * 查找分段长度以内的回车进行截取。  
       
-![智能分段](<img/dataset/automatic paragraphing.png>)
+![智能分段](<img/dataset/automatic_paragraphing.png>)
 
 !!! Abstract ""
     **高级分段**  
@@ -210,7 +83,7 @@
     * 分段长度：支持最小 50个字符，最大 4096 个字符。   
     * 自动清洗：开启后系统会自动去掉重复多余的符号如空格、空行、制表符等。     
 
-![高级分段](<img/dataset/Advanced segmentation.png>)
+![高级分段](<img/dataset/advanced_segmentation.png>)
 !!! Abstract ""
     **导入时添加分段标题为关联问题**  
 
@@ -222,7 +95,7 @@
 
     分段规则设置完成后，需要点击【生成预览】查看最新规则的分段效果。
 
-![分段预览](<img/dataset/Preview segmentation.png>)
+![分段预览](<img/dataset/preview_segmentation.png>)
 
 !!! Abstract ""
     用户可在分段预览中对不合理的分段进行再次编辑。
@@ -231,13 +104,8 @@
 
  
 !!! Abstract ""
-    点击【创建并导入】后，系统会对文档进行自动分段 -> 存储 -> 向量化处理操作。    
-    在创建完成页面可以看到导入的文档数量、分段数量和字符数。  
-![创建完成](img/dataset/finish.png)
+    点击【创建并导入】后，系统会对文档进行自动分段 -> 存储 -> 向量化处理操作，最终在知识库的文档列表中各个文件状态都为 `成功`。
 
-!!! Abstract ""
-    点击【返回知识库列表】回到知识库列表页面。   
-    点击【前往文档】进入该知识库的【文档】列表页面。  
 ![文档列表](img/dataset/doc_list.png)
 
 ## 4 创建应用
@@ -245,7 +113,7 @@
 !!! Abstract ""
     点击【创建应用】，输入应用名称，选择【简易配置应用】，点击【创建】
 
-![选择应用类型](img/app/selectAppType.jpg)
+![选择应用类型](img/app/selectAppType.png)
 
 !!! Abstract ""
     应用创建完成，进入简易配置应用的设置页面，左侧为应用信息，右侧为调试预览界面。
@@ -260,7 +128,7 @@
     * 问题优化：对用户提出的问题先进行一次 LLM 优化处理，将优化后的问题在知识库中进行向量化检索；开启后能提高检索知识库的准确度，但由于多一次询问大模型会增加回答问题的时长。
 
     应用信息设置完成后，可以在右侧调试预览中进行提问预览，调试预览中提问内容不计入对话日志。
-![应用设置](img/app/app-setting.png)
+![应用设置](img/app/app_setting.png)
 
 
   
@@ -276,22 +144,22 @@
     相似度越高代表问题和分段的相关性越强。 
 
     （3）**引用分段数**<br />
-    提问时按相似度携带N个分段生成提示词询问 LLM 模型。 
+    提问时按相似度携带 N 个分段生成提示词询问 LLM 模型。 
 
     （4）**引用最大字符数**<br />
     引用分段内容设置最大字符数，超过时则截断。     
 
     （5）**无引用知识库处理方式**<br />
-    继续提问：可以自定义设置提示词，需要有{question}用户问题的占位符，才会把用户问题发送给模型。       
+    继续提问：可以自定义设置提示词，需要有`{question}`用户问题的占位符，才会把用户问题发送给模型。       
     指定回复内容：当没有命中知识库分段时可以指定回复内容。   
 
-![alt text](<img/app/app-parameter-setting .png>)
+![alt text](<img/app/app-parameter-setting.png>)
 
 ## 5 演示预览
 
 !!! Abstract "" 
     在应用列表页面，在概览页面点击演示或在浏览器中复制公开访问链接进入问答页面进行提问。
-![演示预览](img/app/app-view.png)
+![演示预览](img/app/app_view.png)
 
 
 ## 6 对话日志

@@ -60,13 +60,15 @@
 !!! Abstract ""
 
     （3）删除正在运行的 MaxKB 容器
+
     ```
     docker rm -f maxkb 
     ```
 
     （4）创建并启动 MaxKB 容器
-    ```
-    # 注意：确认数据持久化目录（-v后的目录）要跟【第 2 步】的目录保持一致，否则启动后数据为空。
 
+    **注意：** 务必确认数据持久化目录（-v后的目录）要跟第 (2) 步查看目录保持一致，否则启动后数据为空。
+
+    ```
     docker run -d --name=maxkb -p 8080:8080 -v /opt/maxkb/pgsql/data:/var/lib/postgresql/data -v /opt/maxkb/python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
     ```

@@ -1,7 +1,7 @@
 # 如何让Ollama使用GPU运行LLM模型
 
 !!! Abstract ""
-    说明：以 GPU 模式运行 Ollama 需要有 NVIDIA 显卡支持。
+    以 NVIDIA 为例，说明 Ollama GPU 模式运行大模型的具体操作。
 
 
 ## 1 安装英伟达容器安装包
@@ -29,6 +29,7 @@
 
 !!! Abstract ""
     ```
+    # 以后台模式运行 ollama 容器，并允许容器访问主机上所有可用的 NVIDIA GPU
     docker run --gpus all -d -v /opt/ai/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
     ```
 
@@ -36,9 +37,12 @@
 
 !!! Abstract ""
     ```
+    # 在线下载并运行模型
     docker exec -it ollama ollama run qwen:7b
     ```
 
 ## 4 在 MaxKB 中添加 Ollama 模型
 
+!!! Abstract ""
+    下载完成并运行模型服务后，即可在 MaxKB 中添加对应的模型并使用。
 ![添加模型](../img/FAQ/addmodel.png)

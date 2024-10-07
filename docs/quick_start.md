@@ -37,8 +37,9 @@
 !!! Abstract ""
     上传文档要求：  
 
-    * 支持文本文件格式为：Markdown、TXT、PDF、DOCX、HTML；
-    * 支持 QA 问答对格式为：Excel、CSV；  
+    * 文本文件:：Markdown、TXT、PDF、DOCX、HTML；
+    * 表格：Excel、CSV;
+    * QA 问答对：Excel、CSV；  
     * 每次最多上传 50 个文件；   
     * 每个文件不超过 100 MB；
     * 支持选择文件夹，上传文件夹下符合要求的文件。

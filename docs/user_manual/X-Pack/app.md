@@ -129,7 +129,7 @@
 ![飞书权限](../../img/app/feishu_app_auth.png)
 
 !!! Abstract ""
-    （4）添加权限获取APP ID、APP Secret和Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取APP ID和APP Secret。
+    （4）获取APP ID、APP Secret和Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取APP ID和APP Secret。
 ![飞书应用信息i](../../img/app/feishu_app_info.png)
 
 

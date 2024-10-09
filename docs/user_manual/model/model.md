@@ -1,5 +1,5 @@
 !!! Abstract ""
-    模型管理用于对接供应商的大语言模型，支持对接主流的大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 智谱 AI / 百度千帆 / Kimi / DeepSeek 等）和国外公共大模型（OpenAI / Azure OpenAI / Gemini 等）,支持的种类包括大语言模型、向量模型、重排模型、语音识别模型、语音合成模型等。
+    模型管理用于对接供应商的大语言模型，支持对接主流的大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 智谱 AI / 百度千帆 / Kimi / DeepSeek 等）和国外公共大模型（OpenAI / Azure OpenAI / Gemini 等），支持的种类包括大语言模型、向量模型、重排模型、语音识别模型、语音合成模型等。
     
     各供应商支持的类型详情见下表（按字母排序）：
 
@@ -26,16 +26,16 @@
 ## 1 添加模型
 
 !!! Abstract ""
-    登录 MaxKB 系统后，可以先对接模型，也可以在创建应用时再添加模型。添加模型时，可先点击【添加模型】，然后选择供应商，也可以左侧先选择供应商，然后点击【添加模型】
+    登录 MaxKB 系统后，可以先对接模型，也可以在创建应用时再添加模型。添加模型时，可先点击【添加模型】，然后选择供应商，也可以左侧先选择供应商，然后点击【添加模型】。
 
 ### 1.1 添加千帆大模型
 
 !!! Abstract ""
-    添加千帆大模型之前，需要先在 [百度智能云千帆大模型平台](https://qianfan.cloud.baidu.com/) 中进行注册，并在【模型服务-应用接入】中创建应用，生成 API Key和Secret Key。
+    添加千帆大模型之前，需要先在 [百度智能云千帆大模型平台](https://qianfan.cloud.baidu.com/) 中进行注册并登录。在控制台中的【模型服务-应用接入】中创建应用后，将自动生成 API Key和Secret Key 等信息。
 ![百度应用](../../img/model/qianfan_app.png)
 
 !!! Abstract ""
-    选择模型供应商为`千帆大模型`，并在模型添加对话框中输入如下必要信息：
+   选择模型供应商为`千帆大模型`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。   
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
@@ -51,12 +51,15 @@
 ### 1.2 添加 Ollama 模型
 
 !!! Abstract "" 
-    选择模型供应商为`Ollama`，并在模型添加对话框中输入如下必要信息：
+    **说明：** Ollama允许用户在本地计算机上运行和部署大型语言模型。在添加 Ollama 模型之前需要先自行安装部署 Ollama 并运行模型，详情见：[Ollama 离线部署LLM模型](../../faq/Offline_install_OllamaModel.md)。
+
+!!! Abstract "" 
+    模型供应商为`Ollama`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。   
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
     * 模型类型：大语言模型/向量模型。    
-    * 基础模型：Ollama 支持的 LLM 模型名称，选项中显示了 Ollama 支持的部分常用大语言模型名称，支持手动输入，但需要与 Ollama 支持的模型名称保持一致，否则无法通过校验。如果本地没有此模型，系统将自动下载。 
+    * 基础模型：Ollama 支持的不同类型模型的基础模型名称，选项中显示了 Ollama 支持的部分常用基础模型名称，支持手动输入，但需要与 Ollama 支持的模型名称保持一致，否则无法通过校验。如果本地没有此模型，系统将自动下载。 
 
 !!! Abstract "" 
     大语言模型还需要输入 API 域名和API Key，向量模型需要输入API 域名。
@@ -64,9 +67,10 @@
     * API 域名：为 Ollama 服务地址连接信息，例如：http://42.92.198.53:11434 。     
     * API Key：若没有配置API Key，可以输入任意字符。
 
-    点击【添加】后 校验通过则添加成功，便可以在应用的 AI 模型列表选择该模型。
+    点击【添加】，校验通过则添加成功，便可以在应用的 AI 模型列表选择该模型。
     
-![ollama 模型](../../img/model/ollama_model.png)
+![ollama 大语言模型](../../img/model/ollama_model.png)
+![ollama 向量模型](../../img/model/ollama_embedding_model.png)
 
 ### 1.3 添加 Azure OpenAI 模型
 
@@ -103,27 +107,29 @@
 ### 1.5 添加讯飞星火大模型
 
 !!! Abstract "" 
-    添加讯飞星火大模型之前，需要先在 [讯飞开放平台](https://www.xfyun.cn/) 中进行注册，并创建应用，平台将自动生成APPID、API Secret、APIKey等信息。
+    添加讯飞星火大模型之前，需要先在 [讯飞开放平台](https://www.xfyun.cn/) 中进行注册，并根据不同的模型类型创建不同应用，平台将自动生成APPID、API Secret、APIKey等信息。
 
 ![讯飞APP](../../img/model/xunfei_app.png)
+![讯飞APP](../../img/model/xunfei_s2t_app.png)
+![讯飞APP](../../img/model/xunfei_t2s_app.png)
+
 
 !!! Abstract "" 
     选择模型供应商为`讯飞星火`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。 
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。     
-    * 模型类型：大语言模型。   
-    * 基础模型：对应接口文档中的 domain，下拉选项是讯飞星火常用的一些大语言模型名称，支持自定义输入。    
-    * API 域名：每个基础模型对应的 API 域名不同，请根据所选基础模型输入对应的 API 域名，详情请参考[讯飞星火官方文档](https://www.xfyun.cn/doc/spark/Web.html#_1-%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)。
-
-![讯飞API](../../img/model/xunfei_api.png)
-
-!!! Abstract "" 
-
+    * 模型类型：大语言模型/语音识别/语音合成。   
+    * 基础模型：对应接口文档中的 domain，下拉选项是讯飞星火不同模型类型下的常用基础模型名称，支持自定义输入。    
+    * API 域名：每个基础模型对应的 API 域名不同，请根据所选基础模型输入对应的 API 域名，详情请参考[讯飞开放平台文档中心](https://www.xfyun.cn/doc/)，如下图所示。
     * APP ID：讯飞开放平台中创建应用的标识。
     * API Key：讯飞开放平台应用访问对应的 API Key。
     * API Secret：讯飞开放平台应用访问对应的的 API Secret。
 
+
+![讯飞星火认知大模型 API](../../img/model/xunfei_api.png)
+![讯飞语音识别大模型 API](../../img/model/xunfei_tts_wss.png)
+![讯飞语音合成大模型 API](../../img/model/xunfei_iat_wss.png)
 ![讯飞模型](../../img/model/xunfei_model.png)
 
 
@@ -166,7 +172,7 @@
 ### 1.8 添加 Kimi 大模型
 
 !!! Abstract ""
-    添加 kimi 模型之前，需要先在 Moonshot AI 开放平台中创建 API Key。
+    添加 kimi 模型之前，需要先在 [Moonshot AI 开放平台](https://platform.moonshot.cn/console/account) 中注册并创建 API Key。
 
 ![kimi APIkey](../../img/model/kimi_apikey.png)
 
@@ -185,7 +191,7 @@
 ### 1.9 添加 DeepSeek 大模型
 
 !!! Abstract ""
-    添加 DeepSeek 大模型之前，需要先在[DeepSeek 开放平台](https://platform.deepseek.com/) 创建 API Key。
+    添加 DeepSeek 大模型之前，需要先在 [DeepSeek 开放平台](https://platform.deepseek.com/) 创建 API Key。
 ![kimi 模型](../../img/model/deepseek_apikey.png)
 
 !!! Abstract ""
@@ -210,7 +216,7 @@
     * 基础模型：Gemini 支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。
     * API Key：获取 API Key。
 
-    注意：使用 Gemini API 需要确保程序所在服务器位于 [Gemini API所支持的地区](https://ai.google.dev/gemini-api/docs/available-regions?hl=zh-cn) ，否则无法调用API，并且无法进入Google AI Studio。
+    **注意：** 使用 Gemini API 需要确保程序所在服务器位于 [Gemini API 所支持的地区](https://ai.google.dev/gemini-api/docs/available-regions?hl=zh-cn) ，否则无法调用API，并且无法进入Google AI Studio。
 
 ![gemini 模型](../../img/model/gemini.png)
 
@@ -227,9 +233,12 @@
 !!! Abstract "" 
     大语言模型和重排模型需要输入 API 域名和API Key，向量模型需要输入API 域名。
 
-    * API 域名：Xorbits Inference 服务地址，例如：http://42.92.198.53:11434/v1 。 
-    * API Key：若没有 API Key，输入任意字符即可。     
+    * API 域名：Xorbits Inference 服务地址，例如：http://192.168.20.242:9997 。 
+    * API Key：若没有 API Key，输入任意字符即可。
+
 ![Xorbits Inference LLM模型](../../img/model/LLM_Xinference.png)
+![Xorbits Inference LLM模型](../../img/model/xinfer_embedding.png)
+![Xorbits Inference LLM模型](../../img/model/xinfer_rerank.png)
 
 ### 1.12 添加 vLLM 大模型
 
@@ -240,7 +249,7 @@
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。
     * 模型类型：大语言模型。   
     * 基础模型：vLLM 支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。      
-    * API 域名：vLLM 服务地址， 如：http://42.92.198.53:11434/v1 。 
+    * API 域名：vLLM 服务地址， 如：http://192.168.20.242:8000/v1 。 
     * API Key：若没有 API Key，输入任意字符即可。     
 ![vLLM LLM模型](../../img/model/LLM_vLLM.png)
 
@@ -254,11 +263,16 @@
     * 模型类型：大语言模型。   
     * 基础模型：Amazon Bedrock 支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。     
     * Region Name：模型开通的区域。    
-    * Access Key ID:。 
-    * Secret Access Key：。     
+    * Access Key ID/Secret Access Key:  Access Key ID 和 Secret Access Key 是用于对 AWS 服务（包括 Amazon Bedrock）的编程访问进行身份验证的凭证。
+
 ![AWS LLM模型](../../img/model/AWS_LLM.png)
 
 ### 1.14 添加腾讯混元大模型
+
+!!! Abstract ""
+    添加腾讯混元大模型之前，需要先在腾讯云开通腾讯混元服务并新建秘钥。
+
+![tencent apikey](../../img/model/tencent_apikey.png)
 
 !!! Abstract ""
     选择模型供应商为`腾讯混元`，并在模型添加对话框中输入如下必要信息：
@@ -267,9 +281,9 @@
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
     * 模型类型：大语言模型。   
     * 基础模型：腾讯混元支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。         
-    * APPID：控制台-访问管理-API密钥管理中获取。 
-    * SecretId：控制台-访问管理-API密钥管理中获取
-    * SecretKey：控制台-访问管理-API密钥管理中新建密钥时下载的SecretKey。 
+    * APPID：【腾讯云-控制台-访问管理-API密钥管理】中获取。 
+    * SecretId：【腾讯云-控制台-访问管理-API密钥管理】中获取。
+    * SecretKey：【腾讯云-控制台-访问管理-API密钥管理】新建密钥时下载的SecretKey。 
 
 ![hunyuan LLM模型](../../img/model/hunyuan_LLM.png)
 
@@ -280,28 +294,36 @@
 
     * 模型名称：MaxKB 中自定义的模型名称。    
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。   
-    * 模型类型：大语言模型/语音识别/语音合成。   
+    * 模型类型：大语言模型/语音识别/语音合成。
+
+!!! Abstract ""
+    豆包大语言模型其它接入参数说明：
+
     * 基础模型：在线推理的接入点ID。        
     * API 域名：https://ark.cn-beijing.volces.com/api/v3
-    * API Key：接入点-> API调用 -> 通过API Key授权 -> 选择 API Key 并复制 中获取，如下图
+    * API Key：接入点-> API调用 -> 通过API Key授权 -> 选择 API Key 复制获取，如下图
 
-![doubao LLM模型](../../img/model/doubao_LLM.jpg)
+![doubao LLM模型](../../img/model/doubao_llm.png)
+![doubao LLM模型](../../img/model/doubao_llm_apikey.png)
 
 !!! Abstract "" 
     语音识别和语音合成需要输入App ID、Access Token、Cluster ID。
 
+    * App 域名：语音识别模型 API 域名为`wss://openspeech.bytedance.com/api/v2/asr`，语音合成模型 API 域名为`wss://openspeech.bytedance.com/api/v1/tts/ws_binary`
     * App ID：在火山引擎中创建的应用ID。 
     * Access Token：在火山引擎应用对应的认证信息。 
     * Cluster ID：在火山引擎应用对应的服务信息.
 
-!!! Abstract ""
-    基础模型获取方式如下：  
-![doubao基础模型](../../img/model/doubao_jieru.jpg)
-!!! Abstract ""
-    API Key获取方式如下图：  
-![doubaoAPIkey](../../img/model/doubao_APIkey.jpg)
+![doubao_语音识别](../../img/model/doubao_stt.png)
+![doubao_语音合成](../../img/model/doubao_tts.png)
 
-### 1.16 阿里云百炼
+![doubao 语音识别配置](../../img/model/doubao_stt_model.png)
+![doubao 语音合成配置](../../img/model/doubao_tts_model.png)
+
+
+
+
+### 1.16 阿里云百炼大模型
 
 !!! Abstract ""
     选择模型供应商为`阿里云百炼`，并在模型添加对话框中输入如下必要信息：
@@ -312,18 +334,21 @@
     * 基础模型：阿里云百炼支持的重排模型模型名称，下拉选项是常用的一些重排模型名称，支持自定义输入。
     * API Key：阿里云百炼重排模型对应的 API Key。
 
+![阿里云百炼 APIKEY](../../img/model/aliyun_bailian_apikey.png)
+![阿里云百炼 重排模型配置](../../img/model/aliyun_bailian_model.png)
+
 ### 1.17 本地模型
 
 !!! Abstract ""
-    **前提条件：将模型下载到服务器，并且挂在到 MaxKB 容器中。**
+    **前提条件：** 将模型下载到服务器，并且挂在到 MaxKB 容器中,以向量模型为例详细说明如下。
 
-    1、将向量模型下载到本地服务器。
+    （1）将向量模型下载到本地服务器。
     ```
     # 推荐模型下载网址
     https://huggingface.co/models?other=text-embedding
     # 下载后存放在/opt/maxkb/model/local_embedding目录下
     ```
-    2、使用-v 将宿主机模型路径挂载到 MaxKB 容器内部。
+    （2）使用-v 将宿主机模型路径挂载到 MaxKB 容器内部。
     ```
     -v /opt/maxkb/model/local_embedding:/opt/maxkb/model/local_embedding
     # 说明： v 模型所在目录:MaxKB容器内目录
@@ -339,6 +364,8 @@
     * 模型目录：模型的目录（基础模型为名称时，该目录生效，基础模型若有绝对路径，则该参数不生效，建议与基础模型填写一致）。 
 
 ![本地向量模型](../../img/model/embedding_local.png)
+![本地重排模型](../../img/model/local_rerank.png)
+
 
 
 

@@ -121,26 +121,24 @@
 ### 1.4 飞书应用接入
 
 !!! Abstract ""
-    （1）在应用接入中点击【飞书应用】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到【飞书开放平台-事件与回调-事件配置-配置订阅方式]的请求地址中，除此之外的其它信息，将在飞书开放平台中生成并获取。
+    （1）在应用接入中点击【飞书应用】的【配置】按钮，配置信息中会自动生成回调 URL，并需要复制到【飞书开放平台-事件与回调-事件配置-配置订阅方式】的请求地址中，除此之外的其它信息，将在飞书开放平台中生成并获取。
 
 ![飞书应用配置](../../img/app/feishu_setting.png)
 
 !!! Abstract ""
-    （2）创建飞书机器人：首先在[飞书开发平台](https://open.feishu.cn/app/)的【企业自建应用】中，点击【创建企业自建应用】，填写应用信息。
+    （2）创建飞书机器人：首先在 [飞书开发平台](https://open.feishu.cn/app/)的【企业自建应用】中，点击【创建企业自建应用】，填写应用信息。
 ![飞书添加机器人](../../img/app/feishu_create_app.png)
 
 !!! Abstract ""
-    点击【添加应用能力】，选择 【机器人】 能力，点击 【添加】
+    点击【添加应用能力】，选择 【按能力添加-机器人】，点击【添加】
 ![飞书添加机器人](../../img/app/feishu_add_robot.png)
 
 !!! Abstract ""
-    （3）添加权限：打开【权限管理】，复制下面的权限配置，然后粘贴到【权限配置】下方的输入框内，全选筛选出来的权限，点击【批量开通】，最后点击【确认】。
-
+    （3）添加权限：打开【权限管理】，复制下面的权限配置并粘贴到【API权限-权限配置】输入框，全选筛选出来的权限项，点击【批量开通】，最后点击【确认】。
 
     ```
      m:message,im:message.group_at_msg:readonly,im:message.p2p_msg:readonly,im:message:send_as_bot,im:resource, contact:contact.base:readonly，contact:user.base:readonly
     ```
-
 
 ![飞书权限](../../img/app/feishu_app_auth.png)
 
@@ -150,26 +148,34 @@
 
 
 !!! Abstract ""
-    打开【事件与回调】-【加密策略】，获取 Verification Token。
+    打开【事件与回调-加密策略】，获取 Verification Token。
+
 ![飞书token](../../img/app/feishu_verify_token.png)
 
 !!! Abstract ""
     （5）在MaxKB 飞书应用配置窗口输入上述信息，并保存。
-![飞书事件与回调](../../img/app/feishu_callback.png)
+
+![飞书事件与回调](../../img/app/maxkb_feishu_config.png)
+
 
 !!! Abstract ""
     （6）配置回调URL：在飞书开放平台中打开【事件与回调】-【回调配置】的订阅方式中，将MaxKB中飞书应用的回调地址的URL填写到【请求地址】中。
-![飞书事件与回调](../../img/app/feishu_callback.png)
+![飞书事件与回调](../../img/app/feishu_event_config1.png)
+![飞书事件与回调](../../img/app/feishu_event_config2.png)
+
 
 !!! Abstract ""
-    （7）发布应用：点击【创建版本】，填写版本信息后，点击【保存】发布。
-![飞书应用发布](../../img/app/feishu_app_release.png)
+    （7）发布应用：点击【创建版本】，填写版本信息后，点击【保存】发。
+![飞书应用发布](../../img/app/feishu_app_create1.png)
+![飞书应用发布](../../img/app/feishu_app_create2.png)
+
 !!! Abstract ""
-    确认应用状态为：已启用
+    确认发布后，应用状态将更新为`已启用`。
 ![飞书应用发布](../../img/app/feishu_app_enabled.png)
 
 !!! Abstract ""
-    根据以上步骤完成配置后，即可打开飞书客户端找到机器人应用一对一对话。
+    根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB小助手`，点击【添加】后进行一对一对话。
+![飞书对话](../../img/app/feishu_app_search.jpg){width="500px"}
 ![飞书对话](../../img/app/feishu_dialog.jpeg){width="500px"}
 
 ## 2 显示设置

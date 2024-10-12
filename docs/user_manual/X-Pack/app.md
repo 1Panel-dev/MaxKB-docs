@@ -95,12 +95,8 @@
 ![钉钉机器人创建](../../img/app/dingding_setting.png)
 
 !!! Abstract ""
-    （2）创建机器人：在[钉钉开放平台](https://open-dev.dingtalk.com/)的【应用开发】-【钉钉应用】中，点击【创建应用】，填写应用信息。
+    （2）创建机器人：在 [钉钉开放平台](https://open-dev.dingtalk.com/)的【应用开发】-【钉钉应用】中，点击【创建应用】，填写应用信息后，点击【保存】。
 ![钉钉机器人创建](../../img/app/dingding_robot_create.png)
-
-!!! Abstract ""
-    点击【添加应用能力】，选择 【机器人】能力，点击 【添加】
-![钉钉机器人添加](../../img/app/dingding_robot_add.png)
 
 !!! Abstract ""
     （3）获取Client ID和Client Secret： 进入创建好的钉钉应用，打开【凭证与基础信息】页面，获取Client ID和Client Secret。
@@ -111,7 +107,9 @@
 ![钉钉应用信息](../../img/app/dingding_setting2.png)
 
 !!! Abstract ""
-    （5）进入创建好的钉钉应用，打开【机器人】页面，打开机器人设置，将【消息接收模式】设置为HTTP模式，并将 MaxKB 钉钉应用配置中的回调地址的URL填写到消息接收地址中。
+    （5）!!! Abstract ""
+    点击【添加应用能力】，选择 【机器人】能力，点击 【添加】，输入机器人基本配置信息后，将【消息接收模式】设置为HTTP模式，并将 MaxKB 钉钉应用配置中的回调地址的URL填写到消息接收地址中，然后点击【发布】。
+![钉钉机器人添加](../../img/app/dingding_robot_add.png)
 ![钉钉机器人息接收模式](../../img/app/dingding_msg_recvmode.png)
 
 !!! Abstract ""

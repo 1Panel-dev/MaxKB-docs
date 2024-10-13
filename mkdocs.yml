@@ -63,10 +63,12 @@ nav:
         - 团队管理: user_manual/team/team.md
         - X-Pack功能: 
             - 用户管理: user_manual/X-Pack/user.md
-            - 应用: user_manual/X-Pack/app.md
-            - 外观设置: user_manual/X-Pack/theme_settings.md
             - 登录认证: user_manual/X-Pack/login_auth.md
+            - 应用接入: user_manual/X-Pack/app.md
             - 系统API: user_manual/X-Pack/system_API.md
+            - 应用显示设置: user_manual/X-Pack/app_logo_settting.md
+            - 系统外观设置: user_manual/X-Pack/theme_settings.md
+
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md
         - 如何通过应用API KEY进行对话: dev_manual/APIKey_chat.md

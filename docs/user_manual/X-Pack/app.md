@@ -173,14 +173,3 @@
     根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB小助手`，点击【添加】后进行一对一对话。
 ![飞书对话](../../img/app/feishu_app_search.jpg){width="500px"}
 ![飞书对话](../../img/app/feishu_dialog.jpeg){width="500px"}
-
-## 2 显示设置
-
-!!! Abstract "" 
-    在【应用】的【显示设置】中，支持设置浮窗模式的对话框入口图标、AI回复的头像和拖拽位置，且支持设置是否显示历史记录。
-
-![显示设置](../../img/app/view_setting.png)
-
-!!! Abstract "" 
-    应用显示配置效果示例图：
-![对话框](../../img/app/app_fuchuang.jpg)

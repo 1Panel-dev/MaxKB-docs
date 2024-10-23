@@ -12,30 +12,30 @@
 
 ![API doc](../img/dev/app_swaagger.png)
 
-### 1.2 使用 api-key 进行认证
+### 1.2 API Key 认证
   
-![APIKEY](../img/FAQ/apikey.png)
+![APIKEY](../img/dev/app_apikey.png)
 
 ### 1.3 获取应用信息
 
 !!! Abstract ""
-    调用 profile 接口，获取应用信息（应用 id、name等）。
+    调用 profile 接口，获取应用详细信息（应用 id、name等）。
   
-![ profile](../img/FAQ/profile.png)
+![ profile](../img/dev/app_profile.png)
 
 ### 1.4 打开会话
 
 !!! Abstract ""
-    根据应用 id，打开会话并获取会话 id。
+    调用打开会话接口，输入上述步骤获取的应用 id，打开会话并获取会话 id。
 
-![appid](../img/FAQ/appid.png)
+![appid](../img/dev/chat_open.png)
 
 ### 1.5 进行对话
 
 !!! Abstract ""
-    根据会话 id 进行对话。
+    调用对话接口，输入会话 id 进行对话。
 
-![chatid](../img/FAQ/chatid.png)
+![chatid](../img/dev/app_chat.png)
 
 ## 2 标准OpenAI 格式
 

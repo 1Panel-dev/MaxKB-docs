@@ -6,6 +6,7 @@
 ## 1 应用API
 
 ### 1.1 打开swagger文档
+
 !!! Abstract ""
     在应用-概况-应用信息中复制并访问 swagger 地址。
 

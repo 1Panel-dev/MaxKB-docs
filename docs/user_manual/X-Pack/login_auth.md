@@ -13,14 +13,16 @@
 ## 2 CAS
 
 !!! Abstract ""
-    配置 CAS 的过程可参考下图，注意勾选下方"启用 CAS 认证"后开启此功能。         
+    配置 CAS 的过程可参考下图，注意勾选下方"启用 CAS 认证"后开启此功能。    
+    **说明：** CAS 回调地址即 MaxKB 访问地址加上`/api/cas`，例如：`http://40.100.86.240:8080/api/cas`
 ![CAS](../../img/system/CAS.png)
 
 
 ## 3 OIDC
 
 !!! Abstract ""
-    配置 OIDC 的过程可参考下图，注意勾选下方"启用 OIDC 认证"后开启此功能。         
+    配置 OIDC 的过程可参考下图，注意勾选下方"启用 OIDC 认证"后开启此功能。 
+    **说明：** OIDC 回调地址即 MaxKB 访问地址加上`/api/oidc`，例如：`http://40.100.86.240:8080/api/oidc`
 ![OIDC](../../img/system/OIDC.png)
 
 ## 4 登陆认证

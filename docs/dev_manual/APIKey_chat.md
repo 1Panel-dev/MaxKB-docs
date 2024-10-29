@@ -40,7 +40,7 @@
 ## 2 标准OpenAI 格式
 
 !!! Abstract ""
-    MaxKB 应用兼容 OpenAI API 格式，在Open AI API 原有调用方式的基础上替换为MaxKB 应用提供的 Base URL 以及 API Key 即可。
+    MaxKB 应用兼容 OpenAI API 格式，在OpenAI API 原有调用方式的基础上替换为MaxKB 应用提供的 Base URL 以及 API Key 即可。
 
 ![API doc](../img/dev/openai_baseurl.png)
 

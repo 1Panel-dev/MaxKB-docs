@@ -32,7 +32,19 @@
     - **模型中立**     
       支持对接各种大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 腾讯混元 / 字节豆包 / 百度千帆 / 智谱 AI / Kimi 等）和国外公共大模型（OpenAI / Claude / Gemini 等）。
 
-## 3 了解更多
+## 3 案例展示
+
+!!! Abstract ""
+
+    MaxKB 自发布以来，日均安装下载超过 1000 次，被广泛应用于智能客服、企业内部知识库、学术研究与教育等场景。
+
+    - [华莱士智能客服](https://ai.cnhls.com/ui/chat/1fc0f6a9b5a6fb27)
+    - [JumpServer 小助手](https://maxkb.fit2cloud.com/ui/chat/b4e27a6e72d349a3)
+    - [信用深圳](https://www.szcredit.org.cn/#/index)
+    - [重庆交通大学教务在线](http://jwc.anyquestion.cn/ui/chat/b75496390f7d935d)
+
+
+## 4 了解更多
 
 !!! Abstract ""
 

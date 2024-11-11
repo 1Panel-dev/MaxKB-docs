@@ -373,7 +373,7 @@
 !!! Abstract ""
     腾讯混元-大语言模型配置样例图示：
 
-![hunyuan LLM模型](../../img/model/hunyuan_llm.png){ width="500px" }
+![hunyuan LLM模型](../../img/model/hunyuan_LLM.png){ width="500px" }
 
 !!! Abstract ""
     腾讯混元-向量模型配置样例图示：

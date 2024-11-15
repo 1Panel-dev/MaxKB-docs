@@ -1,8 +1,12 @@
 ## 1 mkctl 命令
 
 !!! Abstract ""
-    MaxKB 离线安装包默认内置了命令行运维工具 mkctl，通过执行 `mkctl help`，可以查看相关的命令说明。    
-    **说明**：1.5.0 版本之前请使用 kbctl 命令。
+    MaxKB 离线安装包默认内置了命令行运维工具 mkctl，通过执行 `mkctl help`，可以查看相关的命令说明。  
+
+    **说明**：
+
+    - 1.5.0 版本之前请使用 kbctl 命令。
+    - 通过在线安装、1panel安装，并没有内置 mkctl 命令。
 
     ```
     Usage:

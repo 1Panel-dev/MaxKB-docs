@@ -48,6 +48,6 @@
 
 !!! Abstract ""
 
-    - **如何向团队介绍 MaxKB？：** https://fit2cloud.com/maxkb/download/introduce-maxkb_202409.pdf
+    - **如何向团队介绍 MaxKB？：** https://fit2cloud.com/maxkb/download/introduce-maxkb_202411.pdf
     - **飞致云培训认证中心：** https://edu.fit2cloud.com/index 
     - **MaxKB 知识库：** https://kb.fit2cloud.com/categories/maxkb

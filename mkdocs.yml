@@ -64,7 +64,7 @@ nav:
         - X-Pack功能: 
             - 用户管理: user_manual/X-Pack/user.md
             - 登录认证: user_manual/X-Pack/login_auth.md
-            - 应用接入: user_manual/X-Pack/app.md
+            - 应用接入: user_manual/X-Pack/app_integrate.md
             - 应用显示: user_manual/X-Pack/app_logo_settting.md
             - 身份验证: user_manual/X-Pack/app_auth.md
             - 系统API: user_manual/X-Pack/system_API.md

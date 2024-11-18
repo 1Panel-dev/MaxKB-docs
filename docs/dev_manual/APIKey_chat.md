@@ -49,7 +49,7 @@
     ```
     # 将url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 
-    curl https://maxkb.fit2cloud.com/api/application/xxxxxxxx-8c56-11ef-a99e-0242ac140003/chat/completions_ \
+    curl https://maxkb.fit2cloud.com/api/application/xxxxxxxx-8c56-11ef-a99e-0242ac140003/chat/completions \
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer application-xxxxxxxxf00e21a7530d1177c20967"  \
         -d '{

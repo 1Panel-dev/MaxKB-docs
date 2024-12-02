@@ -15,7 +15,7 @@
 !!! Abstract ""
     Amazon Bedrock-大语言模型配置样例图示：
 
-![AWS LLM模型](../../img/model/aws_llm.png){ width="500px" }
+![AWS LLM模型](../../img/model/AWS_LLM.png){ width="500px" }
 
 !!! Abstract ""
     Amazon Bedrock-向量模型配置样例图示：

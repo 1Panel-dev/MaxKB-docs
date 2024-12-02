@@ -57,7 +57,7 @@ nav:
         - 应用:
             - 应用创建:
                 - 简单配置应用: user_manual/app/simple_app.md
-                - 高级编排应用: user_manual/app/app.md
+                - 高级编排应用: user_manual/app/workflow_app.md
             - 应用概览: user_manual/app/app-view.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md

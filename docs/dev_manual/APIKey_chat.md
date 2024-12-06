@@ -1,18 +1,16 @@
-# 应用API
-
 !!! Abstract ""
-    MaxKB 支持提供系统应用 API 以及兼容 OpenAI 标准格式调用对话。
+    MaxKB 社区版提供系统应用 API 以及兼容 OpenAI 标准格式进行对话，专业版提供系统级别 API，详细情况见：[系统API ](../user_manual/X-Pack/system_API.md)。
 
 ## 1 应用API
 
-### 1.1 打开swagger文档
+### 1.1 打开API文档
 
 !!! Abstract ""
-    在应用-概况-应用信息中复制并访问 swagger 地址。
+    在应用信息中复制并访问 swagger 地址。
 
 ![API doc](../img/dev/app_swaagger.png)
 
-### 1.2 API Key 认证
+### 1.2 API Key认证
   
 ![APIKEY](../img/dev/app_apikey.png)
 

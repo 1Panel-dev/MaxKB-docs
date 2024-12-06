@@ -24,7 +24,7 @@
 ![通义千问 APIkey](img/model/tongyi_model.png)
 
 !!! Abstract ""
-    不同的平台参数要求不同，其它供应商模型配置添加详情见：[模型管理-添加模型 ](./user_manual/model/model.md)
+    不同的平台参数要求不同，其它供应商模型配置添加详情见各模型对接详细说明。
 
 
 ## 3 创建知识库
@@ -173,7 +173,7 @@
 ![嵌入第三方](<img/app/embed.png>)
 
 !!! Abstract "" 
-    在专业版中，也可以接入企业微信、公众号、钉钉和飞书等应用，详细说明见：[X-Pack功能-应用接入 ](./user_manual/X-Pack/app.md)。
+    在专业版中，也可以接入企业微信、公众号、钉钉和飞书等应用，详细说明见：[X-Pack功能-应用接入 ](./user_manual/X-Pack/app_integrate.md)。
 
     
 

@@ -25,8 +25,8 @@
 
 !!! Abstract ""
     腾讯混元-向量模型配置样例图示：
-![hunyuan LLM模型](../../img/model/hunyuan_embed.png){ width="500px" }
+![hunyuan 向量模型](../../img/model/hunyuan_embed.png){ width="500px" }
 
 !!! Abstract ""
     腾讯混元-图片理解模型配置样例图示：
-![hunyuan LLM模型](../../img/model/hunyuan_vision.png){ width="500px" }
+![hunyuan 图片理解模型](../../img/model/hunyuan_vision.png){ width="500px" }

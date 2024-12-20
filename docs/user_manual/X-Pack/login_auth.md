@@ -2,6 +2,11 @@
 !!! Abstract "" 
     MaxKB专业版支持 LDAP、CAS、OIDC、OAUTH2 单点认证协议，以及企业微信、钉钉、飞书移动端扫码登录验证，满足企业对于强身份验证和访问控制的需求。
 
+!!! Abstract ""
+    对接参考资料：
+
+    - [TOPIAM 与 MaxKB 集成指南](https://bbs.fit2cloud.com/t/topic/9533)
+
 ## 1 LDAP
 
 !!! Abstract ""  

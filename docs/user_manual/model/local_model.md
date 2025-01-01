@@ -28,9 +28,9 @@
 ## 3 配置样例
 
 !!! Abstract ""
-    本地模型-向量模型配置样例图示：
+    本地模型-向量模型配置样例图示如下：
 ![本地向量模型](../../img/model/local_embed.png){ width="500px" }
 
 !!! Abstract ""
-    本地模型-重排模型配置样例图示：
+    本地模型-重排模型配置样例图示如下：
 ![本地重排模型](../../img/model/local_reranker.png){ width="500px" }

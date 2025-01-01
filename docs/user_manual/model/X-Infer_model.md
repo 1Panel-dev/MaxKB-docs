@@ -5,7 +5,7 @@
 
     * 模型名称：MaxKB 中自定义的模型名称。    
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
-    * 模型类型：大语言模型/向量模型/语音识别/语音合成/重排模型。   
+    * 模型类型：大语言模型/向量模型/重排模型/语音识别/语音合成/图片理解/图片生成。   
     * 基础模型：不同类型模型下的基础模型名称，下拉选项是常用的一些基础模型名称，支持自定义输入。  
 
 !!! Abstract "" 
@@ -17,21 +17,21 @@
 ## 2 配置样例
 
 !!! Abstract ""
-    Xorbits Inference-大语言模型配置样例图示：
+    Xorbits Inference-大语言模型配置样例图示如下：
 ![Xorbits Inference](../../img/model/xinfo_llm.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-向量模型配置样例图示：
+    Xorbits Inference-向量模型配置样例图示如下：
 ![Xorbits Inference](../../img/model/xinfo_embed.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-语音识别模型配置样例图示：
+    Xorbits Inference-重排模型配置样例图示如下：
+![Xorbits Inference](../../img/model/xinfo_reranker.png){ width="500px" }
+
+!!! Abstract ""
+    Xorbits Inference-语音识别模型配置样例图示如下：
 ![Xorbits Inference](../../img/model/xinfo_asr.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-语音合成模型配置样例图示：
+    Xorbits Inference-语音合成模型配置样例图示如下：
 ![Xorbits Inference](../../img/model/xinfo_tts.png){ width="500px" }
-
-!!! Abstract ""
-    Xorbits Inference-重排模型配置样例图示：
-![Xorbits Inference](../../img/model/xinfo_reranker.png){ width="500px" }

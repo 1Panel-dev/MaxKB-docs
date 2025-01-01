@@ -64,23 +64,23 @@ nav:
         - 模型管理:
             - 模型概况: user_manual/model/model_ summary.md
             - 模型对接:
-                - 添加千帆大模型: user_manual/model/qianfan_model.md
-                - 添加Ollama模型: user_manual/model/ollama_model.md
+                - 添加阿里云百炼大模型: user_manual/model/bailian_model.md
+                - 添加Amazon Bedrock大模型: user_manual/model/amazon_bedrock_model.md
                 - 添加Azure OpenAI大模型: user_manual/model/azure_openai_model.md
-                - 添加OpenAI大模型: user_manual/model/openai_model.md
-                - 添加讯飞星火大模型: user_manual/model/spark_model.md
-                - 添加智谱AI大模型: user_manual/model/zhipu_model.md
-                - 添加通义千问大模型: user_manual/model/tongyi_model.md
-                - 添加Kimi大模型: user_manual/model/kimi_model.md
                 - 添加DeepSeek大模型: user_manual/model/deepseek_model.md
                 - 添加Gemini大模型: user_manual/model/gemini_model.md
-                - 添加Xorbits Inference大模型: user_manual/model/X-Infer_model.md
-                - 添加vLLM大模型: user_manual/model/vllm_model.md
-                - 添加Amazon Bedrock大模型: user_manual/model/amazon_bedrock_model.md
-                - 添加腾讯混元大模型: user_manual/model/hunyuan_model.md
-                - 添加豆包大模型: user_manual/model/doubao_model.md
-                - 添加阿里云百炼大模型: user_manual/model/bailian_model.md
+                - 添加Kimi大模型: user_manual/model/kimi_model.md
                 - 添加本地大模型: user_manual/model/local_model.md
+                - 添加Ollama模型: user_manual/model/ollama_model.md
+                - 添加OpenAI大模型: user_manual/model/openai_model.md
+                - 添加通义千问大模型: user_manual/model/tongyi_model.md
+                - 添加腾讯混元大模型: user_manual/model/hunyuan_model.md
+                - 添加vLLM大模型: user_manual/model/vllm_model.md
+                - 添加火山引擎大模型: user_manual/model/doubao_model.md
+                - 添加千帆大模型: user_manual/model/qianfan_model.md
+                - 添加讯飞星火大模型: user_manual/model/spark_model.md
+                - 添加Xorbits Inference大模型: user_manual/model/X-Infer_model.md
+                - 添加智谱AI大模型: user_manual/model/zhipu_model.md
             - 模型参数配置: user_manual/model/model_param.md
         - 团队管理: user_manual/team/team.md
         - X-Pack功能: 

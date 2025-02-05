@@ -5,8 +5,8 @@
 
     **说明**：
 
-    - 1.5.0 版本之前请使用 kbctl 命令。
-    - 通过在线安装、1panel安装，并没有内置 mkctl 命令。
+    - 1.5.0 之前版本请使用 kbctl 命令。
+    - 通过在线安装、1Panel方式安装，并没有内置 mkctl 命令。
 
     ```
     Usage:
@@ -22,4 +22,5 @@
     uninstall           卸载 MaxKB 服务
     upgrade             升级 MaxKB 服务
     version             查看 MaxKB 版本信息
+    clean-images        清理 MaxKB 旧版本的相关镜像
     ```

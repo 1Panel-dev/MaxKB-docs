@@ -23,7 +23,7 @@
     - 容器名称：MaxKB 应用容器名称。    
     - CPU 限制：MaxKB 应用可以使用的 CPU 核心数。   
     - 内存限制：MaxKB 应用可以使用的内存大小。    
-    - 端口外部访问：MaxKB 应用可以使用 IP:PORT 进行访问（MaxKB 应用必须打开外部端口访问）。   
+    - 端口外部访问：MaxKB 应用可以使用 IP:PORT 进行访问（MaxKB 应用必须勾选外部端口访问）。   
 
 ![maxkb-setting](../img/index/maxkb_setting.jpg)
 
@@ -45,6 +45,6 @@
     密码: MaxKB@123..
     ``` 
 
-    为了安全，admin 第一次登录时将强制修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
+    为了安全，admin 第一次登录时将要求修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
 
 ![登录成功](../img/index/UI.jpg)

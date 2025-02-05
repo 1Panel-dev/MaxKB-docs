@@ -2,11 +2,11 @@
 
 ## 1 整体架构
 
-![架构图](img/index/arch.jpg)
+![架构图](img/index/arch.jpg){width="950px"}
 
 ## 2 实现原理
 
-![实现原理](<img/index/Implementation principle.jpg>)
+![实现原理](img/index/Implementation principle.jpg)
 
 ## 3 技术栈
 

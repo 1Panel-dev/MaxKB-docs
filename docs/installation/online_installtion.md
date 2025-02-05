@@ -16,10 +16,10 @@
 
     在线部署 MaxKB 需要开通的访问端口说明如下：
 
-| 端口     | 作用       | 说明                       |
-|--------|:---------|:-------------------------|
-| 22     | SSH      | 安装、升级及管理使用               |
-| 8080   | Web 服务端口 | 默认 Web 服务访问端口，根据实际情况进行更改 |    
+| 端口     | 作用       | 说明                        |
+|--------|:---------|:--------------------------|
+| 22     | SSH      | 安装、升级及管理使用                |
+| 8080   | Web 服务端口 | 默认 Web 服务访问端口，可根据实际情况进行更改 |    
 
 
 ## 2 在线快速部署
@@ -54,12 +54,12 @@
     ```
     docker pull cr2.fit2cloud.com/1panel/maxkb
     ```
-    （2）查看并确认上一次数据持久化目录，复制保存，第（4）步使用
+    （2）查看并确认上一次数据持久化目录，复制保存
     ```
     docker inspect maxkb
     ```
 
-![获取pgsql目录](../img/index/mount_pgsqldir.png)
+![获取pgsql目录](../img/index/mount_pgsqldir2.png)
 
 !!! Abstract ""
 
@@ -71,8 +71,8 @@
 
     （4）启动并运行新版本的 MaxKB 容器
 
-    **注意：** 务必确认数据持久化目录（即命令行中 -v后的目录）要跟第 (2) 步查看目录保持一致，否则启动后整个系统数据为空。
+    **注意：** 务必确认数据持久化目录（即命令行中 -v后的目录）要跟第 (2) 步查看目录保持一致，否则启动后整个系统的数据为空。
 
     ```
-    docker run -d --name=maxkb -p 8080:8080 -v /opt/maxkb/pgsql/data:/var/lib/postgresql/data -v /opt/maxkb/python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
+    docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
     ```

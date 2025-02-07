@@ -1,24 +1,24 @@
 # 问题
 
 !!! Abstract ""  
-    MaxKB 知识库管理员可以收集用户可能提出的相关问题，创建问题并关联知识库文档中的内容，维护知识库常见问题列表，以提高问答的准确度。
-![问题列表](../../img/dataset/problem_list.png)
+    MaxKB knowledge base administrators can collect potential user questions, create questions and associate them with content in the knowledge base documents, maintain a list of frequently asked questions in the knowledge base to improve Q&A accuracy.
+![Question List](../../img/dataset/problem_list.png)
 
-## 1 创建问题
-
-!!! Abstract ""  
-    点击【创建问题】，分行输入问题列表。
-![创建问题](../../img/dataset/create_problem.png)
-
-## 2 问题关联分段
+## 1 Create Question
 
 !!! Abstract ""  
-    问题添加完成后，可以与文档中的分段进行关联，当用户提问时会优先匹配问题库来查询相关的分段。
-![问题关联分段](../../img/dataset/problem_segmentation.png)
+    Click Create Question button and enter questions line by line.
+![Create Question](../../img/dataset/create_problem.png)
 
-## 3 问题详情
+## 2 Associate Questions with Segments
 
 !!! Abstract ""  
-    点击问题查看详情，可对分段内容进行修改或取消关联关系。
+    After adding questions, they can be associated with segments in documents. When users ask questions, the system will first match against the question bank to query related segments.
+![Associate Questions with Segments](../../img/dataset/problem_segmentation.png)
 
-![问题详情](../../img/dataset/problem_detail.png)
+## 3 Question Details
+
+!!! Abstract ""  
+    Click a question to view details, where you can modify segment content or remove associations.
+
+![Question Details](../../img/dataset/problem_detail.png)

@@ -1,20 +1,20 @@
 
 !!! Abstract ""
-    在对话日志记录了所有用户会话中的问答详情，包括用户对AI 回答的反馈信息，维护人员可以通过查看对话日志详情并参考用户反馈进一步修正答案。       
-    在对话日志支持查询过去 7 天、30 天、90 天、过去半年的对内容，以及按摘要和用户反馈查询进行查询。
+    The conversation log records all Q&A details from user sessions, including user feedback on AI responses. Maintenance personnel can review conversation log details and refer to user feedback to further improve answers.
+    The conversation log supports querying content from the past 7 days, 30 days, 90 days, past 6 months, as well as searching by summary and user feedback.
 
-## 1 日志详情
-
-!!! Abstract ""
-    日志详情为每个用户真实的问答场景，问答中用户的反馈只能查看不能修改。
-
-![日志详情](../../img/app/loglist.png)
+## 1 Log Details
 
 !!! Abstract ""
-    点击日志列表中的摘要，可查看对话详细内容。
+    Log details show real Q&A scenarios for each user. User feedback in Q&A can only be viewed and not modified.
 
-![引用分段](../../img/app/log_detail.png)
+![Log Details](../../img/app/loglist.png)
 
 !!! Abstract ""
-    运营人员可以根据用户提问、AI 回答以及用户的反馈来编辑和标注，以进一步完善并提升效果。
-![引用分段](../../img/app/log_details_edit.png)
+    Click on the summary in the log list to view detailed conversation content.
+
+![Referenced Segments](../../img/app/log_detail.png)
+
+!!! Abstract ""
+    Operations staff can edit and annotate based on chat log details to further improve and enhance effectiveness.
+![Referenced Segments](../../img/app/log_details_edit.png)

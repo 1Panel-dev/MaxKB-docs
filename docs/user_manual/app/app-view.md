@@ -1,43 +1,42 @@
 
-# 应用概览
+# Application Overview
 
 !!! Abstract ""
-    在应用列表页面，点击应用的面板，进入到应用概览页面。     
-    在概览页面可以进行启用/禁用/重新生成公开访问链接、演示、嵌入第三方、访问限制以及 API Key 管理。
+    On the application list page, click an application panel to enter the application overview page.     
+    On the overview page, you can enable/disable/regenerate public access links, demo the application, embed in third-party systems, set access restrictions and manage API Keys.
 
-![应用概览](../../img/index/UI.jpg)
+![Application Overview](../../img/index/UI.jpg)
 
-## 1 公开访问链接
-
-!!! Abstract ""
-    点击演示或复制公开访问链接至浏览器进入问答页面。
-
-![问答](../../img/app/QA.png)
-!!! Abstract ""
-    公开访问链接支持开关设置和重新生成。  
-    对于已打开的公开链接，如果此时关闭当前公开链接或重新生成新的公开访问链接，此时访问将提示：抱歉，当前正在维护，无法提供服务，请稍后再试！
-
-![关闭服务](../../img/app/app-closed.png)
-
-## 2 嵌入第三方
+## 1 Public Access Link
 
 !!! Abstract ""
-    MaxKB 应用支持零编码嵌入到企业的第三方系统。     
-    在应用概览页面，点击【嵌入第三方】，用户可以复制全屏模式代码或浮窗模式代码嵌入到第三方系统中，嵌入完成后便可在第三方系统中进行问答。
+    Click Demo or copy the public access link to a browser to enter the Q&A page.
 
-![嵌入第三方](<../../img/app/embed.png>)
+![Q&A](../../img/app/QA.png)
+!!! Abstract ""
+    Public access links support toggling and regeneration.  
+    For active public links, if you disable the current public link or regenerate a new public access link, visitors will see the message: Sorry, the service is currently under maintenance and unavailable. Please try again later!
 
-## 3 访问限制
+![Service Closed](../../img/app/app-closed.png)
+
+## 2 Third-party Embedding
 
 !!! Abstract ""
-    MaxKB 支持对应用设置每个客户端提问次数限制和嵌入第三方白名单防盗链设置，并且支持设置用户端是否显示知识来源。
+    MaxKB applications support zero-code embedding into third-party web system.     
+    On the application overview page, click Embed in website to copy either fullscreen mode code or floating mode code for embedding into third-party web system. Once embedded, you can interact with MaxKB within the third-party system.
 
-![访问限制](<../../img/app/Access restrictions.png>)
+![Embed in Third-party](<../../img/app/embed.png>)
 
-
-## 4 API 访问凭据
+## 3 Access Control
 
 !!! Abstract ""
-    如果外部系统需要通过 API 的方式进行调用，需要查看 API 文档和当前应用的 API Key，点击 【API Key 】，打开 API Key 的管理对话框，支持创建、启用/禁用、删除 API Key。
+    MaxKB supports setting question limits per client and embedding whitelist hotlink protection for applications, as well as configuring whether to display knowledge sources to end users.
+
+![Access Restrictions](<../../img/app/Access restrictions.png>)
+
+## 4 API Access Credentials
+
+!!! Abstract ""
+    If external systems need to interact with MaxKB through API calls, you'll need to check the API documentation and the application's API Key. Click API Key button to open the API Key management dialog, where you can create, enable/disable, and delete API Keys.
 
 ![API key](../../img/app/app_apikey.png)

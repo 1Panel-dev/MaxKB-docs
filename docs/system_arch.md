@@ -1,17 +1,16 @@
-# 系统架构
 
-## 1 整体架构
+## 1 System Architecture
 
-![架构图](img/index/arch.jpg){width="950px"}
+![Architecture Diagram](img/index/arch.jpg)
 
-## 2 实现原理
+## 2 Implementation Principle
 
-![实现原理](img/index/Implementation principle.jpg)
+![Implementation Principle](<img/index/Implementation principle.jpg>)
 
-## 3 技术栈
+## 3 Technology Stack
 
 !!! Abstract "" 
-    - 前端：[vue.js](https://cn.vuejs.org/)、[LogicFlow](https://github.com/didi/LogicFlow)
-    - 后端：[Python / Django](https://www.djangoproject.com/)、[langchain](https://www.langchain.com/)  
-    - 向量数据库：[PostgreSQL / pgvector](https://www.postgresql.org/)
-    - 大模型：[Ollama](https://github.com/ollama/ollama)、Azure OpenAI、OpenAI、通义千问、Kimi、百度千帆、讯飞星火、Gemini、DeepSeek等。
+    - Frontend: [vue.js](https://cn.vuejs.org/), [LogicFlow](https://github.com/didi/LogicFlow)
+    - Backend: [Python / Django](https://www.djangoproject.com/), [langchain](https://www.langchain.com/)  
+    - Vector Database: [PostgreSQL / pgvector](https://www.postgresql.org/)
+    - Large Language Models: [Ollama](https://github.com/ollama/ollama), Azure OpenAI, OpenAI, Gemini, DeepSeek, Tongyi Qianwen, Kimi, Baidu Qianfan, Xunfei Spark, etc.

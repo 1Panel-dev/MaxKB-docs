@@ -1,12 +1,12 @@
-## 1 mkctl 命令
+## 1 mkctl Command
 
 !!! Abstract ""
-    MaxKB 离线安装包默认内置了命令行运维工具 mkctl，通过执行 `mkctl help`，可以查看相关的命令说明。  
+    The MaxKB offline installation package comes with a built-in command line maintenance tool mkctl. You can view the command descriptions by executing `mkctl help`.
 
-    **说明**：
+    **Note**:
 
-    - 1.5.0 之前版本请使用 kbctl 命令。
-    - 通过在线安装、1Panel方式安装，并没有内置 mkctl 命令。
+    - For versions before 1.5.0, please use the kbctl command.
+    - The mkctl command is not built-in for online installation or 1panel installation.
 
     ```
     Usage:
@@ -14,13 +14,12 @@
     mkctl --help
 
     Commands: 
-    status              查看 MaxKB 服务运行状态
-    start               启动 MaxKB 服务
-    stop                停止 MaxKB 服务
-    restart             重启 MaxKB 服务
-    reload              重新加载 MaxKB 服务
-    uninstall           卸载 MaxKB 服务
-    upgrade             升级 MaxKB 服务
-    version             查看 MaxKB 版本信息
-    clean-images        清理 MaxKB 旧版本的相关镜像
+    status              View MaxKB service running status
+    start               Start MaxKB service
+    stop                Stop MaxKB service
+    restart             Restart MaxKB service
+    reload              Reload MaxKB service
+    uninstall           Uninstall MaxKB service
+    upgrade             Upgrade MaxKB service
+    version             View MaxKB version information
     ```

@@ -1,10 +1,10 @@
-# 应用显示设置
+# App Diaplay Settings
 
 !!! Abstract "" 
-    在【应用】的【显示设置】中，除了支持显示知识的来源，专业版还支持更丰富的配置，包括应用对话框主题颜色、字体颜色、提问用户头像、AI回复头像、浮窗入库入口图标以及位置、历史记录、引导图以及免责声明等。
+    In the "Display Settings" of App, in addition to supporting the display of knowledge sources, the Professional Edition supports richer configurations, including application dialog theme color, font color, user avatar for questions, AI reply avatar, floating window entry icon and position, history records, guide images and disclaimers, etc.
 
-![显示设置](../../img/app/view_setting.png)
+![Display Settings](../../img/app/view_setting.png)
 
 !!! Abstract "" 
-    应用显示配置效果示例图：
-![对话框](../../img/app/app_fuchuang.jpg)
+    Example of application display configuration:
+![Dialog](../../img/app/app_fuchuang.jpg)

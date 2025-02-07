@@ -1,50 +1,50 @@
-## 1 安装 1Panel
+## 1 Install 1Panel
 
 !!! Abstract ""
 
-    关于 1Panel 的安装部署与基础功能介绍，请参考 [1Panel 官方文档](https://1panel.cn/docs/) 。在完成了 1Panel 的安装部署后，根据提示网址打开浏览器进入 1Panel，界面如下。    
+    For 1Panel installation, deployment and basic feature introduction, please refer to the [1Panel Official Documentation](https://1panel.cn/docs/). After completing 1Panel installation and deployment, open your browser with the provided URL to access 1Panel as shown below.
 
 ![1panel](../img/index/1panel.jpg)
 
-## 2 安装 MaxKB 
+## 2 Install MaxKB
 
-!!! Abstract "" 
-    进入应用商店应用列表，在【AI/大模型】分类下找到 MaxKB 应用进行安装。    
+!!! Abstract ""
+    Go to the App Store application list and find MaxKB under the [AI/Large Models] category to install.
 
 ![1panel-maxkb](../img/index/1panel_maxkb.jpg)    
 
-!!! Abstract ""  
+!!! Abstract ""
 
-    在安装页面配置 MaxKB 应用参数：
+    Configure MaxKB application parameters on the installation page:
 
-    - 名称：要创建的 MaxKB 应用的名称。   
-    - 版本：选择 MaxKB 的版本。   
-    - 端口：MaxKB 应用的服务端口。   
-    - 容器名称：MaxKB 应用容器名称。    
-    - CPU 限制：MaxKB 应用可以使用的 CPU 核心数。   
-    - 内存限制：MaxKB 应用可以使用的内存大小。    
-    - 端口外部访问：MaxKB 应用可以使用 IP:PORT 进行访问（MaxKB 应用必须勾选外部端口访问）。   
+    - Name: Name of the MaxKB application to be created.
+    - Version: Select MaxKB version.
+    - Port: Service port for the MaxKB application.
+    - Container Name: Name of the MaxKB application container.
+    - CPU Limit: Number of CPU cores available to the MaxKB application.
+    - Memory Limit: Amount of memory available to the MaxKB application.
+    - External Port Access: MaxKB application can be accessed via IP:PORT (external port access must be enabled for MaxKB).
 
 ![maxkb-setting](../img/index/maxkb_setting.jpg)
 
-!!! Abstract "" 
+!!! Abstract ""
 
-    点击确认开始安装，页面自将动跳转到已安装应用列表，等待 MaxKB 应用状态变为已启动。   
+    Click confirm to start installation. The page will automatically redirect to the installed applications list. Wait for the MaxKB application status to change to "Running".
 
-![maxkb启动](../img/index/maxkb-start.jpg)    
+![maxkb started](../img/index/maxkb-start.jpg)    
 
-## 3 访问 MaxKB 
+## 3 Access MaxKB
 
-!!! Abstract "" 
+!!! Abstract ""
 
-    安装成功后，通过浏览器访问如下页面登录 MaxKB：   
+    After successful installation, access MaxKB through your browser using the following credentials:
 
     ```
-    地址: http://目标服务器IP地址:服务运行端口（默认 8080）     
-    用户名: admin    
-    密码: MaxKB@123..
-    ``` 
+    Address: http://IP:service-port (default 8080)
+    Username: admin
+    Password: MaxKB@123..
+    ```
 
-    为了安全，admin 第一次登录时将要求修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
+    For security reasons, admin will be required to change the default password on first login. After changing the password, log in again to start using MaxKB.
 
-![登录成功](../img/index/UI.jpg)
+![Login](../img/index/UI.jpg)

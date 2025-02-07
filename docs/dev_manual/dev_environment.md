@@ -1,73 +1,73 @@
-# 开发环境搭建
+# Development Environment Setup
 
-## 1 项目结构
+## 1 Project Structure
 
 !!! Abstract "" 
 
     ```
     .          
-    ├── LICENSE                 # License 申明        
+    ├── LICENSE                 #  declaration        
     ├── README.md           
-    ├── apps                    # 后端项目根目录        
-    │ ├── application           # 应用
-    │ ├── common                # 项目公共资源目录
-    │ ├── dataset               # 知识库
-    │ ├── embedding             # 向量化
-    │ ├── function_lib          # 函数库
-    │ ├── ops                   # 
-    │ ├── settting              # 设置
-    │ ├── smartdoc              # 项目主目录          
-    │ ├── users                 # 用户相关          
-    │ └── manage.py             # django项目入口         
-    ├── installer               # 安装相关  
-    ├── pyproject.toml          # 后端依赖 配置文件         
-    └── ui                      # 前端项目根目录          
-    ├── config_example.yml      # 项目配置示例             
-    ├── main.py                 # 项目入口文件              
+    ├── apps                    # Backend project root directory        
+    │ ├── application           # Applications
+    │ ├── common                # Project common resources directory
+    │ ├── dataset              # Knowledge base
+    │ ├── embedding            # Vectorization
+    │ ├── function_lib         # Function library
+    │ ├── ops                  # 
+    │ ├── settting             # Settings
+    │ ├── smartdoc             # Project main directory          
+    │ ├── users                # User related          
+    │ └── manage.py            # Django project entry         
+    ├── installer              # Installation related  
+    ├── pyproject.toml         # Backend dependency configuration file         
+    └── ui                     # Frontend project root directory          
+    ├── config_example.yml     # Project configuration example             
+    ├── main.py                # Project entry file              
     ```     
 
-## 2 环境准备          
+## 2 Environment Preparation          
 
 !!! Abstract "" 
-    - **前端环境准备**       
-      安装 [node](https://nodejs.org/) ，v16及以上版本     
-    - **后端环境准备**        
-      安装 [python](https://www.python.org/downloads/release/python-3115/) ，版本 v3.11.x  
-      安装 [pycharm](https://www.jetbrains.com/pycharm/download/)
-    - **数据库**   
-      安装 [PostgreSql](https://www.postgresql.org/) ，版本 v15.x
+    - **Frontend Environment Preparation**       
+      Install [node](https://nodejs.org/), v16 or above     
+    - **Backend Environment Preparation**        
+      Install [python](https://www.python.org/downloads/release/python-3115/), version v3.11.x  
+      Install [pycharm](https://www.jetbrains.com/pycharm/download/)
+    - **Database**   
+      Install [PostgreSql](https://www.postgresql.org/), version v15.x
 
-## 3 本地配置
+## 3 Configuration
 
-### 3.1 创建数据库
+### 3.1 Create Database
 
 !!! Abstract "" 
-    在 PostgreSql 中手动创建MaxKB 应用数据库，名称为`maxkb`。
+    Manually create MaxKB application database named `maxkb` in PostgreSql.
     ```
-    # 创建数据库
+    # Create database
     CREATE DATABASE "maxkb"; 
-    # 切换使用数据库
+    # Switch to database
     \c "maxkb"; 
-    # 创建vector 扩展
+    # Create vector extension
     CREATE EXTENSION "vector";
     ```
 
-### 3.2 配置文件
+### 3.2 Configuration File
 
 !!! Abstract "" 
-      项目启动之前，需要准备配置文件及目录
+      Before starting the project, configuration files and directories need to be prepared
 
-      - 准备配置文件
+      - Prepare configuration file
 
       ```bash
-      # 将config_example.yml配置文件拷贝至 /opt/maxkb/conf目录下
+      # Copy config_example.yml configuration file to /opt/maxkb/conf directory
       cp config_example.yml /opt/maxkb/conf
       ```
 
-      - 配置 /opt/maxkb/conf/config_example.yml 
+      - Configure /opt/maxkb/conf/config_example.yml 
 
       ```
-      # 数据库配置（将以下信息替换为实际环境信息）
+      # Database configuration 
       DB_NAME: maxkb
       DB_HOST: localhost
       DB_PORT: 5432
@@ -75,77 +75,77 @@
       DB_PASSWORD: xxx
       DB_ENGINE: django.db.backends.postgresql_psycopg2
       
-      # 模型相关配置
-      # 模型路径:如果EMBEDDING_MODEL_NAME是绝对路径则无效,反之则会从https://huggingface.co/下载模型到当前目录
+      # Model related configuration
+      # Model path: If EMBEDDING_MODEL_NAME is an absolute path then invalid, otherwise will download model from https://huggingface.co/ to current directory
       EMBEDDING_MODEL_PATH: /opt/maxkb/model/
-      # 模型名称:如果模型名称是路径,则会加载目录下的模型,如果是模型名称,则会在https://huggingface.co/下载模型 模型的下载位置为EMBEDDING_MODEL_PATH
+      # Model name: If model name is a path, will load model from directory, if it's a model name, will download model from https://huggingface.co/. Download location is EMBEDDING_MODEL_PATH
       EMBEDDING_MODEL_NAME: /opt/maxkb/model/shibing624_text2vec-base-chinese
       ```
 
-## 4 开发调试
+## 4 Development and Debugging
 
-### 4.1 启动前端
+### 4.1 Start Frontend
 
 !!! Abstract "" 
 
     ```bash
-    # 在 `ui`目录 执行安装前端需要的依赖
+    # Execute in `ui` directory to install frontend dependencies
     npm install
     
-    # 然后启动项目
+    # Then start the project
     npm run dev
     ```
 
-    启动成功后，如下图显示。
+    After successful startup, it will display as shown below.
 
-![启动前端](../img/dev/npm_run.png){width="500px"}
+![Start Frontend](../img/dev/npm_run.png){width="500px"}
 
 
-### 4.2 启动后端
+### 4.2 Start Backend
 
 !!! Abstract "" 
-    后端系统，需要启动 web服务、本地模型服务、和异步任务队列服务。
-    注意: 在项目根目录执行
+    For the backend system, you need to start the web service, local model service, and asynchronous task queue service.
+    Note: Execute in project root directory
 
 !!! Abstract ""
-    在 MaxKB 项目根目录下依次执行以下命令，启动 Web 服务。
+    Execute the following commands in sequence under the MaxKB project root directory to start the Web service.
 
     ```
-    # 安装 poetry 包管理器
+    # Install poetry package manager
     pip install poetry
     
-    # 安装后端需要的依赖
+    # Install backend dependencies
     poetry install
     
-    # 启动项目
+    # Start project
     python main.py start
     ```
 
-![启动Web服务](../img/dev/main_start.png){width="500px"}
+![Start Web Service](../img/dev/main_start.png){width="500px"}
 
 !!! Abstract ""
-    在 MaxKB 项目根目录下依次执行以下命令，启动本地模型服务。
+    Execute the following commands in sequence under the MaxKB project root directory to start the local model service.
 
     ```
-    # 启动项目
+    # Start project
     python main.py dev local_model
     ```
 
-![启动本地模型服务](../img/dev/main_localmodel.png){width="500px"}
+![Start Local Model Service](../img/dev/main_localmodel.png){width="500px"}
 
 !!! Abstract ""
-    在 MaxKB 项目根目录下依次执行以下命令，启动异步任务服务。
+    Execute the following commands in sequence under the MaxKB project root directory to start the asynchronous task service.
 
     ```
-    # 启动项目
+    # Start project
     python main.py dev celery
     ```
 
-![启动异步任务服务](../img/dev/main_celery.png){width="500px"}
+![Start Async Task Service](../img/dev/main_celery.png){width="500px"}
 
-## 5 访问项目
+## 5 Access Project
 
 !!! Abstract ""
-    前后端都启动成功后，就可以通过前端路由（前端启动出现的访问地址）在浏览器中进行访问。
+    After both frontend and backend are successfully started, you can access through the frontend route (access address shown when frontend starts) in the browser.
 
-![浏览器访问](../img/dev/maxkb_running.png)
+![Browser Access](../img/dev/maxkb_running.png)

@@ -1,16 +1,16 @@
-# 应用导出与导出
+# Application Export and Import
 
-## 1 应用导出
-
-!!! Abstract ""
-    应用支持导出操作，导出后文件名称为：应用名称.mk。
-    对于高级编排类型的应用，导出内容为包括工作流中所有节点的参数设置以及函数内容，流程节点中所选择的知识库和模型信息不导出。
-
-![应用导出](<../../img/app/app_export.png>){ width="500px" }
-
-## 2 应用导入
+## 1 Application Export
 
 !!! Abstract ""
-    在应用页面，点击【导入应用】，即可导入应用文件（文件后缀为.mk）。
+    MaxKB Applications support export operations. The exported file will be named: application_name.mk.
+    For workflow applications, the exported content includes parameter settings and function content for all nodes in the workflow. Knowledge base and model information selected in workflow nodes are not exported.
 
-![应用导入](<../../img/app/app_import.png>){ width="500px" }
+![Application Export](<../../img/app/app_export.png>){ width="500px" }
+
+## 2 Application Import
+
+!!! Abstract ""
+    On the application page, click Import App and select application files with .mk extension to import.
+
+![Application Import](<../../img/app/app_import.png>){ width="500px" }

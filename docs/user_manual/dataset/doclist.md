@@ -1,118 +1,114 @@
-# 文档
 
-## 1 文档上传
-
-!!! Abstract ""
-    对于通用型知识库，点击【上传文档】进入上传文档页面，可以拖拽文件或选择文件/文件夹进行上传，支持的文件格式包括：TXT、Markdown、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP。如果选择文件夹，将通过文件后缀进行自动过滤，每次最多上传 50 个文件，且单个文件不超过 100 MB。
-
-![上传文档](../../img/dataset/create_offline_dataset.png)
+## 1 Document Upload
 
 !!! Abstract ""
-    点击【下一步】，对上传文档选择分段规则，默认为智能分段。分段规则变更后需点击【生成预览】，确认分段效果，然后点击【开始导入】，系统将对文档按照自动分段 -> 存储 -> 向量化流程处理。
+    For general knowledge bases, click Upload Document button to enter the document upload page. You can drag and drop files or select files/folders to upload. Supported file formats include: TXT, Markdown, PDF, DOCX, HTML, XLS, XLSX, CSV, ZIP. When selecting folders, files will be automatically filtered by extension. Maximum 50 files can be uploaded at once, with each file not exceeding 100 MB.
 
-![智能分段](<../../img/dataset/auto_paragraph.png>)
+![Upload Document](../../img/dataset/create_offline_dataset.png)
+
+!!! Abstract ""
+    Click Next to set segmentation rules. You can select segmentation rules for uploaded documents, with intelligent segmentation as the default. After changing segmentation rules, click Apply button to display segmentation according to the latest rules. After clicking Start Import button, the system will process documents in the background following the workflow: automatic segmentation, storage, vectorization.
+
+![Intelligent Segmentation](<../../img/dataset/auto_paragraph.png>)
 
 !!! Abstract "" 
-    对于 Web 站点知识库，点击【导入文档】打开对话框，输入文档链接 URL 地址和选择器，即可同步对应内容。
+    For Web site knowledge bases, click Import Document button to open a dialog box where you can enter document links and selectors. Multiple online Web documents can be entered line by line.
 
-![导入Web文档](../../img/dataset/upload_web_doc.png)
+![Import Document](../../img/dataset/upload_web_doc.png)
 
-## 2 同步知识库
+## 2 Sync Knowledge Base
 
 !!! Abstract ""
-    Web 站点知识库支持同步更新操作，同步方式分为替换同步和完全同步。
+    Web site knowledge bases support synchronization updates in two ways:
 
-    * 替换同步：重新获取 Web 站点文档，替换本地知识库中地址相同的文档。
-    * 整体同步：先删除本地知识库中所有文档，重新获取 Web站点下的文档数据。
+    * Sync and Replace: Re-fetch web site documents and replace documents with matching addresses in the local knowledge base.
+    * Full Sync: First delete all documents in the local knowledge base, then re-fetch all documents from the web site.
 
-![同步知识库](../../img/dataset/sysn_dataset.png)
+![Sync Knowledge Base](../../img/dataset/sysn_dataset.png)
 
-
-## 3 文档同步 
+## 3 Document Synchronization
 
 !!! Abstract ""     
-    Web 站点知识库支持对选中文档进行同步操作。同步时会先删除当前文档下的所有分段，并重新获取文档地址的文本数据后重新分段。   
+    Web site knowledge bases support synchronization of selected documents. During synchronization, all segments under the current document will be deleted, and text data will be re-fetched from the document address and re-segmented.
 
-![同步文档](../../img/dataset/sysn_web_doc.png)
-    
+![Sync Document](../../img/dataset/sysn_web_doc.png)
 
-## 4 命中处理设置
+## 4 Hit Processing Settings
 
 !!! Abstract ""      
     文档设置目前支持文档的命中处理方式。
 
-    * 模型优化：提问时命中该文档下面的分段后，会按照应用的提示词生成 prompt 发送给模型优化后返回答案。
-    * 直接回答：提问时命中该文档下面的分段后，若相似度符合设置则直接返回分段内容。对于需要将图片、链接等信息返回要求，建议使用此方式。     
-       
+    * Model Optimization: When segments under this document are matched during questioning, prompts will be generated according to the application's prompt templates and sent to the model for optimization before returning answers.
+    * Direct Answer: When segments under this document are matched during questioning and similarity meets the threshold, segment content is returned directly. This method is recommended when images, links and other information need to be returned.
 
-![文档设置](../../img/dataset/doc_setting.png)
+![Document Settings](../../img/dataset/doc_setting.png)
 
-## 5 生成问题
+## 5 Generate Questions
 
 !!! Abstract ""   
-    选中文件，点击【生成问题】按钮或执行生成问题操作，将通过 AI 模型，根据文件内容总结生成对应的问题，并自动关联。
+    Select files and click Generate Questions button or execute generate questions operation. The AI model will summarize the file content to generate corresponding questions and automatically associate them.
 
-![生成问题](../../img/dataset/gen_question.png)
+![Generate Questions](../../img/dataset/gen_question.png)
 
-## 6 文档迁移
-
-!!! Abstract ""  
-    选中文档，点击【迁移】按钮，将文档迁移到其它知识库。
-
-![迁移文档](../../img/dataset/move_web_doc.png)
-
-## 7 导出EXCEL/ZIP
+## 6 Document Migration
 
 !!! Abstract ""  
-    选中文档，执行导出Excel/导出Zip操作，将文档下载到本地客户端。
+    Select documents and click [Migrate] button to migrate documents to other knowledge bases.
 
-![文档导出](../../img/dataset/dataset_file_export.png)
+![Migrate Document](../../img/dataset/move_web_doc.png)
 
-## 8 文档删除
+## 7 Export EXCEL/ZIP
 
 !!! Abstract ""  
-    选中文档，点击删除按钮或执行删除操作，对选中文档进行删除。
+    Select documents and execute Export Excel/Export Zip operation to download documents to local client.
 
-![文档删除](../../img/dataset/doc_delete.png)
+![Document Export](../../img/dataset/dataset_file_export.png)
 
-## 9 文档启用与禁用
+## 8 Delete Document
+
+!!! Abstract ""  
+    Select documents and click delete button or execute delete operation to delete selected documents.
+
+![Delete Document](../../img/dataset/doc_delete.png)
+
+## 9 Enable and Disable Documents
 
 !!! Abstract ""    
-    在文档列表中的其中状态列，可对文档执行启用或禁用操作。文档禁用后，当用户提问时系统不会检索该文档下的分段内容，需要重新启用后系统才会检索。  
+    In the status column of the document list, you can enable or disable documents. When a document is disabled, the system will not search segments under that document when users ask questions. The system will only search after re-enabling.
 
-![文档启用](../../img/dataset/doc_enable.png)
+![Enable Document](../../img/dataset/doc_enable.png)
 
-## 10 分段管理
+## 10 Segment Management
 
 !!! Abstract ""
-    导入文档后，系统根据分段规则进行分段操作。点击文档列表中的文档，进入文档分段管理页面，可添加、编辑、迁移、删除、启用/禁用分段以及为分段添加关联问题。 
+    After importing, the system segments them according to segmentation rules. Click a document in the document list to enter the document segment management page, where you can add, edit, migrate, delete, enable/disable segments and add related questions to segments.
 
-![分段管理](<../../img/dataset/segmentation_management.png>)
+![Segment Management](<../../img/dataset/segmentation_management.png>)
 
-### 10.1 添加分段 
+### 10.1 Add Segment
 
 !!! Abstract "" 
-    点击【添加分段】，弹出添加分段对话框，填写分段标题、分段内容（支持 markdown 样式编辑分段内容）和关联问题，点击【提交】后则新增一个分段。           
-    **建议：** 为了能准确匹配到分段，建议为分段设置关联问题，这样会优先匹配关联问题，然后再映射分段内容，从而提高匹配效率和准确度。 
+    Click Add Segment button to open the add segment dialog box. Fill in segment title, segment content (supports markdown style editing) and related questions, then click Submit button to add a new segment.           
+    **Recommendation:** To accurately match segments, it's recommended to set related questions for segments. This will prioritize matching related questions before mapping segment content, thereby improving matching efficiency and accuracy.
 
-![添加分段](../../img/dataset/add_segmentation.png)
+![Add Segment](../../img/dataset/add_segmentation.png)
 
-### 10.2 编辑分段
+### 10.2 Edit Segment
 
 !!! Abstract ""    
-    点击分段面板，在分段详情页面对已分段的信息进行编辑和关联问题操作。
-![分段详情](../../img/dataset/edit_segmentation.png)
+    Click the segment panel to edit segment information and related questions on the segment details page.
+![Segment Details](../../img/dataset/edit_segmentation.png)
 
-### 10.3 迁移分段
-
-!!! Abstract ""  
-    在分段面板中可以对选中分段迁移到其它知识库的文档中。
-
-![迁移分段](../../img/dataset/move_segmentation.png)
-
-### 10.4 删除分段
+### 10.3 Migrate Segment
 
 !!! Abstract ""  
-    在分段面板中可以对选中分段进行删除。
+    In the segment panel, you can migrate selected segments to documents in other knowledge bases.
 
-![删除分段](../../img/dataset/del_segmentation.png)
+![Migrate Segment](../../img/dataset/move_segmentation.png)
+
+### 10.4 Delete Segment
+
+!!! Abstract ""  
+    In the segment panel, you can delete selected segments.
+
+![Delete Segment](../../img/dataset/del_segmentation.png)

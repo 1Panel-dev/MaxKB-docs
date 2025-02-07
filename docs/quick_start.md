@@ -1,183 +1,173 @@
 
-## 1 操作流程
+## 1 Operation Process
 
 !!! Abstract ""
-    MaxKB 的使用操作流程一般可分为四步：添加模型、创建知识库、创建应用、发布应用。     
-    在高级编排应用中还可以通过函数库的功能，实现数据处理、逻辑判断、信息提取等功能，提供更加强大、灵活的能力。
+    MaxKB's operation process can generally be divided into four steps: adding models, creating knowledge bases, creating applications, and publishing applications.     
+    In advanced orchestration applications, you can also create functions for data processing, logical judgment, information extraction, or other work scenario functions through the function library, providing more powerful and flexible capabilities.
 
-![操作流程](img/model/maxkb_flow.png)
-
-!!! Abstract ""
-    下面以通用知识库为例，通过通义千问大语言模型，快速创建智能问答应用并发布为例说明具体的操作。
-
-## 2 添加模型
+![Tongyi Qianwen APIkey](img/model/maxkb_flow.png)
 
 !!! Abstract ""
-    登录 MaxKB 系统后，在供应商列表中选择`通义千问`，然后点击【添加模型】，进入模型配置表单配置参数如下：
+    Below we'll quickly create and publish an intelligent Q&A application using the Tongyi Qianwen large language model with a general knowledge base as an example.
 
-    * 模型名称：MaxKB 中自定义的模型名称。  
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。   
-    * 模型类型：大语言模型。   
-    * 基础模型：通义千问支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。        
-    * API Key：阿里云 DashScope灵积模型服务 API Key管理中创建和查看。
-
-![通义千问 APIkey](img/model/tongyi_model.png)
+## 2 Add Model
 
 !!! Abstract ""
-    不同的平台参数要求不同，其它供应商模型配置添加详情见各模型对接详细说明。
+    After logging into the MaxKB system, select `Tongyi Qianwen` from the provider list, then click [Add Model] to enter the model configuration form with the following parameters:
 
+    * Model Name: Custom model name in MaxKB.  
+    * Permission: Two types - private and public. Private models are only available to the current user, while public models are available to all users in the system, but other users cannot edit.   
+    * Model Type: LLM.   
+    * Base Model: LLM model name supported by Tongyi Qianwen. The dropdown options are some commonly used large language model names, and custom input is supported.        
+    * API Key: Created and viewed in Alibaba Cloud DashScope API Key Management.
 
-## 3 创建知识库
+![Tongyi Qianwen APIkey](img/model/tongyi_model.png)
+
+## 3 Create Knowledge Base
 
 !!! Abstract ""
 
-    打开【知识库】页面，点击【创建知识库】，输入知识库名称、知识库描述、选择通用型知识库类型，然后将离线文档通过拖拽方式或选择文件上传方式进行上传。 
+    Open the [Knowledge] page, click [Create Knowledge ], enter the knowledge base name, description, select the general knowledge base type, then upload offline documents by dragging and dropping or selecting files.
 
-### 3.1 上传文档
+### 3.1 Upload Documents
 
 !!! Abstract ""
-    上传文档要求：  
+    Document upload requirements:  
 
-    * 文本文件:：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
-    * 表格格式：Excel、CSV;
-    * QA 问答对：Excel、CSV；  
-    * 每次最多上传 50 个文件；   
-    * 每个文件不超过 100 MB；
-    * 支持选择文件夹，上传文件夹下符合格式要求的文件。
+    * File formats: Markdown, TXT, PDF, DOCX, HTML
+    * Table formats: Excel, CSV
+    * QA pairs: Excel, CSV  
+    * Maximum 50 files per upload   
+    * Each file not exceeding 100 MB
+    * Support selecting folders to upload files meeting format requirements
 
-    文档规范建议：
+    Document specification recommendations:
 
-    * 规范分段标识：离线文档的分段标识要有一定规范，否则拆分出来的段落不规整。   
-    * 段落要完整：一个分段中最好能描述一个完整的内容。
+    * Standardized segment markers: Offline documents should have standardized segment markers, otherwise the split paragraphs will be irregular.   
+    * Complete paragraphs: A segment should ideally describe a complete feature or issue.
 
-![创建通用知识库](img/dataset/create_offline_dataset.png)
+![Create General Knowledge Base](img/dataset/create_offline_dataset.png)
 
-### 3.2 设置分段规则
+### 3.2 Set Segmentation Rules
     
 !!! Abstract ""
-    MaxKB 支持智能分段和高级分段两种分段方式。
+    Currently, MaxKB supports two segmentation methods: intelligent segmentation and advanced segmentation.
 
-    **智能分段**
+    **Intelligent Segmentation**
 
-    （1）MarkDown 类型的文件智能分段规则：<br />
+    (1) Intelligent segmentation rules for MarkDown files:<br />
 
-    * 根据标题逐级下钻式分段，最多支持 6 级标题，每个段落最多 4096 个字符；   
-    * 当最后一级的文本段落字符数超过设置的分段长度时，会查找分段长度以内的回车进行截取。
+    * Segments by drilling down through title levels, supporting up to 6 levels of titles, with maximum 4096 characters per segment.   
+    * When the text paragraph at the last level exceeds the set segment length, it will look for line breaks within the segment length for cutting.
 
-    （2）HTML、DOCX 类型的智能分段规则：
+    (2) Intelligent segmentation rules for HTML and DOCX files:
 
-    * 识别标题格式转换成 markdown 的标题样式；
-    * 逐级下钻进行分段，最多支持 6 级标题，每个段落最多 4096 个字符。
+    * Recognizes title formats and converts them to markdown styles.
+    * Drills down through levels for segmentation, supporting up to 6 title levels, with maximum 4096 characters per segment.
 
-    （3）TXT和 PDF 类型的文件智能分段规则：
+    (3) Intelligent segmentation rules for TXT and PDF files:
 
-    * 按照标题# 进行分段，若没有#标题的则按照字符数 4096 个字符进行分段；
-    * 查找分段长度以内的回车进行截取。  
+    * Segments by # titles; if no # titles exist, segments by 4096 characters.
+    * Looks for line breaks within segment length for cutting.  
       
-![智能分段](<img/dataset/automatic_paragraphing.png>)
+![Intelligent Segmentation](<img/dataset/automatic_paragraphing.png>)
 
 !!! Abstract ""
-    **高级分段**  
+    **Advanced Segmentation**  
 
-    用户可以根据文档规范自定义设置分段标识符、分段长度及自动清洗。
+    Users can customize segment markers, segment length, and automatic cleaning according to document specifications.
 
-    * 分段标识支持：#、##、###、####、#####、######、-、空行、回车、空格、分号、逗号、句号，还可以手动输入分段标识符。   
-    * 分段长度：支持最小 50个字符，最大 4096 个字符。   
-    * 自动清洗：开启后系统会自动去掉重复多余的符号，例如空格、空行、制表符等。     
+    * Supported segment markers: #, ##, ###, ####, #####, ######, -, blank line, line break, space, semicolon, comma, period, and manual input of segment markers   
+    * Segment length: Supports minimum 50 characters, maximum 4096 characters   
+    * Automatic cleaning: When enabled, the system automatically removes redundant symbols like spaces, blank lines, tabs, etc.     
 
-![高级分段](<img/dataset/advanced_segmentation.png>)
+![Advanced Segmentation](<img/dataset/advanced_segmentation.png>)
+!!! Abstract ""
+    **Add "Related Questions" section for question-based pairs during import**  
+
+    When checked, all segment titles will be set as related questions for the segments.
+![Set Title as Related Question](img/dataset/titel_set_question.png)
 
 !!! Abstract ""
-    **导入时添加分段标题为关联问题**  
+    **Preview** 
 
-    勾选后会把所有分段的标题设置为分段的关联问题。
-![设置标题为关联问题](img/dataset/titel_set_question.png)
+    After setting segmentation rules, click [Generate Preview] to check the segmentation effect of the latest rules.
 
-!!! Abstract ""
-    **预览** 
-
-    分段规则设置完成后，需要点击【生成预览】查看最新规则的分段效果。
-
-![分段预览](<img/dataset/preview_segmentation.png>)
+![Segmentation Preview](<img/dataset/preview_segmentation.png>)
 
 !!! Abstract ""
-    可在分段预览中对不合理的分段进行再次编辑。
+    You can edit unreasonable segments in the segmentation preview.
 
-![编辑分段](img/dataset/view_edit.png)
+![Edit Segments](img/dataset/view_edit.png)
 
  
 !!! Abstract ""
-    点击【创建并导入】后，系统后台会对文档进行自动分段 -> 存储 -> 向量化处理操作，执行完成后在知识库文档列表中各个文件状态显示为`成功`。
+    After clicking [Start Import], the system backend will automatically perform segmentation -> storage -> vectorization operations on the documents. When completed, each file's status in the knowledge base document list will show as `Success`.
 
-![文档列表](img/dataset/doc_list.png)
+![Document List](img/dataset/doc_list.png)
 
-## 4 创建应用
-
-!!! Abstract ""
-    点击【创建应用】，输入应用名称，选择【简易配置应用】，点击【创建】
-
-![选择应用类型](img/app/selectAppType.png)
+## 4 Create Application
 
 !!! Abstract ""
-    应用创建完成，进入简易配置应用的设置页面，左侧为应用信息，右侧为调试预览界面。
+    Click [Create APP], enter the application name and description, select [Simple Configuration Application], click [Create]
 
-    * 应用名称：用户提问时对话框的标题和名字。    
-    * 应用描述：对应用场景及用途的描述。    
-    * AI模型：在【系统设置】-【模型管理】中添加的大语言模型。    
-    * 提示词：系统默认有智能知识库的提示词，用户可以自定义通过调整提示词内容，引导大模型聊天方向。可对无引用知识库和引用知识库两种情况分别设置不同的提示词。
-    * 历史聊天记录：大模型提交当前会话中最后 N 条对话内容，否则仅向大模型提交当前问题。
-    * 关联知识库：用户提问后将在关联的知识库中检索分段。   
-    * 开场白：用户打开对话时，系统弹出的问候语。支持 Markdown 格式；[-]后的内容为快捷问题，一行一个。 
-    * 语音输入：开启后将支持语音方式进行提问，需要语音识别模型支持。
-    * 语音播放：开启后可以通过语音进行播放回答，可以通过浏览器播放，也可以通选择语音合成模型。
+![Select Application Type](img/app/selectAppType.png)
 
-    应用信息设置完成后，可以在右侧调试预览中进行提问预览，调试预览中提问内容不计入对话日志。
-![应用设置](img/app/app_setting.png)
+!!! Abstract ""
+    After the application is created, enter the simple configuration application settings page, with application information on the left and debug preview interface on the right.
+
+    * Application Name: Title and name of the chat box when users ask questions    
+    * Application Description: Description of application scenarios and uses    
+    * AI Model: Large language model added in [System Settings]-[Model Management]    
+    * Prompt: System has default prompts for intelligent knowledge base, users can customize by adjusting prompt content to guide the large model chat direction. Different prompts can be set for cases with and without knowledge base references
+    * Chat History: Submit the last N conversations in the current session to the large model, otherwise only submit the current question
+    * Associated Knowledge Base: After user questions, segments will be retrieved from associated knowledge bases   
+    * Opening Message: Greeting message when users open the dialogue. Supports Markdown format; content after [-] are quick questions, one per line 
+    * Voice Input: When enabled, supports voice questions, requires speech recognition model support
+    * Voice Playback: When enabled, answers can be played through voice, either through browser playback or by selecting a voice synthesis model
+
+    After setting application information, you can preview questions in the debug preview on the right. Questions in debug preview are not counted in conversation logs.
+![Application Settings](img/app/app_setting.png)
 
 
   
 !!! Abstract "" 
-    **知识库参数设置详细说明**
+    ** Knowledge Base Parameter Settings**
 
-    （1）**检索模式**
+    (1) **Retrieval Mode**
 
-    * 向量检索：使用向量模型通过向量距离计算与用户问题最相似的文本分段；        
-    * 全文检索：通过关键词检索，返回包含关键词最多的文本分段；           
-    * 混合检索：同时执行全文检索和向量检索，再进行重排序，从两类查询结果中选择匹配用户问题的最佳结果。    
+    * Vector Retrieval: Uses vector model to calculate text segments most similar to user questions through vector distance        
+    * Full-text Retrieval: Retrieves text segments containing the most keywords through keyword search           
+    * Hybrid Retrieval: Executes both full-text and vector retrieval, then reranks to select best results matching user questions from both query types    
 
-    （2）**相似度：** 相似度越高代表问题和分段的相关性越强。 
+    (2) **Similarity:** Higher similarity indicates stronger relevance between questions and segments 
 
-    （3）**引用分段数：** 提问时按相似度携带 N 个分段生成提示词询问 LLM 模型。 
+    (3) **Reference Segment Count:** Carries N segments by similarity to generate prompts when asking LLM model 
 
-    （4）**引用最大字符数：** 引用分段内容设置最大字符数，超过时则截断。     
+    (4) **Maximum Reference Characters:** Sets maximum character count for referenced segment content, truncates if exceeded     
 
-    （5）**无引用知识库处理**
+    (5) **When there are no knowledge references**
 
-    * 继续提问：可以自定义设置提示词，需要有`{question}`用户问题的占位符，才会把用户问题发送给模型。       
-    * 指定回复内容：当没有命中知识库分段时可以指定回复内容。   
+    * Continue Asking: Can customize prompt settings, needs `{question}` placeholder for user questions to send to model       
+    * Specify Reply Content: Can specify reply content when no knowledge base segments are matched   
     
-    （6）**问题优化：** 开启后对用户提出的问题先进行一次 LLM 优化处理，将优化后的问题在知识库中进行向量化检索，能提高检索知识库的准确度，但由于多一次询问大模型会增加回答问题的时长。
+    (6) **Question Optimization:** When enabled, user questions first undergo LLM optimization processing, then optimized questions are vector-searched in knowledge base, improving retrieval accuracy but increasing response time due to additional model query
 
-![应用知识库参数设置](<img/app/app-parameter-setting.png>)
-
-!!! Abstract "" 
-    经过调试后，保存设置并发布。在应用列表页面，在概览页面点击演示或在浏览器中复制公开访问链接进入问答页面进行提问。
-![演示预览](img/app/app_view.png)
-
-## 5 应用集成
+![Knowledge Base Parameter Settings](<img/app/app-parameter-setting.png>)
 
 !!! Abstract "" 
-    MaxKB 应用支持零编码快速嵌入第三方 Web系统。
+    After debugging, save settings and publish. On the application list page, click demo buttonin the overview page or copy the Public Access Linker in browser to interact.
+![Preview](img/app/app_view.png)
 
-    在应用概览页面，点击【嵌入第三方】，复制对应的嵌入代码，以全屏模式或浮窗模式嵌入到第三方系统中，嵌入完成后便可在第三方系统中进行问答。
-
-![嵌入第三方](<img/app/embed.png>)
+## 5 Application Integration
 
 !!! Abstract "" 
-    在专业版中，还可以将 MaxKB 应用接入企业微信、公众号、钉钉和飞书等移动端应用，详细说明见：[X-Pack功能-应用接入 ](./user_manual/X-Pack/app_integrate.md)。
+    MaxKB applications support quick  embedding into third-party Web systems with zero-code.
 
-    
+    On the application overview page, click [Embed Third-party] to copy fullscreen mode code or floating window mode code for embedding into third-party systems. After embedding, Q&A can be conducted in third-party systems.
 
+![Embed Third-party](<img/app/embed.png>)
 
-
+!!! Abstract "" 
+    In the Professional Edition, you can also integrate with WeChat Work, WeChat Official Accounts, DingTalk, and Feishu applications. For detailed instructions, see: [X-Pack Features-Application Integration](./user_manual/X-Pack/app_integrate.md).
 

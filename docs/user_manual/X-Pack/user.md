@@ -1,16 +1,16 @@
-# 用户管理
+# User Management
 
 !!! Abstract ""
-    admin 系统管理员可以在【用户管理】中可以对用户的基本信息进行管理，包括用户的姓名、邮箱、密码、启停用状态等。
+    The administrator can manage users' basic information, including user's name, email, password, enable/disable status, etc.
 
-![用户列表](../../img/system/user.png)
-
-!!! Abstract ""
-    在用户列表页的上方，点击【创建用户】按钮，在弹出的对话框中输入要新建用户的基本信息，如用户名（登录名，不可修改）、姓名、手机号码、邮箱、密码等。输入完成后， 点击【保存】按钮。
-![创建用户](../../img/system/add_user.png)
+![User List](../../img/system/user.png)
 
 !!! Abstract ""
-    第三方用户如 LDAP 用户登录后，系统会自动创建一个用户类型为LDAP的用户，且用户可以使用普通登录方式进行登录。
+    Click the Create button, In the popup dialog, enter the basic information for the new user, such as username (login name, cannot be modified), name, phone number, email, password, etc. After entering the information, click the Save button.
+![Create User](../../img/system/add_user.png)
 
-    **注意：如果用户删除，则该用户创建的资源在删除用户时会一起删除。**
+!!! Abstract ""
+    When third-party users such as LDAP users log in, the system will automatically create a user with user type LDAP, and the user can login using normal login methods.
+
+    **Note: If a user is deleted, all resources created by that user will be deleted along with the user.**
 

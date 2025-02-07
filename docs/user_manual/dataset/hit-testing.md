@@ -1,21 +1,16 @@
-# 命中测试
+# Retrieval Testing
 
 !!! Abstract ""  
-    知识库命中测试是对提问进行提前验证，点击【命中测试】，输入测试问题，系统在当前知识库中向量检索与问题相关的分段，然后按照相似度和返回Top 分段数等参数返回命中结果，可以根据命中测试返回分段内容，对分段进行再次编辑或添加关联问题，以进一步提升和优化回答效果。
-![命中测试](../../img/dataset/hittesting.png)
+    Knowledge base hit testing is used to validate questions in advance. Click Retrieval Testing, enter a test question, and the system will perform vector retrieval in the current knowledge base to find segments related to the question, then return hit results based on parameters like similarity and Top N segments. Knowledge base administrators can review the returned segments and edit them or add related questions to further improve and optimize answer quality.
+![Retrieval Testing](../../img/dataset/hittesting.png)
 
 
 !!! Abstract ""
-    **参数设置说明**
+    **Parameter Settings**
 
-    * **检索模式**：当前支持向量检索、全文检索和混合检索 3 种检索模式。<br />
-    （1）向量检索：使用向量模型通过向量距离计算与用户问题最相似的文本分段。     
-    （2）全文检索：通过关键词检索，返回包含关键词最多的文本分段。    
-    （3）混合检索：同时执行全文检索和向量检索，再进行重排序，从两类查询结果中选择匹配用户问题的最佳结果。
-    * **相似度**：相似度越高代表问题和分段的相关性越强。    
-    * **返回分段数 TOP** ： 返回符合条件的 Top N 个分段。    
-
-
-
-
-
+    * **Retrieval Mode**: Currently supports 3 retrieval modes - vector retrieval, full-text retrieval and hybrid retrieval.<br />
+    (1) Vector Retrieval: Uses vector models to calculate text segments most similar to user questions through vector distance.     
+    (2) Full-text Retrieval: Uses keyword search to return text segments containing the most keywords.    
+    (3) Hybrid Retrieval: Performs both full-text and vector retrieval, then reranks to select the best matching results from both query types.
+    * **Similarity**: Higher similarity indicates stronger relevance between questions and segments.    
+    * **Top N References**: Returns the Top N segments meeting the criteria.    

@@ -1,7 +1,6 @@
-
-# 命中测试
+# Retrieval Testing
 
 !!! Abstract ""
-    应用命中测试功能是简易配置类型应用针对用户提问进行一个模拟测试，用来调整分段内容和关联问题从而提高分段内容的匹配度，从而提升回答效果。输入测试问题，系统根据检索模式在当前应用关联的知识库中进行检索，然后按照相似度和返回Top 分段数筛选返回满足条件的分段。如有必要，可对指定返回分段内容进行再次编辑。 
+    The application retrieval testing feature is a simulation test for user questions in simple configuration type applications, used to adjust segment content and related questions to improve segment matching and enhance answer quality. Enter a test question, and the system will search in the knowledge bases associated with the current application according to the retrieval mode, then filter and return segments that meet the conditions based on similarity and Top N segments. If necessary, the returned segment content can be edited again.
 
-![命中测试](../../img/app/app_hittesting.png)
+![Hit Testing](../../img/app/app_hittesting.png)

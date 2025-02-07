@@ -1,44 +1,44 @@
-# 云市场部署指南
+# Alibaba Cloud Marketplace Deployment Guide
 
 !!! Abstract ""
 
-    本指南将介绍如何通过阿里云云市场购买、部署和使用 **MaxKB** 镜像，并提供购买服务器的优惠链接。
+    This guide will explain how to purchase, deploy and use MaxKB images through Alibaba Cloud Marketplace, and provide discounted links for purchasing servers.
 
-## 1 购买镜像
+## 1 Purchase Image
 
 !!! Abstract ""
 
-    - MaxKB 已经上架到阿里云云市场，您可以通过以下链接直接购买镜像：
-    [MaxKB 云市场购买链接](https://market.aliyun.com/products/53690006/cmjj00067609.html?userCode=kmemb8jp)
+    - MaxKB is available on Alibaba Cloud Marketplace. You can purchase the image directly through this link:
+    [MaxKB Cloud Marketplace Purchase Link](https://market.aliyun.com/products/53690006/cmjj00067609.html?userCode=kmemb8jp)
     
-    - 您也可以自行购买阿里云服务器，并在选择镜像时搜索 **MaxKB**，即可快速选择镜像进行部署。
+    - You can also purchase an Alibaba Cloud server separately and search for **MaxKB** when selecting an image for quick deployment.
 
-    **注意：** 购买时请选择合适的实例规格，建议 4C/8G 及以上。
+    **Note:** Please select an appropriate instance specification when purchasing, recommended 4 cores/8GB RAM or higher.
 
-!!! Abstract "服务器优惠"
+!!! Abstract "Server Discounts"
 
-    如果您还没有服务器，可以通过以下优惠链接购买阿里云服务器：
+    If you don't have a server yet, you can purchase Alibaba Cloud servers through this discount link:
 
-    - [专属阿里云特价链接 5.5 折优惠](https://market.aliyun.com/common/dashi/maxkb?userCode=kmemb8jp)
+    - [Exclusive Alibaba Cloud Special Price Link - 45% Off](https://market.aliyun.com/common/dashi/maxkb?userCode=kmemb8jp)
 
-## 2 启动服务
-
-!!! Abstract ""
-
-    镜像启动后，您可以通过浏览器访问以下地址登录 MaxKB：
-
-    ```
-    服务访问地址: http://服务器IP:8080
-    默认用户名: admin
-    默认密码: MaxKB@123..
-    ```
-
-    首次登录后，建议及时更改密码并进行其他安全设置。
-
-## 3 开放端口
+## 2 Start Service
 
 !!! Abstract ""
 
-    - 为了确保外部能够正常访问 MaxKB 服务，您需要在阿里云服务器的安全组规则中开放 `8080` 端口。
+    After the image starts, you can access MaxKB through your browser at:
 
-    - 具体的开放步骤可以参考阿里云的 [端口放行教程](https://help.aliyun.com/document_detail/25471.html)。
+    ```
+    Service Access Address: http://SERVER-IP:8080
+    Default Username: admin
+    Default Password: MaxKB@123..
+    ```
+
+    After first login, it is recommended to change the password immediately and configure other security settings.
+
+## 3 Open Ports
+
+!!! Abstract ""
+
+    - To ensure external access to MaxKB services, you need to open port `8080` in your Alibaba Cloud server's security group rules.
+
+    - For detailed steps on opening ports, please refer to Alibaba Cloud's [Port Opening Tutorial](https://help.aliyun.com/document_detail/25471.html).

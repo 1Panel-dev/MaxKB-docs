@@ -1,163 +1,162 @@
-# 知识库
+# Knowledge Base
 
 !!! Abstract ""
-    企业私有的专业知识库，包含各种类型的数据，是问答对话中回答用户问题的知识来源。MaxKB 中知识库分为通用型知识库和 Web 站点知识库两种类型。
+    Enterprise private professional knowledge base contains various types of data and serves as the knowledge source for answering user questions in Q&A dialogues. MaxKB's knowledge bases are divided into two types: General Knowledge Base and Web Site Knowledge Base.
 
-    * **通用型知识库**：对离线文档上传管理，支持的文本文件、表格以及 QA 问答对。   
-    * **Web 站点知识库**：用于获取在线静态文本数据管理，输入 Web 根地址后自动同步根地址及子级地址的文本数据。
+    * **General Knowledge Base**: For offline document, supporting text files, tables and Q&A pairs.
+    * **Web Site Knowledge Base**: For online static text data, automatically synchronizing text data from root URL and sub-URLs after inputting the root web address.
     
-    MaxKB 支持知识库创建、重新向量化、设置、同步、导出、删除等功能。
+    MaxKB supports knowledge base creation, re-vectorization, settings, synchronization, export, deletion, etc.
 
-## 1 创建知识库
+## 1 Create Knowledge Base
 
 !!! Abstract ""
-    打开【知识库】页面，点击【创建知识库】，进入创建知识库页面。
+    Open the Knowledge  page, click Create Knowledge.
     
 ![dataset](../../img/dataset/create.jpg)
 
-###  1.1 通用型知识库
+### 1.1 General Knowledge Base
 
 !!! Abstract ""
-    输入知识库名称、知识库描述，选择向量模型并设置知识库类型为通用型，然后将离线文档通过拖拽或选择文件方式进行上传。
-    上传文档要求：
+    Enter the knowledge base name, description, select vector model and set knowledge base type as general, then upload offline documents by dragging and dropping or selecting files.
+    Document  requirements:
 
-    * 文本文件:：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
-    * 表格：XLS、XLSX、CSV、ZIP;
-    * QA 问答对：XLS、XLSX、CSV、ZIP；  
-    * 每次最多上传 50 个文件；   
-    * 每个文件不超过 100 MB；
-    * 支持选择文件夹，上传文件夹下符合要求的文件。
+    * Text files: Markdown, TXT, PDF, DOCX, HTML, XLS, XLSX, CSV, ZIP;
+    * Tables: XLS, XLSX, CSV, ZIP;
+    * QA pairs: XLS, XLSX, CSV, ZIP;
+    * Maximum 50 files per upload;
+    * Each file not exceeding 100 MB;
+    * Support selecting folders to upload files meeting format requirements.
         
 !!! Abstract ""
-    **说明：** ZIP 文件包括两种形式：
+    **Note:** ZIP files include two forms:
 
-    *  MarkDown 文档 + 图片文件，MarkDown 文档中引入对应的图片，并将两者打包在 ZIP 中。
-    *  XLS/XLSX 文件 + 图片文件，XLS/XLSX 文件中引入对应的图片，并将两者打包在 ZIP 中。
+    * Markdown documents and images referenced in the Markdown documents, packaged together in ZIP.
+    * XLS/XLSX files and images referenced in the XLS/XLSX files, packaged together in ZIP.
 
 ![上传文档](../../img/dataset/create_offline_dataset.png)
 
     
 !!! Abstract ""
-    对于知识库文件的分段，目前 MaxKB 支持智能分段以及高级分段两种方式。
+    MaxKB currently supports two methods for document segmentation: Intelligent Segmentation and Advanced Segmentation.
 
-    **智能分段**
+    **Intelligent Segmentation**
 
-    （1）MarkDown 类型文件智能分段规则<br />
+    (1) Markdown file automatic segmentation rules<br />
 
-    * 根据标题逐级下钻式分段（最多支持 6 级标题），每个段落最多 4096 个字符；   
-    * 当最后一级的文本段落字符数超过设置的分段长度时，会查找分段长度以内的回车进行截取。
+    * Segmentation based on hierarchical titles (up to 6 levels), with maximum 4096 characters per segment;   
+    * When text paragraphs under the last level exceed the set segment length, the system will look for line breaks within the segment length to split.
 
-    （2）HTML、DOCX 类型智能分段规则
+    (2) HTML and DOCX file automatic segmentation rules
 
-    * 识别标题格式转换成 markdown 的标题样式；
-    * 逐级下钻进行分段（最多支持 6 级标题），每个段落最多 4096 个字符。
+    * Recognizes heading formats and converts them to markdown heading styles;
+    * Segments hierarchically (up to 6 levels) with maximum 4096 characters per segment.
 
-    （3）TXT和 PDF 类型文件智能分段规则
+    (3) TXT and PDF file automatic segmentation rules
 
-    * 按照标题# 进行分段，若没有#标题的则按照字符数4096个字符进行分段；
-    * 查找分段长度以内的回车进行截取。  
+    * Segments by headings marker; if no headings marker exist, segments by 4096 characters;
+    * Looks for line breaks within segment length to split.
 
-![智能分段](<../../img/dataset/automatic_paragraphing.png>)
-
-!!! Abstract ""
-    文档规范建议：    
-
-    * **分段标识规范**：离线文档的分段标识要有一定规范，否则拆分出来的段落不规整。   
-    * **段落完整**：在一个分段中集中描述一个完整的内容。
+![Automatic Segmentation](<../../img/dataset/automatic_paragraphing.png>)
 
 !!! Abstract ""
-    **高级分段**   
+    Document specification recommendations:    
 
-    用户可以根据文档规范自定义设置分段标识符、分段长度及自动清洗。
-
-    * 分段标识支持：#、##、###、####、#####、######、-、空行、回车、空格、分号、逗号、句号，并支持手动输入其它分段标识符或正则表达式。   
-    * 分段长度：单个分段的长度，范围 50 至 4096 个字符。   
-    * 自动清洗：开启后系统会自动去掉重复多余的符号如空格、空行、制表符等。      
-
-![高级分段](<../../img/dataset/advanced_segmentation.png>)
-!!! Abstract ""
-    **导入时添加分段标题为关联问题**   
-
-    勾选后会把所有分段的标题设置为分段的关联问题。
-![设置标题为关联问题](../../img/dataset/titel_set_question.png)
-
+    * **Standardized segment marker**: Offline documents should have standardized segment markers, otherwise the split paragraphs will be irregular.   
+    * **Complete paragraphs**: A segment should ideally describe a complete piece of content.
 
 !!! Abstract ""
-    **预览**   
+    **Advanced Segmentation**   
 
-    分段规则设置完成后，需要点击【生成预览】才能查看最新规则的分段效果。
-![分段预览](<../../img/dataset/preview_segmentation.png>)
+    Users can customize segment delimiters, segment length and automatic cleaning based on document specifications.
+
+    * Supported segment markers: #, ##, ###, ####, #####, ######, -, blank line, line break, space, semicolon, comma, period. Also supports manual input of other markers or regular expressions.   
+    * Segment length: Length of a single segment, ranging from 50 to 4096 characters.   
+    * Automatic cleaning: When enabled, the system automatically removes redundant symbols like spaces, blank lines, tabs, etc.      
+
+![Advanced Segmentation](<../../img/dataset/advanced_segmentation.png>)
 !!! Abstract ""
-    在分段预览中对不合理的分段进行再次编辑以及删除无意义分段。
-![编辑分段](../../img/dataset/view_edit.png)
+    **Add "Releated Question" section for question-based QA pair during import**   
+
+    When checked, all segment titles will be set as related questions for the segments.
+![Set Title as Related Question](../../img/dataset/titel_set_question.png)
+
+!!! Abstract ""
+    **Preview**   
+
+    After setting segmentation rules, click [Generate Preview] to check the segmentation effect of the latest rules.
+![Segmentation Preview](<../../img/dataset/preview_segmentation.png>)
+!!! Abstract ""
+    You can edit unreasonable segments and delete meaningless segments in the segmentation preview.
+![Edit Segments](../../img/dataset/view_edit.png)
 
    
 !!! Abstract ""
-    点击【开始导入】后，系统后台会对文档进行自动分段 -> 存储 -> 向量化操作，处理结束后，文件状态将显示为完成。
-![编辑分段](../../img/dataset/processing.png)
+    After clicking [Start Import], the system backend will automatically perform segmentation, storage, vectorization operations on the documents. When completed, the file status will show as complete.
+![Edit Segments](../../img/dataset/processing.png)
 
 
-### 1.2 Web站点知识库
-
-!!! Abstract ""
-    输入知识库名称、知识库描述，选择向量模型并设置知识库类型为 Web 站点。
-
-![Web知识库](../../img/dataset/web_dataset.png)
+### 1.2 Web Site Knowledge Base
 
 !!! Abstract ""
-    * Web 根地址：为在线静态网页站点的根节点地址，系统会自动获取 Web 根地址及子级地址的数据资料。以DataEase V2在线文档为例，可在 Web 根地址为：https://dataease.io/docs/v2/ 。  
-    * 选择器：针对 Web 页面的数据可以设置定获取某个div内的数据，默认获取 body 数据。如 DataEase 在线文档仅获取中间内容部分，可以右键检查网页，定位到中间内部区域找到 div 为 md-content，则选择器输入为：.md-content 。
+    Enter the knowledge base name, description, select the vector model and set the knowledge base type as Web Site.
+
+![Web Knowledge Base](../../img/dataset/web_dataset.png)
+
+!!! Abstract ""
+    * Web Root URL: The root node URL of the online static website. The system will automatically fetch data from the root URL and its sub-level URLs. For example, using DataEase V2 online documentation, the Web root URL would be: https://dataease.io/docs/v2/
+    * Selector: You can set selectors to get data from specific div elements on the web page. By default, it gets data from the body. For example, to only get the middle content section of DataEase online documentation, you can right-click to inspect the webpage, locate the middle content area with div class "md-content", then enter the selector as: .md-content
 
 ![Alt text](../../img/dataset/DataEase_doc.png)
 !!! Abstract ""
-    点击【创建并导入】后，跳转到文档列表页面查看当前 Web 站点下文档的详细信息，处理结束后，文件状态将显示为完成。
+    After clicking OK button, you'll be redirected to the document list page to view detailed information of documents under the current website. When processing is complete, the file status will show as complete.
 
 ![Alt text](../../img/dataset/web_doc.png)
 
-## 2 知识库操作
+## 2 Knowledge Base Operations
 
 !!! Abstract ""
-    MaxKB 知识库支持同步、重新向量化、设置、导出以及删除操作。
+    MaxKB knowledge bases support synchronization, re-vectorization, settings configuration, export and delete operations.
 
-![知识库导出](../../img/dataset/dataset_actions.png)
+![Knowledge Base Export](../../img/dataset/dataset_actions.png)
 
-### 2.1 同步 Web 知识库
-
-!!! Abstract ""
-    对于 Web 站点类型知识库，在知识库卡片网格中，点击知识库面板的【…】->【同步】，对知识库中所有内容进行同步。
-
-    * 同步替换：重新获取 Web 站点文档，覆盖替换本地知识库中的文档。  
-    * 整体同步：先删除本地知识库的所有文档，重新获取 Web 站点文档。  
-![知识库导出](../../img/dataset/web_ sync.png)
-
-### 2.2 重新向量化
+### 2.1 Sync Web Knowledge Base
 
 !!! Abstract ""
-    如果在知识库设置中选择了不同的向量模型，对于新增的文档将使用新设置的向量模型进行向量化，如果要对已有的知识库进行重新向量化，可在知识库卡片网格中，点击知识库面板的【…】->【重新向量化】，对知识库中已有的分段进行重新向量化。
+    For Web site type knowledge bases, click Sync menu on the knowledge base card grid panel to synchronize all content in the knowledge base.
 
-![知识库导出](../../img/dataset/dataset_embedding.png)
+    * Sync and Replace: Re-fetch web site documents and replace documents in the local knowledge base.
+    * Full Sync: First delete all documents in the local knowledge base, then re-fetch web site documents.
+![Knowledge Base Export](../../img/dataset/web_ sync.png)
 
-### 2.3 设置知识库
-
-!!! Abstract ""
-    在知识库列表，点击知识库面板的【…】->【设置】进入知识库设置页面，可以对当前知识库名称、描述、向量模型等属性进行修改，所有设置保存后设置生效。
-![知识库设置页面](../../img/dataset/dataset_setting.png)
-
-### 2.4 导出知识库
+### 2.2 Vectorization
 
 !!! Abstract ""
-    在知识库列表，点击知识库面板的【…】->【导出EXCEL】/【导出ZIP】。将知识库的分段内容以Excel或ZIP文件格式导出。  
-    每个文档为 Excel 文件的一个 sheet，sheet 每一行展示一个分段。导出 ZIP 文件时，会将引用的图片一起导出，且以 guid 的方式进行命名，且没有格式扩展名。
+    If you select a different vector model in the knowledge base settings, new documents will be vectorized using the newly set model. To re-vectorize existing knowledge base content, click Vectorization menu on the knowledge base card grid panel to re-vectorize existing segments in the knowledge base.
 
-![知识库导出](../../img/dataset/dataset_export.png)
-![知识库导出](../../img/dataset/dataset_zip.png){ width="500px" }
+![Knowledge Base Export](../../img/dataset/dataset_embedding.png)
 
-### 2.5 删除知识库
+### 2.3 Knowledge Base Configuration
 
 !!! Abstract ""
-    在知识库列表，点击知识库面板的【…】->【删除】对知识库进行删除操作。
-    在知识库卡片网格中，点击知识库面板的【…】->【删除】，对知识库进行删除操作。
+    In the knowledge base list, click Setting menu to enter the knowledge base settings page. You can modify the current knowledge base name, description, vector model and other properties. All settings take effect after saving.
+![Knowledge Base Settings Page](../../img/dataset/dataset_setting.png)
 
-    **注意**：知识库删除后无法恢复，请谨慎操作。
-![知识库删除](../../img/dataset/dataset_del.png)
+### 2.4 Export Knowledge Base
+
+!!! Abstract ""
+    In the knowledge base list, click  ExportEXCEL/ExportZIP menu to export the knowledge base segments as Excel or ZIP files.
+    Each document correspond to a sheet in the Excel file, with each row showing one segment. When exporting as ZIP, referenced images are also exported, named using GUIDs without file extensions.
+
+![Knowledge Base Export](../../img/dataset/dataset_export.png)
+![Knowledge Base Export](../../img/dataset/dataset_zip.png){ width="500px" }
+
+### 2.5 Delete Knowledge Base
+
+!!! Abstract ""
+    In the knowledge base list, click Delete menu to delete a knowledge base.
+    On the knowledge base card grid, click Delete menu to delete a knowledge base.
+
+    **Note**: Knowledge base deletion cannot be undone, please proceed with caution.
+![Knowledge Base Delete](../../img/dataset/dataset_del.png)
 

@@ -1,34 +1,34 @@
-# 团队管理
+# Team Management
 
 !!! Abstract ""
-    在 MaxKB 中，支持团队协同维护知识库和应用。内置所有者和成员两种角色，知识库/应用创建者即为所有者角色，添加的成员用户都是成员角色。所有者可以添加和移除成员。    
-    **友情提示：社区版限制 1 个团队成员。**      
+    MaxKB supports team collaboration for maintaining knowledge bases and applications. There are two built-in roles: owner and member. The creator of a knowledge base/application is the owner, and added users are members. Owners can add and remove members.
+    **Note: Community Edition is limited to 1 team member.**
 
-![成员列表](../../img/team/teamlist.png)
+![Member List](../../img/team/teamlist.png)
 
-## 1 添加成员
-
-!!! Abstract ""
-    点击【添加成员】，需要输入完整的成员用户名或邮箱后进行添加。   
-    **注意：** 待添加的成员必须是已存在的用户。  
-
-![添加成员](../../img/team/addMembers.png)
-
-## 2 权限设置
+## 1 Add Members
 
 !!! Abstract ""
-    添加成员后，可以对成员分配知识库和应用的的权限。 
+    Click Add icon and enter the username or email of the member to add them.
+    **Note:** The member to be added must be an existing user.
 
-    * 管理权限，当成员登录 MaxKB 后可以管理操作相应资源。 
-    * 使用权限，当成员登录 MaxKB 后仅能查看相应资源。    
+![Add Members](../../img/team/addMembers.png)
+
+## 2 Permission Settings
+
+!!! Abstract ""
+    After adding members, you can assign permissions for knowledge bases and applications to members.
+
+    * Management permission allows members to manage and operate corresponding resources after logging into MaxKB.
+    * Usage permission only allows members to view corresponding resources after logging into MaxKB.
     
-    点击【保存】后，权限设置生效。
+    Click Save button to make the permission settings take effect.
 
-![权限设置](<../../img/team/permission_setting.png>)
+![Permission Settings](<../../img/team/permission_setting.png>)
 
-## 3 移除成员
+## 3 Remove Members
 
 !!! Abstract ""
-    在成员列表中点击【…】->【移除】即可删除该成员，成员移除后将失去所有权限。
+    Click [...] -> [Remove] in the member list to remove that member. After removal, the member will lose all permissions.
 
-![移除成员](../../img/team/del_member.png)
+![Remove Member](../../img/team/del_member.png)

@@ -1,14 +1,14 @@
-# 访问限制
+# Access Control
 
 
 !!! Abstract "" 
-    MaxKB X-Pack 支持通过身份验证的方式对应用进行访问限制，进一步保障信息安全。
+    MaxKB X-Pack supports restricting application access through authentication methods to further ensure information security.
 
-![身份验证设置](../../img/app/app_auth.png)
+![Authentication Settings](../../img/app/app_auth.png)
 
 !!! Abstract "" 
-    应用身份验证开启后，通过公开访问链接时(包括浮窗框)需要输入验证密码才可以进入问答页面。<br />   
-    **说明：** 身份验证开启后，通过公开访问链接访问应用时都需要输入验证密码，包括演示以及全屏/浮窗模式嵌入，而应用接入到企业微信、公众号、钉钉、飞书则不受影响。
+    After application authentication is enabled, users need to enter a verification password to access the Q&A page when using public access links (including floating windows).<br />   
+    **Note:** When authentication is enabled, verification passwords are required when accessing applications through public links, including demo and fullscreen/floating window embedding. However, applications integrated with WeChat Work, WeChat Official Accounts, DingTalk, and Lark are not affected.
 
-![身份验证](../../img/app/app_password1.png)
-![身份验证](../../img/app/app_password2.png){width="500px"}
+![Authentication](../../img/app/app_password1.png)
+![Authentication](../../img/app/app_password2.png){width="500px"}

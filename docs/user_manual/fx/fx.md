@@ -1,63 +1,59 @@
-# 函数库
+# Function Library
 
 !!! Abstract ""
-    MaxKB 知识库问答系统支持了函数库功能。用户可以根据自身的业务需求，在函数库中创建特定的函数脚本，例如数据处理、逻辑判断、信息提取或其它任何满足实际工作场景的操作。       
-    函数创建完成后，在应用编排时以添加组件的方式调用这些函数，从而更好地满足各种复杂的业务需求。这种组件化的设计不仅提高了工作效率，还使得整个系统更加模块化，便于维护和扩展。      
+    MaxKB supports function library capabilities. Users can create specific function scripts in the function library based on their business needs, such as data processing, logical judgment, information extraction, or any other operations that meet actual work scenarios.       
+    After functions are created, they can be called as components during application orchestration to better meet various complex business requirements. This componentized design not only improves work efficiency, but also makes the entire system more modular, easier to maintain and extend.      
 
-
-## 1.函数依赖包安装
+## 1. Install Dependencies
 
 !!! Abstract ""
-    如果函数实现需要安装第三方依赖包，可在 maxkb 容器中使用 pip 命令进行安装。
+    If function implementation requires third-party dependency packages, you can use pip commands in the maxkb container to install them.
 
     ```
-    # 进入 maxkb 容器中
+    # Enter maxkb container
     docker exec -it maxkb bash
 
-    # pip安装第三方依赖，如 pymysql，执行下面命令
+    # Use pip to install third-party dependencies, e.g. pymysql, run:
     pip install pymysql 
     ```
 
-
-## 2.创建函数
-
+## 2. Create Function
 
 !!! Abstract ""
-    点击【创建函数】，打开创建函数对话框。
+    Click Create Function button, open the create function dialog.
 
-    - 函数名称：函数的调用标识，创建成功后显示在高级编排应用的组件列表中。       
-    - 描述：函数详细说明以及使用注意事项，会显示在高级编排应用的组件列表中。       
-    - 输入变量：函数的输入变量，变量的数据类别包括：string、int、float、array，来源分为自定义赋值和引用前置节点的变量值。
-        在高级编排应用配置函数节点对应的输入变量。    
-    - Python 代码：自定义编写 Python 函数代码，可以引用输入变量。  
-    - 输出变量：Python 代码执行返回的结果。
+    - Function Name: Function call identifier, displayed in the component list of advanced orchestration applications after creation.       
+    - Description: Detailed function description and usage notes, displayed in the component list of advanced orchestration applications.       
+    - Input Parameters: Parameters with data types include string, int, float, array. Sources can be custom values or referenced from preceding node variables. Configure input variables for function nodes in advanced orchestration applications.    
+    - Function Content: Custom Python function code that can reference input variables.  
+    - Output Parameters: Results returned from Python code execution.
 
-![创建函数](../../img/fx/add_fx.png)
-
-!!! Abstract ""
-    Python 代码编写完成后，点击【调试】进行代码功能的验证。调试完成后，点击【创建】，即完成函数的创建。  
-![函数调试](../../img/fx/fx_debug.png)
+![Create Function](../../img/fx/add_fx.png)
 
 !!! Abstract ""
-    创建成功的函数，可以在【高级编排应用】的设置中，点击【添加组件】->【函数库】中，以添加组件的方式调用这些函数。
-
-![添加函数节点](../../img/fx/use_fx.png)
-
-## 3.复制函数
+    After writing Python code, click Debug button to verify the code functionality. After debugging, click Create button to complete function creation.  
+![Function Debug](../../img/fx/fx_debug.png)
 
 !!! Abstract ""
-    点击函数面板的【复制】按钮，打开复制函数对话框，对原函数内容进行编辑修改后点击【创建】即可快速创建一个新函数。
+    Created functions can be called as components in workflow applications.
 
-![复制函数](../../img/fx/copy_fx.png)
+![Add Function Node](../../img/fx/use_fx.png)
 
-## 4.删除函数
+## 3. Copy Function
 
 !!! Abstract ""
-    点击函数面板的【删除】按钮，即可对函数进行删除。
+    Click the Copy button on the function panel to open the copy function dialog, edit the original function content and click Create button to quickly create a new function.
 
-![删除函数](../../img/fx/del_fx.png)
+![Copy Function](../../img/fx/copy_fx.png)
+
+## 4. Delete Function
+
+!!! Abstract ""
+    Click the Delete button on the function panel to delete the function.
+
+![Delete Function](../../img/fx/del_fx.png)
 !!! Abstract ""
 
-    **注意：** 函数删除后，如果应用引用了该函数，那么在编排页面将显示`该函数不可用`的提示信息，并且在问答时也会报错。 
+    **Note:** After a function is deleted, if an application references that function, the workflow page will display a "Function Unavailable" message and Q&A will also report errors. 
 
-![应用引用已删除函数](../../img/fx/use_del_fx.png)
+![Application Referencing Deleted Function](../../img/fx/use_del_fx.png)

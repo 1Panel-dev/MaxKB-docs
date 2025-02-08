@@ -15,7 +15,7 @@
     │ ├── embedding             # 向量化
     │ ├── function_lib          # 函数库
     │ ├── ops                   # 
-    │ ├── settting              # 设置
+    │ ├── setting               # 设置
     │ ├── smartdoc              # 项目主目录          
     │ ├── users                 # 用户相关          
     │ └── manage.py             # django项目入口         

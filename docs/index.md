@@ -40,7 +40,6 @@
 
     - [华莱士智能客服](https://ai.cnhls.com/ui/chat/1fc0f6a9b5a6fb27)
     - [JumpServer 小助手](https://maxkb.fit2cloud.com/ui/chat/b4e27a6e72d349a3)
-    - [信用深圳](https://www.szcredit.org.cn/#/index)
     - [重庆交通大学教务在线](http://jwc.anyquestion.cn/ui/chat/b75496390f7d935d)
 
 

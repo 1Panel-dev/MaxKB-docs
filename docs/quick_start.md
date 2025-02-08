@@ -8,7 +8,7 @@
 ![操作流程](img/model/maxkb_flow.png)
 
 !!! Abstract ""
-    下面以通用知识库为例，通过通义千问大语言模型，快速创建智能问答应用并发布为例说明具体的操作。
+    下面以通用知识库为例，通过公有模型服务通义千问（本地模型部署操作，例如，DeepSeek部署，请参考[使用1Panel开源面板快速部署DeepSeek-R1](https://mp.weixin.qq.com/s/bF253jBHZIWIHvNnSMv-Rg)），快速创建智能问答应用并发布为例说明具体的操作。
 
 ## 2 添加模型
 

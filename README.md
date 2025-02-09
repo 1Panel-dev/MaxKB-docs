@@ -9,7 +9,7 @@ git clone git@github.com:1Panel-dev/MaxKB-docs.git
 
 ### 安装依赖
 ```bash
-cd docs
+cd MaxKB-docs
 pip install -r requirements/requirements.txt
 ```
 

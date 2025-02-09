@@ -30,7 +30,7 @@
       内置强大的工作流引擎和函数库，支持编排 AI 工作过程，满足复杂业务场景下的需求；     
 
     - **模型中立**     
-      支持对接各种大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（通义千问 / 腾讯混元 / 字节豆包 / 百度千帆 / 智谱 AI / Kimi 等）和国外公共大模型（OpenAI / Claude / Gemini 等）。
+      支持对接各种大模型，包括本地私有大模型（Llama 3 / Qwen 2 等）、国内公共大模型（DeepSeek / SILICONFLOW / 通义千问 / 腾讯混元 / 字节豆包 / 百度千帆 / 智谱 AI / Kimi 等）和国外公共大模型（OpenAI / Azure OpenAI / Anthropic / Gemini 等）。
 
 ## 3 案例展示
 

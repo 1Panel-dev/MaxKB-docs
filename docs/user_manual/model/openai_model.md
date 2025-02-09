@@ -32,5 +32,5 @@
 ![OpenAI 模型](../../img/model/openai_tts.png){ width="500px" }
 
 !!! Abstract ""
-    OpenAI-图片理解配置样例图示：
+    OpenAI-视觉模型配置样例图示：
 ![OpenAI 模型](../../img/model/openai_vision.png){ width="500px" }

@@ -5,7 +5,7 @@
 
     * 模型名称：MaxKB 中自定义的模型名称。    
     * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。   
-    * 模型类型：大语言模型/语音识别/语音合成/图片理解/图片生成。
+    * 模型类型：大语言模型/向量模型/语音识别/语音合成/视觉模型/图片生成。
 
 !!! Abstract ""
     豆包大语言模型其它接入参数说明：
@@ -36,16 +36,20 @@
 ![火山引擎 LLM模型](../../img/model/huoshan_llm.png){ width="500px" }
 
 !!! Abstract ""
+    火山引擎-向量模型配置样例图示如下：
+![火山引擎 向量模型](../../img/model/huoshan_embedding.png){ width="500px" }
+
+!!! Abstract ""
     火山引擎-语音识别模型配置样例图示如下：
-![火山引擎 LLM模型](../../img/model/huoshan_asr.png){ width="500px" }
+![火山引擎 语音识别模型](../../img/model/huoshan_asr.png){ width="500px" }
 
 !!! Abstract ""
     火山引擎-语音合成模型配置样例图示如下：
-![火山引擎 LLM模型](../../img/model/huoshan_tts.png){ width="500px" }
+![火山引擎 语音合成模型](../../img/model/huoshan_tts.png){ width="500px" }
 
 !!! Abstract ""
-    火山引擎-图片理解模型配置样例图示如下：
-![火山引擎 图片理解](../../img/model/doubao_vision.png){ width="500px" }
+    火山引擎-视觉模型模型配置样例图示如下：
+![火山引擎 视觉模型](../../img/model/doubao_vision.png){ width="500px" }
 
 !!! Abstract ""
     火山引擎-图片生成模型需要在火山引擎【控制台-访问控制-API访问密钥】新建密钥，样例图示如下：

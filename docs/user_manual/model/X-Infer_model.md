@@ -35,3 +35,11 @@
 !!! Abstract ""
     Xorbits Inference-语音合成模型配置样例图示如下：
 ![Xorbits Inference](../../img/model/xinfo_tts.png){ width="500px" }
+
+!!! Abstract ""
+    Xorbits Inference-视觉模型配置样例图示如下：
+![Xorbits Inference](../../img/model/xinfo_version.png){ width="500px" }
+
+!!! Abstract ""
+    Xorbits Inference-图片生成模型配置样例图示如下：
+![Xorbits Inference](../../img/model/xinfo_version_gen.png){ width="500px" }

@@ -1,163 +1,75 @@
-site_name: 'MaxKB 文档'
-site_url: 'https://maxkb.cn'
-site_description: 'MaxKB 是一款基于大语言模型和 RAG 的智能知识库问答系统'
-site_author: 'MaxKB 开源项目组'
-repo_name: 'MaxKB'
-repo_url: 'https://github.com/1Panel-dev/MaxKB'
+## basic info
+site_name: "MaxKB Documentation"
+site_url: "https://maxkb.hk"
+site_description: "Ready-to-use, flexible RAG Chatbot"
+repo_name: "MaxKB"
+repo_url: "https://github.com/1Panel-dev/MaxKB"
+edit_uri: https://github.com/1Panel-dev/MaxKB-docs
+copyright: Copyright &copy; 2025 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
 
-edit_uri: https://github.com/1Panel-dev/MaxKB-docs/edit/main/docs/
+## customization
 theme:
-    name: 'material'
-    logo: 'img/logo-white.png'
-    favicon: 'img/facio.ico'
-    language: 'zh'
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - django
-    palette:
-        - scheme: default
-          accent: blue
-          toggle:
-              icon: material/weather-sunny
-              name: Switch to dark mode
-        - scheme: slate
-          accent: blue
-          toggle:
-              icon: material/weather-night
-              name: Switch to light mode
-    features:
-        - navigation.instant
-        - navigation.tracking
-        - navigation.indexes
-        - navigation.top
-        - search.suggest
-        - search.highlight
-        - search.share
-        - header.autohide
-        - content.tabs.link
-    custom_dir: "theme"
-nav:
-    - 产品介绍: index.md
-    - 系统架构: system_arch.md
-    - 安装部署:
-        - 离线安装: installation/offline_installtion.md
-        - 在线安装: installation/online_installtion.md
-        - 1Panel 安装: installation/1panel_installtion.md
-        - 阿里云安装: installation/aliyun.md
-        - 命令行工具: installation/cli.md
-    - 快速入门: quick_start.md
-    - 功能手册: 
-        - 知识库: 
-            - 知识库: user_manual/dataset/dataset.md
-            - 文档: user_manual/dataset/doclist.md
-            - 问题: user_manual/dataset/problem.md
-            - 命中测试: user_manual/dataset/hit-testing.md
-        - 函数库: user_manual/fx/fx.md
-        - 应用:
-            - 应用创建:
-                - 简单配置应用: user_manual/app/simple_app.md
-                - 高级编排应用: user_manual/app/workflow_app.md
-            - 导出与导入: user_manual/app/serialization.md
-            - 应用概览: user_manual/app/app-view.md
-            - 命中测试: user_manual/app/hit-testing.md
-            - 对话日志: user_manual/app/log.md
-        - 模型管理:
-            - 模型概况: user_manual/model/model_ summary.md
-            - 模型对接:
-                - 添加阿里云百炼大模型: user_manual/model/bailian_model.md
-                - 添加Amazon Bedrock大模型: user_manual/model/amazon_bedrock_model.md
-                - 添加Azure OpenAI大模型: user_manual/model/azure_openai_model.md
-                - 添加DeepSeek大模型: user_manual/model/deepseek_model.md
-                - 添加Gemini大模型: user_manual/model/gemini_model.md
-                - 添加Kimi大模型: user_manual/model/kimi_model.md
-                - 添加本地大模型: user_manual/model/local_model.md
-                - 添加Ollama模型: user_manual/model/ollama_model.md
-                - 添加OpenAI大模型: user_manual/model/openai_model.md
-                - 添加通义千问大模型: user_manual/model/tongyi_model.md
-                - 添加腾讯混元大模型: user_manual/model/hunyuan_model.md
-                - 添加vLLM大模型: user_manual/model/vllm_model.md
-                - 添加火山引擎大模型: user_manual/model/doubao_model.md
-                - 添加千帆大模型: user_manual/model/qianfan_model.md
-                - 添加讯飞星火大模型: user_manual/model/spark_model.md
-                - 添加Xorbits Inference大模型: user_manual/model/X-Infer_model.md
-                - 添加智谱AI大模型: user_manual/model/zhipu_model.md
-            - 模型参数配置: user_manual/model/model_param.md
-        - 团队管理: user_manual/team/team.md
-        - X-Pack功能: 
-            - 用户管理: user_manual/X-Pack/user.md
-            - 登录认证: user_manual/X-Pack/login_auth.md
-            - 应用接入: user_manual/X-Pack/app_integrate.md
-            - 应用显示: user_manual/X-Pack/app_logo_settting.md
-            - 身份验证: user_manual/X-Pack/app_auth.md
-            - 系统API: user_manual/X-Pack/system_API.md
-            - 系统外观: user_manual/X-Pack/theme_settings.md
-
-    - 开发文档:
-        - 开发环境搭建: dev_manual/dev_environment.md
-        - 通过API KEY进行对话: dev_manual/APIKey_chat.md
-    - 常见问题:
-        - Ollama离线部署LLM模型: faq/Offline_install_OllamaModel.md
-        - Ollama使用GPU运行LLM模型: faq/GPU_runOllama.md
-        - 将MaxKB小助手集成到Halo中: faq/maxkb_In_halo.md
-    - 更新日志: changelog.md
-    - 联系我们: contact.md
-    
-markdown_extensions:
-    - admonition
-    - codehilite:
-          guess_lang: True
-          linenums: False
-    - toc:
-          permalink: True
-    - footnotes
-    - attr_list
-    - def_list
-    - tables
-    - abbr
-    - md_in_html
-    - pymdownx.extra
-    - pymdownx.arithmatex
-    - pymdownx.betterem:
-          smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_generator: !!python/name:pymdownx.emoji.to_png
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist
-    - pymdownx.tilde
-    - pymdownx.betterem
-    - pymdownx.progressbar
-    - lightgallery
-    - pymdownx.tabbed
-
+  name: "material"
+  logo: "img/logo-white.png"
+  favicon: "img/facio.ico"
+  language: "en"
+  palette:
+    primary: custom
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.top
+  font:
+    text: Roboto
+    code: Roboto Mono
 extra_css:
-    - css/extra.css
+  - stylesheets/extra.css    
+markdown_extensions:
+  - toc:
+      permalink: true
+  ## admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  ## content tabs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  ## grid
+  - attr_list
+  - md_in_html      
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: Copyright &copy; 2014-2025 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备14038283号-9</a>
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/1Panel-dev/MaxKB
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/maxkb_ai
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@MaxKB-AI
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Bv7sR3UGZb
+  version:
+    method: mike
 
 plugins:
-    - search:
-          lang:
-              - en
-              - ja
-          separator: '[\s\-\.]+'
-extra:
-    version:
-        method: mike
-    analytics:
-        provider: google
-        property: G-NG51348CBW
-    social:
-        - icon: fontawesome/brands/github
-          link: https://github.com/1Panel-dev/MaxKB
-        - icon: fontawesome/solid/envelope
-          link: mailto:support@fit2cloud.com
-        - icon: fontawesome/solid/phone
-          link: tel://400-052-0755
+  - glightbox
+
+## content nav
+nav:
+  - Introduction: index.md
+  - Get Started:
+    - Quick Start: quick_start.md
+
+  #- Tutorials: tutorials.md
+  - Development:
+    - Building from Source: dev_manual/build_from_source.md

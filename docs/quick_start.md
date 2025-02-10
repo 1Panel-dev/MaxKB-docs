@@ -1,16 +1,44 @@
+# Quick Start
 
-## 1 Operation Process
+## Installing MaxKB
 
-!!! Abstract ""
-    MaxKB's operation process can generally be divided into four steps: adding models, creating knowledge bases, creating applications, and publishing applications.     
-    In advanced orchestration applications, you can also create functions for data processing, logical judgment, information extraction, or other work scenario functions through the function library, providing more powerful and flexible capabilities.
+!!! info "Prerequisites"
+    Before installing MaxKB, make sure your machine meets the following minimum system requirements:
 
-![Tongyi Qianwen APIkey](img/model/maxkb_flow.png)
+    - CPU >= 4 Cores
+    - RAM >= 8 GiB
+    - Disk Space >= 100 GiB
 
-!!! Abstract ""
-    Below we'll quickly create and publish an intelligent Q&A application using the Tongyi Qianwen large language model with a general knowledge base as an example.
+    And ensure Docker is installed ([install Docker](https://docs.docker.com/get-started/get-docker/)).
 
-## 2 Add Model
+Execute the script below to start a MaxKB container using Docker:
+
+```bash
+docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages 1panel/maxkb
+```
+
+Access MaxKB web interface at `http://your_server_ip:8080` with default admin credentials:
+
+- username: admin
+- password: MaxKB@123..
+
+Change the default password after logging in.
+
+## Main Steps to Use MaxKB
+
+The MaxKB operation process can be broadly categorized into four stages:
+
+1. Adding models.
+2. Creating knowledge bases.
+3. Creating applications.
+4. Publishing applications.
+
+!!! info "Note"
+    You can use custom functions for advanced orchestration applications, including data processing, logical judgment, information extraction, and more, providing enhanced capabilities and flexibility.
+
+Now, let's swiftly build and release a smart Q&A app. We'll use ChatGPT from OpenAI and a general knowledge base as an example.
+
+## Adding a Model
 
 !!! Abstract ""
     After logging into the MaxKB system, select `Tongyi Qianwen` from the provider list, then click [Add Model] to enter the model configuration form with the following parameters:
@@ -23,13 +51,13 @@
 
 ![Tongyi Qianwen APIkey](img/model/tongyi_model.png)
 
-## 3 Create Knowledge Base
+## Creating a Knowledge Base
 
 !!! Abstract ""
 
     Open the [Knowledge] page, click [Create Knowledge ], enter the knowledge base name, description, select the general knowledge base type, then upload offline documents by dragging and dropping or selecting files.
 
-### 3.1 Upload Documents
+### Upload Documents
 
 !!! Abstract ""
     Document upload requirements:  
@@ -48,8 +76,8 @@
 
 ![Create General Knowledge Base](img/dataset/create_offline_dataset.png)
 
-### 3.2 Set Segmentation Rules
-    
+### Set Segmentation Rules
+
 !!! Abstract ""
     Currently, MaxKB supports two segmentation methods: intelligent segmentation and advanced segmentation.
 
@@ -89,7 +117,7 @@
 ![Set Title as Related Question](img/dataset/titel_set_question.png)
 
 !!! Abstract ""
-    **Preview** 
+    **Preview**
 
     After setting segmentation rules, click [Generate Preview] to check the segmentation effect of the latest rules.
 
@@ -100,13 +128,12 @@
 
 ![Edit Segments](img/dataset/view_edit.png)
 
- 
 !!! Abstract ""
     After clicking [Start Import], the system backend will automatically perform segmentation -> storage -> vectorization operations on the documents. When completed, each file's status in the knowledge base document list will show as `Success`.
 
 ![Document List](img/dataset/doc_list.png)
 
-## 4 Create Application
+## Creating an Application
 
 !!! Abstract ""
     Click [Create APP], enter the application name and description, select [Simple Configuration Application], click [Create]
@@ -129,10 +156,8 @@
     After setting application information, you can preview questions in the debug preview on the right. Questions in debug preview are not counted in conversation logs.
 ![Application Settings](img/app/app_setting.png)
 
-
-  
-!!! Abstract "" 
-    ** Knowledge Base Parameter Settings**
+!!! Abstract ""
+    **Knowledge Base Parameter Settings**
 
     (1) **Retrieval Mode**
 
@@ -155,19 +180,18 @@
 
 ![Knowledge Base Parameter Settings](<img/app/app-parameter-setting.png>)
 
-!!! Abstract "" 
+!!! Abstract ""
     After debugging, save settings and publish. On the application list page, click demo buttonin the overview page or copy the Public Access Linker in browser to interact.
 ![Preview](img/app/app_view.png)
 
-## 5 Application Integration
+## Publishing the Application
 
-!!! Abstract "" 
+!!! Abstract ""
     MaxKB applications support quick  embedding into third-party Web systems with zero-code.
 
     On the application overview page, click [Embed Third-party] to copy fullscreen mode code or floating window mode code for embedding into third-party systems. After embedding, Q&A can be conducted in third-party systems.
 
 ![Embed Third-party](<img/app/embed.png>)
 
-!!! Abstract "" 
+!!! Abstract ""
     In the Professional Edition, you can also integrate with WeChat Work, WeChat Official Accounts, DingTalk, and Feishu applications. For detailed instructions, see: [X-Pack Features-Application Integration](./user_manual/X-Pack/app_integrate.md).
-

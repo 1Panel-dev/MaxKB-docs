@@ -9,6 +9,9 @@ hide:
 
 MaxKB is a ready-to-use, flexible RAG Chatbot. MaxKB = Max Knowledge Base, it is a chatbot based on Large Language Models (LLM) and Retrieval-Augmented Generation (RAG). MaxKB is widely applied in scenarios such as intelligent customer service, corporate internal knowledge bases, academic research, and education.
 
+![Overview](/img/overview.png)
+{: .browser-mockup }
+
 ## Features
 
 - **Ready-to-Use**: Supports direct uploading of documents / automatic crawling of online documents, with features for automatic text splitting, vectorization, and RAG (Retrieval-Augmented Generation). This effectively reduces hallucinations in large models, providing a superior smart Q&A interaction experience.

@@ -14,4 +14,4 @@
     - 前端：[vue.js](https://cn.vuejs.org/)、[LogicFlow](https://github.com/didi/LogicFlow)
     - 后端：[Python / Django](https://www.djangoproject.com/)、[langchain](https://www.langchain.com/)  
     - 向量数据库：[PostgreSQL / pgvector](https://www.postgresql.org/)
-    - 大模型：[Ollama](https://github.com/ollama/ollama)、Azure OpenAI、OpenAI、通义千问、Kimi、百度千帆、讯飞星火、Gemini、DeepSeek等。
+    - 大模型：[Ollama](https://github.com/ollama/ollama)、Azure OpenAI、OpenAI、Anthropic、Gemini、DeepSeek、通义千问、Kimi、百度千帆、讯飞星火等。

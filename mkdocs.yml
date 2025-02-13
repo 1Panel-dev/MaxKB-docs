@@ -75,6 +75,7 @@ nav:
                 - 对接OpenAI: user_manual/model/openai_model.md
                 - 对接通义千问: user_manual/model/tongyi_model.md
                 - 对接SILICONFLOW: user_manual/model/siliconflow_model.md
+                - 对接腾讯知识引擎原子能力: user_manual/model/tencentcloud_model.md
                 - 对接腾讯混元: user_manual/model/hunyuan_model.md
                 - 对接火山引擎: user_manual/model/doubao_model.md
                 - 对接百度千帆: user_manual/model/qianfan_model.md

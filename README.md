@@ -9,7 +9,7 @@ git clone git@github.com:1Panel-dev/MaxKB-docs.git
 
 ### 安装依赖
 ```bash
-cd docs
+cd MaxKB-docs
 pip install -r requirements/requirements.txt
 ```
 
@@ -37,7 +37,7 @@ mkdocs build
 
 ### 克隆 fork 后的仓库
 ```bash
-git clone https://github.com/your-github-account/docs.git
+git clone https://github.com/your-github-account/MaxKB-docs.git
 ```
 
 ### 本地修改并调试

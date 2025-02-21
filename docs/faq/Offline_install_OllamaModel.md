@@ -4,7 +4,7 @@
 !!! Abstract "" 
     以 qwen:0.5b 模型为例，详细说明 Ollama 离线部署 LLM 大语言模型的过程和步骤。
 
-### 1 下载模型
+## 1 下载模型
 
 !!! Abstract ""
     访问 huggingface 并下载 qwen1_5-0_5b-chat-q5_k_m.gguf 模型文件。
@@ -13,12 +13,12 @@
     ```
 ![下载模型](../img/FAQ/downModel.png)
 
-### 2 上传模型
+## 2 上传模型
 
 !!! Abstract ""
     将下载好的 Qwen1.5-0.5B-Chat-GGUF 模型文件上传到 Ollama 所在服务器。
 
-### 3 创建Ollama Modelfile
+## 3 创建Ollama Modelfile
 
 !!! Abstract ""
     创建一个名为 Modelfile 的文件，内容如下：

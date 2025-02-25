@@ -96,7 +96,6 @@ nav:
             - 身份验证: user_manual/X-Pack/app_auth.md
             - 系统API: user_manual/X-Pack/system_API.md
             - 系统外观: user_manual/X-Pack/theme_settings.md
-
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md
         - 通过API KEY进行对话: dev_manual/APIKey_chat.md
@@ -104,6 +103,7 @@ nav:
         - Ollama离线部署LLM模型: faq/Offline_install_OllamaModel.md
         - Ollama使用GPU运行LLM模型: faq/GPU_runOllama.md
         - 将MaxKB小助手集成到Halo中: faq/maxkb_In_halo.md
+        - MaxKB和Dify有什么区别: faq/MaxKB VS.Dify.md
     - 更新日志: changelog.md
     - 联系我们: contact.md
     

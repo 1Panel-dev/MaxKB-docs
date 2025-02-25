@@ -21,7 +21,7 @@
     输入知识库名称、知识库描述，选择向量模型并设置知识库类型为通用型，然后将离线文档通过拖拽或选择文件方式进行上传。
     上传文档要求：
 
-    * 文本文件:：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
+    * 文本文件：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
     * 表格：XLS、XLSX、CSV、ZIP;
     * QA 问答对：XLS、XLSX、CSV、ZIP；  
     * 每次最多上传 50 个文件；   

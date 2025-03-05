@@ -1,26 +1,26 @@
-## 1 添加模型
+## 1 Adding a Model
 
-!!! Abstract "" 
-    添加 Azure OpenAI 大模型之前，需要先在 [Azure AI Studio](https://ai.azure.com/) 中注册，并获取有关API 域名、API Key、部署详细信息等内容，参考下图：
+!!! Abstract ""
+    Before adding an Azure OpenAI large model, you need to register in [Azure AI Studio](https://ai.azure.com/) and obtain information regarding the API domain, API Key, deployment details, etc. Refer to the image below:
 
 ![Azure OpenAI Key](<../../img/model/Azure_APIKey.png>)
-![Azure OpenAI DemployInfo](<../../img/model/Azure_deployInfo.png>)
+![Azure OpenAI Deployment Info](<../../img/model/Azure_deployInfo.png>)
 
-!!! Abstract "" 
-    选择模型供应商为`Azure OpenAI`，并在模型添加对话框中输入如下必要信息：
+!!! Abstract ""
+    Select the model provider as `Azure OpenAI` and enter the following necessary information in the model addition dialog:
 
-    * 模型名称：MaxKB 中自定义的模型名称。   
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
-    * 模型类型：大语言模型/向量模型/语音识别/语音合成/图片理解/图片生成。   
-    * 基础模型：具体的基础模型由部署名决定，见上图。 
-    * API 版本：模型版本
-    * API 域名：Azure OpenAI 项目 API 服务 URL，见上图。
-    * API Key：Azure OpenAI 项目 API 服务认证验证信息，见上图。
-    * 部署名：Azure AI Studio 项目操场中模型的部署名称。
+    * Model Name: Custom model name in MaxKB.
+    * Permission: Divided into private and public permissions. Private models are only available to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Large language model/Vector model/Speech recognition/Speech synthesis/Image understanding/Image generation.
+    * Base Model: The specific base model is determined by the deployment name, as shown in the above image.
+    * API Version: Model version.
+    * API Domain: The URL of the API service for the Azure OpenAI project, as shown in the above image.
+    * API Key: The authentication information for the Azure OpenAI project API service, as shown in the above image.
+    * Deployment Name: The deployment name of the model in Azure AI Studio's project playground.
 
-## 2 配置样例
+## 2 Configuration Example
 
-!!! Abstract "" 
-    Azure OpenAI-大语言模型配置样例图示：
+!!! Abstract ""
+    Example of Azure OpenAI - Large Language Model configuration:
 
-![Azure_大语言模型](../../img/model/azure_model.png)
+![Azure Large Language Model](../../img/model/azure_model.png)

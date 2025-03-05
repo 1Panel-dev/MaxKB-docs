@@ -1,36 +1,37 @@
-## 1 下载模型
+## 1 Download the Model
 
 !!! Abstract ""
-    **前提条件：** 将模型下载到服务器，并且挂在到 MaxKB 容器中,以向量模型为例详细说明如下。
+    **Prerequisite:** Download the model to the server and mount it to the MaxKB container. Using a vector model as an example, the detailed explanation is as follows.
 
-    （1）将向量模型下载到本地服务器。
+    (1) Download the vector model to the local server.
     ```
-    # 推荐模型下载网址
+    # Recommended model download website
     https://huggingface.co/models?other=text-embedding
-    # 下载后存放在/opt/maxkb/model/local_embedding目录下
+    # After downloading, store it in the /opt/maxkb/model/local_embedding directory
     ```
-    （2）使用-v 将宿主机模型路径挂载到 MaxKB 容器内部。
+    (2) Use -v to mount the host model path inside the MaxKB container.
     ```
     -v /opt/maxkb/model/local_embedding:/opt/maxkb/model/local_embedding
-    # 说明： v 模型所在目录:MaxKB容器内目录
+    # Note: v Host model directory: MaxKB container internal directory
     ```
-## 2 添加模型
+
+## 2 Add the Model
 
 !!! Abstract ""
-    在模型管理中，点击供应商【本地模型】，直接进入下一步填写本地模型的表单。  
+    In the model management, click on the supplier [Local Model] to directly proceed to the next step and fill out the form for the local model.
 
-    * 模型名称：MaxKB 中自定义的模型名称。    
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。   
-    * 模型类型：向量模型/重排模型。   
-    * 基础模型：模型在 MaxKB 容器下的绝对路径。     
-    * 模型目录：模型的目录（基础模型为名称时，该目录生效，基础模型若有绝对路径，则该参数不生效，建议与基础模型填写一致）。 
+    * Model Name: Custom model name in MaxKB.
+    * Permission: Divided into private and public permissions. Private models are only available to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Vector model/Reranker model.
+    * Base Model: The absolute path of the model in the MaxKB container.
+    * Model Directory: The directory of the model (this takes effect when the base model is a name; if the base model has an absolute path, this parameter does not take effect, and it's recommended to match it with the base model).
 
-## 3 配置样例
-
-!!! Abstract ""
-    本地模型-向量模型配置样例图示如下：
-![本地向量模型](../../img/model/local_embed.png){ width="500px" }
+## 3 Configuration Example
 
 !!! Abstract ""
-    本地模型-重排模型配置样例图示如下：
-![本地重排模型](../../img/model/local_reranker.png){ width="500px" }
+    Example of configuration for a local model - Vector Model:
+![Local Vector Model](../../img/model/local_embed.png){ width="500px" }
+
+!!! Abstract ""
+    Example of configuration for a local model - Reranker Model:
+![Local Reranker Model](../../img/model/local_reranker.png){ width="500px" }

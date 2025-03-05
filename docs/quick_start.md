@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Quick Start
 
 ## Installing MaxKB

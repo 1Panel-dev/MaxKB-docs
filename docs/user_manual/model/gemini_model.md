@@ -1,23 +1,23 @@
-## 1 添加模型
+## 1 Adding a Model
 
 !!! Abstract ""
-    添加 Gemini 大模型之前，需要先在 [Google AI Studio](https://aistudio.google.com/) 创建 API Key。
-![Gemini APIKEy](../../img/model/gemini_key.png)
+    Before adding a Gemini large model, you need to create an API Key in [Google AI Studio](https://aistudio.google.com/).
+![Gemini API Key](../../img/model/gemini_key.png)
 
 !!! Abstract ""
-    选择模型供应商为`Gemini`，并在模型添加对话框中输入如下必要信息：
+    Select the model provider as `Gemini` and enter the following necessary information in the model addition dialog:
 
-    * 模型名称：MaxKB 中自定义的模型名称。    
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。     
-    * 模型类型：大语言模型/向量模型/语音识别/图片理解。   
-    * 基础模型：不同类型模型下的基础模型名称，下拉选项是常用的一些基础模型名称，支持自定义输入。
-    * API Key：获取 API Key。
+    * Model Name: Custom model name in MaxKB.
+    * Permission: Divided into private and public permissions. Private models are only available to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Large language model/Vector model/Speech recognition/Image understanding.
+    * Base Model: The name of the base model under different types, with a drop-down option for some commonly used base model names, and supports custom input.
+    * API Key: Obtain the API Key.
 
-    **注意：** 使用 Gemini API 需要确保程序所在服务器位于 [Gemini API 所支持的地区](https://ai.google.dev/gemini-api/docs/available-regions?hl=zh-cn) ，否则无法调用API，并且无法进入Google AI Studio。
+    **Note:** To use the Gemini API, ensure that the server where the program is located is in a [region supported by Gemini API](https://ai.google.dev/gemini-api/docs/available-regions?hl=en), otherwise you cannot call the API and access Google AI Studio.
 
-## 2 配置样例
+## 2 Configuration Example
 
 !!! Abstract ""
-    Gemini-大语言模型配置样例图示：
+    Example of Gemini - Large Language Model configuration:
 
-![gemini 大语言模型](../../img/model/gemini_llm.png){ width="500px" }
+![Gemini Large Language Model](../../img/model/gemini_llm.png){ width="500px" }

@@ -1,645 +1,622 @@
-## 1 版本说明
+## 1 Version Information
 
 !!! Abstract ""
-    **版本号说明：** 像其它优秀开源项目一样，MaxKB 将保持每月发布一个新的功能版本，功能版本中如遇较为紧急或严重的 Bug，将及时推出 Bug 修复的小版本。           
-    **MaxKB 版本号命名规则为：** v 大版本.功能版本. Bug 修复版本，示例如下：
+    **Version Notes:** Like other excellent open-source projects, MaxKB will maintain a monthly release of new feature versions. If urgent or serious bugs are encountered in a feature version, a bug fix minor version will be released promptly.
+    **MaxKB version naming rule:** v Major.Feature.Bug Fix, examples as follows:
 
-    - v1.0.1 是 v1.0.0 之后的 Bug 修复版本
-    - v1.1.0 是 v1.0.0 之后的功能版本
+    - v1.0.1 is a bug fix version after v1.0.0
+    - v1.1.0 is a feature version after v1.0.0
 
-## 2 更新内容
+## 2 Update Content
 
 ### v1.9.1
 
-2025 年 1 月 9 日
+January 9, 2025
 
-!!! Abstract "功能优化 :sunflower:"
-    - 知识库：文档向量化时支持仅向量化非成功的分段。
-    - 应用：通过第三方应用进行对话的日志，优化为按天记录每个用户的对话日志。(X-Pack)
+!!! Abstract "Feature Optimization :sunflower:"
+    - Knowledge Base: Support vectorizing only non-successful segments during document vectorization.
+    - Application: Conversation logs through third-party applications are optimized to record each user's conversation logs daily. (X-Pack)
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 应用：修复进行语音输入时，提示中图片加载失败的问题。
-    - 应用：修复嵌入应用节点，设置变量参数后，保存不生效的问题。
-    - 应用：修复部分网络环境下使用图片理解模型对话结束后，提示Connection aborted的问题。
-    - 应用：修复判断器节点的执行条件设置为any时不生效的问题。
-    - 应用：修复添加图片理解和图片生成模型时，不能自定义输入基础模型的问题。
-    - 应用：修复部分情况下在执行详情中会遗漏执行节点的问题。
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Application: Fixed the issue of image loading failure in prompts during voice input.
+    - Application: Fixed the issue where setting variable parameters in embedded application nodes would not take effect after saving.
+    - Application: Fixed the "Connection aborted" prompt issue after ending a conversation using the image understanding model in certain network environments.
+    - Application: Fixed the issue where the execution condition of the judgment node doesn't take effect when set to "any".
+    - Application: Fixed the issue where custom input of base models is not possible when adding image understanding and generation models.
+    - Application: Fixed the issue where execution nodes would be missing in execution details under certain circumstances.
 
 ### v1.9.0
 
-2025 年 1 月 2 日
+January 2, 2025
 
-!!! Abstract "新增功能 :star2:"
-    - 应用：新增图片生成节点。
-    - 应用：支持上传音频文件，新增语音转文本节点。
-    - 应用：新增文本转语音节点。
-    - 应用：支持导出和导入应用。
-    - 应用：工作流节点支持设置执行条件。
-    - 应用：支持接入企业微信的微信客服。（X-Pack）
-    - 应用：公众号、企业微信、微信客服支持语音提问和语音回答。（X-Pack）
-    - 知识库：知识库和文档支持导出Excel文件与离线图片的ZIP包。
-    - 知识库：上传文档选择文本文件类型时，新增XLS、XLSX、CSV、ZIP文件格式。
-    - 知识库：上传文档选择QA问答对类型时，新增ZIP文件格式。
-    - 模型设置：创建模型时，支持设置模型参数。
-    - 模型设置：图片理解和图片生成模型支持设置模型参数。
-    - 模型设置：图片理解模型新增支持Xinference、Ollama、豆包、阿里云百炼、Azure OpenAI、Gemini供应商。
-    - 模型设置：图片生成模型新增支持Xinference、OpenAI、腾讯混元、通义千问、智谱AI、豆包、阿里云百炼、Azure OpenAI供应商。
-    - 模型设置：向量模型新增支持Azure OpenAI供应商。
-    - 模型设置：语音识别模型新增支持Azure OpenAI供应商。
-    - 模型设置：语音合成模型新增支持Azure OpenAI供应商。
+!!! Abstract "New Features :star2:"
+    - Application: Added image generation node.
+    - Application: Support for uploading audio files, added speech-to-text node.
+    - Application: Added text-to-speech node.
+    - Application: Support for exporting and importing applications.
+    - Application: Workflow nodes support setting execution conditions.
+    - Application: Support for integrating with WeChat Work customer service. (X-Pack)
+    - Application: Official accounts, WeChat Work, and WeChat customer service support voice questions and answers. (X-Pack)
+    - Knowledge Base: Knowledge bases and documents support exporting ZIP packages with Excel files and offline images.
+    - Knowledge Base: When uploading documents and selecting text file type, added XLS, XLSX, CSV, and ZIP file formats.
+    - Knowledge Base: When uploading documents and selecting QA pairs type, added ZIP file format.
+    - Model Settings: When creating models, support for setting model parameters.
+    - Model Settings: Image understanding and image generation models support setting model parameters.
+    - Model Settings: Image understanding models added support for Xinference, Ollama, Doubao, Alibaba Cloud Bailian, Azure OpenAI, and Gemini providers.
+    - Model Settings: Image generation models added support for Xinference, OpenAI, Tencent Hunyuan, Tongyi Qianwen, Zhipu AI, Doubao, Alibaba Cloud Bailian, and Azure OpenAI providers.
+    - Model Settings: Vector models added support for Azure OpenAI provider.
+    - Model Settings: Speech recognition models added support for Azure OpenAI provider.
+    - Model Settings: Speech synthesis models added support for Azure OpenAI provider.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 应用：基本信息节点中的“用户输入“参数，添加参数时支持设置“显示默认值”选项。
-    - 应用：表单收集节点的参数支持设置“显示默认值”选项。
-    - 应用：对话URL支持携带“question=问题”参数，打开对话页面时自动发送问题。
-    - 应用：上传图片时自动生成“请解析图片内容”的问题。
-    - 应用：优化工作流节点的执行效率。
-    - 知识库：文档列表支持批量取消向量化和批量取消生成问题。
-    - 模型设置：Amazon Bedrock供应商添加大语言模型时，支持ProxyURL参数。
+!!! Abstract "Feature Optimization :sunflower:"
+    - Application: In the basic information node, the "user input" parameter supports setting the "show default value" option when adding parameters.
+    - Application: Parameters in the form collection node support setting the "show default value" option.
+    - Application: Conversation URL supports carrying the "question=query" parameter to automatically send the question when opening the conversation page.
+    - Application: Automatically generating "Please analyze the image content" question when uploading an image.
+    - Application: Optimized the execution efficiency of workflow nodes.
+    - Knowledge Base: Document list supports batch cancellation of vectorization and batch cancellation of question generation.
+    - Model Settings: When adding large language models for Amazon Bedrock provider, supports ProxyURL parameter.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 安全：修复函数库模块中远程命令执行的安全漏洞（CVE-2024-56137）。
-    - 应用：修复浮窗对话框中不显示“新建对话”按钮的问题。
-    - 应用：修复浮窗对话框右上角的icon颜色不一致的问题。
-    - 应用：修复历史应用进行对话时会提示“缺少上下文类型”错误的问题。
-    - 应用：修复使用低版本浏览器进行对话时报错的问题。
-    - 应用：修复执行复杂工作流时，在部分情况下会漏执行节点的问题。
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Security: Fixed remote command execution security vulnerability in the function library module (CVE-2024-56137).
+    - Application: Fixed the issue where the "New Conversation" button is not displayed in the floating dialog box.
+    - Application: Fixed the issue of inconsistent icon colors in the upper right corner of the floating dialog box.
+    - Application: Fixed the issue where historical applications would prompt "missing context type" error during conversations.
+    - Application: Fixed the error when using older browser versions for conversations.
+    - Application: Fixed the issue where nodes would be missed when executing complex workflows under certain circumstances.
 
 ### v1.8.1
 
-2024 年 12 月 12 日
+December 12, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 应用：AI对话节点的历史聊天记录可设置工作流和节点的上下文。
-    - 模型管理：支持智谱AI供应商的图片理解模型。
+!!! Abstract "New Features :star2:"
+    - Application: Historical chat records in AI conversation nodes can be set as context for workflows and nodes.
+    - Model Management: Support for Zhipu AI provider's image understanding model.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 应用：语音播放时过滤表单数据。
-    - 系统：优化部分页面的显示样式。
+!!! Abstract "Feature Optimization :sunflower:"
+    - Application: Filter form data during voice playback.
+    - System: Optimized display styles of certain pages.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 应用：按名称筛选结果后，不加载数据的问题。
-    - 应用：修复浮窗图标尺寸过大时会被引导图遮盖的问题。
-    - 知识库：修复文档按状态筛选结果错误的问题。
-    - 知识库：修复拥有查看权限的成员可以导出文档的问题。
-    - 知识库：修复拥有查看权限的成员可以修改分段启用/禁用状态的问题。
-    - 知识库：修复上传无目录结构的PDF文件，只能识别第一页内容的问题。
-    - 系统管理：修复Swagger文档中的Web站点知识库缺少参数的问题。（X-Pack）
-    - 系统管理：修复企业微信扫码登录配置错误的问题。（X-Pack）
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Application: Fixed the issue where data doesn't load after filtering results by name.
+    - Application: Fixed the issue where floating icon would be covered by the guide image when too large.
+    - Knowledge Base: Fixed the error in document filtering results by status.
+    - Knowledge Base: Fixed the issue where members with view permissions could export documents.
+    - Knowledge Base: Fixed the issue where members with view permissions could modify segment enable/disable status.
+    - Knowledge Base: Fixed the issue where only the first page content could be identified when uploading PDF files without directory structure.
+    - System Management: Fixed the missing parameter issue in the Web site knowledge base in Swagger documentation. (X-Pack)
+    - System Management: Fixed the WeChat Work scan code login configuration error. (X-Pack)
 
 ### v1.8.0
 
-2024 年 12 月 5 日
+December 5, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 应用：用户提问时支持上传文档和图片。
-    - 应用：工作流新增文档内容提取节点。
-    - 应用：工作流新增图片理解节点。
-    - 应用：工作流新增表单收集节点。
-    - 应用：工作流支持嵌入应用节点。
-    - 应用：工作流画布支持收起或展开全部节点以及一键美化布局。
-    - 应用：基础节点的用户输入参数中，支持多选框和选项卡组件。
-    - 应用：开场白支持HTML渲染。
-    - 应用：支持批量将对话日志添加到知识库。
-    - 应用：支持按创建者显示应用。
-    - 知识库：支持按创建者显示知识库。
-    - 函数库：支持按创建者显示函数。
-    - 模型设置：支持通义千问供应商的图片理解模型。
-    - 模型设置：支持OpenAI供应商的图片理解模型。
-    - 模型设置：支持腾讯混元供应商的图片理解模型。
-    - 模型设置：支持阿里云百炼供应商的大语言模型。
-    - 系统管理：支持OAuth2单点登录方式。（X-Pack）
+!!! Abstract "New Features :star2:"
+    - Application: Support for uploading documents and images when users ask questions.
+    - Application: Added document content extraction node to workflow.
+    - Application: Added image understanding node to workflow.
+    - Application: Added form collection node to workflow.
+    - Application: Support for embedded application nodes in workflow.
+    - Application: Workflow canvas supports collapsing or expanding all nodes and one-click layout beautification.
+    - Application: In basic node's user input parameters, support for checkbox and tab components.
+    - Application: Welcome message supports HTML rendering.
+    - Application: Support for batch adding conversation logs to knowledge base.
+    - Application: Support for displaying applications by creator.
+    - Knowledge Base: Support for displaying knowledge bases by creator.
+    - Function Library: Support for displaying functions by creator.
+    - Model Settings: Support for Tongyi Qianwen provider's image understanding model.
+    - Model Settings: Support for OpenAI provider's image understanding model.
+    - Model Settings: Support for Tencent Hunyuan provider's image understanding model.
+    - Model Settings: Support for Alibaba Cloud Bailian provider's large language model.
+    - System Management: Support for OAuth2 single sign-on method. (X-Pack)
 
-!!! Abstract "功能优化 :sunflower:"
-    - 知识库：优化文档状态，显示向量化和生成问题的进度详情。
-    - 应用：基础节点的用户输入参数中，单选框组件支持标签、选项值的设置方式。
-    - 应用：对话详情页面对AI回复内容进行标注时，保留上一次所选的知识库文档。
-    - 应用：优化对话日志列表的显示顺序，按最近对话时间降序排序。
-    - 应用：优化打开对话详情时，默认显示最新对话记录。
+!!! Abstract "Feature Optimization :sunflower:"
+    - Knowledge Base: Optimized document status to display detailed progress of vectorization and question generation.
+    - Application: In basic node's user input parameters, radio button component supports setting labels and option values.
+    - Application: When annotating AI reply content on the conversation details page, retain the previously selected knowledge base document.
+    - Application: Optimized the display order of conversation logs list, sorted by latest conversation time in descending order.
+    - Application: Optimized opening conversation details to display the latest conversation record by default.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 知识库：修复PDF文档中若包含不能识别的特殊字符时，上传文档会报错的问题。
-    - 知识库：修复部分情况下为“成功”状态的文档生成问题时，无法下发任务的问题。
-    - 知识库：修复由于网站编码问题，导致web站点知识库无法获取文本内容的问题。
-    - 系统管理：修复拥有知识库管理权限的成员，无法查看知识库的问题。
-    - 系统管理：修复拥有应用查看权限的成员，能够修改应用接入配置的问题。（X-Pack）
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Knowledge Base: Fixed the error when uploading documents containing unrecognizable special characters in PDF documents.
+    - Knowledge Base: Fixed the issue where tasks couldn't be dispatched when generating questions for documents in "Success" status under certain circumstances.
+    - Knowledge Base: Fixed the issue where text content couldn't be obtained from website knowledge bases due to website encoding problems.
+    - System Management: Fixed the issue where members with knowledge base management permissions couldn't view knowledge bases.
+    - System Management: Fixed the issue where members with application view permissions could modify application access configuration. (X-Pack)
 
 ### v1.7.2
 
-2024 年 11 月 15 日
+November 15, 2024
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 应用：修复显示设置中自定义上传的用户头像、AI回复头像图片显示变形的问题。
-    - 应用：修复工作流中知识库检索节点收起后，无法发布应用的问题。
-    - 应用：修复AI模型的参数设置中，若删除温度或最大输出 Tokens 参数，无法发布应用的问题。
-    - 应用：修复应用中关联的知识库名称过长时，偶然不显示 tooltips 的问题。
-    - 应用：修复应用列表中查询结果显示不正确的问题。
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Application: Fixed the issue where custom uploaded user avatars and AI reply avatars were distorted in display settings.
+    - Application: Fixed the issue where applications couldn't be published after collapsing the knowledge base retrieval node in the workflow.
+    - Application: Fixed the issue where applications couldn't be published if temperature or maximum output tokens parameters were deleted in AI model parameter settings.
+    - Application: Fixed the issue where tooltips occasionally wouldn't display when knowledge base names associated with applications were too long.
+    - Application: Fixed the issue where query results were displayed incorrectly in the application list.
 
 ### v1.7.1
 
-2024 年 11 月 8 日
+November 8, 2024
 
+!!! Abstract "Feature Optimization :sunflower:"
+    - Application: Save the collapse/expand state of nodes in advanced orchestration applications.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 应用：高级编排应用中保存节点的收起/展开状态。
-
-!!! Abstract "问题修复 :palm_tree:"
-    - 应用：修复应用接入认证过的公众号，提问时不回复的问题。
-    - 应用：修复应用接入公众号配置页面的样式问题。
-    - 应用：函数中设置了非必填参数，在应用中引用该函数时，若未传值执行会报错的问题。
-    - 应用：修复工作流中所有节点未打开返回内容时，无法查看执行详情的问题。
-    - 应用：修复直接回答分段内容显示问题。
-    - 应用：修复应用发布后，提问时未使用最新发布的应用配置的问题。
-    - 知识库：修复导入DOCX文档时，在部分情况下无法识别图片问题。
-    - 问答页面：修复AI回答时，若返回的MarkDown表格中含有图片内容会导致显示错位的问题。
-    - 系统设置：修复团队成员的权限设置中，搜索后点击“全选”，会选中全部而不是搜索后的内容。
-    - 模型管理：修复添加Xinference向量模型时，提示 API 域名无效的问题。
-
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - Application: Fixed the issue where authenticated official accounts wouldn't reply to questions.
+    - Application: Fixed style issues on the official account configuration page for application access.
+    - Application: Fixed the error that occurs during execution when non-required parameters are set in functions and those functions are referenced in applications without passing values.
+    - Application: Fixed the issue where execution details couldn't be viewed when no return content was enabled for all nodes in the workflow.
+    - Application: Fixed display issues with direct answer segment content.
+    - Application: Fixed the issue where the latest published application configuration wasn't used when asking questions after application publication.
+    - Knowledge Base: Fixed the issue where images couldn't be recognized when importing DOCX documents under certain circumstances.
+    - Q&A Page: Fixed the issue where image content in returned Markdown tables would cause display misalignment in AI answers.
+    - System Settings: Fixed the issue where clicking "Select All" after searching in team member permission settings would select all items instead of just the search results.
+    - Model Management: Fixed the issue where adding Xinference vector models would prompt "API domain name invalid".
 
 ### v1.7.0
 
-2024 年 10 月 31 日
+October 31, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】支持知识库文档自动生成关联问题。           
-    - 【应用】工作流节点支持多进多出。         
-    - 【应用】支持设置语音播放的声音和语速。         
-    - 【应用】支持查看和恢复历史版本。         
-    - 【应用】支持设置对话日志的清除策略。         
-    - 【应用】高级编排应用支持自动保存设置，默认不开启，开启后默认5分钟保存一次。         
-    - 【应用】工作流编排界面在添加组件时支持按名称查询组件。         
-    - 【模型设置】支持自定义大语言模型和语音合成模型的参数。         
-    - 【模型设置】支持按模型类型、创建人、权限查询模型。         
-    - 【模型设置】模型面板中增加创建人信息。         
-    - 【模型设置】支持阿里云百炼的向量模型。         
-    - 【模型设置】支持 Amazon Bedrock 的向量模型。         
-    - 【模型设置】支持腾讯混元的向量模型。         
-    - 【模型设置】支持讯飞星火的向量模型。         
-    - 【模型设置】支持百度千帆的向量模型。         
-    - 【模型设置】支持阿里云百炼的语音识别和语音合成模型。         
-    - 【模型设置】支持 Xinference 的语音识别和语音合成模型。         
-    - 【问答页面】支持个性化显示设置。（X-Pack）        
-    - 【问答页面】支持身份验证。（X-Pack）         
-    - 【系统设置】支持企业微信、钉钉、飞书扫码登录。（X-Pack）         
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for auto-generating related questions for knowledge base documents.
+    - [Application] Workflow nodes support multiple inputs and outputs.
+    - [Application] Support for setting voice playback sound and speed.
+    - [Application] Support for viewing and restoring historical versions.
+    - [Application] Support for setting conversation log clearing policy.
+    - [Application] Advanced orchestration applications support auto-save settings, disabled by default, saves every 5 minutes when enabled.
+    - [Application] The workflow orchestration interface supports component name search when adding components.
+    - [Model Settings] Support for customizing parameters for large language models and speech synthesis models.
+    - [Model Settings] Support for querying models by model type, creator, and permissions.
+    - [Model Settings] Added creator information in the model panel.
+    - [Model Settings] Support for Alibaba Cloud Bailian vector models.
+    - [Model Settings] Support for Amazon Bedrock vector models.
+    - [Model Settings] Support for Tencent Hunyuan vector models.
+    - [Model Settings] Support for Xunfei Sparkdesk vector models.
+    - [Model Settings] Support for Baidu Qianfan vector models.
+    - [Model Settings] Support for Alibaba Cloud Bailian speech recognition and speech synthesis models.
+    - [Model Settings] Support for Xinference speech recognition and speech synthesis models.
+    - [Q&A Page] Support for personalized display settings. (X-Pack)
+    - [Q&A Page] Support for identity verification. (X-Pack)
+    - [System Settings] Support for WeChat Work, DingTalk, and Feishu scan code login. (X-Pack)
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【应用】基础节点的全局变量优化为用户输入和接口传参两个参数表单。         
-    - 【应用】关联知识库时支持按名称查询知识库。         
-    - 【应用】关联知识库的名称过长时增加悬浮显示。         
-    - 【应用】知识库检索结果 和 满足直接回答的分段内容中包含分段标题。         
-    - 【应用】导出高级编排应用时包含知识库检索节点的引用分段数据。         
-    - 【应用】在语音输入时，控制台不再输出调试信息。         
-    - 【函数库】优化函数中 Python 编辑器组件，使得编写函数体验更友好。         
-    - 【团队管理】设置资源权限时增加全选按钮。         
-    - 【模型设置】创建模型时，支持按模型类型筛选供应商。         
-    - 【模型设置】优化供应商列表的显示顺序和分类，将供应商划分为公有模型供应商和私有模型供应商。         
-    - 【系统设置】优化修改密码的逻辑，先验证两次密码是否一致，再发邮件验证码。         
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Application] Basic node's global variables optimized into two parameter forms: user input and interface parameters.
+    - [Application] Support for knowledge base name search when associating knowledge bases.
+    - [Application] Hover display for overly long knowledge base association names.
+    - [Application] Knowledge base retrieval results and direct answer segment content include segment titles.
+    - [Application] Exporting advanced orchestration applications includes referenced segment data from knowledge base retrieval nodes.
+    - [Application] No more debug information output in console during voice input.
+    - [Function Library] Optimized Python editor component in functions for a more friendly function writing experience.
+    - [Team Management] Added select all button when setting resource permissions.
+    - [Model Settings] Support for filtering providers by model type when creating models.
+    - [Model Settings] Optimized the display order and categorization of provider lists, dividing providers into public model providers and private model providers.
+    - [System Settings] Optimized password modification logic to verify password consistency first, then send email verification code.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复导入 License 文件后，会显示一次 License 过期的提示的问题。         
-    - 【知识库】修复当导出空知识库时，打开导出文件报错的问题。         
-    - 【知识库】修复当知识库文档中图片不存在时，AI 回复内容显示异常的问题。         
-    - 【知识库】修复在知识库上传 DOCX 文件后，部分情况下图片未正常导入的问题。         
-    - 【知识库】修复在知识库上传 PDF 文件，选择高级分段时，设置分段长度不生效的问题。         
-    - 【知识库】修复在知识库分段中插入 MarkDown 流程图，不显示文本内容的问题。         
-    - 【应用】修复当应用使用的模型为豆包智能体模型时，接入企业微信提问不回复的问题。         
-    - 【应用】修复知识来源引用分段的文件名过长时，界面显示错乱的问题。         
-    - 【应用】修复在接入的公众号中提问时，若回复内容在图片后面有文本内容, 无法返回图片的问题。         
-    - 【模型管理】修复添加 Xinference 模型时，如果模型名称和 ID 不一致，无法添加模型的问题。         
-    - 【模型管理】修复添加 Xinference 模型时，没有传认证参数导致提示 API 域名无效的问题。         
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed the issue where a license expiration notice would appear once after importing a License file.
+    - [Knowledge Base] Fixed the error when opening an exported file after exporting an empty knowledge base.
+    - [Knowledge Base] Fixed the abnormal display of AI reply content when images in knowledge base documents don't exist.
+    - [Knowledge Base] Fixed the issue where images weren't properly imported after uploading DOCX files to the knowledge base in certain cases.
+    - [Knowledge Base] Fixed the issue where segment length settings didn't take effect when uploading PDF files to the knowledge base with advanced segmentation.
+    - [Knowledge Base] Fixed the issue where inserting MarkDown flowcharts in knowledge base segments wouldn't display text content.
+    - [Application] Fixed the issue where questions in WeChat Work wouldn't receive replies when the application used Doubao intelligent agent models.
+    - [Application] Fixed the UI disorder issue when referenced segment file names in knowledge sources were too long.
+    - [Application] Fixed the issue where images couldn't be returned when text content appeared after images in replies to questions in the connected official account.
+    - [Model Management] Fixed the issue where models couldn't be added when model name and ID were inconsistent when adding Xinference models.
+    - [Model Management] Fixed the issue where no authentication parameters were passed causing "API domain name invalid" prompts when adding Xinference models.
 
 ### v1.6.1
 
-2024 年 09 月 29 日
+September 29, 2024
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】修复使用AWS模型进行对话时报错的问题。         
-    - 【应用】修复升级后第一次进入高级编排应用编辑页面，显示空白的问题。         
-    - 【应用】修复高级编排应用设置全局变量后，打开调试对话框，选择变量后调试对话框会被关闭的问题。          
-    - 【应用】修复关联知识库中，知识库名称过长导致显示不全的问题。         
-    - 【知识库】修复分段内容超过单元格最大长度时，导出报错的问题。         
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Fixed the error when conversing using AWS models.
+    - [Application] Fixed the blank display issue when entering the advanced orchestration application edit page for the first time after upgrading.
+    - [Application] Fixed the issue where the debug dialog would close after selecting variables in the global variable settings of advanced orchestration applications.
+    - [Application] Fixed the incomplete display of knowledge base names that are too long in knowledge base associations.
+    - [Knowledge Base] Fixed the error when exporting when segment content exceeds the maximum length of a cell.
 
 ### v1.6.0
 
-2024 年 09 月 27 日
+September 27, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【应用】支持语音方式问答。         
-    - 【应用】支持使用重排模型进行多路召回。         
-    - 【应用】支持自定义全局变量。         
-    - 【应用】支持标准 OpenAI 格式对话。         
-    - 【应用】支持渲染 ECharts 图表和 HTML 页面。         
-    - 【知识库】支持上传 Excel 和 CSV 表格文档。         
-    - 【知识库】支持对多个文档进行批量重新向量化操作。         
-    - 【知识库】支持问题批量关联分段。         
-    - 【函数库】】支持自定义设置函数权限与状态。         
-    - 【模型管理】】支持对接豆包、讯飞星火、OpenAI 供应商的语音识别、语音合成模型。         
-    - 【模型管理】】支持对接阿里云百炼、Xinference 以及本地模型的重排模型。         
-    - 【应用】支持一键接入企业微信、钉钉、飞书和微信公众号。（X-Pack）
-    - 【外观设置】支持自定义主题色、项目信息等设置。（X-Pack）
+!!! Abstract "New Features :star2:"
+    - [Application] Support for voice Q&A.
+    - [Application] Support for multi-path retrieval using reranking models.
+    - [Application] Support for custom global variables.
+    - [Application] Support for standard OpenAI format conversations.
+    - [Application] Support for rendering ECharts charts and HTML pages.
+    - [Knowledge Base] Support for uploading Excel and CSV table documents.
+    - [Knowledge Base] Support for batch re-vectorization of multiple documents.
+    - [Knowledge Base] Support for batch association of questions with segments.
+    - [Function Library] Support for custom function permission and status settings.
+    - [Model Management] Support for speech recognition and speech synthesis models from Doubao, Xunfei Sparkdesk, and OpenAI providers.
+    - [Model Management] Support for reranking models from Alibaba Cloud Bailian, Xinference, and local models.
+    - [Application] One-click integration with WeChat Work, DingTalk, Feishu, and WeChat Official Accounts. (X-Pack)
+    - [Appearance Settings] Support for customizing theme colors, project information, and other settings. (X-Pack)
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】PDF文档支持按目录章节进行分段。         
-    - 【应用】AI模型的参数设置中最大输出Tokens的最大值调整为10万，由用户自行控制大小。         
-    - 【应用】优化简易应用的设置，提示词分为无引用知识库提示词和引用知识库提示词。         
-    - 【应用】简易应用的问题优化调整至关联知识库的参数设置中，且支持设置提示词。         
-    - 【应用】简易应用的多轮对话调整为历史聊天记录，可以自定义设置历史记录数。         
-    - 【应用】简易应用调试预览的应用Logo可以自定义上传应用头像。         
-    - 【应用】高级编排应用的节点支持展开和收起，节省画布空间。         
-    - 【应用】高级编排应用点击节点右侧“+ ”号可直接添加节点。         
-    - 【应用】新增系统变量历史聊天记录和对话ID。         
-    - 【应用】对话日志详情中修改标注内容时支持Markdown样式编辑。         
-    - 【问答页面】优化换个答案按钮的图标。         
-    - 【用户管理】优化创建用户的用户名规则。         
-    - 【系统】优化弹窗只能点击“保存”或者“关闭”选项退出，避免编辑过程中误退出情况的发生。         
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] PDF documents support segmentation by directory chapters.
+    - [Application] The maximum value for tokens output in AI model parameter settings adjusted to 100,000, with size controlled by users.
+    - [Application] Optimized simple application settings, with prompts divided into prompts without referenced knowledge base and prompts with referenced knowledge base.
+    - [Application] Simple application questions optimized to knowledge base association parameter settings, with support for setting prompts.
+    - [Application] Simple application multi-turn conversation adjusted to chat history, with customizable history record count.
+    - [Application] Simple application debug preview's application logo can be customized with uploaded application avatars.
+    - [Application] Advanced orchestration application nodes support expansion and collapse to save canvas space.
+    - [Application] Clicking the "+" icon on the right side of nodes in advanced orchestration applications directly adds nodes.
+    - [Application] Added system variables for chat history and conversation ID.
+    - [Application] Support for Markdown style editing when modifying annotation content in conversation log details.
+    - [Q&A Page] Optimized the icon for the "try another answer" button.
+    - [User Management] Optimized username rules for creating users.
+    - [System] Optimized dialog boxes to only exit via "Save" or "Close" options, preventing accidental exits during editing.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复向MaxKB上传语雀导出的Word文档时，导入内容是空白的问题。         
-    - 【知识库】修复上传空白PDF文件报错的问题。         
-    - 【应用】修复开启多轮对话时，提问30秒以上不携带历史对话记录的问题。         
-    - 【应用】修复AI模型的参数设置中最大输出Tokens的提示描述错误的问题。         
-    - 【应用】修复通过应用的API Key进行对话时，若stream设置为false会报错的问题。         
-    - 【应用】修复在AI对话节点对调用的腾讯混元模型进行角色设定时，对话报错的问题。         
-    - 【团队成员】修复团队成员过多时会出现超出边界的问题。         
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed the issue where content is blank when uploading Word documents exported from Yuque to MaxKB.
+    - [Knowledge Base] Fixed the error when uploading blank PDF files.
+    - [Application] Fixed the issue where historical conversation records aren't carried when questions take more than 30 seconds with multi-turn conversation enabled.
+    - [Application] Fixed the error in description of maximum output tokens in AI model parameter settings.
+    - [Application] Fixed the error when conversing through an application's API Key with stream set to false.
+    - [Application] Fixed the error in conversations when setting role configurations for called Tencent Hunyuan models in AI conversation nodes.
+    - [Team Members] Fixed the issue where team members exceed boundaries when there are too many team members.
 
 ### v1.5.1
 
-2024 年 08 月 29 日
+August 29, 2024
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】修复在应用设置中点击发布提示温度参数未设置的问题。               
-    - 【应用】修复使用本地模型进行提问时，获取tokens报错问题。         
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Fixed the issue of temperature parameter not set prompt when clicking publish in application settings.
+    - [Application] Fixed the error in obtaining tokens when asking questions using local models.
 
 ### v1.5.0
 
-2024 年 08 月 28 日
+August 28, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【函数库】支持函数功能。               
-    - 【高级应用】工作流编排支持添加函数库中函数节点。           
-    - 【应用】支持复制应用。         
-    - 【应用】支持设置AI模型的temperature和max_tokens参数。           
-    - 【模型管理】支持对接豆包大模型。             
-    - 【模型管理】支持对接Amazon Bedrock 的大模型。               
-    - 【模型管理】支持对接腾讯混元大模型。              
-    - 【模型管理】支持对接 vLLM 大模型。             
-    - 【模型管理】支持对接 Xinference 大模型。            
-    - 【系统设置】支持 CAS 认证方式。（X-Pack）   
-    - 【系统设置】支持 OIDC 认证方式。（X-Pack）   
+!!! Abstract "New Features :star2:"
+    - [Function Library] Support for function features.
+    - [Advanced Application] Workflow orchestration supports adding function nodes from the function library.
+    - [Application] Support for copying applications.
+    - [Application] Support for setting temperature and max_tokens parameters for AI models.
+    - [Model Management] Support for integrating with Doubao large models.
+    - [Model Management] Support for integrating with Amazon Bedrock large models.
+    - [Model Management] Support for integrating with Tencent Hunyuan large models.
+    - [Model Management] Support for integrating with vLLM large models.
+    - [Model Management] Support for integrating with Xinference large models.
+    - [System Settings] Support for CAS authentication method. (X-Pack)
+    - [System Settings] Support for OIDC authentication method. (X-Pack)
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】优化文档向量化性能。            
-    - 【知识库】优化PDF文档的智能分段效果。               
-    - 【应用】优化应用名称过滤前后空格。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Optimized document vectorization performance.
+    - [Knowledge Base] Optimized intelligent segmentation effect for PDF documents.
+    - [Application] Optimized filtering out leading and trailing spaces in application names.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【系统】修复Django JSONField存在SQL注入漏洞（CVE-2024-42005）。             
-    - 【知识库】修复文档设置直接回答时相似度写0.000，提示设置成功，实际上不生效的问题。                 
-    - 【知识库】修复智能分段时，单个段落超出10w字符报错的问题。                
-    - 【应用】修复对话日志导出报错的问题。             
-    - 【应用】修复编排页面AI对话节点提示词无法选中的问题。             
-    - 【应用】修复编排页面鼠标定位在AI对话节点的提示词中放大缩小事件冲突问题。             
-    - 【模型管理】修复模型名称前后端校验不统一问题。            
-    - 【模型管理】修复无法添加智谱AI模型的问题。              
-    - 【外观设置】修复登录图片设置上传大尺寸图片报错的问题。（X-Pack）   
-    - 【外观设置】修复自定义外观设置后，还会显示默认外观的问题。（X-Pack）   
- 
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [System] Fixed Django JSONField SQL injection vulnerability (CVE-2024-42005).
+    - [Knowledge Base] Fixed the issue where setting direct answer similarity to 0.000 prompts successful setup but doesn't actually take effect.
+    - [Knowledge Base] Fixed the error when a single segment exceeds 100,000 characters during intelligent segmentation.
+    - [Application] Fixed the error when exporting conversation logs.
+    - [Application] Fixed the issue where prompts in AI conversation nodes cannot be selected on the orchestration page.
+    - [Application] Fixed the conflict between mouse zoom events and positioning in prompt fields in AI conversation nodes on the orchestration page.
+    - [Model Management] Fixed inconsistency in model name validation between frontend and backend.
+    - [Model Management] Fixed the issue where Zhipu AI models couldn't be added.
+    - [Appearance Settings] Fixed the error when uploading large-sized images for login image settings. (X-Pack)
+    - [Appearance Settings] Fixed the issue where default appearance is still displayed after customizing appearance settings. (X-Pack)
+
 ### v1.4.1
 
-2024 年 08 月 08 日
+August 8, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【应用】显示设置中自定义对话头像和浮窗入口图标支持GIF格式。（X-Pack）   
-    - 【应用编排】指定回复和AI对话节点新增返回内容设置。         
+!!! Abstract "New Features :star2:"
+    - [Application] Custom conversation avatars and floating entry icons in display settings support GIF format. (X-Pack)
+    - [Application Orchestration] Specified reply and AI conversation nodes added return content settings.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【应用编排】优化开场白和提示词的编辑框支持放大。              
-    - 【问答页面】用户问题提问后显示换行格式。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Application Orchestration] Optimized welcome message and prompt editing boxes to support enlargement.
+    - [Q&A Page] User questions display line breaks after asking.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】修复使用讯飞星火模型，当多用户同时提问后，回答内容会错乱的问题。             
-    - 【应用】修复在设置页面提问时，多轮对话设置不生效的问题。             
-    - 【应用】修复当应用只有使用权限，在高级编排页面一直提示没有权限的问题。             
-    - 【知识库】修复修改关联问题报错的问题。                
-    - 【知识库】修复添加分段时上传超大像素图谱报错的问题。                
-    - 【知识库】修复上传PDF问答后，部分内容丢失的问题。                
-    - 【知识库】创建Web站点知识库，选择向量模型不生效的问题。               
-    - 【知识库】修复上传QA问答对文件时，当表格中只有数字，获取数据失败的问题。               
-    - 【知识库】修复文档被删除后依然执行向量化的问题。              
-    - 【模型管理】修复模型名称设置超过20个字符报错的问题。            
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Fixed the issue where answer content would be jumbled when multiple users asked questions simultaneously using the Xunfei Sparkdesk model.
+    - [Application] Fixed the issue where multi-turn conversation settings don't take effect when asking questions on the settings page.
+    - [Application] Fixed the continuous permission prompt issue on the advanced orchestration page when an application only has usage permissions.
+    - [Knowledge Base] Fixed the error when modifying related questions.
+    - [Knowledge Base] Fixed the error when uploading ultra-high-pixel graphics when adding segments.
+    - [Knowledge Base] Fixed the issue of partial content loss after uploading PDF Q&A.
+    - [Knowledge Base] Fixed the issue where vector model selection doesn't take effect when creating Web site knowledge bases.
+    - [Knowledge Base] Fixed the issue of data retrieval failure when uploading QA pair files with only numbers in the table.
+    - [Knowledge Base] Fixed the issue of documents still being vectorized after deletion.
+    - [Model Management] Fixed the error when setting model names longer than 20 characters.
 
 ### v1.4.0
 
-2024 年 07 月 31 日
+July 31, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】支持创建空知识库。                
-    - 【知识库】创建和设置知识库时支持选择不同的向量模型进行向量化。             
-    - 【模型管理】支持添加 OpenAI 、Ollama 和本地的向量模型。               
-    - 【模型管理】支持把模型权限设置为公用或私有。              
-    - 【应用】高级编排的指定回复节点支持快捷问题输出：`<quick_question>快捷问题</quick_question>`。             
-    - 【应用】支持设置浮窗模式的对话框入口图标。X-Pack）   
-    - 【应用】支持自定义对话框的AI回复的头像。（X-Pack）   
-    - 【应用】支持设置浮窗模式的对话框是否可拖拽位置。（X-Pack）   
-    - 【应用】支持设置对话框是否显示历史记录。（X-Pack）   
-    - 【系统设置】支持LDAP单点登录。（X-Pack）      
-    - 【系统设置】支持自定义主题外观，设置系统的网站 logo、登录 logo、主题色、登录背景图、网站名称、欢迎语等。（X-Pack）     
-    - 【系统设置】开放系统 API。（X-Pack）   
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for creating empty knowledge bases.
+    - [Knowledge Base] Support for selecting different vector models for vectorization when creating and setting up knowledge bases.
+    - [Model Management] Support for adding OpenAI, Ollama, and local vector models.
+    - [Model Management] Support for setting model permissions as public or private.
+    - [Application] Specified reply nodes in advanced orchestration support quick question output: `<quick_question>Quick Question</quick_question>`.
+    - [Application] Support for setting the dialog box entry icon in floating window mode. (X-Pack)
+    - [Application] Support for customizing the AI reply avatar in the dialog box. (X-Pack)
+    - [Application] Support for setting whether the dialog box in floating window mode can be dragged. (X-Pack)
+    - [Application] Support for setting whether the dialog box displays history. (X-Pack)
+    - [System Settings] Support for LDAP single sign-on. (X-Pack)
+    - [System Settings] Support for customizing theme appearance, setting system website logo, login logo, theme color, login background image, website name, welcome message, etc. (X-Pack)
+    - [System Settings] Open system API. (X-Pack)
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】优化文档索引流程，提高知识点召回率。            
-    - 【知识库】调整分段内容最大长度为 10 万个字符。            
-    - 【应用】调整关联知识库时只能选择使用相同向量模型的知识库。            
-    - 【应用】显示知识来源调整至显示设置中。            
-    - 【模型管理】优化模型列表样式。            
-    - 【关于】优化关于页面显示信息。         
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Optimized document indexing process to improve knowledge point recall rate.
+    - [Knowledge Base] Adjusted maximum segment content length to 100,000 characters.
+    - [Application] Adjusted to only allow selection of knowledge bases using the same vector model when associating knowledge bases.
+    - [Application] Display knowledge source moved to display settings.
+    - [Model Management] Optimized model list style.
+    - [About] Optimized displayed information on the About page.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复爬取Web网站文档时碰到无法访问页面时中断爬取任务的问题。            
-    - 【知识库】修复分段详情中关联问题过多时滚动条显示问题。            
-    - 【模型管理】修复在Ollama供应商有下载中模型时，切换到其他供应商的模型也变为下载中的问题。            
-    - 【问答页面】修复回答时若内容中包含代码不展开显示的问题。           
-    - 【问答页面】修复删除新建对话报错的问题。         
-
-   
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed the issue where crawling tasks are interrupted when encountering inaccessible pages when crawling Web site documents.
+    - [Knowledge Base] Fixed scrollbar display issue when there are too many related questions in segment details.
+    - [Model Management] Fixed the issue where models from other providers also change to downloading status when Ollama provider has models downloading.
+    - [Q&A Page] Fixed the issue where code content in answers doesn't expand and display.
+    - [Q&A Page] Fixed the error when deleting a new conversation.
 
 ### v1.3.1
 
-2024 年 07 月 16 日
+July 16, 2024
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用概览】打开 API 访问凭据的地址显示 404。              
-    - 【应用编排】判断器中删除其中一个条件分支后，再添加条件分支，前端顺序号未更新。               
-    - 【应用编排】判断器中的选择变量的滚动条不能拖动。               
-    - 【应用编排】执行详情中知识库检索结果的排序不对，未按相似度降序排序。               
-    - 【应用编排】指定回复的内容在任务流程中传递会返回空。                
-    - 【问答页面】当应用关联的知识库中含有禁用状态的文档时，提问后点换个答案不会换一批命中分段。              
-    - 【知识库】在线知识库爬取文档名超过 128 个字符报错。             
- 
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application Overview] Opening API access credentials address shows 404.
+    - [Application Orchestration] After deleting one condition branch in the judgment node and adding a condition branch again, the frontend sequence number is not updated.
+    - [Application Orchestration] The scrollbar for selecting variables in the judgment node cannot be dragged.
+    - [Application Orchestration] The order of knowledge base retrieval results in execution details is incorrect, not sorted by similarity in descending order.
+    - [Application Orchestration] The content of specified replies returns empty when passed in the task flow.
+    - [Q&A Page] When the application's associated knowledge base contains disabled documents, clicking "Try another answer" doesn't provide a new batch of hit segments after asking a question.
+    - [Knowledge Base] Online knowledge base crawling reports an error when document names exceed 128 characters.
+
 ### v1.3.0
 
-2024 年 07 月 04 日
+July 4, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【应用】支持创建简易配置和高级编排两种类型的应用，高级编排应用支持自定义工作流。                
-    - 【应用】高级编排的应用AI对话节点支持角色设定。             
-    - 【应用】高级编排的应用AI对话节点支持自定义设置携带的历史聊天记录数。             
-    - 【应用】高级编排的应用支持获取当前时间的系统变量。             
-    - 【对话日志】高级编排应用支持查看每个节点的执行详情。 
+!!! Abstract "New Features :star2:"
+    - [Application] Support for creating two types of applications: simple configuration and advanced orchestration, with advanced orchestration applications supporting custom workflows.
+    - [Application] AI conversation nodes in advanced orchestration support role settings.
+    - [Application] AI conversation nodes in advanced orchestration support custom settings for the number of historical chat records to carry.
+    - [Application] Advanced orchestration applications support system variables for obtaining current time.
+    - [Conversation Logs] Advanced orchestration applications support viewing execution details of each node.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复上传QA问答对时阻塞问题。               
-    - 【知识库】修复高级分段开启自动清洗后会把所有的换行符去掉的问题。            
-    - 【应用】修复提示词输入Json格式的内容时，提问会报错的问题。             
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed blocking issue when uploading QA pairs.
+    - [Knowledge Base] Fixed the issue where automatic cleaning in advanced segmentation would remove all line breaks.
+    - [Application] Fixed the error when asking questions with JSON format content in prompts.
 
 ### v1.2.1
 
-2024 年 06 月 14 日
+June 14, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【问答页面】历史聊天记录支持逻辑删除。 
+!!! Abstract "New Features :star2:"
+    - [Q&A Page] Historical chat records support logical deletion.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【问答页面】对话时文本输入框根据输入文本内容自适应高度。             
-    - 【应用】最大引用字符数调整为 10 万。             
-    - 【应用】对话时问题的最大字符数调整为 10 万。             
-    - 【应用】知识来源引用分段为 0 时也可打开详情。
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Q&A Page] Text input box adapts height according to input text content during conversations.
+    - [Application] Maximum reference character count adjusted to 100,000.
+    - [Application] Maximum character count for questions during conversations adjusted to 100,000.
+    - [Application] Details can be opened even when knowledge source referenced segments is 0.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】解决应用 API 文档接口调用报错的问题。             
-    - 【应用】解决嵌入第三方全屏模式描述错误的问题。             
-    - 【知识库】解决导入带有表格样式的 md 文件分段后表格格式丢失的问题。              
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Resolved the error issue when calling the application API documentation interface.
+    - [Application] Resolved description error in embedded third-party full-screen mode.
+    - [Knowledge Base] Resolved the issue of table format loss after segmenting imported md files with table styles.
 
 ### v1.2.0
 
-2024 年 05 月 30 日
+May 30, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】支持上传 Excel/CSV 格式的 QA 问答对，自动关联问题。               
-    - 【知识库】支持上传 HTML 格式的文本文件。            
-    - 【知识库】支持知识库和文档重新向量化操作。            
-    - 【知识库】支持导出知识库和文档。            
-    - 【问答页面】支持新建对话和查看历史对话。            
-    - 【问答页面】支持导出对话记录。
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for uploading Excel/CSV format QA pairs, automatic question association.
+    - [Knowledge Base] Support for uploading HTML format text files.
+    - [Knowledge Base] Support for re-vectorizing knowledge bases and documents.
+    - [Knowledge Base] Support for exporting knowledge bases and documents.
+    - [Q&A Page] Support for creating new conversations and viewing historical conversations.
+    - [Q&A Page] Support for exporting conversation records.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【应用】显示知识来源的引用分段，支持 markdown 样式显示。              
-    - 【应用】提问后模型返回异常信息时也要记录到对话日志中。             
-    - 【应用】在对话日志详情中修正答案时，问题可以修改。             
-    - 【应用】引用分段数最大值调整为 100 。             
-    - 【应用】开场白最大字符数调整为 4096 。
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Application] Referenced segments in knowledge sources support markdown style display.
+    - [Application] Model exception returns should still be recorded in conversation logs after questions.
+    - [Application] Questions can be modified when correcting answers in conversation log details.
+    - [Application] Maximum number of referenced segments adjusted to 100.
+    - [Application] Maximum welcome message character count adjusted to 4096.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】解决开场白中无法显示 markdown 样式的表格。             
-    - 【问答页面】解决提问时出现【用户问题】此字段不能为空字符串的问题。             
-    - 【知识库】修复删除最后一个分段时报错的问题。              
-    - 【知识库】上传 md格式文档，一个分段内容超过 4096 个字符时，上传报错。             
-    - 【关于】修复刷新浏览器后不显示版本号的问题。             
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Resolved the issue where markdown style tables can't be displayed in welcome messages.
+    - [Q&A Page] Resolved the "This field cannot be an empty string" error for [User Question] when asking questions.
+    - [Knowledge Base] Fixed the error when deleting the last segment.
+    - [Knowledge Base] Error when uploading md format documents when a segment's content exceeds 4096 characters.
+    - [About] Fixed the issue where version number isn't displayed after refreshing the browser.
 
 ### v1.1.3
 
-2024 年 05 月 15 日
+May 15, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【模型管理】支持对接 Gemini 供应商的模型。           
-    - 【模型管理】支持对接 DeepSeek 供应商的模型。             
-    - 【模型管理】OpenAI 供应商的基础模型增加 gpt-4o 模型。          
+!!! Abstract "New Features :star2:"
+    - [Model Management] Support for integrating with Gemini provider models.
+    - [Model Management] Support for integrating with DeepSeek provider models.
+    - [Model Management] Added gpt-4o model to OpenAI provider's base models.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】文档问题列表的多选框优化增加可点击范围。           
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Optimized clickable range of checkboxes in document question lists.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】文档删除或迁移分段后，字符数不会重新计算。           
-    - 【知识库】批量导入选中将标题添加关联问题,标题为空时报错 。            
-    - 【模型管理】Ollama 模型中没有已下载的模型时，在 MaxKB 添加 Ollama 模型报错。            
-    - 【模型管理】添加模型时，上次的表单未清空。
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Document character count not recalculated after deleting or migrating segments.
+    - [Knowledge Base] Error when title is empty during batch import with add title as related question option.
+    - [Model Management] Error when adding Ollama models in MaxKB when there are no downloaded models in Ollama.
+    - [Model Management] Form not cleared after adding a model.
 
 ### v1.1.2
 
-2024 年 05 月 10 日
+May 10, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】上传文档时支持将标题添加为关联问题（适用标题是问题的问答对）。            
-    - 【知识库】支持分段迁移和批量迁移。            
-    - 【知识库】支持分段批量删除。           
-    - 【知识库】文档直接回答时支持相似度设置。            
-    - 【应用】 新增 API Key 跨域的设置。            
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for adding titles as related questions when uploading documents (suitable for Q&A pairs where titles are questions).
+    - [Knowledge Base] Support for segment migration and batch migration.
+    - [Knowledge Base] Support for batch deletion of segments.
+    - [Knowledge Base] Support for similarity settings in document direct answers.
+    - [Application] Added cross-origin settings for API Keys.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】上传文档的分段预览优化为懒加载方式，避免数据量大时浏览器崩溃。         
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Optimized uploaded document segment preview to lazy loading to prevent browser crashes with large data volumes.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复文档改名无法点击保存的问题。            
-    - 【知识库】修复导入文档时在特殊情况下导入失败。            
-    - 【用户管理】修复在创建新用户时，用户名含有 0 时校验不通过的问题。            
-    - 【UI】修复ui文件打包报错的问题。         
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed inability to save when renaming documents.
+    - [Knowledge Base] Fixed import failure in special cases when importing documents.
+    - [User Management] Fixed validation failure when usernames contain 0 when creating new users.
+    - [UI] Fixed UI file packaging errors.
 
 ### v1.1.1
 
-2024 年 04 月 30 日
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】上传文档的超时时间延长为 1 小时。
+April 30, 2024
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】修复未选择AI 模型时，开启问题优化提问报错的问题。            
-    - 【应用】修复未选择AI 模型时，开启多轮对话报错的问题。         
-    - 【知识库】修复文档上传失败时，点击重试按钮无效的问题。         
-    - 【知识库】修复相同类型的知识库直接文档无法迁移的问题。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Extended document upload timeout to 1 hour.
 
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Fixed error when asking questions with question optimization enabled without selecting an AI model.
+    - [Application] Fixed error with multi-turn conversations enabled without selecting an AI model.
+    - [Knowledge Base] Fixed invalid retry button when document upload fails.
+    - [Knowledge Base] Fixed inability to migrate documents between knowledge bases of the same type.
 
 ### v1.1.0
 
-2024 年 04 月 29 日
+April 29, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】新增全文检索和混合检索两种检索模式。            
-    - 【知识库】新增命中处理方式设置，支持设置文档下的分段命中后可直接返回分段内容，也可让模型优化后返回答案。            
-    - 【知识库】新增文档迁移知识库功能。             
-    - 【知识库】上传word文档、添加/编辑分段内容时支持上传本地图片。              
-    - 【应用】当用户提问题时，若无引用知识库内容，可指定回复内容。             
-    - 【应用】新增用户问答页面显示知识来源设置。             
-    - 【应用】支持自定义应用的 logo，用户端浏览器标签显示自定义 logo和应用名称。                
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Added two retrieval modes: full-text retrieval and hybrid retrieval.
+    - [Knowledge Base] Added hit handling method settings, supporting direct return of segment content or model-optimized answers when document segments are hit.
+    - [Knowledge Base] Added document migration functionality.
+    - [Knowledge Base] Support for uploading local images when uploading Word documents or adding/editing segment content.
+    - [Application] Ability to specify reply content when user questions don't reference knowledge base content.
+    - [Application] Added display knowledge source settings for user Q&A page.
+    - [Application] Support for custom application logos, displaying custom logos and application names in user browser tabs.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【应用】创建/编辑应用时支持不选择模型。              
-    - 【问答页面】 AI 回答时优化流式输出，加快数据展示。            
-    - 【搜索框】搜索框可以支持一键清除搜索条件。             
-    - 【模型管理】添加模型表单优化提示语。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Application] Support for not selecting a model when creating/editing applications.
+    - [Q&A Page] Optimized streaming output during AI responses for faster data display.
+    - [Search Box] Search boxes support one-click clearing of search criteria.
+    - [Model Management] Optimized prompt text in add model form.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【应用】修复对话日志详情不按时间排序的问题。               
-    - 【应用】修复问答页面提问达到最大限制的时候返回内容重复。             
-    - 【应用】修复离线环境提问后由于获取不到 tokens 数导致回答有报错内容的问题。             
-    - 【应用】修复修改应用信息保存时会导致问答页面进入 404 的问题。              
-    - 【模型管理】API Key 字符长度过长时，添加模型报错。            
-    - 【问答页面】问题过长时，AI 回答后会有报错信息。             
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Fixed conversation log details not sorting by time.
+    - [Application] Fixed repeated content returns when reaching maximum question limit on Q&A page.
+    - [Application] Fixed issue with error content in answers due to inability to get token counts in offline environments.
+    - [Application] Fixed issue where editing application information would cause Q&A page to enter 404.
+    - [Model Management] Error when adding models when API Key character length is too long.
+    - [Q&A Page] Error information appears after AI answers when questions are too long.
 
 ### v1.0.4
 
-2024 年 04 月 19 日
+April 19, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【模型管理】支持对接智谱 AI 开发放平台的通用大模型。            
-    - 【模型管理】支持对接讯飞星火大模型。             
+!!! Abstract "New Features :star2:"
+    - [Model Management] Support for integrating with Zhipu AI development platform's general models.
+    - [Model Management] Support for integrating with Xunfei Sparkdesk models.
 
-
-!!! Abstract "功能优化 :sunflower:"
-    - 【登录】当前用户使用默认密码登录后需要先修改密码。            
-    - 【应用】对话日志详情修正答案保存分段时，知识库和文档支持搜索。            
-
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Login] Current users logging in with default passwords must change their passwords first.
+    - [Application] Knowledge bases and documents support search when saving segments during answer correction in conversation log details.
 
 ### v1.0.3
 
-2024 年 04 月 18 日
+April 18, 2024
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】上传文档支持选择文件夹。               
-    - 【模型管理】兼容对接OpenAI 格式的模型。             
-    - 【模型管理】支持对接通义千问的大模型。            
-    - 【模型管理】支持对接Kimi大模型。               
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for selecting folders when uploading documents.
+    - [Model Management] Compatible with models conforming to OpenAI format.
+    - [Model Management] Support for integrating with Tongyi Qianwen models.
+    - [Model Management] Support for integrating with Kimi models.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【问答页面】优化AI 输出答案的效率。         
-    - 【命中测试】优化未命中分段时的提示内容。         
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Q&A Page] Optimized efficiency of AI answer output.
+    - [Hit Test] Optimized prompt content when no segments are hit.
 
 ### v1.0.2
 
-2024 年 04 月 17 日
+April 17, 2024
 
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Improved appearance of dropdown component when questions are long when adding related questions in segments.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】在分段中添加关联问题时，当问题比较长时下拉组件显示不美观。              
-
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复文本文件中存在空字符（\0）时，上传文档报错。            
-    - 【知识库】在问题中关联分段，当文档为空时搜索分段标题会。           
-    - 【应用】修复问答页面用户提问时，只输入空格提问后回答错位的问题。           
-    - 【应用】问答页面在回答中...时，点击停止回答不生效。             
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed error when uploading documents containing null characters (\0) in text files.
+    - [Knowledge Base] Error when searching segment titles when the document is empty when associating segments with questions.
+    - [Application] Fixed misalignment issue in answers when users only input spaces in questions on the Q&A page.
+    - [Application] Stop answer button doesn't work when AI is responding with "...".
 
 ### v1.0.1
 
-2024 年 04 月 15 日
+April 15, 2024
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【知识库】文档列表、分段标题、分段内容、问题列表查询时大小写不敏感。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Knowledge Base] Case-insensitive queries for document lists, segment titles, segment content, and question lists.
 
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复整体同步知识库报错。          
-    - 【知识库】修复添加分段时关联问题报错。           
-    - 【知识库】文档列表为空时，在问题列表点击关联分段会404。            
-    - 【应用】修复在应用的命中测试点击分段内容报没有权限访问的问题。             
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed error in overall knowledge base synchronization.
+    - [Knowledge Base] Fixed error when associating questions when adding segments.
+    - [Knowledge Base] 404 error when clicking associate segments in the question list when document list is empty.
+    - [Application] Fixed "no permission to access" error when clicking segment content in application hit tests.
 
 ### v1.0.0
 
-2024 年 04 月 11 日
+April 11, 2024
 
+!!! Abstract "New Features :star2:"
+    - [Knowledge Base] Support for uploading DOCX and PDF format documents.
+    - [Knowledge Base] Added question database, support for organizing user questions into the question database and associating them with segments in documents for more precise matching of relevant knowledge points.
+    - [Application] Added usage statistics function, supporting statistics on question user data, new question users, number of questions, consumed tokens, and user satisfaction for each application.
+    - [Application] Support for exporting conversation logs.
+    - [Model Management] Support for integrating with OpenAI models.
 
-!!! Abstract "新增功能 :star2:"
-    - 【知识库】支持上传 DOCX、PDF 格式的文档。              
-    - 【知识库】新增问题库，支持把用户的问题梳理到问题库，关联文档中的分段，从而能更精确的匹配到相关知识点。              
-    - 【应用】新增用量统计功能，针对每个应用支持统计提问用户数据、新增提问用户数、提问数、 消费Tokens数和用户满意度。              
-    - 【应用】对话日志支持导出。         
-    - 【模型管理】支持对接 OpenAI 模型。            
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Application] Added confirmation prompt when regenerating public access links in overview would invalidate embedded third-party scripts.
+    - [Application] Updated entry logo for floating mode embedded in third parties.
+    - [Knowledge Base] Retained pagination information when returning from document segment details page.
+    - [Knowledge Base] Uploaded document limit adjusted to 100 MB.
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【应用】概览中重新生成公开访问链接会导致嵌入第三方脚本失效，增加确认提示。            
-    - 【应用】浮窗模式嵌入第三方的入口 logo 更新。         
-    - 【知识库】文档分段详情页面点击返回时，保留分页信息。         
-    - 【知识库】上传的文档限制调整为 100 MB。         
-
-!!! Abstract "问题修复 :palm_tree:"
-    - 【知识库】修复获取在线知识库的更新日志内容为乱码的问题。         
-    - 【知识库】修复创建知识库后，进入设置页面无法修改知识库的问题。         
-    - 【知识库】修复上传不支持格式的文档报错的问题。         
-    - 【应用】修复开启问题优化后，优化后的问题返回为空字符串时未处理的问题。         
-    - 【应用】修复从对话日志详情中添加标注内容报错的问题。         
-    - 【应用】修复浮窗模式的 放大按钮与关闭按钮未对齐。         
-    - 【用户管理】修复创建用户时登录密码使用默认密码MaxKB@123.. 提示规则不对。         
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Knowledge Base] Fixed garbled content issue when getting online knowledge base update logs.
+    - [Knowledge Base] Fixed inability to modify knowledge base after creation when entering settings page.
+    - [Knowledge Base] Fixed error when uploading documents in unsupported formats.
+    - [Application] Fixed unhandled issue when optimized questions return empty strings with question optimization enabled.
+    - [Application] Fixed error when adding annotation content from conversation log details.
+    - [Application] Fixed misalignment of maximize and close buttons in floating mode.
+    - [User Management] Fixed incorrect rule prompt when creating users with default password MaxKB@123...
 
 ### v0.9.1
 
-2024 年 03 月 27 日
+March 27, 2024
 
+!!! Abstract "New Features :star2:"
+    - [Model Management] Support for automatic download when adding/modifying Ollama provider models.
+    - [About] Added display of project address, user manual, and forum help entry.
 
-!!! Abstract "新增功能 :star2:"
-    - 【模型管理】Ollama 供应商添加/修改模型时支持自动下载。          
-    - 【关于】增加显示项目地址、用户手册、论坛求助入口。          
+!!! Abstract "Feature Optimization :sunflower:"
+    - [Model Management] Azure OpenAI base models support custom settings, requiring api-version when customizing.
+    - [Model Management] Qianfan large models support custom input of official standard large models (not self-deployed).
 
-!!! Abstract "功能优化 :sunflower:"
-    - 【模型管理】】Azure OpenAI 的基础模型支持自定义设置，自定义时需要填写 api-version。         
-    - 【模型管理】】千帆大模型的基础模型支持自定义输入官方标准的大模型（非自行部署）。         
-
-!!! Abstract "问题修复 :palm_tree:"
-
-    - 【应用】问答提问时同一时间限制只能发出一个快捷问题。            
-    - 【应用】修复问题优化开启后大模型未返回优化结果时的报错问题。              
-    - 【知识库】修复上传的 TXT 文档编码格式问题导致内容为空的问题。            
-    - 【知识库】修复文档列表勾选文档后会自动取消的问题。         
-    - 【用户管理】修复删除用户报错。         
-    - 【用户管理】编辑用户禁止修改用户名。         
-    - 【用户管理】修复禁用用户可以登录。         
-    - 【用户管理】修改用户姓名超过长度时错误提示不对。         
-    - 【用户管理】修复无法修改 admin 用户信息的问题。              
-    - 【用户管理】修复修改用户状态后用户位置变动的问题。         
-
+!!! Abstract "Bug Fixes :palm_tree:"
+    - [Application] Limit to only one quick question at a time during Q&A.
+    - [Application] Fixed error issue when large models don't return optimization results with question optimization enabled.
+    - [Knowledge Base] Fixed empty content issue due to encoding format problems in uploaded TXT documents.
+    - [Knowledge Base] Fixed automatic deselection of documents after checking them in document list.
+    - [User Management] Fixed error when deleting users.
+    - [User Management] Prevented username modification when editing users.
+    - [User Management] Fixed disabled users being able to log in.
+    - [User Management] Incorrect error prompt when modified username exceeds length.
+    - [User Management] Fixed inability to modify admin user information.
+    - [User Management] Fixed user position change after modifying user status.
 
 ### v0.9.0
 
-2024 年 03 月 20 日
+March 20, 2024
 
-
-!!! Abstract "新增功能 :star2:"
-
-    - **开箱即用**：支持直接上传文档、自动爬取在线文档，支持文本自动拆分、向量化、RAG（检索增强生成），智能问答交互体验好。          
-    - **无缝嵌入**：支持零编码快速嵌入到第三方业务系统，让已有系统快速拥有智能问答能力，提高用户满意度。             
-    - **多模型支持**：支持Ollama、百度千帆大模型和 Azure OpenAI 的大语言模型。         
+!!! Abstract "New Features :star2:"
+    - **Ready to Use**: Support for directly uploading documents, automatically crawling online documents, automatic text splitting, vectorization, RAG (Retrieval Augmented Generation), and intelligent Q&A with good interactive experience.
+    - **Seamless Integration**: Support for zero-code quick embedding into third-party business systems, enabling existing systems to quickly have intelligent Q&A capabilities, improving user satisfaction.
+    - **Multi-model Support**: Support for large language models from Ollama, Baidu Qianfan, and Azure OpenAI.

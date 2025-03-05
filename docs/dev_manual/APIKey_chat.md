@@ -1,51 +1,51 @@
 !!! Abstract ""
-    MaxKB 社区版提供系统应用 API 以及兼容 OpenAI 标准格式进行对话，专业版提供系统级别 API，详细情况见：[系统API ](../user_manual/X-Pack/system_API.md)。
+    The MaxKB community edition provides system application APIs and supports conversation in a format compatible with the OpenAI standard. The professional edition offers system-level APIs. For more details, refer to: [System API](../user_manual/X-Pack/system_API.md).
 
-## 1 应用API
+## 1 Application API
 
-### 1.1 打开API文档
+### 1.1 Open API Documentation
 
 !!! Abstract ""
-    在应用信息中复制并访问 swagger 地址。
+    Copy and access the swagger address from the application information.
 
-![API doc](../img/dev/app_swaagger.png)
+![API doc](../img/dev/app_swagger.png)
 
-### 1.2 API Key认证
-  
+### 1.2 API Key Authentication
+
 ![APIKEY](../img/dev/app_apikey.png)
 
-### 1.3 获取应用信息
+### 1.3 Retrieve Application Information
 
 !!! Abstract ""
-    调用 profile 接口，获取应用详细信息（应用 id、name等）。
-  
-![ profile](../img/dev/app_profile.png)
+    Call the profile interface to get detailed application information (such as application ID, name, etc.).
 
-### 1.4 打开会话
+![profile](../img/dev/app_profile.png)
+
+### 1.4 Open a Session
 
 !!! Abstract ""
-    调用打开会话接口，输入上述步骤获取的应用 id，打开会话并获取会话 id。
+    Call the open session interface, enter the application ID obtained in the steps above, open a session, and obtain a session ID.
 
 ![appid](../img/dev/chat_open.png)
 
-### 1.5 进行对话
+### 1.5 Conduct a Conversation
 
 !!! Abstract ""
-    调用对话接口，输入会话 id 进行对话。
+    Call the conversation interface, and enter the session ID to conduct a conversation.
 
 ![chatid](../img/dev/app_chat.png)
 
-## 2 标准OpenAI 格式
+## 2 Standard OpenAI Format
 
 !!! Abstract ""
-    MaxKB 应用兼容 OpenAI API 格式，在OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。
+    The MaxKB application is compatible with the OpenAI API format. You can replace the original OpenAI API Base URL and API Key with those provided by the MaxKB application.
 
 ![API doc](../img/dev/openai_baseurl.png)
 
 !!! Abstract ""
 
     ```
-    # 将url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
+    # Replace the URL and Authorization with the actual Base URL and API Key from the MaxKB application.
 
     curl https://maxkb.fit2cloud.com/api/application/xxxxxxxx-8c56-11ef-a99e-0242ac140003/chat/completions \
         -H "Content-Type: application/json" \
@@ -54,11 +54,9 @@
             "model": "gpt-3.5-turbo",
             "messages": [
                 {
-                  "role": "你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。",
-                  "content": "MaxKB 是什么？"
+                  "role": "You are the intelligent assistant of MaxKB, a product under Hangzhou Fit2Cloud Technology. Your job is to assist MaxKB users in solving problems they encounter during usage. When users come to you with questions, make sure to focus on the MaxKB Q&A system.",
+                  "content": "What is MaxKB?"
                 }
             ]
         }'
     ```
-
-

@@ -1,18 +1,18 @@
-## 1 添加模型
+## 1 Add Model
 
 !!! Abstract ""
-    选择模型供应商为`vLLM`，并在模型添加对话框中输入如下必要信息：
+    Select the model provider as `vLLM`, and enter the following necessary information in the model addition dialog box:
 
-    * 模型名称：MaxKB 中自定义的模型名称。    
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。
-    * 模型类型：大语言模型。   
-    * 基础模型：不同类型模型下的基础模型名称，下拉选项是常用的一些基础模型名称，支持自定义输入。      
-    * API 域名：vLLM 服务地址， 如：http://192.168.20.242:8000/v1 。 
-    * API Key：若没有 API Key，输入任意字符即可。
+    * Model Name: The custom model name in MaxKB.
+    * Permissions: Divided into private and public permissions. Private models are available only to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Large Language Model.
+    * Base Model: The base model name under different model types. The dropdown options include some commonly used base model names, and custom input is supported.
+    * API Domain: vLLM service address, e.g., http://192.168.20.242:8000/v1.
+    * API Key: If there is no API Key, you can enter any characters.
 
-## 2 配置样例
+## 2 Configuration Example
 
 !!! Abstract ""
-    vLLM-大语言模型配置样例图示：
+    vLLM-Large Language Model configuration example illustration:
 
-![vLLM LLM模型](../../img/model/vLLM_llm.png){ width="500px" }
+![vLLM LLM Model](../../img/model/vLLM_llm.png){ width="500px" }

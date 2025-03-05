@@ -28,7 +28,7 @@ theme:
     text: Roboto
     code: Roboto Mono
 extra_css:
-  - stylesheets/extra.css    
+  - stylesheets/extra.css
 markdown_extensions:
   - toc:
       permalink: true
@@ -42,7 +42,7 @@ markdown_extensions:
       alternate_style: true
   ## grid
   - attr_list
-  - md_in_html      
+  - md_in_html
   - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -71,8 +71,52 @@ plugins:
 nav:
   - Introduction: index.md
   - Get Started:
-    - Quick Start: quick_start.md
-
-  #- Tutorials: tutorials.md
+      - Quick Start: quick_start.md
+      - Installation Guide:
+          - Online Installation: installation/online_installtion.md
+          - 1Panel Installation: installation/1panel_installtion.md
+          - Command Line Tools Setup: installation/cli.md
+  - User Manual:
+      - Knowledge Base:
+          - Knowledge Base: user_manual/dataset/dataset.md
+          - Documents: user_manual/dataset/doclist.md
+          - Questions: user_manual/dataset/problem.md
+          - Hit Testing: user_manual/dataset/hit-testing.md
+      - Function Library: user_manual/fx/fx.md
+      - Applications:
+          - Application Creation:
+              - Simple Configuration Applications: user_manual/app/simple_app.md
+              - Advanced Orchestration Applications: user_manual/app/workflow_app.md
+          - Export and Import: user_manual/app/serialization.md
+          - Application Overview: user_manual/app/app-view.md
+          - Hit Testing: user_manual/app/hit-testing.md
+          - Conversation Logs: user_manual/app/log.md
+      - Model Management:
+          - Model Overview: user_manual/model/model_summary.md
+          - Model Integration:
+              - Integrate with Amazon Bedrock: user_manual/model/amazon_bedrock_model.md
+              - Integrate with Azure OpenAI: user_manual/model/azure_openai_model.md
+              - Integrate with Gemini: user_manual/model/gemini_model.md
+              - Integrate with OpenAI: user_manual/model/openai_model.md
+              - Integrate with Local Models: user_manual/model/local_model.md
+              - Integrate with Ollama: user_manual/model/ollama_model.md
+              - Integrate with vLLM: user_manual/model/vllm_model.md
+              - Integrate with Xorbits Inference: user_manual/model/X-Infer_model.md
+          - Model Parameter Configuration: user_manual/model/model_param.md
+      - Team Management: user_manual/team/team.md
+      - X-Pack Features:
+          - User Management: user_manual/X-Pack/user.md
+          - Login Authentication: user_manual/X-Pack/login_auth.md
+          - Application Display: user_manual/X-Pack/app_logo_settting.md
+          - Authentication: user_manual/X-Pack/app_auth.md
+          - System API: user_manual/X-Pack/system_API.md
+          - System Appearance: user_manual/X-Pack/theme_settings.md
   - Development:
-    - Building from Source: dev_manual/build_from_source.md
+      - Building from Source: dev_manual/build_from_source.md
+      - Chat via API KEY: dev_manual/APIKey_chat.md
+  - FAQ:
+      - Deploy LLM Model Offline with Ollama: faq/Offline_install_OllamaModel.md
+      - Run LLM Model with GPU using Ollama: faq/GPU_runOllama.md
+      - Integrate MaxKB Assistant into Halo: faq/maxkb_In_halo.md
+      - Difference Between MaxKB and Dify: faq/MaxKB_VS_Dify.md
+  - Changelog: changelog.md

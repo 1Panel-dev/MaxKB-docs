@@ -116,6 +116,7 @@
     
     # 安装后端需要的依赖
     poetry install
+    * 注意：如果在国内安装，需要配置 poetry 的源，否则下载非常慢，经常无法正常安装，配置命令为：`poetry source add --priority=primary mirrors http://mirrors.aliyun.com/pypi/simple`
     
     # 启动项目
     python main.py start

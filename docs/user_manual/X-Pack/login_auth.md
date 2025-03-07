@@ -32,7 +32,7 @@
     **说明：** OAUTH2 回调地址即 MaxKB 访问地址加上`/api/oauth2`，例如：`http://40.100.86.240:8080/api/oauth2`
 ![OAHTU2](../../img/system/oauth2.png)
 
-## 5 扫描登录
+## 5 扫码登录
 
 ### 5.1 企业微信扫码登录
 

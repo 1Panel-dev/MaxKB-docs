@@ -45,7 +45,6 @@
     - [MaxKB 应用案例：无锡市数据局](https://mp.weixin.qq.com/s/enfUFLevvL_La74PQ0kIXw)
     - [MaxKB 应用案例：中核西仪研究院-西仪睿答](https://mp.weixin.qq.com/s/CbKr4mev8qahKLAtV6Dxdg)
     - [MaxKB 应用案例：南京中医药大学](https://mp.weixin.qq.com/s/WUmAKYbZjp3272HIecpRFA)
-    - [MaxKB 应用案例：西北电力设计院-AI数字助理Memex](https://mp.weixin.qq.com/s/ezHFdB7C7AVL9MTtDwYGSA)
     - [MaxKB 应用案例：西安国际医院中心医院-国医小助](https://mp.weixin.qq.com/s/DSOUvwrQrxbqQxKBilTCFQ)
     - [MaxKB 应用案例：华莱士智能AI客服助手上线啦！](https://www.bilibili.com/video/BV1hQtVeXEBL)
     - [MaxKB 应用案例：把医疗行业知识转化为知识库问答助手！](https://www.bilibili.com/video/BV157wme9EgB)

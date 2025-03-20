@@ -38,7 +38,7 @@
 !!! Abstract ""
     上传文档要求：  
 
-    * 文本文件:：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
+    * 文本文件：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
     * 表格格式：Excel、CSV;
     * QA 问答对：Excel、CSV；  
     * 每次最多上传 50 个文件；   

@@ -104,6 +104,7 @@ nav:
         - Ollama使用GPU运行LLM模型: faq/GPU_runOllama.md
         - 将MaxKB小助手集成到Halo中: faq/maxkb_In_halo.md
         - MaxKB和Dify有什么区别: faq/MaxKB VS.Dify.md
+        - 知识库文档如何合理分段: faq/doc_segment.md
     - 更新日志: changelog.md
     - 联系我们: contact.md
     

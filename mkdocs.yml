@@ -39,6 +39,8 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
+    - 快速入门: quick_start.md
+    - 更新日志: changelog.md
     - 系统架构: system_arch.md
     - 安装部署:
         - 离线安装: installation/offline_installtion.md
@@ -47,7 +49,6 @@ nav:
         - 阿里云安装: installation/aliyun.md
         - 腾讯云安装: installation/tencent.md
         - 命令行工具: installation/cli.md
-    - 快速入门: quick_start.md
     - 功能手册: 
         - 知识库: 
             - 知识库: user_manual/dataset/dataset.md
@@ -105,7 +106,6 @@ nav:
         - 将MaxKB小助手集成到Halo中: faq/maxkb_In_halo.md
         - MaxKB和Dify有什么区别: faq/MaxKB VS.Dify.md
         - 知识库文档如何合理分段: faq/doc_segment.md
-    - 更新日志: changelog.md
     - 联系我们: contact.md
     
 markdown_extensions:

@@ -40,19 +40,27 @@
 
     - [MaxKB 应用案例：中国农业大学-小鹉哥](https://mp.weixin.qq.com/s/4g_gySMBQZCJ9OZ-yBkmvw)
     - [MaxKB 应用案例：东北财经大学-小银杏](https://mp.weixin.qq.com/s/3BoxkY7EMomMmmvFYxvDIA)
+    - [MaxKB 应用案例：重庆交通大学-渝小交](https://mp.weixin.qq.com/s/8L4hIjdhzWOmpQXx2cW33g)
+    - [MaxKB 应用案例：广西大学](https://mp.weixin.qq.com/s/83N9a_wWDce7z1NLIropEAx)
+    - [MaxKB 应用案例：南京中医药大学](https://mp.weixin.qq.com/s/WUmAKYbZjp3272HIecpRFA)
+    - [MaxKB 应用案例：高校行政管理AI小助手](https://www.bilibili.com/video/BV1yvBMYvEdy)
     - [MaxKB 应用案例：中铁水务](https://mp.weixin.qq.com/s/voNAddbK2CJOrJJs1ewZ8g)
     - [MaxKB 应用案例：解放军总医院](https://mp.weixin.qq.com/s/ETrZC-vrA4Aap0eF-15EeQ)
-    - [MaxKB 应用案例：无锡市数据局](https://mp.weixin.qq.com/s/enfUFLevvL_La74PQ0kIXw)
     - [MaxKB 应用案例：中核西仪研究院-西仪睿答](https://mp.weixin.qq.com/s/CbKr4mev8qahKLAtV6Dxdg)
-    - [MaxKB 应用案例：南京中医药大学](https://mp.weixin.qq.com/s/WUmAKYbZjp3272HIecpRFA)
     - [MaxKB 应用案例：西安国际医院中心医院-国医小助](https://mp.weixin.qq.com/s/DSOUvwrQrxbqQxKBilTCFQ)
-    - [MaxKB 应用案例：华莱士智能AI客服助手上线啦！](https://www.bilibili.com/video/BV1hQtVeXEBL)
+    - [MaxKB 应用案例：深圳大学附属华南医院-医疗版“知识数据库助手”](https://www.nfnews.com/content/732YEYDPyW.html)
+    - [MaxKB 应用案例：生物医药AI客服智能体验!](https://www.bilibili.com/video/BV13JzvYsE3e)
     - [MaxKB 应用案例：把医疗行业知识转化为知识库问答助手！](https://www.bilibili.com/video/BV157wme9EgB)
+    - [MaxKB 应用案例：深圳福田公证处 AI 助手](https://mp.weixin.qq.com/s/KEtM-bkqim5LLBc4yA9CmQ)
+    - [MaxKB 应用案例：无锡市数据局](https://mp.weixin.qq.com/s/enfUFLevvL_La74PQ0kIXw)
+    - [MaxKB 应用案例：广西质检院 AI小质](https://mp.weixin.qq.com/s/JNOk8gMrcX1c70A_bX1pfQ)
+    - [MaxKB 应用案例：深圳联交所-深小联AI助手](https://mp.weixin.qq.com/s/3DXghaIT1p1aTQ51D2FCVA)
+    - [MaxKB 应用案例：深圳通](https://mp.weixin.qq.com/s/SILN0GSescH9LyeQqYP0VQ)
+    - [MaxKB 应用案例：华莱士智能AI客服助手上线啦！](https://www.bilibili.com/video/BV1hQtVeXEBL)
     - [MaxKB 应用案例：会展AI智能客服体验](https://www.bilibili.com/video/BV1J7BqY6EKA)
     - [MaxKB 应用案例：孩子要上幼儿园了，AI 智能助手择校好帮手](https://www.bilibili.com/video/BV1wKrhYvEer)
     - [MaxKB 应用案例：产品使用指南AI助手，新手小白也能轻松搞定！](https://www.bilibili.com/video/BV1Yz6gYtEqX)
-    - [MaxKB 应用案例：生物医药AI客服智能体验!](https://www.bilibili.com/video/BV13JzvYsE3e)
-    - [MaxKB 应用案例：高校行政管理AI小助手](https://www.bilibili.com/video/BV1yvBMYvEdy)
+
 
 ## 4 了解更多
 

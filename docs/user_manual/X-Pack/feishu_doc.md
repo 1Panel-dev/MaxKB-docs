@@ -46,8 +46,9 @@
 !!! Abstract ""
     在内部群组中添加对应的群机器人。
 
-![飞书群机器人](../../img/app/feishu_group_robot1.png)
-![飞书群机器人](../../img/app/feishu_group_robot2.png)
+![飞书群机器人](../../img/app/feishu_group_robot1.png){width="500px"}
+
+![飞书群机器人](../../img/app/feishu_group_robot2.png){width="500px"}
 
 !!! Abstract ""
     在飞书文档的文件夹中，添加包含应用机器人的群组作为协作者。
@@ -64,7 +65,7 @@
     - Folder Token：是飞书云空间中每个文件夹的唯一标识，用于区分和操作特定的文件夹飞书中的文件夹。选中文件夹，在链接信息中即可获取。
 
 ![飞书文件夹](../../img/app/feishu_folder_token.png)
-![飞书知识库创建](../../img/app/feishu_kb_create.png)
+![飞书知识库创建](../../img/app/feishu_kb_create.png){width="800px"}
 
 
 !!! Abstract "" 

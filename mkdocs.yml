@@ -93,10 +93,12 @@ nav:
             - 用户管理: user_manual/X-Pack/user.md
             - 登录认证: user_manual/X-Pack/login_auth.md
             - 应用接入: user_manual/X-Pack/app_integrate.md
-            - 应用显示: user_manual/X-Pack/app_logo_settting.md
+            - 飞书文档: user_manual/X-Pack/feishu_doc.md
             - 身份验证: user_manual/X-Pack/app_auth.md
-            - 系统API: user_manual/X-Pack/system_API.md
+            - 应用显示: user_manual/X-Pack/app_logo_settting.md
+            - 系统日志: user_manual/X-Pack/operation_log.md
             - 系统外观: user_manual/X-Pack/theme_settings.md
+            - 系统API: user_manual/X-Pack/system_API.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md
         - 通过API KEY进行对话: dev_manual/APIKey_chat.md

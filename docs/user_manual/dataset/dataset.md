@@ -5,14 +5,14 @@
 
     * **General Knowledge Base**: For offline document, supporting text files, tables and Q&A pairs.
     * **Web Site Knowledge Base**: For online static text data, automatically synchronizing text data from root URL and sub-URLs after inputting the root web address.
-    
+
     MaxKB supports knowledge base creation, re-vectorization, settings, synchronization, export, deletion, etc.
 
 ## 1 Create Knowledge Base
 
 !!! Abstract ""
     Open the Knowledge  page, click Create Knowledge.
-    
+
 ![dataset](../../img/dataset/create.jpg)
 
 ### 1.1 General Knowledge Base
@@ -27,7 +27,7 @@
     * Maximum 50 files per upload;
     * Each file not exceeding 100 MB;
     * Support selecting folders to upload files meeting format requirements.
-        
+
 !!! Abstract ""
     **Note:** ZIP files include two forms:
 
@@ -36,7 +36,7 @@
 
 ![上传文档](../../img/dataset/create_offline_dataset.png)
 
-    
+
 !!! Abstract ""
     MaxKB currently supports two methods for document segmentation: Intelligent Segmentation and Advanced Segmentation.
 
@@ -44,7 +44,7 @@
 
     (1) Markdown file automatic segmentation rules<br />
 
-    * Segmentation based on hierarchical titles (up to 6 levels), with maximum 4096 characters per segment;   
+    * Segmentation based on hierarchical titles (up to 6 levels), with maximum 4096 characters per segment;
     * When text paragraphs under the last level exceed the set segment length, the system will look for line breaks within the segment length to split.
 
     (2) HTML and DOCX file automatic segmentation rules
@@ -60,29 +60,29 @@
 ![Automatic Segmentation](<../../img/dataset/automatic_paragraphing.png>)
 
 !!! Abstract ""
-    Document specification recommendations:    
+    Document specification recommendations:
 
-    * **Standardized segment marker**: Offline documents should have standardized segment markers, otherwise the split paragraphs will be irregular.   
+    * **Standardized segment marker**: Offline documents should have standardized segment markers, otherwise the split paragraphs will be irregular.
     * **Complete paragraphs**: A segment should ideally describe a complete piece of content.
 
 !!! Abstract ""
-    **Advanced Segmentation**   
+    **Advanced Segmentation**
 
     Users can customize segment delimiters, segment length and automatic cleaning based on document specifications.
 
-    * Supported segment markers: #, ##, ###, ####, #####, ######, -, blank line, line break, space, semicolon, comma, period. Also supports manual input of other markers or regular expressions.   
-    * Segment length: Length of a single segment, ranging from 50 to 4096 characters.   
-    * Automatic cleaning: When enabled, the system automatically removes redundant symbols like spaces, blank lines, tabs, etc.      
+    * Supported segment markers: #, ##, ###, ####, #####, ######, -, blank line, line break, space, semicolon, comma, period. Also supports manual input of other markers or regular expressions.
+    * Segment length: Length of a single segment, ranging from 50 to 4096 characters.
+    * Automatic cleaning: When enabled, the system automatically removes redundant symbols like spaces, blank lines, tabs, etc.
 
 ![Advanced Segmentation](<../../img/dataset/advanced_segmentation.png>)
 !!! Abstract ""
-    **Add "Releated Question" section for question-based QA pair during import**   
+    **Add "Releated Question" section for question-based QA pair during import**
 
     When checked, all segment titles will be set as related questions for the segments.
 ![Set Title as Related Question](../../img/dataset/titel_set_question.png)
 
 !!! Abstract ""
-    **Preview**   
+    **Preview**
 
     After setting segmentation rules, click [Generate Preview] to check the segmentation effect of the latest rules.
 ![Segmentation Preview](<../../img/dataset/preview_segmentation.png>)
@@ -90,7 +90,7 @@
     You can edit unreasonable segments and delete meaningless segments in the segmentation preview.
 ![Edit Segments](../../img/dataset/view_edit.png)
 
-   
+
 !!! Abstract ""
     After clicking [Start Import], the system backend will automatically perform segmentation, storage, vectorization operations on the documents. When completed, the file status will show as complete.
 ![Edit Segments](../../img/dataset/processing.png)
@@ -107,7 +107,7 @@
     * Web Root URL: The root node URL of the online static website. The system will automatically fetch data from the root URL and its sub-level URLs. For example, using DataEase V2 online documentation, the Web root URL would be: https://dataease.io/docs/v2/
     * Selector: You can set selectors to get data from specific div elements on the web page. By default, it gets data from the body. For example, to only get the middle content section of DataEase online documentation, you can right-click to inspect the webpage, locate the middle content area with div class "md-content", then enter the selector as: .md-content
 
-![Alt text](../../img/dataset/DataEase_doc.png)
+![Alt text](../../img/dataset/web_doc_content_area.png)
 !!! Abstract ""
     After clicking OK button, you'll be redirected to the document list page to view detailed information of documents under the current website. When processing is complete, the file status will show as complete.
 
@@ -127,7 +127,7 @@
 
     * Sync and Replace: Re-fetch web site documents and replace documents in the local knowledge base.
     * Full Sync: First delete all documents in the local knowledge base, then re-fetch web site documents.
-![Knowledge Base Export](../../img/dataset/web_ sync.png)
+![Knowledge Base Export](../../img/dataset/web_sync.png)
 
 ### 2.2 Vectorization
 
@@ -159,4 +159,3 @@
 
     **Note**: Knowledge base deletion cannot be undone, please proceed with caution.
 ![Knowledge Base Delete](../../img/dataset/dataset_del.png)
-

@@ -1,7 +1,7 @@
 ## basic info
 site_name: "MaxKB Documentation"
 site_url: "https://maxkb.pro"
-site_description: "Ready-to-use, flexible RAG Chatbot"
+site_description: "Ready-to-use AI Chatbot"
 repo_name: "MaxKB"
 repo_url: "https://github.com/1Panel-dev/MaxKB"
 edit_uri: https://github.com/1Panel-dev/MaxKB-docs

@@ -60,6 +60,19 @@
     - [MaxKB 应用案例：会展AI智能客服体验](https://www.bilibili.com/video/BV1J7BqY6EKA)
     - [MaxKB 应用案例：孩子要上幼儿园了，AI 智能助手择校好帮手](https://www.bilibili.com/video/BV1wKrhYvEer)
     - [MaxKB 应用案例：产品使用指南AI助手，新手小白也能轻松搞定！](https://www.bilibili.com/video/BV1Yz6gYtEqX)
+    - [MaxKB 应用案例：苏州热工研究院有限公司-大宗材料方案制定和审查助手](https://mp.weixin.qq.com/s/Ts5FQdnv7Tu9Jp7bvofCVA)
+    - [MaxKB 应用案例：国核自仪系统工程有限公司-NuCON AI帮](https://mp.weixin.qq.com/s/HNPc7u5xVfGLJr8IQz3vjQ)
+    - [MaxKB 应用案例：深圳通开启Deep Seek智能应用新篇章](https://mp.weixin.qq.com/s/SILN0GSescH9LyeQqYP0VQ)
+    - [MaxKB 应用案例："畅行南通"智能客服](https://mp.weixin.qq.com/s/WEC9UQ6msY0VS8LhTZh-Ew)
+    - [MaxKB 应用案例：中船动力人工智能"智慧动力云助手"及首批数字员工正式上线](https://mp.weixin.qq.com/s/OGcEkjh9DzGO1Tkc9nr7qg)
+    - [MaxKB 应用案例：南宁矿业集团智慧矿山AI助手](https://mp.weixin.qq.com/s/SZstxTvVoLZg0ECbZbfpIA)
+    - [MaxKB 应用案例：DeepSeek落地弘盛铜业：国产大模型点亮"黑灯工厂"新引擎](https://mp.weixin.qq.com/s/Eczdx574MS5RMF7WfHN7_A)
+    - [MaxKB 应用案例：拥抱智能时代！中国五矿以 “AI+”赋能企业发展](https://mp.weixin.qq.com/s/D5vBtlX2E81pWE3_2OgWSw)
+    - [MaxKB 应用案例：DeepSeek赋能中冶武勘AI智能体](https://mp.weixin.qq.com/s/8m0vxGcWXNdZazziQrLyxg)
+    - [MaxKB 应用案例：重磅！陕西广电网络“秦岭云”平台实现DeepSeek本地化部署](https://mp.weixin.qq.com/s/ZKmEU_wWShK1YDomKJHQeA)
+    - [MaxKB 应用案例：粤海集团完成DeepSeek私有化部署，助力集团智能化管理](https://mp.weixin.qq.com/s/2JbVp0-kr9Hfp-0whH4cvg)
+    - [MaxKB 应用案例：建筑材料工业信息中心完成DeepSeek本地化部署，推动行业数智化转型新发展](https://mp.weixin.qq.com/s/HThGSnND3qDF8ySEqiM4jw)
+    - [MaxKB 应用案例：一起DeepSeek！福建设计以AI大模型开启新篇章](https://mp.weixin.qq.com/s/m67e-H7iQBg3d24NM82UjA)
 
 
 ## 4 了解更多

@@ -4,7 +4,7 @@
 
 !!! Abstract ""
 
-    MaxKB = Max Knowledge Brain，是一款强大易用的 AI 助手，支持 RAG 检索增强、工作流编排、MCP 工具调用能力。MaxKB 支持对接各种主流大语言模型，广泛应用于智能客服、企业内部知识库问答、员工助手、学术研究与教育等场景。
+    MaxKB = Max Knowledge Brain，是一款强大易用的企业级 AI 助手，支持 RAG 检索增强、工作流编排、MCP 工具调用能力。MaxKB 支持对接各种主流大语言模型，广泛应用于智能客服、企业内部知识库问答、员工助手、学术研究与教育等场景。
 
 !!! Abstract ""
 

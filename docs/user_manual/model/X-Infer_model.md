@@ -1,37 +1,37 @@
-## 1 添加模型
+## 1 Add Model
 
 !!! Abstract ""
-    选择模型供应商为`Xorbits Inference`，并在模型添加对话框中输入如下必要信息：
+    Select the model provider as `Xorbits Inference`, and enter the following necessary information in the model addition dialog box:
 
-    * 模型名称：MaxKB 中自定义的模型名称。    
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。    
-    * 模型类型：大语言模型/向量模型/重排模型/语音识别/语音合成/图片理解/图片生成。   
-    * 基础模型：不同类型模型下的基础模型名称，下拉选项是常用的一些基础模型名称，支持自定义输入。  
-
-!!! Abstract "" 
-    大语言模型和重排模型需要输入 API 域名和API Key，向量模型需要输入API 域名。
-
-    * API 域名：Xorbits Inference 服务地址，例如：http://192.168.20.242:9997 。 
-    * API Key：若没有 API Key，输入任意字符即可。
-
-## 2 配置样例
+    * Model Name: The custom model name in MaxKB.
+    * Permissions: Divided into private and public permissions. Private models are available only to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Large Language Model / Vector Model / Rerank Model / Speech Recognition / Speech Synthesis / Image Understanding / Image Generation.
+    * Base Model: The base model name under different model types. The dropdown options include some commonly used base model names, and custom input is supported.
 
 !!! Abstract ""
-    Xorbits Inference-大语言模型配置样例图示如下：
+    Large language models and rerank models require input of the API Domain and API Key, while vector models require input of the API Domain.
+
+    * API Domain: Xorbits Inference service address, e.g., http://192.168.20.242:9997.
+    * API Key: If there is no API Key, you can enter any characters.
+
+## 2 Configuration Example
+
+!!! Abstract ""
+    The configuration example illustration for Xorbits Inference-Large Language Model is as follows:
 ![Xorbits Inference](../../img/model/xinfo_llm.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-向量模型配置样例图示如下：
+    The configuration example illustration for Xorbits Inference-Vector Model is as follows:
 ![Xorbits Inference](../../img/model/xinfo_embed.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-重排模型配置样例图示如下：
+    The configuration example illustration for Xorbits Inference-Rerank Model is as follows:
 ![Xorbits Inference](../../img/model/xinfo_reranker.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-语音识别模型配置样例图示如下：
+    The configuration example illustration for Xorbits Inference-Speech Recognition Model is as follows:
 ![Xorbits Inference](../../img/model/xinfo_asr.png){ width="500px" }
 
 !!! Abstract ""
-    Xorbits Inference-语音合成模型配置样例图示如下：
+    The configuration example illustration for Xorbits Inference-Speech Synthesis Model is as follows:
 ![Xorbits Inference](../../img/model/xinfo_tts.png){ width="500px" }

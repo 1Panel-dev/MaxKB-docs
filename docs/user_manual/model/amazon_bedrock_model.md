@@ -1,23 +1,23 @@
-## 1 添加模型
+## 1 Adding a Model
 
 !!! Abstract ""
-    选择模型供应商为`Amazon Bedrock`，并在模型添加对话框中输入如下必要信息：
+    Select the model provider as `Amazon Bedrock` and enter the following necessary information in the model addition dialog:
 
-    * 模型名称：MaxKB 中自定义的模型名称。    
-    * 权限：分为私有和公用两种权限，私有模型仅当前用户可用，公用模型即系统内所有用户均可使用，但其它用户不能编辑和删除。
-    * 模型类型：大语言模型/向量大模型。   
-    * 基础模型：Amazon Bedrock 支持的 LLM 模型名称，下拉选项是常用的一些大语言模型名称，支持自定义输入。     
-    * Region Name：模型开通的区域。    
-    * Access Key ID/Secret Access Key:  Access Key ID 和 Secret Access Key 是用于对 AWS 服务（包括 Amazon Bedrock）的编程访问进行身份验证的凭证。
+    * Model Name: Custom model name in MaxKB.
+    * Permission: Divided into private and public permissions. Private models are only available to the current user, while public models can be used by all users within the system, but other users cannot edit or delete them.
+    * Model Type: Large language model/Vector large model.
+    * Base Model: The names of LLM models supported by Amazon Bedrock. The drop-down option includes commonly used large language model names and supports custom input.
+    * Region Name: The region where the model is activated.
+    * Access Key ID/Secret Access Key: The Access Key ID and Secret Access Key are credentials used to authenticate programmatic access to AWS services, including Amazon Bedrock.
 
-## 2 配置样例
-
-!!! Abstract ""
-    Amazon Bedrock-大语言模型配置样例图示：
-
-![AWS LLM模型](../../img/model/AWS_LLM.png){ width="500px" }
+## 2 Configuration Example
 
 !!! Abstract ""
-    Amazon Bedrock-向量模型配置样例图示：
+    Example of Amazon Bedrock - Large Language Model configuration:
 
-![AWS LLM模型](../../img/model/aws_embed.png){ width="500px" }
+![AWS LLM Model](../../img/model/AWS_LLM.png){ width="500px" }
+
+!!! Abstract ""
+    Example of Amazon Bedrock - Vector Model configuration:
+
+![AWS Vector Model](../../img/model/aws_embed.png){ width="500px" }

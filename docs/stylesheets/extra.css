@@ -1,7 +1,12 @@
-:root  > * {
-  --md-primary-fg-color:        #5A55FA;
-  --md-primary-fg-color--light: #5A55FA;
-  --md-primary-fg-color--dark:  #5A55FA;
+:root > * {
+  --md-primary-fg-color: #5a55fa;
+  --md-primary-fg-color--light: #5a55fa;
+  --md-primary-fg-color--dark: #5a55fa;
+}
+
+.twemoji {
+  display: inline-block !important;
+  box-shadow: none !important;
 }
 
 /* 不添加额外样式的图片样式 */
@@ -14,7 +19,7 @@
 /* 不添加浏览器导航栏的图片样式 */
 .md-content img:not(.browser-mockup img) {
   display: block;
-  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 4px;
 }
@@ -35,28 +40,31 @@
 /* 添加浏览器导航栏的图片样式 */
 .browser-mockup {
   border-top: 2em solid rgba(230, 230, 230, 0.8);
-  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.4);
   position: relative;
-  border-radius: 4px 4px 0 0
+  border-radius: 4px 4px 0 0;
 }
 
 .browser-mockup:before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   top: -1.25em;
   left: 1em;
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
   background-color: #f44;
-  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+  box-shadow:
+    0 0 0 2px #f44,
+    1.5em 0 0 2px #9b3,
+    3em 0 0 2px #fb5;
 }
 
 .browser-mockup.with-tab:after {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   top: -2em;
   left: 5.5em;
   width: 20%;
@@ -69,7 +77,7 @@
 .browser-mockup.with-url:after {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   top: -1.6em;
   left: 5.5em;
   width: calc(100% - 6em);
@@ -78,10 +86,10 @@
   background-color: white;
 }
 
-.browser-mockup>* {
+.browser-mockup > * {
   display: block;
 }
 
-.browser-mockup>a {
+.browser-mockup > a {
   line-height: 0;
 }

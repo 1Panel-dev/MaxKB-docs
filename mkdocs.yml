@@ -81,7 +81,7 @@ nav:
                 - 对接腾讯混元: user_manual/model/hunyuan_model.md
                 - 对接火山引擎: user_manual/model/doubao_model.md
                 - 对接百度千帆: user_manual/model/qianfan_model.md
-                - 对接讯飞星火大: user_manual/model/spark_model.md
+                - 对接讯飞星火: user_manual/model/spark_model.md
                 - 对接智谱AI: user_manual/model/zhipu_model.md
                 - 对接本地大模型: user_manual/model/local_model.md
                 - 对接Ollama: user_manual/model/ollama_model.md

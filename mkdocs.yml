@@ -76,3 +76,4 @@ nav:
   #- Tutorials: tutorials.md
   - Development:
     - Building from Source: dev_manual/build_from_source.md
+    - More Information: https://deepwiki.com/1Panel-dev/MaxKB

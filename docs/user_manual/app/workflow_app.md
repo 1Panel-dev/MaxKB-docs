@@ -56,7 +56,7 @@
 
 !!! Abstract ""
 
-    - 文件上传： 开启后应用将支持在对话时上传文档（TXT、MD、DOCX、HTML、CSV、XLSX、XLS、PDF）、图片（JPG、JPEG、PNG、GIF）以及音频文件（MP3、WAV、OGG、ACC、M4A），每次最多上传 3 个，单个文件不超过 100 MB，在后续节点中可以对上传后的文件进行处理。
+    - 文件上传： 开启后应用将支持在对话时上传文档（TXT、MD、DOCX、HTML、CSV、XLSX、XLS、PDF）、图片（JPG、JPEG、PNG、GIF）以及音频文件（MP3、WAV、OGG、ACC、M4A），每次最多上传 3 个文件，单个文件不超过 50 MB，在后续节点中可以对上传后的文件进行处理。
 
 ![开始节点-文件上传](../../img/app/upload_config.png){width="500px"}
 

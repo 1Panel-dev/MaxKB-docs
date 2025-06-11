@@ -105,6 +105,9 @@ nav:
     - 常见问题:
         - 安装部署: faq/install_configuration.md
         - 系统管理: faq/system_management.md
+        - 函数库: faq/function_library.md
+        - 知识库: faq/knowledge_base.md
+        - 应用: faq/apply_setting.md
     - 实践教程:
             - Ollama 离线部署 LLM 模型: faq/Offline_install_OllamaModel.md
             - Ollama 使用 GPU 运行 LLM 模型: faq/GPU_runOllama.md

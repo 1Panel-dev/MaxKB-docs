@@ -21,7 +21,7 @@
     ```
     找到导致依赖冲突的包，通常通过查看错误日志来确定具体冲突的包名。完成依赖包的清理后，重启服务 mkctl restart 以确保更改生效。
 
-## 4 PostgreSQL 超过最大客户端连接数,提示 too many clients already 的错误
+## 4 PostgreSQL 超过最大客户端连接数，提示 too many clients already 的错误
 
 !!! Abstract ""
     这表明当前配置的客户端连接数已达到上限，需要调整配置以允许更多的连接。进入 PostgreSQL 配置文件所在的目录：

@@ -32,7 +32,7 @@
     如果函数实现需要安装第三方依赖包，可在 MaxKB 容器中使用 pip 命令进行安装。
 
     ```
-    # 进入 maxkb 容器中
+    # 进入 MaxKB 容器中
     docker exec -it maxkb bash
 
     # pip安装第三方依赖，如 pymysql，执行下面命令

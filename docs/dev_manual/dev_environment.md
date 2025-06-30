@@ -42,13 +42,13 @@
 ### 3.1 创建数据库
 
 !!! Abstract "" 
-    在 PostgreSql 中手动创建MaxKB 应用数据库，名称为`maxkb`。
+    在 PostgreSql 中手动创建 MaxKB 应用数据库，名称为`maxkb`。
     ```
     # 创建数据库
     CREATE DATABASE "maxkb"; 
     # 切换使用数据库
     \c "maxkb"; 
-    # 创建vector 扩展
+    # 创建 vector 扩展
     CREATE EXTENSION "vector";
     ```
 
@@ -60,7 +60,7 @@
       - 准备配置文件
 
       ```bash
-      # 将config_example.yml配置文件拷贝至 /opt/maxkb/conf目录下
+      # 将 config_example.yml 配置文件拷贝至 /opt/maxkb/conf 目录下
       cp config_example.yml /opt/maxkb/conf
       ```
 
@@ -76,9 +76,9 @@
       DB_ENGINE: django.db.backends.postgresql_psycopg2
       
       # 模型相关配置
-      # 模型路径:如果EMBEDDING_MODEL_NAME是绝对路径则无效,反之则会从https://huggingface.co/下载模型到当前目录
+      # 模型路径:如果 EMBEDDING_MODEL_NAME 是绝对路径则无效,反之则会从 https://huggingface.co/ 下载模型到当前目录
       EMBEDDING_MODEL_PATH: /opt/maxkb/model/
-      # 模型名称:如果模型名称是路径,则会加载目录下的模型,如果是模型名称,则会在https://huggingface.co/下载模型 模型的下载位置为EMBEDDING_MODEL_PATH
+      # 模型名称:如果模型名称是路径,则会加载目录下的模型,如果是模型名称,则会在 https://huggingface.co/ 下载模型 模型的下载位置为 EMBEDDING_MODEL_PATH
       EMBEDDING_MODEL_NAME: /opt/maxkb/model/shibing624_text2vec-base-chinese
       ```
 
@@ -104,8 +104,8 @@
 ### 4.2 启动后端
 
 !!! Abstract "" 
-    后端系统，需要启动 web服务、本地模型服务、和异步任务队列服务。
-    注意: 在项目根目录执行
+    后端系统，需要启动 web服务、本地模型服务、和异步任务队列服务。  
+    注意：在项目根目录执行
 
 !!! Abstract ""
     在 MaxKB 项目根目录下依次执行以下命令，启动 Web 服务。

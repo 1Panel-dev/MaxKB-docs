@@ -23,7 +23,7 @@
     ```
     psql -Uroot
     ```
-    进入 maxkb数据库
+    进入 MaxKB 数据库
     ```
     \c maxkb;
     ```
@@ -67,7 +67,7 @@
 
 !!! Abstract ""
     **确保服务可访问：**   
-    MaxKB 容器需要可正常访问 Ollama 服务。在 maxkb 容器中访问 Ollama 的 API 域名，确保返回 【Ollama is running 】的状态。
+    MaxKB 容器需要可正常访问 Ollama 服务。在 MaxKB 容器中访问 Ollama 的 API 域名，确保返回 【Ollama is running】的状态。
 
 ![doc](../img/FAQ/ollama可访问.png){width="900px"}
 
@@ -77,7 +77,7 @@
 
 !!! Abstract ""
     **以上确认无误后，再到 MaxKB 中 添加 Ollama 的模型。  
-    对于 Window 环境安装 Ollama 可进一步参考：[Windows 系统本地部署 Ollama +MaxKB 安装教程](https://kb.fit2cloud.com/?p=349d848b-7a0a-421b-8029-38e0440f35d4)。**
+    对于 Window 环境安装 Ollama 可进一步参考：[Windows 系统本地部署 Ollama + MaxKB 安装教程](https://kb.fit2cloud.com/?p=349d848b-7a0a-421b-8029-38e0440f35d4)。**
 
 
 

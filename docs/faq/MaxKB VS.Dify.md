@@ -3,7 +3,7 @@
     MaxKB 和 Dify 都是基于大语言模型技术的开源项目，两者在产品定位以及能力上存在差异：
 
     - 产品定位不同：Dify 定位于大模型应用的开发平台，属于中间件范畴；MaxKB 定位于基于大模型和 RAG 的智能问答助手，属于开箱即用的最终应用。
-    - 产品能力对比：以下表格是 Dify 官方提供的与 LangChain、Flowise 等产品的能力对比；MaxKB 是基于LangChain构建的应用，并补齐了 LangChain 在 Workflow 和 SSO 等企业级功能上面的空白。
+    - 产品能力对比：以下表格是 Dify 官方提供的与 LangChain、Flowise 等产品的能力对比；MaxKB 是基于 LangChain 构建的应用，并补齐了 LangChain 在 Workflow 和 SSO 等企业级功能上面的空白。
 
     <table style="width: 100%;height: 80%;">
       <tr>

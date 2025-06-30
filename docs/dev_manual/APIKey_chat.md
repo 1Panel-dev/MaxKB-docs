@@ -1,17 +1,17 @@
 !!! Abstract ""
-    MaxKB 创建的应用支持通过 OpenAI SDK 格式以及提供系统 SDK接入，专业版在社区版本基础上提供平台级别的完整 SDK，详细情况见：[系统API](../user_manual/X-Pack/system_API.md)。
+    MaxKB 创建的应用支持通过 OpenAI SDK 格式以及提供系统 SDK 接入，专业版在社区版本基础上提供平台级别的完整 SDK，详细情况见：[系统API](../user_manual/X-Pack/system_API.md)。
 
 ## 1 标准OpenAI API格式
 
 !!! Abstract ""
-    MaxKB 应用兼容 OpenAI API 格式，在OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。
+    MaxKB 应用兼容 OpenAI API 格式，在 OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。
 
 ![API doc](../img/dev/openai_baseurl.png)
 
 !!! Abstract ""
 
     ```
-    # 将url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
+    # 将 url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 
     curl https://maxkb.fit2cloud.com/api/application/xxxxxxxx-8c56-11ef-a99e-0242ac140003/chat/completions \
         -H "Content-Type: application/json" \
@@ -27,23 +27,23 @@
         }'
     ```
 
-## 2 系统API
+## 2 系统 API
 
-### 2.1 打开API文档
+### 2.1 打开 API 文档
 
 !!! Abstract ""
     在应用信息中复制并访问 swagger 地址。
 
 ![API doc](../img/dev/app_swaagger.png)
 
-### 2.2 API Key认证
+### 2.2 API Key 认证
   
 ![APIKEY](../img/dev/app_apikey.png)
 
 ### 2.3 获取应用信息
 
 !!! Abstract ""
-    调用 profile 接口，获取应用详细信息（应用 id、name等）。
+    调用 profile 接口，获取应用详细信息（应用 id、name 等）。
   
 ![ profile](../img/dev/app_profile.png)
 

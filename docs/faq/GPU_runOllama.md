@@ -1,4 +1,4 @@
-# 如何让Ollama使用GPU运行LLM模型
+# 如何让 Ollama 使用 GPU 运行 LLM 模型
 
 !!! Abstract ""
     以 NVIDIA 为例，说明 Ollama GPU 模式运行大模型的具体操作。

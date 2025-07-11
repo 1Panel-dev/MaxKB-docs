@@ -3,14 +3,15 @@
 ## 1 飞书机器人配置
 
 !!! Abstract "" 
-    MaxKB 专业版支持通过飞书文档构建知识库，目前支持飞书的云文档和表格文档。
+    MaxKB 支持通过飞书文档构建知识库，目前支持飞书的云文档和表格文档。  
     MaxKB 对飞书文档的支持是通过飞书机器人并配置对应的文档权限实现，并在群组中通过将机器人设置为协作者。
 
 ### 1.1 创建飞书机器人
 
 !!! Abstract "" 
     首先在 [飞书开发平台](https://open.feishu.cn/app/)的【企业自建应用】中，点击【创建企业自建应用】，填写应用信息。
-![飞书添加机器人](../../img/app/feishu_create_app.png)
+
+![飞书创建](../../img/app/feishu_create_app.png)
 
 !!! Abstract ""
     点击【添加应用能力】，选择 【按能力添加-机器人】，点击【添加】
@@ -46,9 +47,8 @@
 !!! Abstract ""
     在内部群组中添加对应的群机器人。
 
-![飞书群机器人](../../img/app/feishu_group_robot1.png){width="500px"}
+![飞书群机器人](../../img/app/feishu_group_robot1.png)
 
-![飞书群机器人](../../img/app/feishu_group_robot2.png){width="500px"}
 
 !!! Abstract ""
     在飞书文档的文件夹中，添加包含应用机器人的群组作为协作者。
@@ -58,17 +58,18 @@
 ## 2 创建飞书文档知识库
     
 !!! Abstract "" 
-    在创建知识库时，知识库类型选择为`飞书`，并配置相应参数：
+    在创建知识库时，知识库类型选择为【飞书】，并配置相应参数：
 
     - App ID：飞书应用唯一标识。
     - App Secret：飞书应用凭证。
     - Folder Token：是飞书云空间中每个文件夹的唯一标识，用于区分和操作特定的文件夹飞书中的文件夹。选中文件夹，在链接信息中即可获取。
 
 ![飞书文件夹](../../img/app/feishu_folder_token.png)
-![飞书知识库创建](../../img/app/feishu_kb_create.png){width="800px"}
+![飞书知识库创建](../../img/app/feishu_kb_create.png)          
 
 
 !!! Abstract "" 
     在飞书知识库中，点击【导入文档】，选择飞书文件夹下面需要上传的文档，点击开始导入，即可以将飞书文档导入到 MaxKB 中。
 
 ![飞书文档筛选](../../img/app/feishu_doc_select.png)
+![飞书文档筛选](../../img/app/feishu_doc_select2.png)

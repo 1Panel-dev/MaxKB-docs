@@ -49,13 +49,37 @@ nav:
         - 阿里云安装: installation/aliyun.md
         - 腾讯云安装: installation/tencent.md
         - 命令行工具: installation/cli.md
-    - 功能手册: 
-        - 知识库: 
+    - 功能手册:
+        - 模型管理:
+              - 模型概况: user_manual/model/model_ summary.md
+              - 模型对接:
+                    - 对接阿里云百炼: user_manual/model/bailian_model.md
+                    - 对接Anthropic: user_manual/model/anthropic_model.md
+                    - 对接Amazon Bedrock: user_manual/model/amazon_bedrock_model.md
+                    - 对接Azure OpenAI: user_manual/model/azure_openai_model.md
+                    - 对接DeepSeek: user_manual/model/deepseek_model.md
+                    - 对接Gemini: user_manual/model/gemini_model.md
+                    - 对接Kimi: user_manual/model/kimi_model.md
+                    - 对接OpenAI: user_manual/model/openai_model.md
+                    - 对接通义千问: user_manual/model/tongyi_model.md
+                    - 对接SILICONFLOW: user_manual/model/siliconflow_model.md
+                    - 对接腾讯知识引擎原子能力: user_manual/model/tencentcloud_model.md
+                    - 对接腾讯混元: user_manual/model/hunyuan_model.md
+                    - 对接火山引擎: user_manual/model/doubao_model.md
+                    - 对接百度千帆: user_manual/model/qianfan_model.md
+                    - 对接讯飞星火: user_manual/model/spark_model.md
+                    - 对接智谱AI: user_manual/model/zhipu_model.md
+                    - 对接本地大模型: user_manual/model/local_model.md
+                    - 对接Ollama: user_manual/model/ollama_model.md
+                    - 对接vLLM: user_manual/model/vllm_model.md
+                    - 对接Xorbits Inference: user_manual/model/X-Infer_model.md
+              - 模型参数配置: user_manual/model/model_param.md
+        - 工具: user_manual/fx/fx.md
+        - 知识库:
             - 知识库: user_manual/dataset/dataset.md
             - 文档: user_manual/dataset/doclist.md
             - 问题: user_manual/dataset/problem.md
             - 命中测试: user_manual/dataset/hit-testing.md
-        - 函数库: user_manual/fx/fx.md
         - 应用:
             - 应用创建:
                 - 简单配置应用: user_manual/app/simple_app.md
@@ -64,40 +88,28 @@ nav:
             - 导出与导入: user_manual/app/serialization.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md
-        - 模型管理:
-            - 模型概况: user_manual/model/model_ summary.md
-            - 模型对接:
-                - 对接阿里云百炼: user_manual/model/bailian_model.md
-                - 对接Anthropic: user_manual/model/anthropic_model.md
-                - 对接Amazon Bedrock: user_manual/model/amazon_bedrock_model.md
-                - 对接Azure OpenAI: user_manual/model/azure_openai_model.md
-                - 对接DeepSeek: user_manual/model/deepseek_model.md
-                - 对接Gemini: user_manual/model/gemini_model.md
-                - 对接Kimi: user_manual/model/kimi_model.md
-                - 对接OpenAI: user_manual/model/openai_model.md
-                - 对接通义千问: user_manual/model/tongyi_model.md
-                - 对接SILICONFLOW: user_manual/model/siliconflow_model.md
-                - 对接腾讯知识引擎原子能力: user_manual/model/tencentcloud_model.md
-                - 对接腾讯混元: user_manual/model/hunyuan_model.md
-                - 对接火山引擎: user_manual/model/doubao_model.md
-                - 对接百度千帆: user_manual/model/qianfan_model.md
-                - 对接讯飞星火: user_manual/model/spark_model.md
-                - 对接智谱AI: user_manual/model/zhipu_model.md
-                - 对接本地大模型: user_manual/model/local_model.md
-                - 对接Ollama: user_manual/model/ollama_model.md
-                - 对接vLLM: user_manual/model/vllm_model.md
-                - 对接Xorbits Inference: user_manual/model/X-Infer_model.md
-            - 模型参数配置: user_manual/model/model_param.md
-        - 团队管理: user_manual/team/team.md
+        - 用户管理: user_manual/team/team.md
+        - 资源授权: user_manual/team/team.md
+        - 系统设置: user_manual/team/team.md
         - X-Pack功能: 
             - 用户管理: user_manual/X-Pack/user.md
-            - 登录认证: user_manual/X-Pack/login_auth.md
-            - 应用接入: user_manual/X-Pack/app_integrate.md
+            - 角色管理: user_manual/X-Pack/user.md
+            - 工作空间: user_manual/X-Pack/user.md
+            - 资源管理: user_manual/X-Pack/user.md
+            - 共享资源: user_manual/X-Pack/user.md
+            - 对话用户:
+                      - 对话用户: user_manual/X-Pack/theme_settings.md
+                      - 用户组: user_manual/X-Pack/login_auth.md
+                      - 系统外观: user_manual/X-Pack/theme_settings.md
+            - 应用设置:
+                - 显示设置: user_manual/X-Pack/app_logo_settting.md
+                - 应用接入: user_manual/X-Pack/app_integrate.md
+                - 身份验证: user_manual/X-Pack/app_auth.md
             - 飞书文档: user_manual/X-Pack/feishu_doc.md
-            - 身份验证: user_manual/X-Pack/app_auth.md
-            - 应用显示: user_manual/X-Pack/app_logo_settting.md
-            - 系统日志: user_manual/X-Pack/operation_log.md
-            - 系统外观: user_manual/X-Pack/theme_settings.md
+            - 系统设置:
+                    - 系统外观: user_manual/X-Pack/theme_settings.md
+                    - 登录认证: user_manual/X-Pack/login_auth.md
+            - 操作日志: user_manual/X-Pack/operation_log.md
             - 系统API: user_manual/X-Pack/system_API.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_environment.md

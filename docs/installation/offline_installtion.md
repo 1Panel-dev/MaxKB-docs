@@ -9,7 +9,7 @@
 
     **部署服务器要求：**
 
-    * 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统
+    * 操作系统：Ubuntu 22.04 / CentOS 7（内核版本要求 ≥ 3.10）
     * CPU/内存：4C/8GB 以上
     * 磁盘空间：100GB
 
@@ -28,7 +28,7 @@
 ## 2 安装包下载
 
 !!! Abstract ""
-    打开 [飞致云开源社区 MaxKB 社区版下载](https://community.fit2cloud.com/#/products/maxkb/downloads) 页面下载最新版本安装包，并上传至部署服务器（以 v1.2.0 为例说明安装部署过程）。
+    打开 [飞致云开源社区 MaxKB 社区版下载](https://community.fit2cloud.com/#/products/maxkb/downloads) 页面下载最新版本安装包，并上传至部署服务器（以 v2.0.0 为例说明安装部署过程）。
 
 ## 3 安装部署
 
@@ -38,7 +38,7 @@
 
     以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
     ```
-    tar -zxvf maxkb-v1.2.0-offline.tar.gz
+    tar -zxvf maxkb--ce-v2.0.0-offline.tar.gz
     ```
 
 ### 3.2 安装配置（可选）
@@ -48,12 +48,14 @@
     MaxKB 安装目录、服务运行端口、数据库配置等信息可在安装包解压后中的 install.conf 文件进行配置。
 
     ```
+    # 基础配置
     ## 安装目录
     MAXKB_BASE=/opt
-    ## Service 端口
+    ## 服务端口
     MAXKB_PORT=8080
     ## docker 网段设置
     MAXKB_DOCKER_SUBNET=172.19.0.0/16
+
     # 数据库配置
     ## 是否使用外部数据库
     MAXKB_EXTERNAL_PGSQL=false
@@ -67,9 +69,29 @@
     MAXKB_PGSQL_USER=root
     ## 数据库密码
     MAXKB_PGSQL_PASSWORD=Password123@postgres
+
+    # Redis配置
+    ## 是否使用外部Redis
+    MAXKB_EXTERNAL_REDIS=false
+    ## Redis地址
+    REDIS_HOST=redis
+    ## Redis端口
+    REDIS_PORT=6379
+    ## Redis数据库
+    REDIS_DB=0
+    ## Redis密码
+    REDIS_PASSWORD=Password123@redis
+
+    # 镜像配置
+    ## 镜像仓库
+    MAXKB_IMAGE_REPOSITORY=registry.fit2cloud.com/maxkb
+    ## 镜像名称
+    MAXKB_IMAGE=maxkb-ce
+    ## 版本号
+    MAXKB_VERSION=v2.0.0:;q
     ```
 
-    **注意**：首次安装之前可在 install.conf 文件中的修改参数，安装时则根据修改后的参数执行安装。完成安装后如需再次修改配置参数，则需要在 ${MAXKB_BASE}/maxkb/.env（默认是 /opt/maxkb/.env）文件中进行修改，并且在修改完后需执行 `mkctl reload` 命令重新加载配置文件。
+    **注意**：首次安装之前可以在 install.conf文件中的修改参数，安装时则根据修改后的参数执行安装。安装后如需再次修改配置参数，则需要在 ${MAXKB_BASE}/maxkb/.env（默认是 /opt/maxkb/.env）文件中进行修改，并且在修改完后需执行 `mkctl reload` 命令重新加载配置文件。
 
 
 ### 3.3 执行安装脚本
@@ -78,7 +100,7 @@
 
     ```
     # 进入安装包解压缩后目录  
-    cd maxkb-v1.2.0-offline
+    cd maxkb-ee-v2.0.0-offline
 
     # 执行安装命令
     bash install.sh
@@ -103,11 +125,11 @@
 
 !!! Abstract ""
 
-    离线升级与安装操作过程基本一样，即下载新版本安装包上传解压后，再次执行安装命令进行升级。
+    离线升级与安装操作过程基本一样，即下载新版本安装包上传并解压后，再次执行安装命令进行升级。
 
     ```
     # 进入新版本目录
-    cd maxkb-v1.x.y-offline
+    cd maxkb-v2.x.y-offline
 
     # 运行安装脚本
     bash install.sh

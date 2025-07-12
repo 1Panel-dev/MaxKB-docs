@@ -6,7 +6,7 @@
 
     **部署服务器要求：**
 
-    * 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统
+    * 操作系统：Ubuntu 22.04 / CentOS 7（内核版本要求 ≥ 3.10）
     * CPU/内存：4C/8GB 以上
     * 磁盘空间：100GB
 
@@ -29,10 +29,10 @@
     MaxKB 支持一键启动，仅需执行以下命令：
     ```
     # Linux 操作系统
-    docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages registry.fit2cloud.com/maxkb/maxkb
+    docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/opt/maxkb registry.fit2cloud.com/maxkb/maxkb:v2
 
     # Windows 操作系统
-    docker run -d --name=maxkb --restart=always -p 8080:8080 -v C:/maxkb:/var/lib/postgresql/data -v C:/python-packages:/opt/maxkb/app/sandbox/python-packages registry.fit2cloud.com/maxkb/maxkb
+    docker run -d --name=maxkb --restart=always -p 8080:8080 -v C:/maxkb:/opt/maxkb registry.fit2cloud.com/maxkb/maxkb:v2
     ```
      
     待所有容器状态显示为`healthy`后，可通过浏览器访问 MaxKB：
@@ -52,7 +52,7 @@
 
     （1） 下载最新镜像
     ```
-    docker pull registry.fit2cloud.com/maxkb/maxkb
+    docker pull registry.fit2cloud.com/maxkb/maxkb:v2
     ```
     （2）查看并确认上一次数据持久化目录，复制保存
     ```
@@ -74,5 +74,5 @@
     **注意：** 务必确认数据持久化目录（即命令行中 -v后的目录）要跟第 (2) 步查看目录保持一致，否则启动后整个系统的数据为空。
 
     ```
-    docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages registry.fit2cloud.com/maxkb/maxkb
+     docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/opt/maxkb registry.fit2cloud.com/maxkb/maxkb:v2
     ```

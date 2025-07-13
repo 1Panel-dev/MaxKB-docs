@@ -17,7 +17,3 @@
 
 ![AWS LLM模型](../../img/model/AWS_LLM.png){ width="500px" }
 
-!!! Abstract ""
-    Amazon Bedrock-向量模型配置样例图示：
-
-![AWS LLM模型](../../img/model/aws_embed.png){ width="500px" }

@@ -50,7 +50,7 @@ nav:
         #- 腾讯云安装: installation/tencent.md
         - 命令行工具: installation/cli.md
     - 功能手册:
-        - 模型管理:
+        - 模型:
               - 模型概况: user_manual/model/model_ summary.md
               - 模型对接:
                     - 对接阿里云百炼: user_manual/model/bailian_model.md
@@ -61,9 +61,9 @@ nav:
                     - 对接Gemini: user_manual/model/gemini_model.md
                     - 对接Kimi: user_manual/model/kimi_model.md
                     - 对接OpenAI: user_manual/model/openai_model.md
-                    - 对接通义千问: user_manual/model/tongyi_model.md
+                    - 对接Regolo: user_manual/model/Regolo_model.md
                     - 对接SILICONFLOW: user_manual/model/siliconflow_model.md
-                    - 对接腾讯知识引擎原子能力: user_manual/model/tencentcloud_model.md
+                    - 对接腾讯云: user_manual/model/tencentcloud_model.md
                     - 对接腾讯混元: user_manual/model/hunyuan_model.md
                     - 对接火山引擎: user_manual/model/doubao_model.md
                     - 对接百度千帆: user_manual/model/qianfan_model.md
@@ -74,7 +74,7 @@ nav:
                     - 对接vLLM: user_manual/model/vllm_model.md
                     - 对接Xorbits Inference: user_manual/model/X-Infer_model.md
               - 模型参数配置: user_manual/model/model_param.md
-        - 工具: user_manual/fx/fx.md
+        - 工具: user_manual/tool/tool.md
         - 知识库:
             - 知识库: user_manual/dataset/dataset.md
             - 文档: user_manual/dataset/doclist.md
@@ -88,23 +88,21 @@ nav:
             - 导出与导入: user_manual/app/serialization.md
             - 命中测试: user_manual/app/hit-testing.md
             - 对话日志: user_manual/app/log.md
-        - 用户管理: user_manual/team/team.md
-        - 资源授权: user_manual/team/team.md
-        - 系统设置: user_manual/team/team.md
+        - 用户管理: user_manual/user_community.md
+        - 资源授权: user_manual/X-Pack/authorization_resources.md
+        - 系统设置: user_manual/email.md
         - X-Pack功能: 
             - 用户管理: user_manual/X-Pack/user.md
-            - 角色管理: user_manual/X-Pack/user.md
-            - 工作空间: user_manual/X-Pack/user.md
-            - 资源管理: user_manual/X-Pack/user.md
-            - 共享资源: user_manual/X-Pack/user.md
-            - 对话用户:
-                      - 对话用户: user_manual/X-Pack/theme_settings.md
-                      - 用户组: user_manual/X-Pack/login_auth.md
-                      - 系统外观: user_manual/X-Pack/theme_settings.md
+            - 工作空间: user_manual/X-Pack/workspace.md
+            - 角色管理: user_manual/X-Pack/role.md
+            - 资源管理: user_manual/X-Pack/resource_management.md
+            - 共享资源: user_manual/X-Pack/shared_resources.md
+            - 对话用户: user_manual/X-Pack/chat_user.md
             - 应用设置:
                 - 显示设置: user_manual/X-Pack/app_logo_settting.md
                 - 应用接入: user_manual/X-Pack/app_integrate.md
                 - 身份验证: user_manual/X-Pack/app_auth.md
+                - 对话用户: user_manual/X-Pack/app_chatueser.md
             - 飞书文档: user_manual/X-Pack/feishu_doc.md
             - 系统设置:
                     - 系统外观: user_manual/X-Pack/theme_settings.md

@@ -26,7 +26,7 @@
 
 !!! Abstract ""
 
-    MaxKB 支持一键启动，仅需执行以下命令：
+    在配置 docker 环境的操作系统中，仅需执行以下命令即可一键完成 MaxKB 的安装：
     ```
     # Linux 操作系统
     docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/opt/maxkb registry.fit2cloud.com/maxkb/maxkb:v2

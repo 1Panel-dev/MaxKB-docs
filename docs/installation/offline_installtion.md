@@ -38,7 +38,7 @@
 
     以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
     ```
-    tar -zxvf maxkb--ce-v2.0.0-offline.tar.gz
+    tar -zxvf maxkb-ce-v2.0.0-offline.tar.gz
     ```
 
 ### 3.2 安装配置（可选）
@@ -54,7 +54,7 @@
     ## 服务端口
     MAXKB_PORT=8080
     ## docker 网段设置
-    MAXKB_DOCKER_SUBNET=172.19.0.0/16
+    MAXKB_DOCKER_SUBNET=172.31.250.192/26
 
     # 数据库配置
     ## 是否使用外部数据库
@@ -88,10 +88,11 @@
     ## 镜像名称
     MAXKB_IMAGE=maxkb-ce
     ## 版本号
-    MAXKB_VERSION=v2.0.0:;q
+    MAXKB_VERSION=v2.0.0
     ```
 
     **注意**：首次安装之前可以在 install.conf文件中的修改参数，安装时则根据修改后的参数执行安装。安装后如需再次修改配置参数，则需要在 ${MAXKB_BASE}/maxkb/.env（默认是 /opt/maxkb/.env）文件中进行修改，并且在修改完后需执行 `mkctl reload` 命令重新加载配置文件。
+
 
 
 ### 3.3 执行安装脚本
@@ -100,7 +101,7 @@
 
     ```
     # 进入安装包解压缩后目录  
-    cd maxkb-ee-v2.0.0-offline
+    cd maxkb-ce-v2.0.0-offline
 
     # 执行安装命令
     bash install.sh

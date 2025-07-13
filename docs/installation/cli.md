@@ -3,8 +3,7 @@
 !!! Abstract ""
     MaxKB 离线安装包默认内置了命令行运维工具 mkctl，通过执行 `mkctl help`，可以查看相关的命令说明。  
 
-    **说明**：
-    - 通过在线安装、1Panel方式安装，并没有内置 mkctl 命令。
+    **说明**：通过在线安装、1Panel方式进行安装时，没有内置 mkctl 命令。
 
     ```
     Usage:
@@ -17,7 +16,7 @@
     stop                停止 MaxKB 服务
     restart             重启 MaxKB 服务
     reload              重新加载 MaxKB 服务
-    uninstall           卸载 MaxKB 服务
+    uninstall           卸载 MaxKB 服务（不会删除数据）
     version             查看 MaxKB 版本信息
     clean-images        清理 MaxKB 旧版本的相关镜像
     ```

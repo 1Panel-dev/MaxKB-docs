@@ -6,11 +6,11 @@
 !!! Abstract ""
     MaxKB 支持与多种供应商模型的集成，支持对接当前主流的大型模型。这包括但不限于本地部署的私有模型如 Llama 3 和 Qwen 2，国内提供的公共模型服务例如 DeepSeek、SILICONFLOW、Kimi、智谱 AI 和百度千帆，以及国际知名的公共模型服务如 OpenAI、Azure OpenAI、Anthropic 和 Gemini。集成的模型类型广泛，涵盖文本生成、向量分析、排序算法、语音识别、语音合成、计算机视觉模型以及图像生成等，满足多样化的业务需求和应用场景。
 
-!!! Abstract ""
+
     【模型】用来管理各类大型模型，为后续知识库和应用提供模型使用；
 
      - 共享模型：系统管理员在【共享资源】中创建共享模型后，可以授权给指定工作空间。
-     - 全部工具：用户可以创建工具，其他用户[**资源授权**](../../user_manual/X-Pack/authorization_resources.md)后可以查看、使用和维护。
+     - 全部工具：用户可以创建模型，其他用户[**资源授权**](../../user_manual/X-Pack/authorization_resources.md)后可以查看、使用和维护。
    
      **注意**：共享资源为企业版 X-Pack 功能。
 

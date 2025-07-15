@@ -4,28 +4,66 @@ on:
   workflow_dispatch:
 
 jobs:
-  compile-and-deploy:
+  complie:
+    name: 编译
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        version: ['v1', 'v2']
     steps:
-      - name: 检出
-        uses: actions/checkout@v4
-      - name: 编译
+      - uses: actions/checkout@v4
+        with:
+          token:  ${{ secrets.GH_TOKEN }}
+          ref: ${{ matrix.version }}
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
         run: |
-          sudo apt-get update 
-          sudo apt-get install -y --no-install-recommends zip
-          docker run --rm -v ${PWD}:/docs registry-hk.fit2cloud.com/public/mkdocs-material:latest build
-          zip -r -q -9 site.zip site
-          ls -la site.zip
-      - name: 上传
+          python -m pip install --upgrade pip
+          pip install -r requirements/requirements.txt
+          pip install mike==1.1.2
+          python -m pip install --upgrade pip setuptools wheel
+      - name: Config Git
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+      - name: Build
+        run: |
+          git fetch origin deploy:deploy
+          mike deploy --push --branch deploy --rebase ${{ matrix.version }}
+          if [[ ${{ matrix.version }} == "v1" ]]; then
+            # 先默认v1，等v2上线后改成v2
+            mike set-default -b deploy ${{ matrix.version }}
+          fi
+
+  deploy:
+    name: 部署
+    runs-on: ubuntu-latest
+    needs: complie
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          ref: deploy
+      - name: tar
+        run: |
+          rm -rf docs.tar
+          rm -rf docs.tar.gz
+          tar -zcf docs.tar.gz --exclude=.git *
+          ls -la
+      - name: upload
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.MAXKB_DOCS_HOST }}
           username: ${{ secrets.MAXKB_DOCS_HOST_USERNAME }}
           port: 22
           key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
-          source: "site.zip"
+          source: "docs.tar.gz"
           target: /tmp
-      - name: 部署
+      - name: deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.MAXKB_DOCS_HOST }}
@@ -34,9 +72,13 @@ jobs:
           port: 22
           script: |
             cd /tmp
-            rm -rf site
-            unzip site.zip
-            rm -rf /opt/maxkb/docs/*
-            mv /tmp/site/* /opt/maxkb/docs
+            rm -rf docs
+            mkdir -p docs
+            cd docs
+            mv /tmp/docs.tar.gz ./
+            tar -zxf docs.tar.gz
+            rm -f docs.tar.gz
+            rm -rf /opt/maxkb/docs2/*
+            mv /tmp/docs/* /opt/maxkb/docs2/
             /opt/nginx/bin/reload-nginx.sh
-            rm -rf /tmp/site*
+            rm -rf /tmp/docs*

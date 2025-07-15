@@ -78,7 +78,7 @@ jobs:
             mv /tmp/docs.tar.gz ./
             tar -zxf docs.tar.gz
             rm -f docs.tar.gz
-            rm -rf /opt/maxkb/docs2/*
-            mv /tmp/docs/* /opt/maxkb/docs2/
+            rm -rf /opt/maxkb/docs/*
+            mv /tmp/docs/* /opt/maxkb/docs/
             /opt/nginx/bin/reload-nginx.sh
             rm -rf /tmp/docs*

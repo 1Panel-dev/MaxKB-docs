@@ -148,7 +148,7 @@ markdown_extensions:
     - pymdownx.tilde
     - pymdownx.betterem
     - pymdownx.progressbar
-    - lightgallery
+    #- lightgallery
     - pymdownx.tabbed
 
 extra_css:

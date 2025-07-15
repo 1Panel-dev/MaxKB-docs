@@ -175,14 +175,14 @@ plugins:
           separator: '[\s\-\.]+'
 extra:
     version:
-        method: mike
+      provider: mike
     analytics:
-        provider: google
-        property: G-NG51348CBW
+      provider: google
+      property: G-NG51348CBW
     social:
-        - icon: fontawesome/brands/github
-          link: https://github.com/1Panel-dev/MaxKB
-        - icon: fontawesome/solid/envelope
-          link: mailto:support@fit2cloud.com
-        - icon: fontawesome/solid/phone
-          link: tel://400-052-0755
+      - icon: fontawesome/brands/github
+        link: https://github.com/1Panel-dev/MaxKB
+      - icon: fontawesome/solid/envelope
+        link: mailto:support@fit2cloud.com
+      - icon: fontawesome/solid/phone
+        link: tel://400-052-0755

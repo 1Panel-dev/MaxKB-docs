@@ -125,6 +125,10 @@
     color: #ffffff;
 }
 
+aside.md-banner.md-banner--warning {
+  display: none !important;
+}
+
 /** 增加边框蓝条  **/
 .md-typeset .admonition,
 .md-typeset details {

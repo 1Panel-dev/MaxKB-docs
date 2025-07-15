@@ -164,7 +164,7 @@ plugins:
           separator: '[\s\-\.]+'
 extra:
     version:
-        method: mike
+        provider: mike
     analytics:
         provider: google
         property: G-NG51348CBW

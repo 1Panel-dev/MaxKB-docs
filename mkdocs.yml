@@ -5,7 +5,7 @@ site_author: 'MaxKB 开源项目组'
 repo_name: 'MaxKB'
 repo_url: 'https://github.com/1Panel-dev/MaxKB'
 
-edit_uri: https://github.com/1Panel-dev/MaxKB-docs/edit/main/docs/
+edit_uri: https://github.com/1Panel-dev/MaxKB-docs/edit/v1/docs/
 theme:
     name: 'material'
     logo: 'img/logo-white.png'

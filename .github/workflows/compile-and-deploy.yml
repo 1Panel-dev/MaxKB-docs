@@ -50,8 +50,7 @@ jobs:
           ref: deploy
       - name: tar
         run: |
-          rm -rf docs.tar
-          rm -rf docs.tar.gz
+          rm -rf docs.tar*
           tar -zcf docs.tar.gz --exclude=.git *
           ls -la
       - name: upload
@@ -72,7 +71,7 @@ jobs:
           port: 22
           script: |
             cd /tmp
-            rm -rf docs
+            rm -rf docs*
             mkdir -p docs
             cd docs
             mv /tmp/docs.tar.gz ./

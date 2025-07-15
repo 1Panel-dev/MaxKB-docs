@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  mike-deploy:
+  complie:
+    name: 编译
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -32,3 +33,46 @@ jobs:
         run: |
           git fetch origin deploy:deploy
           mike deploy --push --branch deploy --rebase ${{ matrix.version }}
+
+  deploy:
+    name: 部署
+    runs-on: ubuntu-latest
+    needs: complie
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          ref: deploy
+      - name: tar
+        run: |
+          rm -rf docs.tar
+          rm -rf docs.tar.gz
+          tar -zcf docs.tar.gz --exclude=.git *
+          ls -la
+      - name: upload
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.MAXKB_DOCS_HOST }}
+          username: ${{ secrets.MAXKB_DOCS_HOST_USERNAME }}
+          port: 22
+          key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
+          source: "docs.tar.gz"
+          target: /tmp
+      - name: deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.MAXKB_DOCS_HOST }}
+          username: ${{ secrets.MAXKB_DOCS_HOST_USERNAME }}
+          key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
+          port: 22
+          script: |
+            cd /tmp
+            rm -rf docs
+            mkdir -p docs
+            cd docs
+            mv /tmp/docs.tar.gz ./
+            tar -zxf docs.tar.gz
+            rm -rf /opt/maxkb/docs/docs2/*
+            mv /tmp/docs/* /opt/maxkb/docs/docs2/
+            /opt/nginx/bin/reload-nginx.sh
+            rm -rf /tmp/docs*

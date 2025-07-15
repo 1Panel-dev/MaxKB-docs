@@ -71,7 +71,7 @@ jobs:
           port: 22
           script: |
             cd /tmp
-            rm -rf docs*
+            rm -rf docs
             mkdir -p docs
             cd docs
             mv /tmp/docs.tar.gz ./

@@ -1,319 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://maxkb.cn/v2/</loc>
+         <loc>https://maxkb.cn/docs/v2/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/changelog/</loc>
+         <loc>https://maxkb.cn/docs/v2/changelog/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/contact/</loc>
+         <loc>https://maxkb.cn/docs/v2/contact/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/instructional_video/</loc>
+         <loc>https://maxkb.cn/docs/v2/instructional_video/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/quick_start/</loc>
+         <loc>https://maxkb.cn/docs/v2/quick_start/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/system_arch/</loc>
+         <loc>https://maxkb.cn/docs/v2/system_arch/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/dev_manual/APIKey_chat/</loc>
+         <loc>https://maxkb.cn/docs/v2/dev_manual/APIKey_chat/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/dev_manual/dev_environment/</loc>
+         <loc>https://maxkb.cn/docs/v2/dev_manual/dev_environment/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/GPU_runOllama/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/GPU_runOllama/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/MaxKB%20VS.Dify/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/MaxKB%20VS.Dify/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/Offline_install_OllamaModel/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/Offline_install_OllamaModel/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/apply_setting/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/apply_setting/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/doc_segment/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/doc_segment/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/function_library/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/function_library/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/install_configuration/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/install_configuration/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/knowledge_base/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/knowledge_base/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/maxkb_In_halo/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/maxkb_In_halo/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/faq/system_management/</loc>
+         <loc>https://maxkb.cn/docs/v2/faq/system_management/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/1panel_installtion/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/1panel_installtion/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/aliyun/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/aliyun/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/cli/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/cli/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/offline_installtion/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/offline_installtion/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/online_installtion/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/online_installtion/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/installation/tencent/</loc>
+         <loc>https://maxkb.cn/docs/v2/installation/tencent/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/email/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/email/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/user_community/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/user_community/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/app_auth/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_auth/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/app_chatueser/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_chatueser/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/app_integrate/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_integrate/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/app_logo_settting/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_logo_settting/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/authorization_resources/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/authorization_resources/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/chat_authentication/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/chat_authentication/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/chat_user/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/chat_user/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/feishu_doc/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/feishu_doc/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/login_auth/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/login_auth/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/operation_log/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/operation_log/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/resource_management/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/resource_management/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/role/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/role/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/shared_resources/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/shared_resources/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/system_API/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/system_API/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/theme_settings/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/theme_settings/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/user/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/user/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/X-Pack/workspace/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/workspace/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/app-view/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/app-view/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/app/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/app/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/hit-testing/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/hit-testing/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/log/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/log/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/serialization/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/serialization/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/simple_app/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/simple_app/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/app/workflow_app/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/app/workflow_app/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/dataset/dataset/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/dataset/dataset/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/dataset/doclist/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/dataset/doclist/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/dataset/hit-testing/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/dataset/hit-testing/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/dataset/problem/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/dataset/problem/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/Regolo_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/Regolo_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/X-Infer_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/X-Infer_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/amazon_bedrock_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/amazon_bedrock_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/anthropic_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/anthropic_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/azure_openai_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/azure_openai_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/bailian_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/bailian_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/deepseek_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/deepseek_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/doubao_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/doubao_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/gemini_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/gemini_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/hunyuan_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/hunyuan_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/kimi_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/kimi_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/local_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/local_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/model_%20summary/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/model_%20summary/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/model_param/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/model_param/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/ollama_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/ollama_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/openai_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/openai_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/qianfan_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/qianfan_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/siliconflow_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/siliconflow_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/spark_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/spark_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/tencentcloud_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/tencentcloud_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/tongyi_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/tongyi_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/vllm_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/vllm_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/model/zhipu_model/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/model/zhipu_model/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/team/team/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/team/team/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
     <url>
-         <loc>https://maxkb.cn/v2/user_manual/tool/tool/</loc>
+         <loc>https://maxkb.cn/docs/v2/user_manual/tool/tool/</loc>
          <lastmod>2025-07-15</lastmod>
     </url>
 </urlset>

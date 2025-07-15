@@ -70,6 +70,7 @@ jobs:
           key: ${{ secrets.MAXKB_DOCS_HOST_KEY }}
           port: 22
           script: |
+            set -e
             cd /tmp
             rm -rf docs
             mkdir -p docs

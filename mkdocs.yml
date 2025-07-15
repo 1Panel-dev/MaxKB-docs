@@ -176,6 +176,7 @@ plugins:
 extra:
     version:
       provider: mike
+      warning: false
     analytics:
       provider: google
       property: G-NG51348CBW

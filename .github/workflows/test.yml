@@ -8,6 +8,7 @@ jobs:
     name: 编译
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 1
       matrix:
         version: ['v1', 'v2']
     steps:

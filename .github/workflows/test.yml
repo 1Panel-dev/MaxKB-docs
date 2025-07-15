@@ -5,13 +5,15 @@ on:
 
 jobs:
   mike-deploy:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        version: ['v1', 'v2']
     steps:
       - uses: actions/checkout@v4
         with:
           token:  ${{ secrets.GH_TOKEN }}
+          ref: ${{ matrix.version }}
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
@@ -26,11 +28,7 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-      - name: Build v1
+      - name: Build
         run: |
           git fetch origin deploy:deploy
-          mike deploy --push --branch deploy --rebase v1
-      - name: Build v2
-        run: |
-          git fetch origin deploy:deploy
-          mike deploy --push --branch deploy --rebase v2
+          mike deploy --push --branch deploy --rebase ${{ matrix.version }}

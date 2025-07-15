@@ -72,6 +72,7 @@
 ![企微应用信息](../../img/system/qiwei_appinfo.png)
 
 
+
 !!! Abstract ""
     第二步：设置可信域名。在【开发者接口】中点击【设置可信域名】，添加可信域名，并进行校验。可参考[**可信域名配置**](https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf)。
 

@@ -51,7 +51,7 @@ nav:
         - 命令行工具: installation/cli.md
     - 功能手册:
         - 模型:
-              - 模型概况: user_manual/model/model_ summary.md
+              - 模型概况: user_manual/model/model_summary.md
               - 模型对接:
                     - 对接阿里云百炼: user_manual/model/bailian_model.md
                     - 对接Anthropic: user_manual/model/anthropic_model.md

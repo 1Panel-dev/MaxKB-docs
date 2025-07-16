@@ -77,27 +77,28 @@
 !!! Abstract ""
     开启客服助理：在企业的外部群设置中开启【客服助理】，微信客服便会加入群中，群里的任何用户仅需要@客服助理，即可发起咨询，并微信客服进行一对一的对话。
 
-![企业微信客服账号](../../img/app/enable_cs.png)
+![企业微信客服账号](../../img/app/enable_cs.png){ width="500px" }
 
-![企业微信客服账号](../../img/app/dialog_cs.png)
+![企业微信客服账号](../../img/app/dialog_cs.png){ width="500px" }
 
 ### 3 公众号接入
 
 !!! Abstract "" 
-    在应用接入中点击【公众号】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到【微信公众平台-设置与开发-基本配置-服务器配置】服务器地址URL 中，除此之外的其它信息，将在微信公众平台中生成并获取。
+    在应用接入中点击【公众号】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到【微信公众平台-设置与开发-基本配置-服务器配置】服务器地址 URL 中，除此之外的其它信息，将在微信公众平台中生成并获取。
 ![公众号配置](../../img/app/public_account_setting_empty.png)
 
 !!! Abstract "" 
-    获取APP ID、APP Secret、Token和消息加解密密钥：在微信公众平台-设置与开发-基本配置中获取APP ID、APP Secret信息，并启动服务器配置，生成 Token 和消息加解密密钥。
+    获取 APP ID、APP Secret、Token 和消息加解密密钥：在微信公众平台-设置与开发-基本配置中获取 APP ID、APP Secret 信息，并启动服务器配置，生成 Token 和消息加解密密钥。
 ![公众号信息](../../img/app/public_account_basicinfo.png)
 ![公众号信息](../../img/app/public_account_setting1.png)
 
 !!! Abstract "" 
-    将生成的APP ID、APP Secret、Token 和消息加解密密钥信息输入到MaxKB 公众号配置窗口中，并保存。
+    将生成的 APP ID、APP Secret、Token 和消息加解密密钥信息输入到 MaxKB 公众号配置窗口中，并保存。
 ![公众号信息](../../img/app/public_account_setting2.png)
 
-!!! Abstract "" 
-    回到第（2）步，将【公众号-基本配置-服务器配置】中的 URL 设置为 MaxKB 公众号配置窗口中的回调地址 URL，然后提交，并启用服务器配置。
+!!! Abstract ""
+    将【公众号-基本配置-服务器配置】中的 URL 设置为 MaxKB 公众号配置窗口中的回调地址 URL，然后提交，并启用服务器配置。
+
 ![公众号信息](../../img/app/public_account_setting_url.png)
 
 !!! Abstract "" 
@@ -105,41 +106,46 @@
 ![客服接口权限](../../img/app/public_account_enable_api.png)
 
 !!! Abstract "" 
-    设置IP白名单：进入公众号基本配置的【IP白名单】中，添加 MaxKB 服务器的 IP 地址。
+    设置 IP 白名单：进入公众号基本配置的【IP 白名单】中，添加 MaxKB 服务器的 IP 地址。
 ![公众号IP白名单](../../img/app/public_account_ip.png)
 
 !!! Abstract "" 
-    根据以上步骤完成配置后，即可在公众号中发送消息进行对话了。
+    根据以上步骤完成配置后，即可在公众号中发送消息进行对话。
 
-![公众号对话](../../img/app/public_account_dialog.jpeg)
+![公众号对话](../../img/app/public_account_dialog.png){ width="500px" }
 
 
 ### 4 钉钉应用接入
 
 !!! Abstract ""
     在应用接入中点击【钉钉应用】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到钉钉-机器人设置-消息接收地址中，其它信息，将在钉钉开放平台中生成并获取。
+
 ![钉钉机器人创建](../../img/app/dingding_setting.png)
 
 !!! Abstract ""
     创建机器人：在 [钉钉开放平台](https://open-dev.dingtalk.com/)的【应用开发】-【钉钉应用】中，点击【创建应用】，填写应用信息后，点击【保存】。
+
 ![钉钉机器人创建](../../img/app/dingding_robot_create.png)
 
 !!! Abstract ""
-    获取Client ID和Client Secret： 进入创建好的钉钉应用，打开【凭证与基础信息】页面，获取Client ID和Client Secret。
+    获取 Client ID 和 Client Secret：进入创建好的钉钉应用，打开【凭证与基础信息】页面，获取 Client ID 和 Client Secret。
+
 ![钉钉应用信息](../../img/app/dingding_info.png)
 
 !!! Abstract ""
-    在MaxKB 钉钉应用配置窗口中输入步骤获取的Client ID和Client Secret 应用凭证，并保存。
+    在 MaxKB 钉钉应用配置窗口中输入步骤获取的 Client ID 和 Client Secret 应用凭证，并保存。
+
 ![钉钉应用信息](../../img/app/dingding_setting2.png)
 
 !!! Abstract ""
-    点击【添加应用能力】，选择 【机器人】能力，点击 【添加】，输入机器人基本配置信息后，将【消息接收模式】设置为HTTP模式，并将 MaxKB 钉钉应用配置中的回调地址的URL填写到消息接收地址中，然后点击【发布】。
+    点击【添加应用能力】，选择 【机器人】能力，点击 【添加】，输入机器人基本配置信息后，将【消息接收模式】设置为 HTTP 模式，并将 MaxKB 钉钉应用配置中的回调地址的URL填写到消息接收地址中，然后点击【发布】。
 ![钉钉机器人添加](../../img/app/dingding_robot_add.png)
 ![钉钉机器人息接收模式](../../img/app/dingding_msg_recvmode.png)
 
 !!! Abstract ""
     根据以上步骤完成配置后，就可以群里@机器人中进行对话，或与机器人应用一对一对话。
-![钉钉对话](../../img/app/dingding_dialog.jpeg)
+
+![钉钉对话](../../img/app/dingding_dialog.png){ width="500px" }
 
 ### 5 飞书应用接入
 
@@ -157,7 +163,7 @@
 ![飞书添加机器人](../../img/app/feishu_add_robot.png)
 
 !!! Abstract ""
-    添加权限：打开【权限管理】，复制下面的权限配置并粘贴到【API权限-权限配置】输入框，全选筛选出来的权限项，点击【批量开通】，最后点击【确认】。
+    添加权限：打开【权限管理】，复制下面的权限配置并粘贴到【API 权限-权限配置】输入框，全选筛选出来的权限项，点击【批量开通】，最后点击【确认】。
 
     ```
      m:message,im:message.group_at_msg:readonly,im:message.p2p_msg:readonly,im:message:send_as_bot,im:resource, contact:contact.base:readonly，contact:user.base:readonly
@@ -166,7 +172,7 @@
 ![飞书权限](../../img/app/feishu_app_auth.png)
 
 !!! Abstract ""
-    获取APP ID、APP Secret和Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取APP ID和APP Secret。
+    获取 APP ID、APP Secret 和 Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取 APP ID 和 APP Secret。
 ![飞书应用信息i](../../img/app/feishu_app_info.png)
 
 
@@ -176,7 +182,7 @@
 ![飞书token](../../img/app/feishu_verify_token.png)
 
 !!! Abstract ""
-    在MaxKB 飞书应用配置窗口输入上述信息，并保存。
+    在 MaxKB 飞书应用配置窗口输入上述信息，并保存。
 
 ![飞书事件与回调](../../img/app/maxkb_feishu_config.png)
 
@@ -201,4 +207,4 @@
 !!! Abstract ""
     根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB小助手`，点击【添加】后进行一对一对话。
 
-![飞书对话](../../img/app/feishu_app_search.jpg){width="500px"} ![飞书对话](../../img/app/feishu_dialog.jpeg){width="500px"}
+![飞书对话](../../img/app/feishu_app_search.png){width="500px"}   ![飞书对话](../../img/app/feishu_dialog.png){width="500px"}

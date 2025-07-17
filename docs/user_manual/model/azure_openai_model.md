@@ -1,7 +1,7 @@
 ## 1 添加模型
 
 !!! Abstract "" 
-    添加 Azure OpenAI 大模型之前，需要先在 [Azure AI Studio](https://ai.azure.com/) 中注册，并获取有关API 域名、API Key、部署详细信息等内容，参考下图：
+    添加 Azure OpenAI 大模型之前，需要先在 [Azure AI Studio](https://ai.azure.com/) 中注册，并获取有关 API 域名、API Key、部署详细信息等内容，参考下图：
 
     选择模型供应商为`Azure OpenAI`，并在模型添加对话框中输入如下必要信息：
 

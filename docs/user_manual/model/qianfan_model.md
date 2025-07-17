@@ -1,14 +1,14 @@
 ## 1 添加模型
 
 !!! Abstract ""
-    添加千帆大模型之前，需要先在 [百度智能云千帆大模型平台](https://qianfan.cloud.baidu.com/) 中进行注册并登录。在控制台中的【模型服务-应用接入】中创建应用后，将自动生成 API Key和Secret Key 等信息。
+    添加千帆大模型之前，需要先在 [百度智能云千帆大模型平台](https://qianfan.cloud.baidu.com/) 中进行注册并登录。在控制台中的【模型服务-应用接入】中创建应用后，将自动生成 API Key 和 Secret Key 等信息。
 
     选择模型供应商为`千帆大模型`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。
     * 模型类型：大语言模型/向量模型。    
     * 基础模型：百度千帆支持的 LLM 模型名称，选项中显示了百度千帆支持的部分常用大语言模型名称，支持手动输入，但需要与千帆大平台支持的模型名称保持一致，否则无法通过校验。    
-    * API Key 和 Secret Key：千帆大模型中应用的API Key 和 Secret Key。
+    * API Key 和 Secret Key：千帆大模型中应用的 API Key 和 Secret Key。
 
 
 ![百度应用](../../img/model/qianfan_app.png)

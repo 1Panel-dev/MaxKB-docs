@@ -38,7 +38,7 @@
 
     以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
     ```
-    tar -zxvf maxkb-ce-v2.0.0-offline.tar.gz
+    tar -zxvf maxkb-v2.0.0-offline-installer.tar.gz
     ```
 
 ### 3.2 安装配置（可选）

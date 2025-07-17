@@ -34,8 +34,7 @@ jobs:
         run: |
           git fetch origin deploy:deploy
           mike deploy --push --branch deploy --rebase ${{ matrix.version }}
-          if [[ ${{ matrix.version }} == "v1" ]]; then
-            # 先默认v1，等v2上线后改成v2
+          if [[ ${{ matrix.version }} == "v2" ]]; then
             mike set-default -b deploy ${{ matrix.version }}
           fi
 

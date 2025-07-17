@@ -2315,6 +2315,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2331,7 +2337,7 @@
   
   
   <span class="md-ellipsis">
-    开发文档
+    常见问题
     
   </span>
   
@@ -2341,109 +2347,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            开发文档
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../dev_manual/dev_environment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    开发环境搭建
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../dev_manual/APIKey_chat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    通过API KEY进行对话
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    常见问题
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             常见问题
           </label>
@@ -2507,7 +2410,7 @@
   
   
   <span class="md-ellipsis">
-    函数库
+    工具
     
   </span>
   
@@ -2598,10 +2501,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2614,8 +2517,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             实践教程
           </label>
@@ -2750,28 +2653,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../instructional_video" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    教学视频
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../contact/" class="md-nav__link">
         
   
@@ -2890,9 +2771,7 @@
 </li>
 <li>引用分段数 Top-N：控制最多向大模型提交 N 条高相关段落，避免上下文过长。</li>
 <li>最大引用字符数：对入选段落再做字符截断，确保总长度不超过设定上限（默认 5,000 字符）。</li>
-<li>无引用时的回答策略：
-    • 允许大模型基于通用知识作答
-    • 或统一回复“暂无相关资料”，拒绝编造。</li>
+<li>无引用时的回答策略：允许大模型基于通用知识作答，或指定统一回复（如暂无相关资料”，拒绝编造）。</li>
 <li>问题优化开关：启用后，系统会先将用户问题改写为更利于检索的表述，再执行检索，提高命中率。</li>
 </ul>
 </div>

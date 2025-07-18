@@ -20,8 +20,8 @@
     - 角色设置：选择普通用户和工作空间角色时需要设置工作空间。
 
     **注意**：角色管理为企业版 X-Pack 功能。
-![用户列表](../../img/system/create_user.png)
 
+![用户列表](../../img/system/create_user.png)
 
 
 

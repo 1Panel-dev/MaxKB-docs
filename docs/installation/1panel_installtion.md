@@ -47,4 +47,4 @@
 
     为了安全，admin 第一次登录时将要求修改默认密码，修改密码后，重新登录系统即可使用 MaxKB。   
 
-![登录成功](../img/index/UI.jpg)
+![登录成功](../img/index/login.jpg)

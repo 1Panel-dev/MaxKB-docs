@@ -11,10 +11,6 @@
     * API URL：https://api.anthropic.com/v1/messages
     * API Key：在 anthropic 控制台创建的 API Key。
 
-![SILICONFLOW](../../img/model/siliconflow_model.png)
-
-
-
 ## 2 配置样例
 
 !!! Abstract ""

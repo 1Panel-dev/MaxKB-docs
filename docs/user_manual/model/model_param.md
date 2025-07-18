@@ -11,12 +11,11 @@
 
 ![千帆_实时搜索](../../img/model/qianfan_disable_search.png)
 
-![模型参数_实时搜索](../../img/model/model_param_search.png)
 
 !!! Abstract ""
-    然后在应用的AI模型参数设置中，设置实时搜索功能参数。
+    然后在应用的 AI 模型参数设置中，设置实时搜索功能参数。
 
-![模型参数_实时搜索](../../img/model/app_model_param.png)
+![模型参数_实时搜索](../../img/app/app_model_param.png)
 
 
 

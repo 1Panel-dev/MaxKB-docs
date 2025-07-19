@@ -2617,8 +2617,6 @@
       
         
       
-        
-      
     
     
     
@@ -2709,29 +2707,6 @@
   
   <span class="md-ellipsis">
     将 MaxKB 小助手集成到 Halo 中
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faq/MaxKB%20VS.Dify/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MaxKB 和 Dify 有什么区别
     
   </span>
   
@@ -2987,7 +2962,7 @@
 <h3 id="31">3.1 解压安装包<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
-<div class="highlight"><pre><span></span><code>tar -zxvf maxkb-v2.0.0-offline-installer.tar.gz
+<div class="highlight"><pre><span></span><code>tar -zxvf maxkb-v2.0.0-x86_64-offline-installer.tar.gz
 </code></pre></div></p>
 </div>
 <h3 id="32">3.2 安装配置（可选）<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
@@ -3031,7 +3006,7 @@ REDIS_PASSWORD=Password123@redis
 ## 镜像仓库
 MAXKB_IMAGE_REPOSITORY=registry.fit2cloud.com/maxkb
 ## 镜像名称
-MAXKB_IMAGE=maxkb-ce
+MAXKB_IMAGE=maxkb
 ## 版本号
 MAXKB_VERSION=v2.0.0
 </code></pre></div>
@@ -3040,13 +3015,13 @@ MAXKB_VERSION=v2.0.0
 <h3 id="33">3.3 执行安装脚本<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <div class="highlight"><pre><span></span><code># 进入安装包解压缩后目录  
-cd maxkb-ce-v2.0.0-offline
+cd maxkb-v2.0.0-x86_64-offline-installer
 
 # 执行安装命令
 bash install.sh
 </code></pre></div>
 </div>
-<p><img alt="安装" src="../../img/index/install.jpg" /></p>
+<p><img alt="安装" src="../../img/index/install.png" /></p>
 <h2 id="4">4 登录访问<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>待所有容器状态显示为<code>healthy</code>后，即可通过浏览器访问地址 <code>http://目标服务器 IP 地址:8080</code>，并使用默认的管理员用户和密码登录 MaxKB。</p>

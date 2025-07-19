@@ -38,7 +38,7 @@
 
     以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
     ```
-    tar -zxvf maxkb-v2.0.0-offline-installer.tar.gz
+    tar -zxvf maxkb-v2.0.0-x86_64-offline-installer.tar.gz
     ```
 
 ### 3.2 安装配置（可选）
@@ -86,7 +86,7 @@
     ## 镜像仓库
     MAXKB_IMAGE_REPOSITORY=registry.fit2cloud.com/maxkb
     ## 镜像名称
-    MAXKB_IMAGE=maxkb-ce
+    MAXKB_IMAGE=maxkb
     ## 版本号
     MAXKB_VERSION=v2.0.0
     ```
@@ -101,13 +101,13 @@
 
     ```
     # 进入安装包解压缩后目录  
-    cd maxkb-ce-v2.0.0-offline
+    cd maxkb-v2.0.0-x86_64-offline-installer
 
     # 执行安装命令
     bash install.sh
     ```
 
-![安装](../img/index/install.jpg)
+![安装](../img/index/install.png)
 
 ## 4 登录访问
 

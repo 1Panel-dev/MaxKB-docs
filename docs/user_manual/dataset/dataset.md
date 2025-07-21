@@ -40,8 +40,7 @@
     * 文本文件：Markdown、TXT、PDF、DOCX、HTML、XLS、XLSX、CSV、ZIP；
     * 表格：XLS、XLSX、CSV、ZIP；
     * QA 问答对：XLS、XLSX、CSV、ZIP；  
-    * 每次最多上传 50 个文件；   
-    * 每个文件不超过 100 MB；
+    * 每次默认最多上传 50 个文件，每个文件不超过 100 MB，可配置；
     * 支持选择文件夹，上传文件夹下符合要求的文件。
     * ZIP 文件包括两种形式：
 

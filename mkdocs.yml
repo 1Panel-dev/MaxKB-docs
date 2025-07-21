@@ -121,7 +121,7 @@ nav:
             - Ollama 离线部署 LLM 模型: faq/Offline_install_OllamaModel.md
             - Ollama 使用 GPU 运行 LLM 模型: faq/GPU_runOllama.md
             - 将 MaxKB 小助手集成到 Halo 中: faq/maxkb_In_halo.md
-            - MaxKB 和 Dify 有什么区别: faq/MaxKB VS.Dify.md
+            #- MaxKB 和 Dify 有什么区别: faq/MaxKB VS.Dify.md
             - 知识库文档如何合理分段: faq/doc_segment.md
   #- 教学视频: instructional_video
     - 联系我们: contact.md

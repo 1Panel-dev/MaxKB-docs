@@ -30,7 +30,7 @@
 
 
 !!! Abstract ""
-    创建知识库后，支持新建文档和上传离线文档通。
+    创建知识库后，支持新建文档和上传离线文档。
 
 ![上传文档](../../img/dataset/dataset_office_document.png)
 

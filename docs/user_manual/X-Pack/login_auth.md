@@ -129,16 +129,22 @@
 !!! Abstract ""
     MaxKB 配置钉钉扫码登录时，需要在 [**钉钉开放平台**](https://open-dev.dingtalk.com/) 创建应用并进行配置。
 
-    第一步：创建应用。在【应用开发-钉钉应用】中点击【创建应用】，应用创建完后在【凭证与基础信息】可查案APPKey和 APPSecret信息。
+    第一步：创建应用。在【应用开发-钉钉应用】中点击【创建应用】，应用创建完后在【凭证与基础信息】可查案 APPKey 和 APPSecret 信息。
 ![钉钉创建应用](../../img/system/dingding_app_create.png)
 ![钉钉应用信息](../../img/system/dingding_app_info.png)
 
 !!! Abstract ""
-    第二步：发布应用。在【版本管理与发布】中，填写应用版本号、版本描述等信息，点击【保持】，发布应用。
+    第二步：进入到【权限管理】中，添加如下图所示的权限即可。
+
+![钉钉应用信息](../../img/system/dingding_permissions.png)
+
+!!! Abstract ""    
+    第三步：在【版本管理与发布】中，填写应用版本号、版本描述等信息，点击【保持】，发布应用。
 ![钉钉应用信息](../../img/system/dingding_app_release.png)
 
 !!! Abstract ""
     完成配置后发布，然后在 MaxKB 钉钉扫码登录扫码配置页面进行配置并保存。
+
 ![钉钉创建应用](../../img/system/dingding_setting.png)
 
 !!! Abstract ""
@@ -213,7 +219,7 @@
 ![飞书添加页面应用](../../img/system/feishu_add_webapp.png)
 
 !!! Abstract ""
-    配置桌面主页，例如：配置中填写 桌面端主页地址，如：http(s)://xxx.xxx.xxx/ui/login?client=lark&appId=cli_a7e1c1ddexxxxx。
+    配置桌面主页，例如：配置中填写 桌面端主页地址，如：http(s)://xxx.xxx.xxx/admin/login?client=lark&appId=cli_a7e1c1ddexxxxx。
 ![飞书页面应用配置](../../img/system/feishu_webapp_config.png)
 
 !!! Abstract ""

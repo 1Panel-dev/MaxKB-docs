@@ -24,14 +24,14 @@
 
 !!! Abstract ""
     配置 OIDC 的过程可参考下图，注意勾选下方"启用 OIDC 认证"后开启此功能。   
-    **说明：** OIDC 回调地址即 MaxKB 访问地址加上 /api/cas ，例如：http://40.100.86.240:8080/admin/api/cas。
+    **说明：** OIDC 回调地址即 MaxKB 访问地址加上 /api/oidc ，例如：http://40.100.86.240:8080/admin/api/oidc。
 ![OIDC](../../img/system/OIDC.png)
 
 ## 4 OAUTH2
 
 !!! Abstract ""
     配置 OAUTH2 的过程可参考下图（授权端以 github 为例），注意勾选下方"启用 OAHTU2 认证"后开启此功能。   
-    **说明：** OAUTH2 回调地址即 MaxKB 访问地址加上 /api/cas ，例如：http://40.100.86.240:8080/admin/api/cas。
+    **说明：** OAUTH2 回调地址即 MaxKB 访问地址加上 /api/oauth2 ，例如：http://40.100.86.240:8080/admin/api/oauth2。
 ![OAHTU2](../../img/system/oauth2.png)
 
 ## 5 平台对接

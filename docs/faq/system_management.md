@@ -32,7 +32,7 @@
     update  "public"."user" set password='d880e722c47a34d8e9fce789fc62389d' where username='admin';
     ```
 
-    **注意：找回 admin 密码后优先配置邮箱设置，以便下次忘记密码时能直接使用【忘记密码】功能进行找回。**
+    **注意：找回 admin 密码后优先配置邮箱，以便下次忘记密码时能直接使用【忘记密码】功能进行找回。**
 
 
 
@@ -54,8 +54,7 @@
 !!! Abstract ""
     **API 域名内容说明**： 
 
-    - MaxKB 版本为 0.9.0，API 域名格式为：http://您ollama 所在服务的ip地址:您 ollama 的端口号 /v1 。 
-    - MaxKB 版本为 0.9.1及之后的版本 API 域名格式：http://您ollama 所在服务的ip地址:您 ollama 的端口号 / 。 
+    -  API 域名格式：http://ollama 所在服务的ip地址:ollama 的端口号 / 。 
 
     **注意：API 域名不可使用 127.0.0.1 或 localhost。**
 
@@ -114,7 +113,7 @@
 !!! Abstract ""
     在对应的平台上检查模型可用性，确保模型有余额可调用。
 
-### 2.6 添加模型失败提示 'str' object has no attribute 'model_dump 或者 Invalid API-key provided
+### 2.6 添加模型失败提示 'str' object has no attribute 'model_dump' 或者 Invalid API-key provided
 
 !!! Abstract ""
     核实API域名和密钥：确保 API 域名是可用且配置正确的，并且对应的 API Key 是有效的、具有足够权限的。如果是第三方代理服务，可能需要联系其提供方确认服务状态和配置要求。

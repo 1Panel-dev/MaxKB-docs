@@ -78,6 +78,7 @@
     - [MaxKB 应用案例：粤海集团完成DeepSeek私有化部署，助力集团智能化管理](https://mp.weixin.qq.com/s/2JbVp0-kr9Hfp-0whH4cvg)
     - [MaxKB 应用案例：建筑材料工业信息中心完成DeepSeek本地化部署，推动行业数智化转型新发展](https://mp.weixin.qq.com/s/HThGSnND3qDF8ySEqiM4jw)
     - [MaxKB 应用案例：一起DeepSeek！福建设计以AI大模型开启新篇章](https://mp.weixin.qq.com/s/m67e-H7iQBg3d24NM82UjA)
+    - [MaxKB 应用案例：郑州海关上线 AI 审单智能体](https://dzb.henandaily.cn/html5/2025-07/25/content_10_1749478.htm?curr=)
     
 
 

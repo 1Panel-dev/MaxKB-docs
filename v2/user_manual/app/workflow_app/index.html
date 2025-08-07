@@ -3407,22 +3407,24 @@
 </tbody>
 </table>
 <p><img alt="编排画布" src="../../../img/app/workflow.png" /></p>
-<div class="codehilite"><pre><span></span><code><span class="k">*</span> AI 对话：与AI大模型进行对话节点。  
-<span class="k">*</span> 图片理解：识别并理解图片所包含的信息。
-<span class="k">*</span> 图片生成：根据提供的文本内容生成图片。
-<span class="k">*</span> 知识库检索：关联知识库，检索与问题相关分段的节点。
-<span class="k">*</span> 多路召回：使用重排模型对多个知识库的检索结果进行二次召回。
-<span class="k">*</span> 判断器：根据不同条件执行不同的节点。
-<span class="k">*</span> 指定回复：直接指定回复内容。
-<span class="k">*</span> 表单收集：通过表单的方式收集问答所需要的必要信息。
-<span class="k">*</span> 问题优化：AI对话的一种，设定了默认的角色和提示词，根据上下文优化问题。   
-<span class="k">*</span> 文档内容提取：提取文档中的内容。
-<span class="k">*</span> 语音转文本：将音频转换为文本。
-<span class="k">*</span> 文本转语音：将文本转换为语音。
-<span class="k">*</span> 变量赋值：更新全局变量的值。
-<span class="k">*</span> MCP 调用：通过 SSE 协议调用 MCP 服务中的工具。
-</code></pre></div>
-
+<div class="admonition abstract">
+<ul>
+<li>AI 对话：与AI大模型进行对话节点。  </li>
+<li>图片理解：识别并理解图片所包含的信息。</li>
+<li>图片生成：根据提供的文本内容生成图片。</li>
+<li>知识库检索：关联知识库，检索与问题相关分段的节点。</li>
+<li>多路召回：使用重排模型对多个知识库的检索结果进行二次召回。</li>
+<li>判断器：根据不同条件执行不同的节点。</li>
+<li>指定回复：直接指定回复内容。</li>
+<li>表单收集：通过表单的方式收集问答所需要的必要信息。</li>
+<li>问题优化：AI对话的一种，设定了默认的角色和提示词，根据上下文优化问题。   </li>
+<li>文档内容提取：提取文档中的内容。</li>
+<li>语音转文本：将音频转换为文本。</li>
+<li>文本转语音：将文本转换为语音。</li>
+<li>变量赋值：更新全局变量的值。</li>
+<li>MCP 调用：通过 SSE 协议调用 MCP 服务中的工具。</li>
+</ul>
+</div>
 <h2 id="2">2 组件使用<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 基本组件<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <h4 id="211">2.1.1 基本信息<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
@@ -3448,11 +3450,13 @@
 <p><img alt="开始节点-用户输入" src="../../../img/app/user_input.png" width="500px" /></p>
 <div class="admonition abstract">
 <ul>
-<li>接口传参：在通过应用公开访问链接时可配置的参数。添加接口参数后将会在公开访 URL 自动增加接口参数，在与第三方系统集成。   </li>
+<li>接口传参：在通过应用公开访问链接时可配置的参数。添加接口参数后将会在公开访 URL 自动增加接口参数，在与第三方系统集成。</li>
+<li>会话变量：变量在当前对话流程中全程有效，用于实现节点间数据传递与逻辑判断。</li>
 <li>语音输入：开启后将支持以语音的方式进行问题的输入，需要使用语音识别模型。   </li>
 <li>语音播放：开启后回答内容将以语音的方式进行播放，可以使用浏览器内置的播放，也可以使用语音合成模型进行播放。</li>
 </ul>
 </div>
+<p><img alt="开始节点-用户输入" src="../../../img/app/chat_var.png" /></p>
 <h4 id="212">2.1.2 开始<a class="headerlink" href="#212" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>作为流执行的起点，所有后续节点均从此节点开始流转。

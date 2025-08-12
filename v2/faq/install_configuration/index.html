@@ -2404,9 +2404,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-failed-to-cast-to-expected-type-strconvparseint-parsing-2g" class="md-nav__link">
+  <a href="#2-pgsql" class="md-nav__link">
     <span class="md-ellipsis">
-      2 离线部署提示 failed to cast to expected type: strconv.ParseInt: parsing "2G"
+      2 如何将内置的 pgsql 通过指定的主机端口提供对外访问？
     </span>
   </a>
   
@@ -2743,9 +2743,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-failed-to-cast-to-expected-type-strconvparseint-parsing-2g" class="md-nav__link">
+  <a href="#2-pgsql" class="md-nav__link">
     <span class="md-ellipsis">
-      2 离线部署提示 failed to cast to expected type: strconv.ParseInt: parsing "2G"
+      2 如何将内置的 pgsql 通过指定的主机端口提供对外访问？
     </span>
   </a>
   
@@ -2793,10 +2793,16 @@
 <div class="admonition abstract">
 <p>Docker 版本太老可能会导致安装失败，建议环境建议使用安装包内的 Docker。安装包所使用的 Docker 版本为 27.2.0、Compose 版本为 v2.29.2。</p>
 </div>
-<h2 id="2-failed-to-cast-to-expected-type-strconvparseint-parsing-2g">2 离线部署提示 failed to cast to expected type: strconv.ParseInt: parsing "2G"<a class="headerlink" href="#2-failed-to-cast-to-expected-type-strconvparseint-parsing-2g" title="Permanent link">&para;</a></h2>
+<h2 id="2-pgsql">2 如何将内置的 pgsql 通过指定的主机端口提供对外访问？<a class="headerlink" href="#2-pgsql" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在配置文件中内存设置格式存在问题。打开配置文件 docker-compose-pgsql.yml，找到 services.pgsql.mem_limit 的设置项。 将内存设置值从 "2G" 修改为小写的 "2g"，执行 <code>mkctl reload</code> 命令重新加载配置。</p>
+<p>默认配置进行安装时，为了安全性，pgsql 容器只对宿主机提供 5432 的访问端口，其它地址都无法访问。</p>
 </div>
+<p><img alt="pgsl默认访问规则" src="../../img/FAQ/lcoal_pgsql.png" /></p>
+<div class="admonition abstract">
+<p>如果需要将 pgsql 暴露给其它服务器访问，可在 /opt/maxkb/.env 中配置，然后执行<code>mkctl reload</code>，重新加载配置即可。</p>
+</div>
+<p><img alt="pgsl默认访问规则" src="../../img/FAQ/expose_pgsql_config.png" /></p>
+<p><img alt="pgsl默认访问规则" src="../../img/FAQ/expose_pgsql.png" /></p>
 <h2 id="3-modulenotfounderror-no-module-named-xxx">3 升级过程提示 ModuleNotFoundError: No module named 'XXX'<a class="headerlink" href="#3-modulenotfounderror-no-module-named-xxx" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>某些旧版本的依赖包与新版本不兼容，导致系统无法正常运行。进入依赖包的存储目录：

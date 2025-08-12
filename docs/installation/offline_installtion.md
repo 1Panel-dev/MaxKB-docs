@@ -93,8 +93,10 @@
     MAXKB_VERSION=v2.0.0
     ```
 
-    **注意**：首次安装之前可以在 install.conf文件中的修改参数，安装时则根据修改后的参数执行安装。安装后如需再次修改配置参数，则需要在 ${MAXKB_BASE}/maxkb/.env（默认是 /opt/maxkb/.env）文件中进行修改，并且在修改完后需执行 `mkctl reload` 命令重新加载配置文件。
+    **注意**：
 
+    - 首次安装之前可以在 install.conf文件中的修改参数，安装时则根据修改后的参数执行安装。安装后如需再次修改配置参数，则需要在 ${MAXKB_BASE}/maxkb/.env（默认是 /opt/maxkb/.env）文件中进行修改，并且在修改完后需执行 `mkctl reload` 命令重新加载配置文件。
+    - MAXKB_PGSQL_PORT、REDIS_PORT 仅针对使用外部数据库时有效，如果是使用内置的数据库，请不要做修改。
 
 
 ### 3.3 执行安装脚本

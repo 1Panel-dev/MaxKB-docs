@@ -5,11 +5,20 @@
 !!! Abstract ""
     Docker 版本太老可能会导致安装失败，建议环境建议使用安装包内的 Docker。安装包所使用的 Docker 版本为 27.2.0、Compose 版本为 v2.29.2。
 
-
-## 2 离线部署提示 failed to cast to expected type: strconv.ParseInt: parsing "2G"
+## 2 如何将内置的 pgsql 通过指定的主机端口提供对外访问？
 
 !!! Abstract ""
-    在配置文件中内存设置格式存在问题。打开配置文件 docker-compose-pgsql.yml，找到 services.pgsql.mem_limit 的设置项。 将内存设置值从 "2G" 修改为小写的 "2g"，执行 `mkctl reload` 命令重新加载配置。
+    默认配置进行安装时，为了安全性，pgsql 容器只对宿主机提供 5432 的访问端口，其它地址都无法访问。
+
+![pgsl默认访问规则](../../img/FAQ/lcoal_pgsql.png)
+
+!!! Abstract ""
+    如果需要将 pgsql 暴露给其它服务器访问，可在 /opt/maxkb/.env 中配置，然后执行`mkctl reload`，重新加载配置即可。
+
+![pgsl默认访问规则](../../img/FAQ/expose_pgsql_config.png)
+
+![pgsl默认访问规则](../../img/FAQ/expose_pgsql.png)
+
 
 ## 3 升级过程提示 ModuleNotFoundError: No module named 'XXX'
 

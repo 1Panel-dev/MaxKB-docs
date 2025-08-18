@@ -32,3 +32,9 @@
     - 确保网络连通:检查容器与目标服务器之间的网络连接是否正常，以及 SQL Server 的配置，确保其允许远程连接，并检查防火墙设置是否允许访问目标端口。
     - 重新安装兼容版本的 pymssql。在容器中安装依赖库后，确保后续在函数库中正确使用这些依赖库连接数据库。
     - 指定 TDS 版本：在连接语句中明确指定 TDS 版本（如 7.0）。
+
+## 3 执行提示 "Exception:keyword 'eval(' is banned in the tool."
+
+!!! Abstract ""
+    为了加强的安全性，防止恶意执行脚步，MaxKB V2 版本在工具的脚步中禁止了 subprocess、system、eval 等语句。
+    

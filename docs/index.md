@@ -42,7 +42,7 @@
     - [MaxKB 应用案例：中国农业大学-小鹉哥](https://mp.weixin.qq.com/s/4g_gySMBQZCJ9OZ-yBkmvw)
     - [MaxKB 应用案例：东北财经大学-小银杏](https://mp.weixin.qq.com/s/3BoxkY7EMomMmmvFYxvDIA)
     - [MaxKB 应用案例：重庆交通大学-渝小交](https://mp.weixin.qq.com/s/8L4hIjdhzWOmpQXx2cW33g)
-    - [MaxKB 应用案例：广西大学](https://mp.weixin.qq.com/s/83N9a_wWDce7z1NLIropEAx)
+    - [MaxKB 应用案例：广西大学](https://mp.weixin.qq.com/s/83N9a_wWDce7z1NLIropEA)
     - [MaxKB 应用案例：南京中医药大学](https://mp.weixin.qq.com/s/WUmAKYbZjp3272HIecpRFA)
     - [MaxKB 应用案例：高校行政管理AI小助手](https://www.bilibili.com/video/BV1yvBMYvEdy)
     - [MaxKB 应用案例：中铁水务](https://mp.weixin.qq.com/s/voNAddbK2CJOrJJs1ewZ8g)

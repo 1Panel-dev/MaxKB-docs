@@ -2986,9 +2986,9 @@
 链接格式即参数说明如下：</p>
 <ul>
 <li>链接格式：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect</a></li>
-<li>CORPID： 企业的CorpID</li>
+<li>CORPID： 企业的 CorpID</li>
 <li>REDIRECT_URI：授权后重定向的回调链接地址，需要使用urlencode对链接进行处理，例如：https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2，调整域名部分即可</li>
-<li>SCOPE：填 snsapi_base 即可</li>
+<li>SCOPE：填 snsapi_privateinfo 即可</li>
 <li>AGENTID：应用 ID</li>
 </ul>
 <p>主页地址示例： <a href="https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000008&amp;appid=ww5fad05adxxxx&amp;state=maxkb#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000008&amp;appid=ww5fad05adxxxx&amp;state=maxkb#wechat_redirect</a></p>

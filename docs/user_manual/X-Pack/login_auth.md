@@ -83,9 +83,9 @@
     链接格式即参数说明如下：
 
     - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&agentid=AGENTID&state=STATE#wechat_redirect
-    - CORPID： 企业的CorpID
+    - CORPID： 企业的 CorpID
     - REDIRECT_URI：授权后重定向的回调链接地址，需要使用urlencode对链接进行处理，例如：https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2，调整域名部分即可
-    - SCOPE：填 snsapi_base 即可
+    - SCOPE：填 snsapi_privateinfo 即可
     - AGENTID：应用 ID
 
     主页地址示例： https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&agentid=1000008&appid=ww5fad05adxxxx&state=maxkb#wechat_redirect

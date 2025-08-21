@@ -99,13 +99,13 @@
     应用主页地址的构造可以参考企业微信开发指南[造网页授权链接——构造企业oauth2链接](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
     链接格式即参数说明如下：
 
-    - 链接格式：https://open.weixin.qq.com/connect/authorize?redirect_uri=http(s)://xxx.xxx.xxx/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=CorpID&agentid=AgentID&state=maxkb#wechat_redirect
+    - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=http(s)://xxx.xxx.xxx/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=CorpID&agentid=AgentID&state=maxkb#wechat_redirect
     - CORPID： 企业的 CorpID
-    - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmk-enterprise.fit2cloud.cn/api/wecom/oauth2，调整域名部分即可
-    - SCOPE：填 snsapi_base 即可
+    - redirect_uri：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可。
+    - SCOPE：填 snsapi_privateinfo 即可
     - AGENTID：应用 ID
 
-    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=http(s)://xxx.xxx.xxx/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=ww5fad05ad336d118c&agentid=1000012&state=maxkb#wechat_redirect
+    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=http(s)://xxx.xxx.xxx/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=ww5fad05aaa36d118c&agentid=1000002&state=maxkb#wechat_redirect
 
 ![企业微信配置](../../img/system/weichat_oauth2.png)
 

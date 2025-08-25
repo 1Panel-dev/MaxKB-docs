@@ -372,7 +372,7 @@
     节点设置：
 
     - MCP Server Config：使用 json 格式填写 MCP Server 配置参数。
-    - 工具：对应 MCP Server下单的工具列表。
+    - 工具：对应 MCP Server下的工具列表。
 
     工具参数：MCP 工具对应的请求参数，可自定义，也可引用变量。
 

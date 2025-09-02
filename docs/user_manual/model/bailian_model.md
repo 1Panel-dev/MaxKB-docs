@@ -34,7 +34,7 @@
 ![阿里云百炼 重排模型配置](../../img/model/bailian_reranker.png){ width="500px" }
 
 !!! Abstract ""
-    阿里云百炼-语音识别模型配置样例图示如下：
+    阿里云百炼语音识别模型除了支持 ASR、Paraformer模型外，还支持 qwen-omni-turbo、qwen2.5-omni-7b 全模态模型，阿里云百炼-语音识别模型配置样例图示如下：
 ![阿里云百炼 语音识别模型配置](../../img/model/bailian_asr.png){ width="500px" }
 
 !!! Abstract ""

@@ -34,7 +34,9 @@
 ![阿里云百炼 重排模型配置](../../img/model/bailian_reranker.png){ width="500px" }
 
 !!! Abstract ""
-    阿里云百炼语音识别模型除了支持 ASR、Paraformer模型外，还支持 qwen-omni-turbo、qwen2.5-omni-7b 全模态模型，阿里云百炼-语音识别模型配置样例图示如下：
+    阿里云百炼语音识别模型除了支持 ASR、Paraformer模型外，还支持 qwen-omni-turbo、qwen2.5-omni-7b 全模态模型。
+
+    阿里云百炼-语音识别模型配置样例图示如下：
 ![阿里云百炼 语音识别模型配置](../../img/model/bailian_asr.png){ width="500px" }
 
 !!! Abstract ""
@@ -46,7 +48,7 @@
 ![阿里云百炼 视觉模型模型配置](../../img/model/bailian_vision.png){ width="500px" }
 
 !!! Abstract ""
-    阿里云百炼-图片生成模型默认图像尺寸为 1024 * 1024，图片数量 1 张，风格为 <auto>，即由模型随机输出图像风格，配置样例图示如下：
+    阿里云百炼-图片生成模型默认图像尺寸为 1024 * 1024，图片数量 1 张，风格为 &lt;auto&gt;，即由模型随机输出图像风格，配置样例图示如下：
 ![阿里云百炼 图片生成模型配置](../../img/model/bailian_vision_gen1.png){ width="500px" }
 
 ![阿里云百炼 图片生成模型配置](../../img/model/bailian_vision_gen2.png){ width="500px" }

@@ -102,6 +102,7 @@ nav:
                 - 应用接入: user_manual/X-Pack/app_integrate.md
                 - 身份验证: user_manual/X-Pack/app_auth.md
                 - 对话用户: user_manual/X-Pack/app_chatueser.md
+                - 发布历史: user_manual/X-Pack/public_history.md
             - 飞书文档: user_manual/X-Pack/feishu_doc.md
             - 系统设置:
                     - 系统外观: user_manual/X-Pack/theme_settings.md

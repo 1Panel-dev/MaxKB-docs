@@ -43,12 +43,12 @@
 ![创建函数](../../img/fx/add_tool.png)
 
 !!! Abstract ""
-    Python 代码编写完成后，点击【调试】进行代码功能的验证。调试完成后，点击【创建】，即完成工具数的创建。
+    Python 代码编写完成后，点击【调试】进行代码功能的验证。调试完成后，点击【创建】，即完成工具的创建。已创建成功的工具，默认状态为【已禁用】。
 
 ![工具调试](../../img/fx/tool_debug.png)
 
 !!! Abstract ""
-    创建成功的工具，可以在【高级编排应用】的设置中，点击【添加组件】->【工具】中，以添加组件的方式调用这些工具。
+    已启用的工具，可以在【高级编排应用】的中，点击【添加组件】->【工具】中，以添加组件的方式调用工具；也可通过【AI 对话】组件的【工具】进行调用。
 
 ![添加工具节点](../../img/fx/use_tool.png)
 
@@ -58,12 +58,12 @@
 
     - MCP 名称：MCP 的名称与 Logo，便于识别。MCP 的 Logo 在保存后可自定义上传。   
     - 描述： MCP 详细说明以及使用注意事项，会显示在高级编排应用的组件列表中。
-    - MCP Server Config：使用 JSON 格式填写 MCP Server 配置参数。通过 SSE/Streamable_Http 协议调用 MCP 服务中的工具。
+    - MCP Server Config：使用 JSON 格式填写 MCP Server 配置参数。通过 SSE/Streamable HTTP 协议调用 MCP 服务中的工具。
 
 ![创建MCP](../../img/fx/add_MCP.png)
 
 !!! Abstract ""
-    已创建成功的 MCP，可以在【高级编排应用】->【AI 对话】的 MCP 中进行引用。
+    已创建成功的 MCP，默认状态为【已禁用】。开启 MCP 后，可以在【高级编排应用】->【AI 对话】的 MCP 中进行引用。
 
 ![MCP使用](../../img/fx/use_MCP.png)
 
@@ -83,9 +83,11 @@
 !!! Abstract ""
     内置工具添加后，在配置启动参数（例如数据库连接信息、API Key 等）并启用后，便可在高级编排应用中调用。
 
-![启动函数](../../img/fx/sartup_parameters.png)
+![启动参数](../../img/fx/sartup_parameters.png)
 
-![启动函数](../../img/fx/fill_parameters.png)
+![参数配置](../../img/fx/fill_parameters.png)
+
+![高级编排应用](../../img/fx/use_tool_shop.png)
 
 
 
@@ -93,10 +95,19 @@
 ## 5 工具导出/导入
     
 !!! Abstract ""
-    工具支持导出和导入，对应的文件后缀为 `.tool`。
+    工具支持导出和导入，导出的文件后缀为 `.tool`。
 
-![函数导入导出](../../img/fx/import_export_dx.png)
+![函数导出](../../img/fx/import_export_dx.png)
     
+!!! Abstract ""
+    点击【导入创建】，选择后缀名为 `.tool` 的文件并打开。
+
+![函数导入](../../img/fx/import_fx.png)
+
+!!! Abstract ""
+    工具将自动导入，导入的工具默认状态为【已禁用】，可以点击工具，进入编辑工具查看和修改工具。
+
+![函数导入成功](../../img/fx/import_success_fx.png)
 
 ## 6 复制工具
 
@@ -116,6 +127,6 @@
 
 !!! Abstract ""
 
-    **注意：** 工具删除后，不可恢复。如果应用引用了该工具，在编排页面将显示【该工具不可用】的提示信息。 
+    **注意： 工具删除后，不可恢复。** 如果应用引用了该工具，在编排页面将显示【该工具不可用】的提示信息。 
 
 ![应用引用已删除工具](../../img/fx/use_del_tool.png)

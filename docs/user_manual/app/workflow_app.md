@@ -148,15 +148,15 @@
 
     **注意**：MCP 工具的调用需要大语言模型支持函数调用，如果大语言模型不支持，则配置无效。
 
-![AI对话](../../img/app/ai_chat.png){width="500px"}
+![AI对话](../../img/app/ai_chat.png)
 
 !!! Abstract ""
-    MCP：引用 MCP和自定义 MCP Server Config
+    MCP：引用 MCP和自定义 MCP Server Config。
 ![AI对话MCP](../../img/app/ai_chat_MCP.png){width="500px"}
 ![AI对话自定义](../../img/app/ai_chat_config.png){width="500px"}
 
 !!! Abstract ""
-    添加工具
+    添加工具。
 ![AI对话工具](../../img/app/ai_chat_new_tool.png)
 
 
@@ -357,8 +357,8 @@
 !!! Abstract ""
     表单参数支持引用变量或参数输入:
     
-    * 组件类型为【选项卡、单选框、多选框、单行多选框】时，在赋值方式中可选择自定义或引用变量，默认为：自定义。选项卡引用变量的提示：变量的值必须符合[{label:"xx",value:"xx"},{label:"xx",value:"xx"}]。
-    * 【文本框、JSON 文本框、滑块】组件的默认值支持参数输入。参数格式参考：{{开始.question}}
+    * 组件类型为【JSON文本框、单选框、多选框、选项卡、单行选项卡、单行多选卡、单行多选框】时，在赋值方式中可选择自定义或引用变量，默认为：自定义。
+    * 【文本框、多行文本框、密码框】组件的默认值支持参数输入。参数格式参考：{{开始.question}}
 
 ![表单参数](../../img/app/form_parameters.png)
 

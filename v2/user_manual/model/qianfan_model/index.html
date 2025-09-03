@@ -2037,6 +2037,8 @@
       
         
       
+        
+      
     
     
     
@@ -2150,6 +2152,29 @@
   
   <span class="md-ellipsis">
     对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/public_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    发布历史
     
   </span>
   
@@ -2756,23 +2781,26 @@
 
 <h2 id="1">1 添加模型<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>添加千帆大模型之前，需要先在 <a href="https://qianfan.cloud.baidu.com/">百度智能云千帆大模型平台</a> 中进行注册并登录。在控制台中的【模型服务-安全认证】中创建应用后，将自动生成 API Key 和 Secret Key 等信息。</p>
+<p>添加千帆大模型之前，需要先在 <a href="https://qianfan.cloud.baidu.com/">百度智能云千帆大模型平台</a> 中进行注册并登录。在控制台中的【安全认证】中创建 API Key 和 Secret Key 等信息。</p>
+<p><strong>说明：</strong> 千帆 ModelBuilder 已经推出兼容 OpenAI 规范的 v2 版本推理接口，v1 版本推理接口即将下线。MaxKB 对 v1和 v2 版本接口进行了兼容处理，在创建模型时，可以指定 API 接口版本。使用 v1 版本时，需要输入 API Key 和 Secret Key 参数，而 v2 版本版本输入参数为 API URL 和 API Key。</p>
 <p>选择模型供应商为<code>千帆大模型</code>，并在模型添加对话框中输入如下必要信息：</p>
 <ul>
 <li>模型名称：MaxKB 中自定义的模型名称。</li>
 <li>模型类型：大语言模型/向量模型。    </li>
-<li>基础模型：百度千帆支持的 LLM 模型名称，选项中显示了百度千帆支持的部分常用大语言模型名称，支持手动输入，但需要与千帆大平台支持的模型名称保持一致，否则无法通过校验。    </li>
-<li>API Key 和 Secret Key：千帆大模型中应用的 API Key 和 Secret Key。</li>
+<li>基础模型：百度千帆支持的 LLM 模型名称，选项中显示了百度千帆支持的部分常用大语言模型名称，支持手动输入，但需要与千帆大平台支持的模型名称保持一致，否则无法通过校验。  </li>
+<li>API Version： API 接口版本，v1/v2。</li>
+<li>API URL： API Version 为 v2时的输入参数，请输入<code>https://qianfan.baidubce.com/v2</code>。</li>
+<li>API Key 和 Secret Key： API Version 为 v1 时的输入参数， 即千帆大模型中应用的 API Key 和 Secret Key。</li>
 </ul>
 </div>
 <p><img alt="百度应用" src="../../../img/model/qianfan_app.png" /></p>
 <h2 id="2">2 配置样例<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>千帆大模型-大语言模型配置样例图示：</p>
+<p>千帆大模型 v2-大语言模型配置样例图示：</p>
 </div>
-<p><img alt="千帆大模型" src="../../../img/model/qianfan_model.png" width="500px" /></p>
+<p><img alt="千帆大模型" src="../../../img/model/qianfan_llm.png" width="500px" /></p>
 <div class="admonition abstract">
-<p>千帆大模型-向量模型配置样例图示：</p>
+<p>千帆大模型 v2-向量模型配置样例图示：</p>
 </div>
 <p><img alt="千帆大模型" src="../../../img/model/qianfan_embedding.png" width="500px" /></p>
 

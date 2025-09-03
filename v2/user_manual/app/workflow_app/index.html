@@ -2329,6 +2329,8 @@
       
         
       
+        
+      
     
     
     
@@ -2442,6 +2444,29 @@
   
   <span class="md-ellipsis">
     对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/public_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    发布历史
     
   </span>
   
@@ -3492,8 +3517,9 @@
 </ul>
 </li>
 <li>
-<p>工具：开启并配置 MCP Server Config 后，大模型会根据提示词内容会主动调用合适的工具。</p>
+<p>MCP：开启了 MCP 调用，可以通过引用 MCP 和自定义 MCP Server Config 配置两种方式实现对 MCP 的调用，大模型会根据提示词内容会主动调用合适的工具。</p>
 </li>
+<li>工具：可以根据实际场景灵活选用自定义工具，系统自动将工具能力封装为MCP服务并对接模型，AI能够根据对话上下文智能判断是否调用工具。</li>
 <li>输出思考：对于模型反馈思考过程的设置与开启，默认开始和结束标签是 <code>&lt;think&gt;</code>、<code>&lt;/think&gt;</code> 。</li>
 <li>返回内容：是否在对话中显示该节点返回的内容。</li>
 </ul>
@@ -3504,7 +3530,16 @@
 </ul>
 <p><strong>注意</strong>：MCP 工具的调用需要大语言模型支持函数调用，如果大语言模型不支持，则配置无效。</p>
 </div>
-<p><img alt="AI对话" src="../../../img/app/ai_chat.png" width="500px" /></p>
+<p><img alt="AI对话" src="../../../img/app/ai_chat.png" /></p>
+<div class="admonition abstract">
+<p>MCP：引用 MCP和自定义 MCP Server Config。</p>
+</div>
+<p><img alt="AI对话MCP" src="../../../img/app/ai_chat_MCP.png" width="500px" />
+<img alt="AI对话自定义" src="../../../img/app/ai_chat_config.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>添加工具。</p>
+</div>
+<p><img alt="AI对话工具" src="../../../img/app/ai_chat_new_tool.png" /></p>
 <h4 id="222">2.2.2 图片理解<a class="headerlink" href="#222" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：对用户上传的图片文件进行分析和理解。</p>
@@ -3665,6 +3700,24 @@
 <p>表单全部内容将作为固定的输出，对于各个表单项也都进行参数化输出。</p>
 </div>
 <p><img alt="表单收集" src="../../../img/app/form.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>表单添加参数的组件类型支持文本框、多行文本框、JSON 文本框、密码框、单选框、多选框、选项卡、单行选项卡、单行多选卡、滑块、开关、日期和文件上传。</p>
+</div>
+<p><img alt="多行文本框" src="../../../img/app/form_textarea.png" width="500px" />
+<img alt="文件上传" src="../../../img/app/form_fileup.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>表单参数支持引用变量或参数输入:</p>
+<ul>
+<li>组件类型为【单选框、多选框、选项卡、单行选项卡、单行多选卡、JSON文本框】时，赋值方式中可选择自定义或引用变量，默认为：自定义。引用变量的格式可参考【引用变量】旁的提示信息。</li>
+</ul>
+</div>
+<p><img alt="参数格式" src="../../../img/app/form_parameters_format.png" width="500px" /></p>
+<div class="admonition abstract">
+<ul>
+<li>【文本框、多行文本框、密码框】组件的默认值支持参数输入。参数格式参考：{{开始.question}}</li>
+</ul>
+</div>
+<p><img alt="参数输入" src="../../../img/app/input_parameter.png" width="500px" /></p>
 <h4 id="244">2.4.4  变量赋值<a class="headerlink" href="#244" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：更新全局变量的值。</p>

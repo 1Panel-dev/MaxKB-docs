@@ -1365,15 +1365,6 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2 工具商店
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
       2 自定义工具
     </span>
   </a>
@@ -1405,9 +1396,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-mcp" class="md-nav__link">
     <span class="md-ellipsis">
-      3 工具导出/导入
+      3 创建 MCP
     </span>
   </a>
   
@@ -1416,7 +1407,7 @@
         <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4 复制工具
+      4 工具商店
     </span>
   </a>
   
@@ -1425,7 +1416,25 @@
         <li class="md-nav__item">
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      5 删除工具
+      5 工具导出/导入
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 复制工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 删除工具
     </span>
   </a>
   
@@ -2097,6 +2106,8 @@
       
         
       
+        
+      
     
     
     
@@ -2210,6 +2221,29 @@
   
   <span class="md-ellipsis">
     对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/public_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    发布历史
     
   </span>
   
@@ -2789,15 +2823,6 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2 工具商店
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
       2 自定义工具
     </span>
   </a>
@@ -2829,9 +2854,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-mcp" class="md-nav__link">
     <span class="md-ellipsis">
-      3 工具导出/导入
+      3 创建 MCP
     </span>
   </a>
   
@@ -2840,7 +2865,7 @@
         <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4 复制工具
+      4 工具商店
     </span>
   </a>
   
@@ -2849,7 +2874,25 @@
         <li class="md-nav__item">
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      5 删除工具
+      5 工具导出/导入
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 复制工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 删除工具
     </span>
   </a>
   
@@ -2877,8 +2920,7 @@
 <h1 id="_1">工具<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="1">1 功能概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>MaxKB 支持用户根据自身的业务需求，通过内置工具或自定工具对获取和查询数据，逻辑判断、信息提取或其它场景的操作。<br />
-工具创建完成后，在应用编排时以添加组件的方式调用这些工具，从而更好地满足各种复杂的业务需求。 </p>
+<p>MaxKB 支持用户根据自身的业务需求，通过各种工具获取和查询数据、逻辑判断、信息提取或其它场景的操作并在应用编排时进行调用，以满足各种复杂的业务需求。 </p>
 <ul>
 <li>共享工具：系统管理员在【共享资源】中创建共享工具后，可以授权给指定工作空间。</li>
 <li>全部工具：用户可以创建工具，其他用户<a href="../../X-Pack/authorization_resources/"><strong>资源授权</strong></a>后可以查看、使用和维护。</li>
@@ -2886,23 +2928,7 @@
 <p><strong>注意</strong>：共享资源为企业版 X-Pack 功能。</p>
 </div>
 <p><img alt="工具" src="../../../img/fx/tool.png" /></p>
-<h2 id="2">2 工具商店<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>工具商店是 MaxKB 系统中的一个功能模块，帮助用户扩展系统的功能。<br />
-工具商店中的工具主要分为以下几类：</p>
-<ul>
-<li>联网搜索：提供网络搜索功能，如 Google Search、博查搜索、LangSearch 等，帮助用户快速从互联网获取信息。</li>
-<li>数据库查询：支持连接不同类型的数据库并执行查询，如 MySQL 查询、PostgreSQL 查询等，方便用户管理和分析数据。</li>
-</ul>
-</div>
-<p><img alt="工具商店" src="../../../img/fx/tool_shop.png" /></p>
-<p><img alt="工具商店" src="../../../img/fx/tool_sho_list.png" /></p>
-<div class="admonition abstract">
-<p>内置工具添加后，需要配置启动参数，例如数据库连接信息、API Key 等，并启用后才可以在高级编排应用中使用。</p>
-</div>
-<p><img alt="启动函数" src="../../../img/fx/sartup_parameters.png" /></p>
-<p><img alt="启动函数" src="../../../img/fx/fill_parameters.png" /></p>
-<h2 id="2_1">2 自定义工具<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
+<h2 id="2">2 自定义工具<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 依赖安装<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>如果工具实现需要安装第三方依赖包，可在 MaxKB 容器中使用 pip 命令进行安装。</p>
@@ -2915,9 +2941,9 @@ pip install pymysql
 </div>
 <h3 id="22">2.2 工具创建<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>点击【创建工具】，打开创建工具对话框。</p>
+<p>点击【创建工具】，打开创建工具页面。</p>
 <ul>
-<li>工具名称：工具的 logo 以工具数名称，便于识别。工具 logo 在保存后可自定义上传。     </li>
+<li>工具名称：工具的 logo 与工具名称，便于识别。工具 logo 在保存后可自定义上传。     </li>
 <li>描述：工具详细说明以及使用注意事项，会显示在高级编排应用的组件列表中。</li>
 <li>启动参数：启用参数即工具运行的必要参数，例如 API Key 等。将启动参数与输入参数分离，在工作流中仅关注输入参数，同时也避免关键信息的泄露。</li>
 <li>输入参数：工具的输入参数，参数的数据类别包括：string、int、float、array，可自定义赋值，也可引用参数。 </li>
@@ -2925,33 +2951,72 @@ pip install pymysql
 <li>输出参数：Python 代码执行返回的结果。</li>
 </ul>
 </div>
-<p><img alt="创建函数" src="../../../img/fx/add_tool.png" width="600px" /></p>
+<p><img alt="创建函数" src="../../../img/fx/add_tool.png" /></p>
 <div class="admonition abstract">
-<p>Python 代码编写完成后，点击【调试】进行代码功能的验证。调试完成后，点击【创建】，即完成工具数的创建。  </p>
+<p>Python 代码编写完成后，点击【调试】进行代码功能的验证。调试完成后，点击【创建】，即完成工具的创建。已创建成功的工具，默认状态为【已禁用】。</p>
 </div>
 <p><img alt="工具调试" src="../../../img/fx/tool_debug.png" /></p>
 <div class="admonition abstract">
-<p>创建成功的工具，可以在【高级编排应用】的设置中，点击【添加组件】-&gt;【工具】中，以添加组件的方式调用这些工具。</p>
+<p>已启用的工具，可以在【高级编排应用】的中，点击【添加组件】-&gt;【工具】中，以添加组件的方式调用工具；也可通过【AI 对话】组件的【工具】进行调用。</p>
 </div>
 <p><img alt="添加工具节点" src="../../../img/fx/use_tool.png" /></p>
-<h2 id="3">3 工具导出/导入<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="3-mcp">3 创建 MCP<a class="headerlink" href="#3-mcp" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>工具支持导出和导入，对应的文件后缀为 <code>.tool</code>。</p>
+<p>点击【创建 MCP】，打开创建 MCP 页面。</p>
+<ul>
+<li>MCP 名称：MCP 的名称与 Logo，便于识别。MCP 的 Logo 在保存后可自定义上传。   </li>
+<li>描述： MCP 详细说明以及使用注意事项，会显示在高级编排应用的组件列表中。</li>
+<li>MCP Server Config：使用 JSON 格式填写 MCP Server 配置参数。通过 SSE/Streamable HTTP 协议调用 MCP 服务中的工具。</li>
+</ul>
 </div>
-<p><img alt="函数导入导出" src="../../../img/fx/import_export_dx.png" /></p>
-<h2 id="4">4 复制工具<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p><img alt="创建MCP" src="../../../img/fx/add_MCP.png" /></p>
+<div class="admonition abstract">
+<p>已创建成功的 MCP，默认状态为【已禁用】。开启 MCP 后，可以在【高级编排应用】-&gt;【AI 对话】的 MCP 中进行引用。</p>
+</div>
+<p><img alt="MCP使用" src="../../../img/fx/use_MCP.png" /></p>
+<h2 id="4">4 工具商店<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>工具商店是 MaxKB 系统中的一个功能模块，帮助用户扩展系统的功能。<br />
+工具商店中的工具主要分为以下几类：</p>
+<ul>
+<li>联网搜索：提供 Web 搜索功能，如 Google Search、博查搜索、LangSearch 等，帮助用户快速从互联网获取信息。</li>
+<li>数据库查询：支持连接不同类型的数据库并执行查询，如 MySQL 查询、PostgreSQL 查询等，方便用户管理和分析数据。</li>
+</ul>
+</div>
+<p><img alt="工具商店" src="../../../img/fx/tool_shop.png" /></p>
+<p><img alt="工具商店" src="../../../img/fx/tool_sho_list.png" /></p>
+<div class="admonition abstract">
+<p>内置工具添加后，在配置启动参数（例如数据库连接信息、API Key 等）并启用后，便可在高级编排应用中调用。</p>
+</div>
+<p><img alt="启动参数" src="../../../img/fx/sartup_parameters.png" /></p>
+<p><img alt="参数配置" src="../../../img/fx/fill_parameters.png" /></p>
+<p><img alt="高级编排应用" src="../../../img/fx/use_tool_shop.png" /></p>
+<h2 id="5">5 工具导出/导入<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>工具支持导出和导入，导出的文件后缀为 <code>.tool</code>。</p>
+</div>
+<p><img alt="函数导出" src="../../../img/fx/import_export_dx.png" /></p>
+<div class="admonition abstract">
+<p>点击【导入创建】，选择后缀名为 <code>.tool</code> 的文件并打开。</p>
+</div>
+<p><img alt="函数导入" src="../../../img/fx/import_fx.png" /></p>
+<div class="admonition abstract">
+<p>工具将自动导入，导入的工具默认状态为【已禁用】，可以点击工具，进入编辑工具查看和修改工具。</p>
+</div>
+<p><img alt="函数导入成功" src="../../../img/fx/import_success_fx.png" /></p>
+<h2 id="6">6 复制工具<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击工具面板的【复制】按钮，打开复制工具对话框，对原工具内容进行编辑修改后点击【创建】即可快速创建一个新工具。</p>
 </div>
 <p><img alt="复制工具" src="../../../img/fx/copy_tool.png" /></p>
 <p><img alt="复制工具" src="../../../img/fx/copy_tool1.png" /></p>
-<h2 id="5">5 删除工具<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="7">7 删除工具<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击工具面板的【删除】按钮，即可对工具进行删除。</p>
 </div>
 <p><img alt="删除工具" src="../../../img/fx/del_tool.png" /></p>
 <div class="admonition abstract">
-<p><strong>注意：</strong> 工具删除后，如果应用引用了该工具，那么在编排页面将显示【该工具不可用】的提示信息，并且在问答时也会报错。 </p>
+<p><strong>注意： 工具删除后，不可恢复。</strong> 如果应用引用了该工具，在编排页面将显示【该工具不可用】的提示信息。 </p>
 </div>
 <p><img alt="应用引用已删除工具" src="../../../img/fx/use_del_tool.png" /></p>
 

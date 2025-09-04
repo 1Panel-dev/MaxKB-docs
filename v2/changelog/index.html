@@ -472,6 +472,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v210" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v202" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.2
@@ -2787,6 +2796,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v210" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v202" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.2
@@ -2849,6 +2867,63 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v210">v2.1.0<a class="headerlink" href="#v210" title="Permanent link">&para;</a></h3>
+<p>2025 年 9 月 4 日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>工具：新增 MCP 工具管理功能；</li>
+<li>应用：AI 对话节点新增工具设置，用户选定自定义工具后，模型可自主决策是否调用已配置的工具；</li>
+<li>应用：表单收集节点的参数支持引用变量；</li>
+<li>应用：表单收集节点新增了多行文本框、文件上传和单行多选框组件；</li>
+<li>应用（X-Pack）：应用接入支持对接企业微信智能机器人，支持用户实现 AI 能力与企业微信办公生态的高效联动；</li>
+<li>应用（X-Pack）：显示设置中新增“显示历史记录”的设置选项；</li>
+<li>问答页面：在问答页面中支持将当前的对话记录导出为 PDF 和 PNG 图片格式；</li>
+<li>知识库：针对通用知识库和飞书知识库的文档新增“是否允许在知识来源中下载”的设置选项；</li>
+<li>资源授权：新增按资源维度授权功能，支持将应用、知识库、工具、模型核心资源授权给指定用户。</li>
+<li>资源授权：系统管理中按用户进行资源授权时，支持为每个资源设置不同的权限；</li>
+<li>模型：vLLM 供应商新增支持重排模型和语音识别模型；</li>
+<li>模型：腾讯混元供应商新增支持语音识别模型；</li>
+<li>模型：讯飞星火供应商的语音识别模型新增支持中文语音大模型；</li>
+<li>模型：阿里云百炼供应商的语音识别模型新增支持 qwen-omni-turbo、qwen2.5-omni-7b 和 ASR 模型；</li>
+<li>模型：百度千帆大模型供应商新增支持 API 版本为 V2 的对接方式。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>应用：对话日志列表新增按用户查询的功能；</li>
+<li>应用（X-Pack）：应用接入飞书后，AI 回复内容以 Markdown 格式呈现；</li>
+<li>问答页面：进入问答页面时默认自动新建对话；</li>
+<li>问答页面：优化上传文件或图片时，不自动生成默认问题的问题；</li>
+<li>工具：创建或编辑工具点击“关闭”或“取消”按钮时，增加二次确认提示；</li>
+<li>登录：用户使用默认密码登录后，需要先修改密码方可继续使用。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>应用：修复高级编排应用中 MCP 节点未国际化的问题；</li>
+<li>应用：修复表单收集节点后使用会话变量时，无法读取变量的值的问题；</li>
+<li>问答页面（X-Pack)：修复浏览器页签中未显示自定义应用 Logo 的问题；</li>
+<li>问答页面（X-Pack）：修复在“访问限制”功能中切换应用的身份认证方式时，已有的认证信息仍然生效的问题；</li>
+<li>问答页面：修复点击左侧导航区域的“收起”按钮时，内容展示样式错乱的问题；</li>
+<li>问答页面：修复对话用户重新登录后提问时，提示缺失参数的问题；</li>
+<li>问答页面：修复历史记录数据时，对话记录区域不显示记录的问题；</li>
+<li>问答页面：修复上传空文件会导致提取异常的问题；</li>
+<li>问答页面：修复快捷问题的内容较长时，标签显示异常的问题；</li>
+<li>知识库：修复系统无 License 授权时，命中测试界面输入框显示不完整的问题；</li>
+<li>知识库：修复知识库上传文档时，点击“返回”按钮没有二次确认的问题；</li>
+<li>知识库：修复知识库分段详情中按分段内容搜索，查询结果不正确的问题；</li>
+<li>知识库：修复同一个分段可以重复多次关联同一个问题的问题；</li>
+<li>知识库：修复问题列表中“关联分段数”统计不正确的问题；</li>
+<li>模型：修复“全部模型”列表中模型未按创建时间降序显示的问题；</li>
+<li>资源授权：修复仅具有知识库查看权限的用户可在对话日志中添加分段的问题；</li>
+<li>文件夹：修复在应用和知识库的资源详情中点击“返回”按钮时，每次都返回到根目录的问题；</li>
+<li>对话用户（X-Pack）：修复同步系统用户时未同步用户密码的问题；</li>
+<li>对话用户（X-Pack）：修复新建对话用户时，未设置用户组也能创建成功的问题。</li>
+</ul>
+</div>
 <h3 id="v202">v2.0.2<a class="headerlink" href="#v202" title="Permanent link">&para;</a></h3>
 <p>2025 年 8 月 7 日</p>
 <div class="admonition abstract">

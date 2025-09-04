@@ -57,7 +57,7 @@
     点击【创建 MCP】，打开创建 MCP 页面。
 
     - MCP 名称：MCP 的名称与 Logo，便于识别。MCP 的 Logo 在保存后可自定义上传。   
-    - 描述： MCP 详细说明以及使用注意事项，会显示在高级编排应用的组件列表中。
+    - 描述： MCP 详细说明以及使用注意事项。
     - MCP Server Config：使用 JSON 格式填写 MCP Server 配置参数。通过 SSE/Streamable HTTP 协议调用 MCP 服务中的工具。
 
 ![创建MCP](../../img/fx/add_MCP.png)

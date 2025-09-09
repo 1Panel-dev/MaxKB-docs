@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -1788,6 +1788,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 资源授权规则
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2760,6 +2769,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 资源授权规则
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2783,9 +2801,9 @@
 <div class="admonition abstract">
 <p>资源授权功能用于管理用户对工作空间内资源的访问权限。</p>
 <ul>
-<li>系统管理员可以在【系统管理】中对所有资源进行资源授权；</li>
-<li>工作空间管理员可在自己管理的工作空间下的资源进行资源授权；</li>
-<li>普通用户只能对自己所创建的资源，授权给同个工作空间下的成员。</li>
+<li>系统管理员可以在【系统管理】中对所有资源进行授权；</li>
+<li>工作空间管理员可以在工作空间中，对工作空间内的所有资源进行授权；</li>
+<li>普通用户可以对自己创建的资源进行授权；</li>
 </ul>
 </div>
 <h2 id="1">1 系统资源授权<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
@@ -2798,7 +2816,7 @@
 <li>不授权：默认对资源不进行授权。</li>
 <li>查看：仅能查看和使用资源，不能对该资源进行增删改操作。</li>
 <li>管理：可以对该资源进行所有操作。</li>
-<li>按用户角色：对所选的资源，按照用户角色赋予的权限显示其拥有的操作权限。这种方式适用于需要根据角色统一管理权限的场景。</li>
+<li>按用户角色：对所选的资源，按照角色拥有的权限赋予用户权限。</li>
 </ul>
 </li>
 </ul>
@@ -2810,6 +2828,14 @@
 <p>用户可以在应用、知识库、工具和模型中，将资源授权给指定的用户，授权的用户为当前工作空间下的所有成员。</p>
 </div>
 <p><img alt="资源授权" src="../../../img/system/authorization_resources_app.png" /></p>
+<h2 id="3">3 资源授权规则<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<ul>
+<li>默认对系统管理员的授权是按用户角色，修改工作空间管理员和系统管理员不影响二者对资源的角色权限（优先级高）；</li>
+<li>当普通用户被授予【管理】权限时，也可对应用进行资源授权操作，但需遵守角色权限最高规则;</li>
+<li>如果成员有多个角色，取所有角色的最大权限（并集）进行授权。</li>
+</ul>
+</div>
 
 
 

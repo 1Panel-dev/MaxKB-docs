@@ -413,6 +413,16 @@
 
 ![MCP 节点](../../img/app/mcp.png){width="500px"}
 
+!!! Abstract ""
+    ```
+    MCP Server Config 格式参考如下
+    {
+        "amap-maps": {
+          "url": "http://IP:端口/MCPserver名称",
+          "transport":"sse"               # 如果使用 Streamable_HTTP 协议，需将"sse"替换成"streamable_http"
+        }
+    }
+    ```
 
 #### 2.5.3  自定义工具
 !!! Abstract ""

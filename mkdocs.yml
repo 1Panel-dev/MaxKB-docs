@@ -87,6 +87,7 @@ nav:
                 - 高级编排应用: user_manual/app/workflow_app.md
             - 应用概览: user_manual/app/app-view.md
             - 对话日志: user_manual/app/log.md
+        - 通过API KEY进行对话: user_manual/chat_to_API.md
         - 用户管理: user_manual/user_community.md
         - 资源授权: user_manual/X-Pack/authorization_resources.md
         - 系统设置: user_manual/email.md

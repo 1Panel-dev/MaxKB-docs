@@ -3171,8 +3171,8 @@
 <ul>
 <li><strong>此工具是迁移工具，用以将 v1.10.10-lts 的数据迁移到 v2.1.0，并不是直接的升级工具；</strong></li>
 <li><strong>此工具只支持 v1.10.10-lts 的数据迁移到 v2.1.0；</strong></li>
-<li><strong>数据迁移的目标环境 必须是v2.1.0，且没有任何数据（license 除外）；</strong></li>
-<li><strong>迁移前，停止在 v1.10.10 环境进行操作，避免数据迁移不完整；</strong></li>
+<li><strong>数据迁移的目标环境必须是v2.1.0，且没有任何数据（license 除外）；</strong></li>
+<li><strong>迁移前，停止在 v1.10.10-lts 环境进行操作，避免数据迁移不完整；</strong></li>
 <li><strong>迁移前，请务必检查磁盘空间，并确保数据导出和导入前后有足够的存储空间。</strong></li>
 </ul>
 </div>
@@ -3184,10 +3184,10 @@
 <h3 id="31-linuxmacos">3.1 Linux/macOS 系统<a class="headerlink" href="#31-linuxmacos" title="Permanent link">&para;</a></h3>
 <h4 id="311">3.1.1 导出数据<a class="headerlink" href="#311" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>在 v1.10.10 机器上下载 MaxKB-v1-to-v2-migrator-&lt;version&gt;.zip，解压后进入目录，执行命令导出 v1 数据。</p>
+<p>在 v1.10.10-lts 机器上下载 MaxKB-v1-to-v2-migrator-&lt;version&gt;.zip，解压后进入目录，执行以下命令导出 v1 数据。</p>
 <ul>
-<li>如果迁移数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
-<li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个migrate.zip。</li>
+<li>如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
+<li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个 migrate.zip。</li>
 <li>将 MaxKB-v1-to-v2-migrator-&lt;version&gt; 复制到 v2.1.0 所在的机器上。
 <div class="highlight"><pre><span></span><code>unzip MaxKB-v1-to-v2-migrator-&lt;version&gt;.zip 
 
@@ -3200,8 +3200,8 @@ bash export_v1_data.sh &lt;v1_container_name&gt;
 <p><img alt="v1数据导出" src="../../img/index/migrate_linux_export.png" /></p>
 <h4 id="312">3.1.2 导入数据<a class="headerlink" href="#312" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据, 专业版和企业版需要在导入 license 再进行数据的导入。
-进入迁移工具目录，执行以下命令将数据导入 v2.1.0。
+<p>在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据, 专业版和企业版需导入 license 后再进行数据的导入。</p>
+<p>进入迁移工具目录，执行以下命令将数据导入 v2.1.0。
 <div class="highlight"><pre><span></span><code>cd MaxKB-v1-to-v2-migrator-&lt;version&gt;
 
 bash import_v2_data.sh &lt;v2_container_name&gt;
@@ -3232,9 +3232,9 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 </div>
 <h4 id="322">3.2.2 导出数据<a class="headerlink" href="#322" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>对于 Windows 系统，MaxKB 提供了 PowerShell 脚本(.ps1)来导出 v1.10.10 数据。下载迁移工具并解压，使用终端管理员进入迁移目录，执行命令导出 v1 数据。</p>
+<p>对于 Windows 系统，MaxKB 提供了 PowerShell 脚本（.ps1）来导出 v1.10.10-lts 数据。下载迁移工具并解压，使用终端管理员进入迁移目录，执行命令导出 v1 数据。</p>
 <ul>
-<li>如果迁移数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
+<li>如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
 <li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个migrate.zip。
 <div class="highlight"><pre><span></span><code># PowerShell 版本
 .\export_v1_data.ps1 -ContainerName &lt;v1_container_name&gt;
@@ -3244,7 +3244,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <p><img alt="导出windows" src="../../img/index/migrate_windows_export.png" /></p>
 <h4 id="323">3.2.3 导入数据<a class="headerlink" href="#323" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据, 专业版和企业版需要在导入 license 再进行数据的导入。
+<p>在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据，专业版和企业版需要在导入 license 再进行数据的导入。
 <div class="highlight"><pre><span></span><code>#PowerShell 版本
 .\import_v2_data.ps1 -ContainerName &lt;v2_container_name&gt;
 </code></pre></div></p>
@@ -3254,10 +3254,10 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <h3 id="41">4.1 用户<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <ul>
-<li>如果用户的【姓名】为空，迁移后，自动将【用户名】作为【姓名】；</li>
+<li>如果 v1 中用户的【姓名】为空，迁移后，自动将【用户名】作为【姓名】；</li>
 <li>工作空间内的资源查询依照【姓名】查询；</li>
-<li>admin 账户默认授予系统管理员、工作空间管理员、普通用户权限（X-Pack)；</li>
-<li>除 admin 外，系统用户或其他用户类型迁移后，默认角色为普通用户（X-Pack)。</li>
+<li>admin 账户默认授予系统管理员、工作空间管理员、普通用户权限（X-Pack）；</li>
+<li>除 admin 外，系统用户或其他用户类型迁移后，默认角色为普通用户（X-Pack）。</li>
 </ul>
 </div>
 <h3 id="42">4.2 资源<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
@@ -3265,7 +3265,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <ul>
 <li>v1 授权给其他成员的应用/知识库，迁移后授予相应的权限；</li>
 <li>资源创建者拥有管理资源的权限；</li>
-<li>v1 函数库迁移后，在工具中，创建者有管理权限，其他用户默认都是不授权状态；</li>
+<li>v1 函数库迁移后，在工具中，创建者有管理权限，其他用户默认是不授权状态；</li>
 <li>公有模型迁移后，默认资源授权所有普通用户为查看权限，创建者为管理权限。</li>
 </ul>
 </div>
@@ -3276,8 +3276,11 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 </ul>
 </div>
 <h3 id="44">4.4 应用接入<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>- 应用接入到企业微信等的回调地址会发生变化，应用接入、登录认证（扫码登录）需重新配置（X-Pack)；
-</code></pre></div>
+<div class="admonition abstract">
+<ul>
+<li>应用接入到企业微信等的回调地址会发生变化，应用接入、登录认证（扫码登录）需重新配置（X-Pack）；</li>
+</ul>
+</div>
 
 
 

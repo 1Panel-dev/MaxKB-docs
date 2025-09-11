@@ -461,6 +461,8 @@
       
         
       
+        
+      
     
     
     
@@ -551,6 +553,29 @@
   
   <span class="md-ellipsis">
     1Panel 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/migrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迁移工具
     
   </span>
   
@@ -3777,6 +3802,16 @@
 </ul>
 </div>
 <p><img alt="MCP 节点" src="../../../img/app/mcp.png" width="500px" /></p>
+<div class="admonition abstract">
+<div class="highlight"><pre><span></span><code>MCP Server Config 格式参考如下
+{
+    &quot;amap-maps&quot;: {
+      &quot;url&quot;: &quot;http://IP:端口/MCPserver名称&quot;,
+      &quot;transport&quot;:&quot;sse&quot;               # 如果使用 Streamable_HTTP 协议，需将&quot;sse&quot;替换成&quot;streamable_http&quot;
+    }
+}
+</code></pre></div>
+</div>
 <h4 id="253">2.5.3  自定义工具<a class="headerlink" href="#253" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>在高级编排流程中，编写 Python 代码和添加参数创建工具数作为流程中的一个处理节点，以灵活处理复杂需求，函数详细说明见：<a href="../tool/tool">工具</a>。</p>

@@ -4,22 +4,23 @@
 
 ### 1.1 迁移路线 
 !!! Abstract ""
-    **注意：v1 版本需先升级至 v1.10.10-lts，再使用迁移工具迁移到 v2.1.0，之后可升级到 v2 更高版本。**
+    **注意**：v1 版本需先升级至 **v1.10.10-lts**，再使用迁移工具迁移到 **v2.1.0**。迁移的 v2 版本为 **v2.1.0** ,之后可升级到 v2 更高版本。
 
 ![migrate](../img/index/migrate_route.png)
 
 ### 1.2 注意事项
 !!! Abstract ""
 
-    - **此工具是迁移工具，用以将 v1.10.10-lts 的数据迁移到 v2.1.0，并不是直接的升级工具；**
-    - **此工具只支持 v1.10.10-lts 的数据迁移到 v2.1.0；**
-    - **数据迁移的目标环境必须是v2.1.0，且没有任何数据（license 除外）；**
-    - **迁移前，停止在 v1.10.10-lts 环境进行操作，避免数据迁移不完整；**
-    - **迁移前，请务必检查磁盘空间，并确保数据导出和导入前后有足够的存储空间。**
+    - 此工具是迁移工具，用以将 v1.10.10-lts 的数据迁移到 v2.1.0，并不是直接的升级工具；
+    - 此工具只支持 v1.10.10-lts 的数据迁移到 v2.1.0；
+    - 数据迁移的目标环境必须是 v2.1.0，且没有任何数据（license 除外）；
+    - 迁移前，不要在 v1.10.10-lts 环境进行操作，避免数据迁移不完整；
+    - 迁移前，请务必检查磁盘空间，并确保数据导出和导入前后有足够的存储空间；
+    - 迁移时，保证 v1 和 v2 的容器都处于正常运行状态（不需要停止服务）。
 
 ## 2 迁移工具下载
 !!! Abstract ""
-    打开[MaxKB 迁移工具下载](https://github.com/1Panel-dev/MaxKB-v1-to-v2-migrator)页面，下载最新版本工具，并上传至部署服务器。
+    打开 [MaxKB 迁移工具下载](https://github.com/1Panel-dev/MaxKB-v1-to-v2-migrator)页面，下载最新版本工具，并上传至部署服务器。
 
 ## 3 迁移操作
 ### 3.1 Linux/macOS 系统
@@ -29,7 +30,7 @@
 
     - 如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。
     - 导出完成后，MaxKB-v1-to-v2-migrator-<version\> 中会生成一个 migrate.zip。
-    - 将 MaxKB-v1-to-v2-migrator-<version\> 复制到 v2.1.0 所在的机器上。
+
     ```
     unzip MaxKB-v1-to-v2-migrator-<version>.zip 
 
@@ -40,10 +41,13 @@
 
 ![v1数据导出](../img/index/migrate_linux_export.png)
 
+!!! Abstract ""
+    将 MaxKB-v1-to-v2-migrator-<version\> 复制到 v2.1.0 所在的机器上。
+
 
 #### 3.1.2 导入数据
 !!! Abstract ""
-    在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据, 专业版和企业版需导入 license 后再进行数据的导入。
+    在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据。
 
     进入迁移工具目录，执行以下命令将数据导入 v2.1.0。
     ```
@@ -56,7 +60,7 @@
 ![导入linux](../img/index/migrate_linux_import.png)
 
 !!! Abstract ""
-    导入成功后，需要重启 maxkb 服务。
+    导入成功后，需要重启 MaxKB 服务。
 ![导入linux](../img/index/migrate_linux_import1.png)
     
 
@@ -92,7 +96,7 @@
 
 #### 3.2.3 导入数据
 !!! Abstract ""
-    在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据，专业版和企业版需要在导入 license 再进行数据的导入。
+    在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据。
     ```
     #PowerShell 版本
     .\import_v2_data.ps1 -ContainerName <v2_container_name>

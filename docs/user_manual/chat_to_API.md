@@ -13,9 +13,9 @@
     ``` 
     # 将 url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 
-    curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6 \
-        -H "Content-Type: application/json" \
-        -H "Authorization: Bearer application-xxxxxxxxxx987f1bc06ab16e0ef"  \
+    curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/chat/completions \
+        -H "Content-Type: application/json"  \
+        -H "Authorization: Bearer application-xxxxxxxxxx987f1bc06ab16e0ef"   \
         -d '{
             "model": "gpt-3.5-turbo",
             "messages": [

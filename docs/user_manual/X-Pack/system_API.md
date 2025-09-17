@@ -19,6 +19,10 @@
 
 ![swagger](../../img/system/swagger_api.png)
 
+!!! Abstract ""
+    注意：当使用的接口涉及应用对话时，Authorize 需填写应用的 API Key（application-0d5722xxxxxxxxx），否则会出现如下报错：
+![swagger](../../img/system/swagger_apinotice.png)
+
 
 
 ## 3 开启身份验证的 API 调用

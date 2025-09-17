@@ -10,6 +10,13 @@
 ![api示例](../../img/system/api_example.png)
 
 !!! Abstract ""
+    **注意：**
+         
+    - openai url 的格式为： Base URL/chat/completions
+         
+    - openai Authorization 的格式为：Bearer API Key
+
+!!! Abstract ""
     ``` 
     # 将 url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 

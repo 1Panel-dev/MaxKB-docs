@@ -7,43 +7,43 @@
 ### 1 企业微信应用接入
 
 !!! Abstract ""
-    （1）在应用接入中点击【企业微信应用】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到企业微信应用的 API 接收设置中，除此之外的其它信息，将在企业微信管理后台中生成并获取。 
+    （1）在应用接入中点击【企业微信应用】的【配置】按钮，配置信息中会自动生成回调 URL，并需要复制到企业微信应用的 API 接收设置中，除此之外的其它信息，将在企业微信管理后台中生成并获取。 
 
 ![显示设置](../../img/app/ent_wechat_setting.png)
 
 !!! Abstract ""
-    （2）获取企业ID: 在[企业微信管理后台](https://work.weixin.qq.com/wework_admin/frame#apps)，点击 【我的企业】菜单，在最下方可以看到企业ID 信息。
+    （2）获取企业ID：在[企业微信管理后台](https://work.weixin.qq.com/wework_admin/frame#apps)，点击 【我的企业】菜单，在最下方可以看到企业 ID 信息。
 
 ![企业ID](../../img/app/enterprise_id.png)
 
 !!! Abstract "" 
-    （3）创建企业微信应用：在【应用管理】中点击【创建应用】，选择应用logo，设置应用名称和应用介绍以及可见范围。
+    （3）创建企业微信应用：在【应用管理】中点击【创建应用】，选择应用 logo，设置应用名称和应用介绍以及可见范围。
 
 ![创建企业微信应用](../../img/app/create_robot.png)
 ![企业微信应用设置](../../img/app/robot_info.png)
 
 !!! Abstract ""
-    （4）获取 Agentid 和 Secret:进入创建的应用，获取 AgentId 和 Secret。点击【查看】Secret 将通过企业微信进行查看。 
+    （4）获取 Agentid 和 Secret：进入创建的应用，获取 AgentId 和 Secret。点击【查看】Secret 将通过企业微信进行查看。 
 
 ![Agentid](../../img/app/Agentid.png)
 
 !!! Abstract ""
-    （5）获取 Token 和 EncodingAESKey：进入企业微信应用设置的【接收消息】-【设置API接收】，随机获取 Token 和EncodingAESKey。然后在 MaxKB 企业微信应用配置输入对应的参数并保存，然后再回到企业微信应用设置【接收消息】-【设置API接收】企业微信应用接入配置中自动生成的回调 URL，然后再点击【保存】。
+    （5）获取 Token 和 EncodingAESKey：进入企业微信应用设置的【接收消息】-【设置 API 接收】，随机获取 Token 和 EncodingAESKey。然后在 MaxKB 企业微信应用配置输入对应的参数并保存，然后再回到企业微信应用设置【接收消息】-【设置API接收】企业微信应用接入配置中自动生成的回调 URL，然后再点击【保存】。
 
-    **注意：** 在企业微信应用API接收消息配置保存之前，一定要在 MaxKB 中完成企业微信应用配置并保存，不然保存时将报错`openapi回调地址请求不通过`。
+    **注意：** 在企业微信应用 API 接收消息配置保存之前，一定要在 MaxKB 中完成企业微信应用配置并保存，不然保存时将报错`openapi 回调地址请求不通过`。
 
 ![设置API接收](../../img/app/recmsg_api.png)
 
 
 !!! Abstract ""
-    **注意：** 在企业微信应用API接收消息配置保存之前，一定要在 MaxKB 中完成企业微信应用配置并保存，不然保存时将报错`openapi回调地址请求不通过`。
+    **注意：** 在企业微信应用API接收消息配置保存之前，一定要在 MaxKB 中完成企业微信应用配置并保存，不然保存时将报错`openapi 回调地址请求不通过`。
 
 ![设置API接收](../../img/app/recmsg_api_setting.png)
 
 
 
 !!! Abstract ""
-    （6）配置企业可信IP：进入企业微信应用设置的【企业可信IP】中，把 MaxKB 服务的IP地址设置为可信IP。
+    （6）配置企业可信 IP：进入企业微信应用设置的【企业可信 IP】中，把 MaxKB 服务的 IP 地址设置为可信 IP。
 
 ![企业微信对话](../../img/app/creditable_ip.png)  
 
@@ -80,16 +80,16 @@
 ### 3 公众号接入
 
 !!! Abstract "" 
-    （1）在应用接入中点击【公众号】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到【微信公众平台-设置与开发-基本配置-服务器配置】服务器地址URL 中，除此之外的其它信息，将在微信公众平台中生成并获取。
+    （1）在应用接入中点击【公众号】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到【微信公众平台-设置与开发-基本配置-服务器配置】服务器地址 URL 中，除此之外的其它信息，将在微信公众平台中生成并获取。
 ![公众号配置](../../img/app/public_account_setting_empty.png)
 
 !!! Abstract "" 
-    （2）获取APP ID、APP Secret、Token和消息加解密密钥：在微信公众平台-设置与开发-基本配置中获取APP ID、APP Secret信息，并启动服务器配置，生成 Token 和消息加解密密钥。
+    （2）获取 APP ID、APP Secret、Token 和消息加解密密钥：在微信公众平台-设置与开发-基本配置中获取 APP ID、APP Secret 信息，并启动服务器配置，生成 Token 和消息加解密密钥。
 ![公众号信息](../../img/app/public_account_basicinfo.png)
 ![公众号信息](../../img/app/public_account_setting1.png)
 
 !!! Abstract "" 
-    （3）将生成的APP ID、APP Secret、Token 和消息加解密密钥信息输入到MaxKB 公众号配置窗口中，并保存。
+    （3）将生成的 APP ID、APP Secret、Token 和消息加解密密钥信息输入到 MaxKB 公众号配置窗口中，并保存。
 ![公众号信息](../../img/app/public_account_setting2.png)
 
 !!! Abstract "" 
@@ -101,7 +101,7 @@
 ![客服接口权限](../../img/app/public_account_enable_api.png)
 
 !!! Abstract "" 
-    （6）设置IP白名单：进入公众号基本配置的【IP白名单】中，添加 MaxKB 服务器的 IP 地址。
+    （6）设置IP白名单：进入公众号基本配置的【 IP 白名单】中，添加 MaxKB 服务器的 IP 地址。
 ![公众号IP白名单](../../img/app/public_account_ip.png)
 
 !!! Abstract "" 
@@ -113,7 +113,7 @@
 ### 4 钉钉应用接入
 
 !!! Abstract ""
-    （1）在应用接入中点击【钉钉应用】的【配置】按钮，配置信息中会自动生成回调 URL,并需要复制到钉钉-机器人设置-消息接收地址中，其它信息，将在钉钉开放平台中生成并获取。
+    （1）在应用接入中点击【钉钉应用】的【配置】按钮，配置信息中会自动生成回调 URL，并需要复制到钉钉-机器人设置-消息接收地址中，其它信息，将在钉钉开放平台中生成并获取。
 ![钉钉机器人创建](../../img/app/dingding_setting.png)
 
 !!! Abstract ""
@@ -121,15 +121,15 @@
 ![钉钉机器人创建](../../img/app/dingding_robot_create.png)
 
 !!! Abstract ""
-    （3）获取Client ID和Client Secret： 进入创建好的钉钉应用，打开【凭证与基础信息】页面，获取Client ID和Client Secret。
+    （3）获取 Client ID 和 Client Secret：进入创建好的钉钉应用，打开【凭证与基础信息】页面，获取 Client ID 和 Client Secret。
 ![钉钉应用信息](../../img/app/dingding_info.png)
 
 !!! Abstract ""
-    （4）在MaxKB 钉钉应用配置窗口中输入步骤获取的Client ID和Client Secret 应用凭证，并保存。
+    （4）在 MaxKB 钉钉应用配置窗口中输入步骤获取的 Client ID 和 Client Secret 应用凭证，并保存。
 ![钉钉应用信息](../../img/app/dingding_setting2.png)
 
 !!! Abstract ""
-    （5）点击【添加应用能力】，选择 【机器人】能力，点击 【添加】，输入机器人基本配置信息后，将【消息接收模式】设置为HTTP模式，并将 MaxKB 钉钉应用配置中的回调地址的URL填写到消息接收地址中，然后点击【发布】。
+    （5）点击【添加应用能力】，选择 【机器人】能力，点击 【添加】，输入机器人基本配置信息后，将【消息接收模式】设置为 HTTP 模式，并将 MaxKB 钉钉应用配置中的回调地址的 URL 填写到消息接收地址中，然后点击【发布】。
 ![钉钉机器人添加](../../img/app/dingding_robot_add.png)
 ![钉钉机器人息接收模式](../../img/app/dingding_msg_recvmode.png)
 
@@ -162,7 +162,7 @@
 ![飞书权限](../../img/app/feishu_app_auth.png)
 
 !!! Abstract ""
-    （4）获取APP ID、APP Secret和Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取APP ID和APP Secret。
+    （4）获取 APP ID、APP Secret 和 Verification Token：进入创建好的飞书应用，打开【凭证与基础信息】页面，获取 APP ID 和 APP Secret。
 ![飞书应用信息i](../../img/app/feishu_app_info.png)
 
 
@@ -172,13 +172,13 @@
 ![飞书token](../../img/app/feishu_verify_token.png)
 
 !!! Abstract ""
-    （5）在MaxKB 飞书应用配置窗口输入上述信息，并保存。
+    （5）在 MaxKB 飞书应用配置窗口输入上述信息，并保存。
 
 ![飞书事件与回调](../../img/app/maxkb_feishu_config.png)
 
 
 !!! Abstract ""
-    （6）配置回调URL：在飞书开放平台中打开【事件与回调】-【回调配置】的订阅方式中，将MaxKB中飞书应用的回调地址的URL填写到【请求地址】中。
+    （6）配置回调 URL：在飞书开放平台中打开【事件与回调】-【回调配置】的订阅方式中，将 MaxKB 中飞书应用的回调地址的 URL 填写到【请求地址】中。
 ![飞书事件与回调](../../img/app/feishu_event_config1.png)
 
 ![飞书事件与回调](../../img/app/feishu_event_config2.png)
@@ -195,7 +195,7 @@
 ![飞书应用发布](../../img/app/feishu_app_enabled.png)
 
 !!! Abstract ""
-    根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB小助手`，点击【添加】后进行一对一对话。
+    根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB 小助手`，点击【添加】后进行一对一对话。
 ![飞书对话](../../img/app/feishu_app_search.jpg){width="500px"}
 
 ![飞书对话](../../img/app/feishu_dialog.jpeg){width="500px"}

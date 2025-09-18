@@ -10,8 +10,13 @@
     * CPU/内存：4C/8GB 以上
     * 磁盘空间：100GB
 
-    将上传至服务器的安装包解压好，在安装包目录里执行以下脚本进行快速安装：
+    打开 [飞致云开源社区 MaxKB 社区版下载](https://community.fit2cloud.com/#/products/maxkb/downloads) 页面下载最新版本安装包（以 v2.0.0 为例），并上传至部署服务器 /opt 目录。
+
+    解压安装包，并在安装包目录里执行安装脚本进行安装：
+    
     ```
+    tar -zxvf maxkb-v2.0.0-x86_64-offline-installer.tar.gz 
+    cd maxkb-v2.0.0-x86_64-offline-installer
     bash install.sh
     ```
     

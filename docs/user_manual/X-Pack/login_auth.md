@@ -70,7 +70,7 @@
 ![设置回调域](../../img/system/qiwei_callback.png)
 
 !!! Abstract ""
-    第三步：配置企业可信 IP。在【企业可信 IP】中配置可信 IP。
+    第四步：配置企业可信 IP。在【企业可信 IP】中配置可信 IP。
 ![配置可信IP](../../img/system/qiwei_ip.png)
 
 !!! Abstract ""

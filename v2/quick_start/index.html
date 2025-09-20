@@ -2927,22 +2927,18 @@
 
 <h2 id="1">1 快速部署<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>按照部署服务器要求准备好部署环境后，通过安装脚本快速部署。    </p>
-<p>部署服务器要求：</p>
 <ul>
-<li>操作系统：Ubuntu 22.04 / CentOS 7（内核版本要求 ≥ 3.10）</li>
-<li>CPU/内存：4C/8GB 以上</li>
-<li>磁盘空间：100GB</li>
+<li>支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）</li>
+<li>推荐使用 <a href="https://community.fit2cloud.com/#/products/maxkb/downloads">离线安装包</a> 进行部署。</li>
 </ul>
-<p>将上传至服务器的安装包解压好，在安装包目录里执行以下脚本进行快速安装：
+<p>将下载的安装包上传至服务器并解压，在安装包目录里执行以下脚本进行快速安装：
 <div class="highlight"><pre><span></span><code>bash install.sh
 </code></pre></div></p>
-<p>在服务器安装完成后，客户端通过浏览器访问 <code>http://目标服务器 IP 地址:8080</code>，并使用默认的管理员用户和密码登录 MaxKB。</p>
+<p>安装完成后，通过浏览器访问 <code>http://目标服务器 IP 地址:8080</code>，并使用默认的管理员用户和密码登录 MaxKB。</p>
 <div class="highlight"><pre><span></span><code>用户名：admin
 
 默认密码：MaxKB@123..
 </code></pre></div>
-<p><strong>注意：暂不支持从 v1.10.x 版本直接升级至 v2.0.x 版本，计划于 2025 年 9 月发布相关迁移工具。</strong></p>
 </div>
 <h2 id="2">2 界面介绍<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">

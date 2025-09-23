@@ -88,7 +88,7 @@
     - 如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。
     - 导出完成后，MaxKB-v1-to-v2-migrator-<version\> 中会生成一个migrate.zip。
     ```
-    # PowerShell 版本
+    # PowerShell 脚本
     .\export_v1_data.ps1 -ContainerName <v1_container_name>
     ```
 
@@ -98,7 +98,7 @@
 !!! Abstract ""
     在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据。
     ```
-    #PowerShell 版本
+    #PowerShell 脚本
     .\import_v2_data.ps1 -ContainerName <v2_container_name>
     ```
 

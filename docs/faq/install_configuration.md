@@ -48,3 +48,41 @@
     docker rm maxkb
     ```
     执行 `mkctl reload` 重新加载服务配置并启动服务。
+
+## 5 迁移常见问题
+### 5.1 无法执行 PowerShell 脚本
+![无法执行powershell脚本](../../img/FAQ/error1.png)
+!!! Abstract ""
+    如果无法执行 PowerShell 脚本，可能需要修改执行策略：
+
+    - 临时修改（推荐）
+    ```
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process       
+    ```
+    - 永久修改（需管理员权限）
+    ```
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine     
+    ```
+
+### 5.2 执行脚本后出现乱码报错
+![执行powershell脚本乱码](../../img/FAQ/error1.png)
+!!! Abstract ""
+    用记事本打开文件，将文件另存为 ANSI 格式的文本。
+![解决方法](../../img/FAQ/solution1.png)
+!!! Abstract ""
+    重新执行 PowerShell 即可正常执行迁移命令。
+![解决方法](../../img/FAQ/solution2.png)
+
+### 5.3 Docker Desktop 安装的 MaxKB 迁移后目录路径内容为空，但 MaxKB 能正常运行
+!!! Abstract ""
+    Docker Desktop 安装的 MaxKB 迁移后目录路径内容为空，但 MaxKB 能正常运行
+![解决方法](../../img/FAQ/Path missing.png)
+!!! Abstract ""
+    安装 MaxKB V2 时，容器数据的挂载目录为 /opt/maxkb，修改挂载目录即可
+    
+    ```
+    V1:/var/lib/postgresql/data
+    V2:/opt/maxkb
+    ```
+
+![解决方法](../../img/FAQ/solution3.png)

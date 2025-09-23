@@ -65,7 +65,7 @@
     ```
 
 ### 5.2 执行脚本后出现乱码报错
-![执行powershell脚本乱码](../../img/FAQ/error1.png)
+![执行powershell脚本乱码](../../img/FAQ/error2.png)
 !!! Abstract ""
     用记事本打开文件，将文件另存为 ANSI 格式的文本。
 ![解决方法](../../img/FAQ/solution1.png)

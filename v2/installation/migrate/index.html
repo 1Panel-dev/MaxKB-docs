@@ -465,6 +465,8 @@
       
         
       
+        
+      
     
     
     
@@ -826,6 +828,29 @@
   
   <span class="md-ellipsis">
     命令行工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    备份还原
     
   </span>
   
@@ -3239,7 +3264,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <ul>
 <li>如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
 <li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个migrate.zip。
-<div class="highlight"><pre><span></span><code># PowerShell 版本
+<div class="highlight"><pre><span></span><code># PowerShell 脚本
 .\export_v1_data.ps1 -ContainerName &lt;v1_container_name&gt;
 </code></pre></div></li>
 </ul>
@@ -3248,7 +3273,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <h4 id="323">3.2.3 导入数据<a class="headerlink" href="#323" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>在 v2.1.0 机器上，确保 v2.1.0 版本的容器已经启动且没有任何其它数据。
-<div class="highlight"><pre><span></span><code>#PowerShell 版本
+<div class="highlight"><pre><span></span><code>#PowerShell 脚本
 .\import_v2_data.ps1 -ContainerName &lt;v2_container_name&gt;
 </code></pre></div></p>
 </div>

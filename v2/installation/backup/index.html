@@ -12,31 +12,31 @@
         <meta name="author" content="MaxKB 开源项目组">
       
       
-        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/model/siliconflow_model/">
+        <link rel="canonical" href="https://maxkb.cn/docs/v2/installation/backup/">
       
       
-        <link rel="prev" href="../Regolo_model/">
+        <link rel="prev" href="../cli/">
       
       
-        <link rel="next" href="../tencentcloud_model/">
+        <link rel="next" href="../../user_manual/model/model_summary/">
       
       
-      <link rel="icon" href="../../../img/facio.ico">
+      <link rel="icon" href="../../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
-        <title>对接SILICONFLOW - MaxKB 文档</title>
+        <title>备份还原 - MaxKB 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../../css/lightgallery.min.css">
-    <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,10 +48,10 @@
     
       
     
-    <script src="../../../js/lightgallery.min.js"></script>
-    <script src="../../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../../js/bootstrap.bundle.min.js"></script>
-    <script src="../../../js/mega.js"></script>
+    <script src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/mega.js"></script>
     <script async defer src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=ba685e8f64e36ba9"></script>
 </script>
 
@@ -66,9 +66,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -119,12 +119,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the latest version.
-  <a href="../../../..">
+  <a href="../../..">
     <strong>Click here to go to latest.</strong>
   </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -146,7 +146,7 @@
             <div class="container">
                 <div class="mega-nav-banner-item">
                     <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img
-                            src="../../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                            src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -191,9 +191,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../.." title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -210,7 +210,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              对接SILICONFLOW
+              备份还原
             
           </span>
         </div>
@@ -334,9 +334,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../.." title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     MaxKB 文档
@@ -363,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -385,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../quick_start/" class="md-nav__link">
+      <a href="../../quick_start/" class="md-nav__link">
         
   
   
@@ -407,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -429,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../system_arch/" class="md-nav__link">
+      <a href="../../system_arch/" class="md-nav__link">
         
   
   
@@ -448,8 +448,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -469,11 +471,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -489,7 +491,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             安装部署
@@ -503,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/offline_installtion/" class="md-nav__link">
+      <a href="../offline_installtion/" class="md-nav__link">
         
   
   
@@ -526,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_installtion/" class="md-nav__link">
+      <a href="../online_installtion/" class="md-nav__link">
         
   
   
@@ -549,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/1panel_installtion/" class="md-nav__link">
+      <a href="../1panel_installtion/" class="md-nav__link">
         
   
   
@@ -572,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/migrate/" class="md-nav__link">
+      <a href="../migrate/" class="md-nav__link">
         
   
   
@@ -595,460 +597,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     命令行工具
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../installation/backup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    备份还原
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    功能手册
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            功能手册
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    模型
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            模型
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../model_summary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    模型概况
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6_1_2" id="__nav_6_1_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    模型对接
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_1_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_1_2">
-            <span class="md-nav__icon md-icon"></span>
-            模型对接
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bailian_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接阿里云百炼
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../anthropic_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Anthropic
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../amazon_bedrock_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Amazon Bedrock
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../azure_openai_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Azure OpenAI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../deepseek_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接DeepSeek
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gemini_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Gemini
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kimi_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Kimi
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../openai_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接OpenAI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Regolo_model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对接Regolo
     
   </span>
   
@@ -1072,67 +626,256 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    对接SILICONFLOW
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    对接SILICONFLOW
+    备份还原
     
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+              
+            
+          </ul>
+        </nav>
       
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 添加模型
-    </span>
-  </a>
+    </li>
   
-</li>
+
+    
       
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 配置样例
-    </span>
-  </a>
+      
   
-</li>
-      
-    </ul>
   
-</nav>
+  
+  
+    
+    
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    功能手册
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            功能手册
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    模型
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            模型
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/model_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    模型概况
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1_2" id="__nav_6_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    模型对接
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            模型对接
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/bailian_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接阿里云百炼
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1145,7 +888,214 @@
   
   
     <li class="md-nav__item">
-      <a href="../tencentcloud_model/" class="md-nav__link">
+      <a href="../../user_manual/model/anthropic_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Anthropic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/amazon_bedrock_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Amazon Bedrock
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/azure_openai_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Azure OpenAI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/deepseek_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接DeepSeek
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/gemini_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Gemini
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/kimi_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Kimi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/openai_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接OpenAI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/Regolo_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接Regolo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/siliconflow_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对接SILICONFLOW
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/model/tencentcloud_model/" class="md-nav__link">
         
   
   
@@ -1168,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hunyuan_model/" class="md-nav__link">
+      <a href="../../user_manual/model/hunyuan_model/" class="md-nav__link">
         
   
   
@@ -1191,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../doubao_model/" class="md-nav__link">
+      <a href="../../user_manual/model/doubao_model/" class="md-nav__link">
         
   
   
@@ -1214,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../qianfan_model/" class="md-nav__link">
+      <a href="../../user_manual/model/qianfan_model/" class="md-nav__link">
         
   
   
@@ -1237,7 +1187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spark_model/" class="md-nav__link">
+      <a href="../../user_manual/model/spark_model/" class="md-nav__link">
         
   
   
@@ -1260,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zhipu_model/" class="md-nav__link">
+      <a href="../../user_manual/model/zhipu_model/" class="md-nav__link">
         
   
   
@@ -1283,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../local_model/" class="md-nav__link">
+      <a href="../../user_manual/model/local_model/" class="md-nav__link">
         
   
   
@@ -1306,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ollama_model/" class="md-nav__link">
+      <a href="../../user_manual/model/ollama_model/" class="md-nav__link">
         
   
   
@@ -1329,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vllm_model/" class="md-nav__link">
+      <a href="../../user_manual/model/vllm_model/" class="md-nav__link">
         
   
   
@@ -1352,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Infer_model/" class="md-nav__link">
+      <a href="../../user_manual/model/X-Infer_model/" class="md-nav__link">
         
   
   
@@ -1383,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model_param/" class="md-nav__link">
+      <a href="../../user_manual/model/model_param/" class="md-nav__link">
         
   
   
@@ -1414,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/tool/" class="md-nav__link">
+      <a href="../../user_manual/tool/tool/" class="md-nav__link">
         
   
   
@@ -1485,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/dataset/" class="md-nav__link">
+      <a href="../../user_manual/dataset/dataset/" class="md-nav__link">
         
   
   
@@ -1508,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/doclist/" class="md-nav__link">
+      <a href="../../user_manual/dataset/doclist/" class="md-nav__link">
         
   
   
@@ -1531,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/problem/" class="md-nav__link">
+      <a href="../../user_manual/dataset/problem/" class="md-nav__link">
         
   
   
@@ -1554,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/hit-testing/" class="md-nav__link">
+      <a href="../../user_manual/dataset/hit-testing/" class="md-nav__link">
         
   
   
@@ -1633,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/app/" class="md-nav__link">
+      <a href="../../user_manual/app/app/" class="md-nav__link">
         
   
   
@@ -1700,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/simple_app/" class="md-nav__link">
+      <a href="../../user_manual/app/simple_app/" class="md-nav__link">
         
   
   
@@ -1723,7 +1673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/workflow_app/" class="md-nav__link">
+      <a href="../../user_manual/app/workflow_app/" class="md-nav__link">
         
   
   
@@ -1754,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/app-view/" class="md-nav__link">
+      <a href="../../user_manual/app/app-view/" class="md-nav__link">
         
   
   
@@ -1777,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/log/" class="md-nav__link">
+      <a href="../../user_manual/app/log/" class="md-nav__link">
         
   
   
@@ -1808,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_community/" class="md-nav__link">
+      <a href="../../user_manual/user_community/" class="md-nav__link">
         
   
   
@@ -1831,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/authorization_resources/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/authorization_resources/" class="md-nav__link">
         
   
   
@@ -1854,7 +1804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../email/" class="md-nav__link">
+      <a href="../../user_manual/email/" class="md-nav__link">
         
   
   
@@ -1939,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/user/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/user/" class="md-nav__link">
         
   
   
@@ -1962,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/workspace/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/workspace/" class="md-nav__link">
         
   
   
@@ -1985,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/role/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/role/" class="md-nav__link">
         
   
   
@@ -2008,7 +1958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/resource_management/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/resource_management/" class="md-nav__link">
         
   
   
@@ -2031,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/shared_resources/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/shared_resources/" class="md-nav__link">
         
   
   
@@ -2054,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/chat_user/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/chat_user/" class="md-nav__link">
         
   
   
@@ -2127,7 +2077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/app_logo_settting/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/app_logo_settting/" class="md-nav__link">
         
   
   
@@ -2150,7 +2100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/app_integrate/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/app_integrate/" class="md-nav__link">
         
   
   
@@ -2173,7 +2123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/app_auth/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/app_auth/" class="md-nav__link">
         
   
   
@@ -2196,7 +2146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/app_chatueser/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/app_chatueser/" class="md-nav__link">
         
   
   
@@ -2219,7 +2169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/public_history/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/public_history/" class="md-nav__link">
         
   
   
@@ -2250,7 +2200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/feishu_doc/" class="md-nav__link">
         
   
   
@@ -2317,7 +2267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/theme_settings/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/theme_settings/" class="md-nav__link">
         
   
   
@@ -2340,7 +2290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/login_auth/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/login_auth/" class="md-nav__link">
         
   
   
@@ -2371,7 +2321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/operation_log/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/operation_log/" class="md-nav__link">
         
   
   
@@ -2394,7 +2344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../X-Pack/system_API/" class="md-nav__link">
+      <a href="../../user_manual/X-Pack/system_API/" class="md-nav__link">
         
   
   
@@ -2482,7 +2432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/install_configuration/" class="md-nav__link">
+      <a href="../../faq/install_configuration/" class="md-nav__link">
         
   
   
@@ -2505,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/system_management/" class="md-nav__link">
+      <a href="../../faq/system_management/" class="md-nav__link">
         
   
   
@@ -2528,7 +2478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/function_library/" class="md-nav__link">
+      <a href="../../faq/function_library/" class="md-nav__link">
         
   
   
@@ -2551,7 +2501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/knowledge_base/" class="md-nav__link">
+      <a href="../../faq/knowledge_base/" class="md-nav__link">
         
   
   
@@ -2574,7 +2524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/apply_setting/" class="md-nav__link">
+      <a href="../../faq/apply_setting/" class="md-nav__link">
         
   
   
@@ -2654,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chat_to_API/" class="md-nav__link">
+      <a href="../../user_manual/chat_to_API/" class="md-nav__link">
         
   
   
@@ -2677,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/Offline_install_OllamaModel/" class="md-nav__link">
+      <a href="../../faq/Offline_install_OllamaModel/" class="md-nav__link">
         
   
   
@@ -2700,7 +2650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/GPU_runOllama/" class="md-nav__link">
+      <a href="../../faq/GPU_runOllama/" class="md-nav__link">
         
   
   
@@ -2723,7 +2673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/maxkb_In_halo/" class="md-nav__link">
+      <a href="../../faq/maxkb_In_halo/" class="md-nav__link">
         
   
   
@@ -2746,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/doc_segment/" class="md-nav__link">
+      <a href="../../faq/doc_segment/" class="md-nav__link">
         
   
   
@@ -2776,7 +2726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -2808,32 +2758,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 添加模型
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 配置样例
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2852,43 +2778,25 @@
   
 
 
-  <h1>对接SILICONFLOW</h1>
-
-<h2 id="1">1 添加模型<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">备份与还原<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p>添加 SILICONFLOW 模型之前，需要先在 <a href="https://siliconflow.cn/">SILICONFLOW</a> 中进行注册并登录。在控制台中的【账户管理-API密钥】中新建 API 密钥。</p>
-<p>选择模型供应商为<code>SILICONFLOW</code>，并在模型添加对话框中输入如下必要信息：</p>
+<p>MaxKB 安装后，相关文件的分布路径如下：</p>
 <ul>
-<li>模型名称：MaxKB 中自定义的模型名称。    </li>
-<li>模型类型：大语言模型/向量模型/语音识别/图片生成/重排模型。    </li>
-<li>基础模型：SILICONFLOW 支持的各类模型的基础模型名称，选项中显示了 SILICONFLOW 支持的部分常用大语言模型名称，支持手动输入，但需要与 SILICONFLOW 支持的模型名称保持一致，否则无法通过校验。    </li>
-<li>API URL：<a href="https://api.siliconflow.cn/v1">https://api.siliconflow.cn/v1</a></li>
-<li>API Key：创建的密钥 Key。</li>
+<li>/opt/maxkb：默认运行路径，在安装时可设置。主要存放 MaxKB 运行时所需的配置文件及运行时产生的数据，包括日志文件等</li>
+<li>/usr/bin：默认 docker 及 docker-compose 的运行程序被放置在此目录下</li>
+<li>/usr/local/bin/dectl：MaxKB 的命令行工具</li>
+<li>/var/lib/docker：默认 docker 镜像加载在此</li>
 </ul>
 </div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_model.png" /></p>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_model2.png" /></p>
-<h2 id="2">2 配置样例<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>SILICONFLOW-大语言模型配置样例图示如下：</p>
+<p>综上所述，备份 MaxKB 主要需要备份运行路径，如 /opt/maxkb 目录即可。还原步骤如下：</p>
+<ul>
+<li>该方式适用于相同版本 MaxKB 的迁移，请在新环境里安装同一个版本的 MaxKB，安装时请选择相同的配置参数</li>
+<li>停止 MaxKB 服务，执行命令： </li>
+<li>把原环境里的运行目录 /opt/maxkb 整个目录覆盖掉新环境里的 /opt/maxkb 目录</li>
+<li>启动新环境里的 MaxKB 服务： </li>
+</ul>
 </div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_llm.png" width="500px" /></p>
-<div class="admonition abstract">
-<p>SILICONFLOW-向量模型配置样例图示如下：</p>
-</div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_embedding.png" width="500px" /></p>
-<div class="admonition abstract">
-<p>SILICONFLOW-语音识别配置样例图示如下：</p>
-</div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_asr.png" width="500px" /></p>
-<div class="admonition abstract">
-<p>SILICONFLOW-图片生成配置样例图示如下：</p>
-</div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_vision_gen.png" width="500px" /></p>
-<div class="admonition abstract">
-<p>SILICONFLOW-重排模型配置样例图示如下：</p>
-</div>
-<p><img alt="SILICONFLOW" src="../../../img/model/siliconflow_rerank.png" width="500px" /></p>
 
 
 
@@ -2977,11 +2885,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
     <script>

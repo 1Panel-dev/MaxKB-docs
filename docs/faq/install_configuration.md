@@ -75,10 +75,10 @@
 
 ### 5.3 Docker Desktop 安装的 MaxKB 迁移后目录路径内容为空，但 MaxKB 能正常运行
 !!! Abstract ""
-    Docker Desktop 安装的 MaxKB 迁移后挂载路径内容为空，但 MaxKB 能正常运行
+    Docker Desktop 安装的 MaxKB 迁移后挂载路径内容为空，但 MaxKB 能正常运行。
 ![解决方法](../../img/FAQ/Path missing.png)
 !!! Abstract ""
-    安装 MaxKB V2 时，容器数据的挂载目录为 /opt/maxkb，修改挂载目录即可
+    安装 MaxKB V2 时，容器数据的挂载目录为 /opt/maxkb，修改挂载目录即可。
     
     ```
     V1:/var/lib/postgresql/data

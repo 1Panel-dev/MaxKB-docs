@@ -12,6 +12,6 @@
     综上所述，备份 MaxKB 主要需要备份运行路径，如 /opt/maxkb 目录即可。还原步骤如下：
 
     - 该方式适用于相同版本 MaxKB 的迁移，请在新环境里安装同一个版本的 MaxKB，安装时请选择相同的配置参数
-    - 停止 MaxKB 服务，执行命令： 
+    - 停止 MaxKB 服务，执行命令： mkctl stop
     - 把原环境里的运行目录 /opt/maxkb 整个目录覆盖掉新环境里的 /opt/maxkb 目录
-    - 启动新环境里的 MaxKB 服务： 
+    - 启动新环境里的 MaxKB 服务： mkctl restart

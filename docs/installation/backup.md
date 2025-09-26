@@ -5,7 +5,7 @@
 
     - /opt/maxkb：默认运行路径，在安装时可设置。主要存放 MaxKB 运行时所需的配置文件及运行时产生的数据，包括日志文件等
     - /usr/bin：默认 docker 及 docker-compose 的运行程序被放置在此目录下
-    - /usr/local/bin/dectl：MaxKB 的命令行工具
+    - /usr/local/bin/mkctl：MaxKB 的命令行工具
     - /var/lib/docker：默认 docker 镜像加载在此
 
 !!! Abstract ""

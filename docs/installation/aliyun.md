@@ -19,7 +19,7 @@
 
     如果您还没有服务器，可以通过以下优惠链接购买阿里云服务器：
 
-    - [专属阿里云特价链接 6.5 折优惠](https://market.aliyun.com/common/dashi/maxkb?userCode=kmemb8jp)
+    - [专属阿里云特价链接 7 折优惠](https://market.aliyun.com/common/dashi/maxkb?userCode=kmemb8jp)
 
 ## 2 启动服务
 

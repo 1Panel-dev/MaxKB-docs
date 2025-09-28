@@ -3188,16 +3188,16 @@
 <h2 id="1">1 迁移说明<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <h3 id="11">1.1 迁移路线<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p><strong>注意</strong>：v1 版本需先升级至 <strong>v1.10.10-lts</strong>，再使用迁移工具迁移到 <strong>v2.1.0</strong>。迁移的 v2 版本为 <strong>v2.1.0</strong> ,之后可升级到 v2 更高版本。</p>
+<p><strong>注意</strong>：v1 版本需先升级至 <strong>≥v1.10.10-lts</strong> 版本，再使用迁移工具迁移到 <strong>v2.1.0</strong>。迁移的 v2 版本为 <strong>v2.1.0</strong> ，之后可升级到 v2 更高版本。</p>
 </div>
 <p><img alt="migrate" src="../../img/index/migrate_route.png" /></p>
 <h3 id="12">1.2 注意事项<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <ul>
 <li>此工具是迁移工具，用以将 v1.10.10-lts 的数据迁移到 v2.1.0，并不是直接的升级工具；</li>
-<li>此工具只支持 v1.10.10-lts 的数据迁移到 v2.1.0；</li>
+<li>此工具只支持 ≥v1.10.10-lts 的数据迁移到 v2.1.0；</li>
 <li>数据迁移的目标环境必须是 v2.1.0，且没有任何数据（license 除外）；</li>
-<li>迁移前，不要在 v1.10.10-lts 环境进行操作，避免数据迁移不完整；</li>
+<li>迁移前，不要在 v1 环境进行操作，避免数据迁移不完整；</li>
 <li>迁移前，请务必检查磁盘空间，并确保数据导出和导入前后有足够的存储空间；</li>
 <li>迁移时，保证 v1 和 v2 的容器都处于正常运行状态（不需要停止服务）。</li>
 </ul>
@@ -3210,7 +3210,7 @@
 <h3 id="31-linuxmacos">3.1 Linux/macOS 系统<a class="headerlink" href="#31-linuxmacos" title="Permanent link">&para;</a></h3>
 <h4 id="311">3.1.1 导出数据<a class="headerlink" href="#311" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>在 v1.10.10-lts 机器上下载 MaxKB-v1-to-v2-migrator-&lt;version&gt;.zip，解压后进入目录，执行以下命令导出 v1 数据。</p>
+<p>在 ≥v1.10.10-lts 机器上下载 MaxKB-v1-to-v2-migrator-&lt;version&gt;.zip，解压后进入目录，执行以下命令导出 v1 数据。</p>
 <ul>
 <li>如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
 <li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个 migrate.zip。</li>
@@ -3233,7 +3233,8 @@ bash export_v1_data.sh &lt;v1_container_name&gt;
 <div class="highlight"><pre><span></span><code>cd MaxKB-v1-to-v2-migrator-&lt;version&gt;
 
 bash import_v2_data.sh &lt;v2_container_name&gt;
-</code></pre></div></p>
+</code></pre></div>
+<strong>注意</strong>：v1 社区版只能迁移到 v2 社区版，v1 专业版只能迁移到 v2 专业版，且 v1 和 v2 的专业版必须有有效的 license 许可。</p>
 </div>
 <p><img alt="导入linux" src="../../img/index/migrate_linux_import.png" /></p>
 <div class="admonition abstract">
@@ -3260,7 +3261,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 </div>
 <h4 id="322">3.2.2 导出数据<a class="headerlink" href="#322" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p>对于 Windows 系统，MaxKB 提供了 PowerShell 脚本（.ps1）来导出 v1.10.10-lts 数据。下载迁移工具并解压，使用终端管理员进入迁移目录，执行命令导出 v1 数据。</p>
+<p>对于 Windows 系统，MaxKB 提供了 PowerShell 脚本（.ps1）来导出 ≥v1.10.10-lts 数据。下载迁移工具并解压，使用终端管理员进入迁移目录，执行命令导出 v1 数据。</p>
 <ul>
 <li>如果 v1 的数据量较大，导出过程中需要一定的时间，请务必耐心等待。</li>
 <li>导出完成后，MaxKB-v1-to-v2-migrator-&lt;version&gt; 中会生成一个migrate.zip。
@@ -3276,6 +3277,7 @@ bash import_v2_data.sh &lt;v2_container_name&gt;
 <div class="highlight"><pre><span></span><code>#PowerShell 脚本
 .\import_v2_data.ps1 -ContainerName &lt;v2_container_name&gt;
 </code></pre></div></p>
+<p><strong>注意</strong>：v1 社区版只能迁移到 v2 社区版，v1 专业版只能迁移到 v2 专业版，且 v1 和 v2 的专业版必须有有效的 license 许可。</p>
 </div>
 <p><img alt="导出windows" src="../../img/index/migrate_windows_import.png" /></p>
 <h2 id="4">4 迁移变更说明<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>

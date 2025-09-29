@@ -4,7 +4,7 @@
     选择模型供应商为`火山引擎`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。     
-    * 模型类型：大语言模型/向量模型/语音识别/语音合成/视觉模型/图片生成。
+    * 模型类型：大语言模型/向量模型/语音识别/语音合成/视觉模型/图片生成/文生视频/图生视频。
 
     豆包大语言模型其它接入参数说明：
 
@@ -53,3 +53,14 @@
 
 ![火山引擎 图片生成](../../img/model/doubao_gen2.png){ width="500px" }
 
+!!! Abstract ""
+    火山引擎-文生视频模型模型配置样例图示如下：
+![火山引擎 文生视频](../../img/model/doubao_text2video.png){ width="500px" }
+
+![火山引擎 文生视频](../../img/model/doubao_text2video1.png){ width="500px" }
+
+!!! Abstract ""
+    火山引擎-图生视频模型模型配置样例图示如下：
+![火山引擎 图生视频](../../img/model/doubao_picture2video.png){ width="500px" }
+
+![火山引擎 图生视频](../../img/model/doubao_picture2video1.png){ width="500px" }

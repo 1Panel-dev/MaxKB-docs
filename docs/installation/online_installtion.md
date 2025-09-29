@@ -9,6 +9,8 @@
     * 操作系统：Ubuntu 22.04 / CentOS 7（内核版本要求 ≥ 3.10）
     * CPU/内存：4C/8GB 以上
     * 磁盘空间：100GB
+    
+    **提示：Docker 版本太老可能会导致安装失败，建议使用安装包内的 Docker，或者使用 v26.0.0 版本及以上的 Docker。**
 
 
 ### 1.2 端口要求
@@ -27,7 +29,7 @@
 
 !!! Abstract ""
 
-    在配置 docker 环境的操作系统中，仅需执行以下命令即可一键完成 MaxKB 的安装：
+    在配置 Docker 环境的操作系统中，仅需执行以下命令即可一键完成 MaxKB 的安装：
     ```
     # Linux 操作系统
     docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/opt/maxkb registry.fit2cloud.com/maxkb/maxkb

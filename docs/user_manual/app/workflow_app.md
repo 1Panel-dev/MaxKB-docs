@@ -78,7 +78,7 @@
     - 文档 {document}：客户端上传的文档。
 
 
-![开始节点-用户输入](../../img/app/app_start.png){width="500px"}
+![开始节点-用户输入](../../img/app/app_start.png){width="300px"}
 
 !!! Abstract ""  
     点击画布右上角【添加组件】，即可通过“点击”或“拖拽”方式将所需节点加入工作流。组件按功能分为三大类，具体说明如下：
@@ -121,7 +121,17 @@
 
     **注意**：MCP 工具的调用需要大语言模型支持函数调用，如果大语言模型不支持，则配置无效。
 
-![AI对话](../../img/app/ai_chat.png)
+![AI对话](../../img/app/ai_chat.png){width="300px"}
+
+!!! Abstract ""   
+    提示词是在每次对话开始时固定注入的上下文指令，用于为模型确立身份、语气、知识边界及输出格式等前置规则，从而确保回复精准、风格一致且可控。
+
+    - 变量支持：如 {data} 自动插入知识库片段，{question} 引用用户问题，实现精准、可控、低幻觉的智能回复。
+
+    通过合理编排提示词，管理员可在不更换模型的前提下，实现多场景、多角色的快速切换，显著降低大模型幻觉风险并提升用户体验。
+
+    AI 对话节点支持基于用户输入的主题内容，自动生成高质量、结构完整的系统提示词，辅助用户快速构建适用于当前场景的提示文本。
+![应用设置](../../img/app/ai_chat_prompt.png)
 
 !!! Abstract ""
     MCP：引用 MCP和自定义 MCP Server Config。
@@ -148,7 +158,7 @@
     
     - 分类 {category}：根据意图分类的类型，返回分类名称。 
     - 理由 {reason}：判断意图分类的理由。
-![意图识别](../../img/app/intent_classification.png)
+![意图识别](../../img/app/intent_classification.png){width="300px"}
 
 
 #### 2.1.3 图片生成
@@ -168,7 +178,7 @@
     - AI 回答内容 {answer}：即图片生成模型根据文本输入生成的图片。
     - 图片 {image}: 生成图片的详细信息。
 
-![图片生成](../../img/app/vision_gen.png){width="500px"}
+![图片生成](../../img/app/vision_gen.png){width="300px"}
 
 
 #### 2.1.4 图片理解
@@ -193,7 +203,7 @@
 
     - AI 回答内容{answer}：根据上传的图片以及角色、提示词等信息图片理解模型返回的内容。
 
-![图片理解](../../img/app/picture_extract.png){width="500px"}
+![图片理解](../../img/app/picture_extract.png){width="300px"}
 
 
 #### 2.1.5 文本转语音
@@ -213,7 +223,7 @@
     - 结果 {result}：将文本转成的音频内容。
 
 
-![文本转语音](../../img/app/text2audio.png){width="500px"}
+![文本转语音](../../img/app/text2audio.png){width="300px"}
 
 
 #### 2.1.6 语音转文本
@@ -231,7 +241,7 @@
 
     - 结果 {result}：语音转换后的文本内容。
 
-![语音转文本](../../img/app/audio2text.png){width="500px"}
+![语音转文本](../../img/app/audio2text.png){width="300px"}
 
 
 #### 2.1.7 文生视频
@@ -249,7 +259,7 @@
     参数输出：
     
     - 视频 {video}：根据文本生成的视频内容。
-![语音转文本](../../img/app/text2video.png){width="500px"}
+![语音转文本](../../img/app/text2video.png){width="300px"}
 
 
 #### 2.1.8 图生视频
@@ -269,7 +279,7 @@
     参数输出：
     
     - 视频 {video}：根据图片生成的视频内容。
-![图生视频](../../img/app/picture2video.png){width="500px"}
+![图生视频](../../img/app/picture2video.png){width="300px"}
 
 
 #### 2.1.9 问题优化
@@ -290,7 +300,7 @@
     - 问题优化结果 {answer}：通过大模型优化后的问题。
 
 
-![问题优化](../../img/app/question_opt.png){width="500px"}
+![问题优化](../../img/app/question_opt.png){width="300px"}
 
 
 ### 2.2 知识库
@@ -315,7 +325,7 @@
     - 满足直接回答的分段内容 {directly_return}：字符串类型，指根据检索问题、检索参数进行检索后命中的分段中满足直接回答的所有分段内容。  
 
 
-![知识库检索](../../img/app/dataset_search.png){width="500px"}
+![知识库检索](../../img/app/dataset_search.png){width="300px"}
 
 #### 2.2.2 多路召回
 
@@ -335,7 +345,7 @@
     - 重排结果 {result}：字符串类型，指根据检索参数后的重排结果。
 
 
-![多路召回](../../img/app/rerank.png){width="500px"}
+![多路召回](../../img/app/rerank.png){width="300px"}
 
 ### 2.3 业务逻辑
 
@@ -349,7 +359,7 @@
     - 分支名称{branch_name}：每个判断分支的名称。
 
 
-![判断器](../../img/app/condition_statement.png){width="500px"}
+![判断器](../../img/app/condition_statement.png){width="450px"}
 
 
 #### 2.3.2  表单收集
@@ -396,7 +406,7 @@
 !!! Abstract ""
     节点说明：更新全局变量的值。
 
-![变量赋值](../../img/app/reset_var.png){width="500px"}
+![变量赋值](../../img/app/reset_var.png){width="300px"}
 
 #### 2.3.4  指定回复
 
@@ -407,7 +417,7 @@
 
     * 内容{answer}： 指定回复输出的内容。
 
-![指定回复](../../img/app/direct_reply.png){width="500px"}
+![指定回复](../../img/app/direct_reply.png){width="300px"}
 
 #### 2.3.5 循环节点
 !!! Abstract ""
@@ -427,7 +437,7 @@
 
 !!! Abstract ""
     输出参数：在循环体中【循环开始】设置的循环变量，可以作为循环节点的输出参数，供各工作流节点调用。
-![输出参数](../../img/app/loop_output.png){width="500px"}
+![输出参数](../../img/app/loop_output.png){width="300px"}
 
 !!! Abstract ""
     循环体：循环体画布用于编排循环的逻辑，每次循环时，工作流会执行循环体画布中的工作流。
@@ -449,7 +459,7 @@
     * 循环元素{item}：数组中的单个数据。数组由多个元素组成，每个元素可以是数字、字符、字符串等数据类型。
         
             例如：数组 array=[23,26,37,88,90]，array[0]的 index 是 0，item 为 23； array[4]的 index 是 4，item 为 90。
-![循环开始](../../img/app/loop_begins.png){width="500px"}
+![循环开始](../../img/app/loop_begins.png){width="300px"}
 
 !!! Abstract ""
     **Continue**：用于终止当前循环，执行下次循环。
@@ -492,7 +502,7 @@
     - 结果 {result}：MCP 工具执行返回结果。
 
 
-![MCP 节点](../../img/app/mcp.png){width="500px"}
+![MCP 节点](../../img/app/mcp.png){width="300px"}
 
 !!! Abstract ""
     ```
@@ -518,13 +528,13 @@
     
     - 文档输出 {content}：对用户上传文件进行的总结输出。
 
-![文档内容提取](../../img/app/doc_extract.png){width="500px"}
+![文档内容提取](../../img/app/doc_extract.png){width="300px"}
 
 #### 2.4.3 自定义工具
 !!! Abstract ""
     在高级编排流程中，编写 Python 代码和添加参数创建工具数作为流程中的一个处理节点，以灵活处理复杂需求，函数详细说明见：[工具](../tool/tool)。
 
-![添加函数](../../img/app/app_function.png){width="500px"}
+![添加函数](../../img/app/app_function.png){width="300px"}
 
 
 ### 2.5 工具

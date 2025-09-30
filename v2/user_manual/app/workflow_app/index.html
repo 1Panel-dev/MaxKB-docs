@@ -757,7 +757,7 @@
   
   
   <span class="md-ellipsis">
-    模型概况
+    模型概述
     
   </span>
   
@@ -2044,7 +2044,7 @@
           <li class="md-nav__item">
   <a href="#33" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3 保存
+      3.3 发布历史
     </span>
   </a>
   
@@ -2053,7 +2053,16 @@
           <li class="md-nav__item">
   <a href="#34" class="md-nav__link">
     <span class="md-ellipsis">
-      3.4 发布
+      3.4 自动保存
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 发布
     </span>
   </a>
   
@@ -2421,8 +2430,6 @@
       
         
       
-        
-      
     
     
     
@@ -2536,29 +2543,6 @@
   
   <span class="md-ellipsis">
     对话用户
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../X-Pack/public_history/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    发布历史
     
   </span>
   
@@ -3479,7 +3463,7 @@
           <li class="md-nav__item">
   <a href="#33" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3 保存
+      3.3 发布历史
     </span>
   </a>
   
@@ -3488,7 +3472,16 @@
           <li class="md-nav__item">
   <a href="#34" class="md-nav__link">
     <span class="md-ellipsis">
-      3.4 发布
+      3.4 自动保存
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 发布
     </span>
   </a>
   
@@ -3619,6 +3612,7 @@
 <p>MCP：支持添加多个 MCP，通过引用 MCP 和自定义 MCP Server Config 配置两种方式实现对 MCP 的调用，大模型会根据提示词内容会主动调用合适的工具。</p>
 </li>
 <li>工具：可以根据实际场景灵活选用自定义工具，系统自动将工具能力封装为MCP服务并对接模型，AI能够根据对话上下文智能判断是否调用工具。</li>
+<li>输出 MCP/工具执行过程：开启后，模型在生成最终答案前，会先输出一段置于标签内的推理过程，随后再给出正式回复。</li>
 <li>输出思考：对于模型反馈思考过程的设置与开启，默认开始和结束标签是 <code>&lt;think&gt;</code>、<code>&lt;/think&gt;</code> 。</li>
 <li>返回内容：是否在对话中显示该节点返回的内容。</li>
 </ul>
@@ -3636,7 +3630,7 @@
 <p><img alt="AI对话MCP" src="../../../img/app/ai_chat_MCP.png" width="500px" />
 <img alt="AI对话自定义" src="../../../img/app/ai_chat_config.png" width="500px" /></p>
 <div class="admonition abstract">
-<p>添加工具。</p>
+<p>工具：支持添加【工具】中已启用的工具。</p>
 </div>
 <p><img alt="AI对话工具" src="../../../img/app/ai_chat_new_tool.png" /></p>
 <h4 id="212">2.1.2 意图识别<a class="headerlink" href="#212" title="Permanent link">&para;</a></h4>
@@ -4021,12 +4015,27 @@
 <p>在调试对话框中进行提问，AI 回答完成后，会显示【执行详情】，点击【执行详情】后，在弹出执行详情对话框中可以查看每个流程节点的执行状态、耗时以及其它执行信息。</p>
 </div>
 <p><img alt="执行详情" src="../../../img/app/exec_detail.png" /></p>
-<h3 id="33">3.3 保存<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<h3 id="33">3.3 发布历史<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>应用高级编排中，支持查看发布历史版本的工作流、时间和用户。</p>
+</div>
+<p><img alt="发布历史" src="../../../img/app/public_history.png" /></p>
+<div class="admonition abstract">
+<p>可对历史发布的版本时间进行编辑。</p>
+</div>
+<p><img alt="发布历史" src="../../../img/app/public_history_edit.png" />
+<img alt="发布时间修改" src="../../../img/app/pubic_history_time.png" /></p>
+<div class="admonition abstract">
+<p>可恢复历史版本的工作流。</p>
+</div>
+<p><img alt="恢复版本" src="../../../img/app/public_history_restore.png" />
+<img alt="恢复版本" src="../../../img/app/public_history_restore1.png" /></p>
+<h3 id="34">3.4 自动保存<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>高级编排流程默认手动保存，也可设置自动保存，开启自动保存后将每隔 1 分钟保存到本地，并在发布成功后将配置同步到后台数据库。</p>
 </div>
 <p><img alt="自动保存" src="../../../img/app/auto_save.png" /></p>
-<h3 id="34">3.4 发布<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<h3 id="35">3.5 发布<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>点击【发布】后会先校验当前工作流是否符合规则，如果合规将成功发布，否则发布失败。发布成功后，所有节点配置修改才在问答页面中生效。</p>
 <p>可以点击【去对话】进行 AI 问答，也可以查看发布历史并进行版本恢复。</p>

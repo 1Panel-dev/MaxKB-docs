@@ -3581,7 +3581,7 @@
 <li>文档 {document}：客户端上传的文档。</li>
 </ul>
 </div>
-<p><img alt="开始节点-用户输入" src="../../../img/app/app_start.png" width="500px" /></p>
+<p><img alt="开始节点-用户输入" src="../../../img/app/app_start.png" width="300px" /></p>
 <div class="admonition abstract">
 <p>点击画布右上角【添加组件】，即可通过“点击”或“拖拽”方式将所需节点加入工作流。组件按功能分为三大类，具体说明如下：</p>
 <ul>
@@ -3623,7 +3623,16 @@
 </ul>
 <p><strong>注意</strong>：MCP 工具的调用需要大语言模型支持函数调用，如果大语言模型不支持，则配置无效。</p>
 </div>
-<p><img alt="AI对话" src="../../../img/app/ai_chat.png" /></p>
+<p><img alt="AI对话" src="../../../img/app/ai_chat.png" width="300px" /></p>
+<div class="admonition abstract">
+<p>提示词是在每次对话开始时固定注入的上下文指令，用于为模型确立身份、语气、知识边界及输出格式等前置规则，从而确保回复精准、风格一致且可控。</p>
+<ul>
+<li>变量支持：如 {data} 自动插入知识库片段，{question} 引用用户问题，实现精准、可控、低幻觉的智能回复。</li>
+</ul>
+<p>通过合理编排提示词，管理员可在不更换模型的前提下，实现多场景、多角色的快速切换，显著降低大模型幻觉风险并提升用户体验。</p>
+<p>AI 对话节点支持基于用户输入的主题内容，自动生成高质量、结构完整的系统提示词，辅助用户快速构建适用于当前场景的提示文本。</p>
+</div>
+<p><img alt="应用设置" src="../../../img/app/ai_chat_prompt.png" /></p>
 <div class="admonition abstract">
 <p>MCP：引用 MCP和自定义 MCP Server Config。</p>
 </div>
@@ -3649,7 +3658,7 @@
 <li>理由 {reason}：判断意图分类的理由。</li>
 </ul>
 </div>
-<p><img alt="意图识别" src="../../../img/app/intent_classification.png" /></p>
+<p><img alt="意图识别" src="../../../img/app/intent_classification.png" width="300px" /></p>
 <h4 id="213">2.1.3 图片生成<a class="headerlink" href="#213" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：根据文本描述生成对应的图片。</p>
@@ -3666,7 +3675,7 @@
 <li>图片 {image}: 生成图片的详细信息。</li>
 </ul>
 </div>
-<p><img alt="图片生成" src="../../../img/app/vision_gen.png" width="500px" /></p>
+<p><img alt="图片生成" src="../../../img/app/vision_gen.png" width="300px" /></p>
 <h4 id="214">2.1.4 图片理解<a class="headerlink" href="#214" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：对用户上传的图片文件进行分析和理解。</p>
@@ -3692,7 +3701,7 @@
 <li>AI 回答内容{answer}：根据上传的图片以及角色、提示词等信息图片理解模型返回的内容。</li>
 </ul>
 </div>
-<p><img alt="图片理解" src="../../../img/app/picture_extract.png" width="500px" /></p>
+<p><img alt="图片理解" src="../../../img/app/picture_extract.png" width="300px" /></p>
 <h4 id="215">2.1.5 文本转语音<a class="headerlink" href="#215" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：将文本转换为音频。</p>
@@ -3707,7 +3716,7 @@
 <li>结果 {result}：将文本转成的音频内容。</li>
 </ul>
 </div>
-<p><img alt="文本转语音" src="../../../img/app/text2audio.png" width="500px" /></p>
+<p><img alt="文本转语音" src="../../../img/app/text2audio.png" width="300px" /></p>
 <h4 id="216">2.1.6 语音转文本<a class="headerlink" href="#216" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：将音频文件转换为文本。</p>
@@ -3722,7 +3731,7 @@
 <li>结果 {result}：语音转换后的文本内容。</li>
 </ul>
 </div>
-<p><img alt="语音转文本" src="../../../img/app/audio2text.png" width="500px" /></p>
+<p><img alt="语音转文本" src="../../../img/app/audio2text.png" width="300px" /></p>
 <h4 id="217">2.1.7 文生视频<a class="headerlink" href="#217" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：根据文本描述生成对应的视频。</p>
@@ -3738,7 +3747,7 @@
 <li>视频 {video}：根据文本生成的视频内容。</li>
 </ul>
 </div>
-<p><img alt="语音转文本" src="../../../img/app/text2video.png" width="500px" /></p>
+<p><img alt="语音转文本" src="../../../img/app/text2video.png" width="300px" /></p>
 <h4 id="218">2.1.8 图生视频<a class="headerlink" href="#218" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：根据图片生成对应的视频。</p>
@@ -3756,7 +3765,7 @@
 <li>视频 {video}：根据图片生成的视频内容。</li>
 </ul>
 </div>
-<p><img alt="图生视频" src="../../../img/app/picture2video.png" width="500px" /></p>
+<p><img alt="图生视频" src="../../../img/app/picture2video.png" width="300px" /></p>
 <h4 id="219">2.1.9 问题优化<a class="headerlink" href="#219" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：根据当前会话的历史聊天记录，以及在节点设置的大预言模型和提示词，对当前问题进行智能优化。</p>
@@ -3773,7 +3782,7 @@
 <li>问题优化结果 {answer}：通过大模型优化后的问题。</li>
 </ul>
 </div>
-<p><img alt="问题优化" src="../../../img/app/question_opt.png" width="500px" /></p>
+<p><img alt="问题优化" src="../../../img/app/question_opt.png" width="300px" /></p>
 <h3 id="22">2.2 知识库<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <h4 id="221">2.2.1  知识库检索<a class="headerlink" href="#221" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
@@ -3793,7 +3802,7 @@
 <li>满足直接回答的分段内容 {directly_return}：字符串类型，指根据检索问题、检索参数进行检索后命中的分段中满足直接回答的所有分段内容。  </li>
 </ul>
 </div>
-<p><img alt="知识库检索" src="../../../img/app/dataset_search.png" width="500px" /></p>
+<p><img alt="知识库检索" src="../../../img/app/dataset_search.png" width="300px" /></p>
 <h4 id="222">2.2.2 多路召回<a class="headerlink" href="#222" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：根据需要重排的内容、检索问题以及检索参数进行多路召回。</p>
@@ -3810,7 +3819,7 @@
 <li>重排结果 {result}：字符串类型，指根据检索参数后的重排结果。</li>
 </ul>
 </div>
-<p><img alt="多路召回" src="../../../img/app/rerank.png" width="500px" /></p>
+<p><img alt="多路召回" src="../../../img/app/rerank.png" width="300px" /></p>
 <h3 id="23">2.3 业务逻辑<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <h4 id="231">2.3.1  判断器<a class="headerlink" href="#231" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
@@ -3820,7 +3829,7 @@
 <li>分支名称{branch_name}：每个判断分支的名称。</li>
 </ul>
 </div>
-<p><img alt="判断器" src="../../../img/app/condition_statement.png" width="500px" /></p>
+<p><img alt="判断器" src="../../../img/app/condition_statement.png" width="450px" /></p>
 <h4 id="232">2.3.2  表单收集<a class="headerlink" href="#232" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：通过表单的设计，以引导的方式主动获取必要的信息，一般应用于需要多次询问的应答场景。</p>
@@ -3858,7 +3867,7 @@
 <div class="admonition abstract">
 <p>节点说明：更新全局变量的值。</p>
 </div>
-<p><img alt="变量赋值" src="../../../img/app/reset_var.png" width="500px" /></p>
+<p><img alt="变量赋值" src="../../../img/app/reset_var.png" width="300px" /></p>
 <h4 id="234">2.3.4  指定回复<a class="headerlink" href="#234" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：指定输出文本内容，在知识库查询到的相关内容满足直接回答的要求，可以输出检索内容，也可以在知识库没有查询到关联内容时，指定回复内容。</p>
@@ -3867,7 +3876,7 @@
 <li>内容{answer}： 指定回复输出的内容。</li>
 </ul>
 </div>
-<p><img alt="指定回复" src="../../../img/app/direct_reply.png" width="500px" /></p>
+<p><img alt="指定回复" src="../../../img/app/direct_reply.png" width="300px" /></p>
 <h4 id="235">2.3.5 循环节点<a class="headerlink" href="#235" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：通过设置循环类型和循环体，在满足特定条件前重复执行任务序列。添加循环节点后，会生成一个循环节点和对应的循环体画布。</p>
@@ -3890,7 +3899,7 @@
 <div class="admonition abstract">
 <p>输出参数：在循环体中【循环开始】设置的循环变量，可以作为循环节点的输出参数，供各工作流节点调用。</p>
 </div>
-<p><img alt="输出参数" src="../../../img/app/loop_output.png" width="500px" /></p>
+<p><img alt="输出参数" src="../../../img/app/loop_output.png" width="300px" /></p>
 <div class="admonition abstract">
 <p>循环体：循环体画布用于编排循环的逻辑，每次循环时，工作流会执行循环体画布中的工作流。</p>
 </div>
@@ -3913,7 +3922,7 @@
 </li>
 </ul>
 </div>
-<p><img alt="循环开始" src="../../../img/app/loop_begins.png" width="500px" /></p>
+<p><img alt="循环开始" src="../../../img/app/loop_begins.png" width="300px" /></p>
 <div class="admonition abstract">
 <p><strong>Continue</strong>：用于终止当前循环，执行下次循环。</p>
 <p>添加条件：添加终止当前循环的条件，当满足条件时，终止当前循环，执行下次的循环。</p>
@@ -3946,7 +3955,7 @@
 <li>结果 {result}：MCP 工具执行返回结果。</li>
 </ul>
 </div>
-<p><img alt="MCP 节点" src="../../../img/app/mcp.png" width="500px" /></p>
+<p><img alt="MCP 节点" src="../../../img/app/mcp.png" width="300px" /></p>
 <div class="admonition abstract">
 <div class="highlight"><pre><span></span><code>MCP Server Config 格式参考如下
 {
@@ -3969,12 +3978,12 @@
 <li>文档输出 {content}：对用户上传文件进行的总结输出。</li>
 </ul>
 </div>
-<p><img alt="文档内容提取" src="../../../img/app/doc_extract.png" width="500px" /></p>
+<p><img alt="文档内容提取" src="../../../img/app/doc_extract.png" width="300px" /></p>
 <h4 id="243">2.4.3 自定义工具<a class="headerlink" href="#243" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>在高级编排流程中，编写 Python 代码和添加参数创建工具数作为流程中的一个处理节点，以灵活处理复杂需求，函数详细说明见：<a href="../tool/tool">工具</a>。</p>
 </div>
-<p><img alt="添加函数" src="../../../img/app/app_function.png" width="500px" /></p>
+<p><img alt="添加函数" src="../../../img/app/app_function.png" width="300px" /></p>
 <h3 id="25">2.5 工具<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>在高级编排流程中，可以添加工具中的一个处理节点，以灵活处理复杂需求，函数详细说明见：<a href="../tool/tool">工具</a>。</p>

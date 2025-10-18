@@ -36,5 +36,5 @@
 ## 3 执行提示 "Exception:keyword 'eval(' is banned in the tool."
 
 !!! Abstract ""
-    为了加强的安全性，防止恶意执行脚步，MaxKB V2 版本在工具的脚步中禁止了 subprocess、system、eval 等语句。
+    为了加强的安全性，防止恶意执行脚步，MaxKB V2 版本在工具的脚本中禁止了 subprocess、system、eval 等语句。
     

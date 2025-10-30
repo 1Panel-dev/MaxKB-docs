@@ -99,12 +99,14 @@ nav:
             - 资源管理: user_manual/X-Pack/resource_management.md
             - 共享资源: user_manual/X-Pack/shared_resources.md
             - 对话用户: user_manual/X-Pack/chat_user.md
-            - 应用设置:
+            - 应用:
                 - 显示设置: user_manual/X-Pack/app_logo_settting.md
                 - 应用接入: user_manual/X-Pack/app_integrate.md
                 - 身份验证: user_manual/X-Pack/app_auth.md
                 - 对话用户: user_manual/X-Pack/app_chatueser.md
-            - 飞书文档: user_manual/X-Pack/feishu_doc.md
+            - 知识库:
+                - 飞书文档知识库: user_manual/X-Pack/feishu_doc.md
+                - 对话用户: user_manual/X-Pack/dataset_chatuser.md
             - 系统设置:
                     - 系统外观: user_manual/X-Pack/theme_settings.md
                     - 登录认证: user_manual/X-Pack/login_auth.md

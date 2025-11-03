@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -2189,7 +2189,7 @@
   
   
   <span class="md-ellipsis">
-    应用设置
+    应用
     
   </span>
   
@@ -2200,7 +2200,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_8_7">
             <span class="md-nav__icon md-icon"></span>
-            应用设置
+            应用
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2310,18 +2310,93 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_8_8" id="__nav_6_8_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    知识库
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            知识库
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    飞书文档
+    飞书文档知识库
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/dataset_chatuser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3006,7 +3081,7 @@
 <li>共享知识库：系统管理员在【共享资源】中创建共享后，可以授权给指定工作空间。</li>
 <li>全部知识库：用户可以创建知识库，其他用户<a href="../../X-Pack/authorization_resources/"><strong>资源授权</strong></a>后可以查看、使用和维护。</li>
 </ul>
-<p>知识库通过文件夹进行管理，根目录下可建立最多三级的子文件夹。每一级文件夹内均可创建相应的知识库。用户可以创建知识库，也可以使用资源授权后的知识库。</p>
+<p>知识库通过文件夹进行管理，根目录下可建立最多三级的子文件夹。每一级文件夹内均可创建相应的知识库。文件夹支持资源授权，普通用户仅可查看被授权的文件夹，授权文件夹时支持授权文件夹下已有的子资源。</p>
 <p><strong>注意</strong>：共享资源为企业版 X-Pack 功能。</p>
 </div>
 <h2 id="1">1 创建知识库<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
@@ -3028,6 +3103,9 @@
 <p><img alt="创建通用型知识库" src="../../../img/dataset/create_offline_dataset.png" /></p>
 <div class="admonition abstract">
 <p>创建知识库后，支持新建文档和上传离线文档。</p>
+</div>
+<div class="admonition abstract">
+<p>注意：对话用户为 X-Pack 功能。</p>
 </div>
 <p><img alt="上传文档" src="../../../img/dataset/dataset_office_document.png" /></p>
 <div class="admonition abstract">
@@ -3132,7 +3210,7 @@
 <p><img alt="Alt text" src="../../../img/dataset/web_doc.png" /></p>
 <h2 id="2">2 知识库操作<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>MaxKB 知识库支持同步、重新向量化、生成问题、转移、设置、导出以及删除操作。</p>
+<p>MaxKB 知识库支持同步、重新向量化、生成问题、资源授权、转移到、设置、导出以及删除操作。</p>
 </div>
 <p><img alt="知识库导出" src="../../../img/dataset/dataset_actions.png" /></p>
 <h3 id="21-web">2.1 同步 Web 知识库<a class="headerlink" href="#21-web" title="Permanent link">&para;</a></h3>
@@ -3151,7 +3229,7 @@
 <p><img alt="知识库导出" src="../../../img/dataset/dataset_embedding.png" /></p>
 <h3 id="23">2.3 设置知识库<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>在知识库列表，点击知识库面板的【设置】进入知识库设置页面，可以对当前知识库名称、描述、向量模型等属性进行修改，所有设置保存后设置生效。</p>
+<p>在知识库列表，点击知识库面板的【设置】进入知识库设置页面，可修改知识库基本信息（名称、描述、向量模型）及上传规则：每次上传最多文件数与单个文档大小上限值（MB）。</p>
 </div>
 <p><img alt="知识库设置页面" src="../../../img/dataset/dataset_setting.png" /></p>
 <h3 id="24">2.4 导出知识库<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>

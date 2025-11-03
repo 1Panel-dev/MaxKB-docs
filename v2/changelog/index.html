@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -470,6 +470,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.3.0
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v221" class="md-nav__link">
@@ -2175,7 +2184,7 @@
   
   
   <span class="md-ellipsis">
-    应用设置
+    应用
     
   </span>
   
@@ -2186,7 +2195,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_8_7">
             <span class="md-nav__icon md-icon"></span>
-            应用设置
+            应用
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2296,18 +2305,93 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_8_8" id="__nav_6_8_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    知识库
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            知识库
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../user_manual/X-Pack/feishu_doc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    飞书文档
+    飞书文档知识库
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/X-Pack/dataset_chatuser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2882,6 +2966,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.3.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v221" class="md-nav__link">
     <span class="md-ellipsis">
       v2.2.1
@@ -2989,6 +3082,59 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v230">v2.3.0<a class="headerlink" href="#v230" title="Permanent link">&para;</a></h3>
+<p>2025 年 11 月 3 日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>知识库：新增“标签管理”功能；</li>
+<li>知识库：知识库中的文档新增“标签设置”功能；</li>
+<li>知识库：通用知识库新增“替换原文档”功能；</li>
+<li>应用：高级编排应用新增“文档标签检索”节点；</li>
+<li>应用：高级编排应用新增“视频理解”节点；</li>
+<li>应用：高级编排应用新增“变量拆分”节点；</li>
+<li>应用：高级编排应用新增“变量聚合”节点；</li>
+<li>应用：高级编排应用新增“参数提取”节点；</li>
+<li>应用：文件上传设置新增“视频”文件类型的选项设置；</li>
+<li>应用：判断器节点新增 “startwith” 和 “endwith” 判断条件；</li>
+<li>应用：AI对话节点的输出参数中新增“历史聊天记录 {history}” 参数；</li>
+<li>应用：知识库检索节点中检索范围支持手动选择知识库和引用变量两种方式；</li>
+<li>资源授权：支持按用户授权文件夹资源；</li>
+<li>资源授权：在工作空间的应用、知识库、工具中，支持按文件夹进行资源授权；</li>
+<li>系统管理（X-Pack）：操作日志新增支持清除策略，助力管理员高效管理日志数据。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>应用：上传文件支持视频文件类型；</li>
+<li>应用：图片理解、图生视频、视频理解节点的选择文件参数支持设置 URL 地址；</li>
+<li>应用：变量赋值节点可以作为结束节点使用；</li>
+<li>应用：工作流编排页面支持批量选中节点；</li>
+<li>应用：接口参数中增加描述字段；</li>
+<li>应用：在“访问限制”中的“每个客户端提问限制”选项的最大值调整为 1000 万次/天；</li>
+<li>应用：表单收集节点中多选框组件支持自定义输入；</li>
+<li>应用：根目录显示当前工作空间下所有应用，支持全局搜索；</li>
+<li>应用（X-Pack）：应用接入企业微信、飞书或钉钉后，支持用户免密登录；</li>
+<li>工具：根目录显示当前工作空间下所有工具，支持全局搜索；</li>
+<li>工具：自定义类型参数支持变量解析；</li>
+<li>角色：关于权限位调整至普通用户角色；</li>
+<li>模型：向量模型支持设置模型参数；</li>
+<li>知识库：根目录显示当前工作空间下所有知识库，并且支持全局搜索。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>应用：修复应用导出时未导出循环体内的工具节点；</li>
+<li>应用：修复循环体中表单收集节点后面节点无法输出循环变量的问题；</li>
+<li>应用：修复在 MCP 调用节点修改第二个参数内容会清空第一个参数内容的问题；</li>
+<li>应用：修复在 AI 对话节点中使用智谱大语言模型并开启工具功能，在对话时 Tokens 显示为 0 的问题；</li>
+<li>应用（X-Pack）：修复显示设置中历史记录设置选项不生效的问题；</li>
+<li>问答页面：在问答页面上传文件提问后，点击换个答案时上传的文件丢失的问题；</li>
+<li>问答页面：修复问答页面提问时调整对话窗口大小会丢失对话记录的问题。</li>
+</ul>
+</div>
 <h3 id="v221">v2.2.1<a class="headerlink" href="#v221" title="Permanent link">&para;</a></h3>
 <p>2025 年 10 月 11 日</p>
 <div class="admonition abstract">

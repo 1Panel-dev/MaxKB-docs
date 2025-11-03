@@ -2486,10 +2486,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -2506,7 +2502,7 @@
   
   
   <span class="md-ellipsis">
-    应用
+    知识库
     
   </span>
   
@@ -2516,6 +2512,108 @@
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_8_7">
+            <span class="md-nav__icon md-icon"></span>
+            知识库
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    飞书文档知识库
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Pack/dataset_chatuser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    对话用户
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_8_8" id="__nav_6_8_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    应用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_8">
             <span class="md-nav__icon md-icon"></span>
             应用
           </label>
@@ -2598,104 +2696,6 @@
   
     <li class="md-nav__item">
       <a href="../../X-Pack/app_chatueser/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    对话用户
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_8_8" id="__nav_6_8_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    知识库
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_8_8">
-            <span class="md-nav__icon md-icon"></span>
-            知识库
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    飞书文档知识库
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../X-Pack/dataset_chatuser/" class="md-nav__link">
         
   
   
@@ -3969,6 +3969,9 @@
 <p><img alt="图生视频" src="../../../img/app/picture2video.png" width="300px" /></p>
 <h4 id="219">2.1.9 视频理解<a class="headerlink" href="#219" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
+<p>注意：目前视频理解组件仅支持阿里云百炼和火山引擎的视觉模型。</p>
+</div>
+<div class="admonition abstract">
 <p>节点说明：对用户上传的视频文件进行分析和理解。</p>
 <p>节点设置：</p>
 <ul>
@@ -4242,10 +4245,12 @@
 <h4 id="244">2.4.4 参数提取<a class="headerlink" href="#244" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
 <p>节点说明：从非结构化文本或半结构化文本中提取结构化参数。</p>
-<p>节点设置：
-* AI 模型：大语言模型，用于提取结构化参数。
-* 输入变量：结构化文本或非结构化文本。
-* 提取参数：设置提取参数、显示名称、参数类型以及描述。</p>
+<p>节点设置：</p>
+<ul>
+<li>AI 模型：大语言模型，用于提取结构化参数。</li>
+<li>输入变量：结构化文本或非结构化文本。</li>
+<li>提取参数：设置提取参数、显示名称、参数类型以及描述。</li>
+</ul>
 <p>输出参数：</p>
 <ul>
 <li>结果{result}：输出所有提取参数的内容。</li>

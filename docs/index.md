@@ -39,6 +39,7 @@
 
     MaxKB 自发布以来，日均安装下载超过 1000 次，被广泛应用于智能客服、企业内部知识库、学术研究与教育等场景，典型应用案例详情见如下链接：
 
+    - [MaxKB 应用案例：中信建投证券](https://mp.weixin.qq.com/s/w6ZY9fQpdeQ0vQkKZA-DYA)
     - [MaxKB 应用案例：中国农业大学-小鹉哥](https://mp.weixin.qq.com/s/4g_gySMBQZCJ9OZ-yBkmvw)
     - [MaxKB 应用案例：东北财经大学-小银杏](https://mp.weixin.qq.com/s/3BoxkY7EMomMmmvFYxvDIA)
     - [MaxKB 应用案例：重庆交通大学-渝小交](https://mp.weixin.qq.com/s/8L4hIjdhzWOmpQXx2cW33g)

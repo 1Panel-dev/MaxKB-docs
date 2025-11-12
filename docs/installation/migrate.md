@@ -21,6 +21,7 @@
 ## 2 迁移工具下载
 !!! Abstract ""
     打开 [MaxKB 迁移工具下载](https://github.com/1Panel-dev/MaxKB-v1-to-v2-migrator)页面，下载最新版本工具，并上传至部署服务器。
+![migrate](../img/index/migrate_step.png)
 
 ## 3 迁移操作
 ### 3.1 Linux/macOS 系统

@@ -498,6 +498,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v230" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3476,6 +3487,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v230" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3611,6 +3633,41 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v231">v2.3.1<a class="headerlink" href="#v231" title="Permanent link">&para;</a></h3>
+<p>2025 年 11 月 13 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复工具中Python代码可以访问本地服务的漏洞（<a href="https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-9287-g7px-9rp4">CVE-2025-64511</a>）；</li>
+<li>安全漏洞：修复工具中Python代码可以获取系统配置信息的漏洞（<a href="https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-qwvm-x4xh-g2qq">CVE-2025-64703</a>）。</li>
+</ul>
+<p>感谢腾讯玄武实验室XlabAI团队（<a href="https://github.com/XlabAITeam">@XlabAITeam</a>）发现并向MaxKB开源社区及时反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>系统：通过代码重构与架构优化，显著降低 CPU 与内存占用，全面提升系统资源利用率、稳定性及并发处理能力，打造更轻量、更高效的运行体验；</li>
+<li>系统：优化用户登录系统后，右上角显示用户的姓名；</li>
+<li>应用：授权“查看”权限的用户可以查看应用的“设置”页面；</li>
+<li>文件夹：应用、知识库、工具列表中的文件夹支持移动和拖拽移动；</li>
+<li>文件夹：应用、知识库、工具列表中的文件夹不再限制层级；</li>
+<li>用户管理：用户名和姓名最大长度调整为 64 个字符；</li>
+<li>对话用户（X-Pack）：用户名和姓名最大长度调整为 64 个字符。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>应用：修复循环体中存在表单收集节点，对话时会展示多个表单收集的问题；</li>
+<li>应用：修复循环体中存在表单收集节点，对话时输出的内容直接显示"context"异常信息的问题；</li>
+<li>应用：修复循环体中存在表单收集节点，循环节点输出参数会变为"None"的问题；</li>
+<li>应用：修复添加工具节点时，最后一个文件夹未显示的问题；</li>
+<li>知识库：修复文档向量化偶尔失败的问题；</li>
+<li>知识库：修复删除文档时，未删除分段与问题的关联关系的问题；</li>
+<li>资源授权：修复授权文件夹下面的资源时文件夹会自动收起的问题；</li>
+<li>问答页面：修复对话用户使用 safari 浏览器无法使用企业微信扫描登录的问题。</li>
+</ul>
+</div>
 <h3 id="v230">v2.3.0<a class="headerlink" href="#v230" title="Permanent link">&para;</a></h3>
 <p>2025 年 11 月 3 日</p>
 <div class="admonition abstract">

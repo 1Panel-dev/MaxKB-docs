@@ -48,7 +48,7 @@
     **说明：** OAUTH2 回调地址即 MaxKB 访问地址加上 /api/oauth2 ，例如：http://40.100.86.240:8080/admin/api/oauth2。
 ![OAHTU2](../../img/system/oauth2.png)
 
-### 5 平台对接
+### 5 扫码登录
 
 !!! Abstract ""
     支持企业微信、钉钉、飞书接入，支持扫码登录、免密登录。
@@ -148,12 +148,24 @@
 ![钉钉应用信息](../../img/system/dingding_app_info.png)
 
 !!! Abstract ""
-    第二步：进入到【权限管理】中，添加如下图所示的权限即可。
+    第二步：权限设置。
+    
+    - 进入到【权限管理】中，添加如下图所示的权限。
 
 ![钉钉应用信息](../../img/system/dingding_permissions.png)
 
+!!! Abstract ""
+    - 在【分享设置】的【回调域名】里中添加授权回调域，注意域名需要和 MaxKB 平台里填写的【回调域名】一致。
+
+![钉钉回调信息](../../img/system/dingding_url.png)
+
+!!! Abstract ""
+    - 同时在【安全设置】的【重定向 URL】里中添加授权回调域，注意域名一致。
+
+![钉钉安全信息](../../img/system/dingding_safe.png)
+
 !!! Abstract ""    
-    第三步：在【版本管理与发布】中，填写应用版本号、版本描述等信息，点击【保持】，发布应用。
+    第三步：在【版本管理与发布】中，填写应用版本号、版本描述等信息，点击【保存】，发布应用。
 ![钉钉应用信息](../../img/system/dingding_app_release.png)
 
 !!! Abstract ""
@@ -164,6 +176,7 @@
 !!! Abstract ""
     后续即可在 MaxKB 登陆页面点击选择钉钉进行扫码登陆。
 
+![钉钉应用展示](../../img/system/dingding_deplay.jpg)
 
 ##### 5.2.2 钉钉免登设置
 
@@ -211,10 +224,16 @@
 !!! Abstract ""
     第一步：创建企业自建应用。点击【创建企业自建应用】，输入应用名称、描述以及上传应用图标后，点击【创建】。
 ![飞书创建](../../img/system/feishu_create_app.png)
+![飞书创建](../../img/system/feishu_create_app1.png)
 
 !!! Abstract ""
-    第二步：配置重定向 URL。在【开发配置-安全设置】中，输 入MaxKB 飞书扫码配置弹出框中的回调地址，点击【添加】。
+    第二步：权限配置
+
+    - 配置重定向 URL。在【开发配置-安全设置】中，输入 MaxKB 飞书扫码配置弹出框中的回调地址，点击【添加】。
 ![飞书配置回调URL](../../img/system/feishu_url.png)
+!!! Abstract ""
+    - 应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图：
+![飞书应用授权](../../img/system/feishu_permissions.png)
 
 !!! Abstract ""
     第三步：发布应用。在【版本管理与发布】中，输入应用版本号、更新说明等信息，点击【保存】，完成应用发布。
@@ -223,7 +242,8 @@
 ![飞书配置](../../img/system/feishu_setting.png)
 
 !!! Abstract ""
-    发布应用后，即可在 MaxKB 登陆页面点击选择飞书进行扫码登陆。     
+    发布应用后，即可在 MaxKB 登陆页面点击选择飞书进行扫码登陆。   
+![飞书展示](../../img/system/feishu_deplay.jpg)
 
 ##### 5.3.2 飞书免登设置
 

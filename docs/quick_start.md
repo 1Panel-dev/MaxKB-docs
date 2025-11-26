@@ -5,7 +5,7 @@
 
     
     - 支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
-    - 推荐使用 [离线安装包](https://community.fit2cloud.com/#/products/maxkb/downloads) 进行部署。
+    - 生产环境推荐使用 [离线安装包](https://community.fit2cloud.com/#/products/maxkb/downloads) 进行部署。
 
     将下载的安装包上传至服务器并解压，在安装包目录里执行以下脚本进行快速安装：
     ```

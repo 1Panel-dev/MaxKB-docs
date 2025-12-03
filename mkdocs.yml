@@ -1,7 +1,7 @@
 site_name: 'MaxKB 文档'
 site_url: 'https://maxkb.cn/docs'
-site_description: 'MaxKB 是强大易用的企业级智能体平台'
-site_author: 'MaxKB 开源项目组'
+site_description: 'MaxKB 在线文档'
+site_author: '飞致云'
 repo_name: 'MaxKB'
 repo_url: 'https://github.com/1Panel-dev/MaxKB'
 
@@ -43,11 +43,10 @@ nav:
     - 更新日志: changelog.md
     - 系统架构: system_arch.md
     - 安装部署:
-        - 离线安装: installation/offline_installtion.md
+        - 离线安装（生产环境推荐）: installation/offline_installtion.md
         - 在线安装: installation/online_installtion.md
         - 1Panel 安装: installation/1panel_installtion.md
-        #- 阿里云安装: installation/aliyun.md
-        #- 腾讯云安装: installation/tencent.md
+        - 阿里云安装: installation/aliyun.md
         - 迁移工具: installation/migrate.md
         - 命令行工具: installation/cli.md
         - 备份还原: installation/backup.md
@@ -112,9 +111,6 @@ nav:
                     - 登录认证: user_manual/X-Pack/login_auth.md
             - 操作日志: user_manual/X-Pack/operation_log.md
             - 系统API: user_manual/X-Pack/system_API.md
-   #- 开发文档:
-        #- 开发环境搭建: dev_manual/dev_environment.md
-        #- 通过API KEY进行对话: dev_manual/APIKey_chat.md
     - 常见问题:
         - 安装部署: faq/install_configuration.md
         - 系统管理: faq/system_management.md
@@ -126,9 +122,7 @@ nav:
             - Ollama 离线部署 LLM 模型: faq/Offline_install_OllamaModel.md
             - Ollama 使用 GPU 运行 LLM 模型: faq/GPU_runOllama.md
             - 将 MaxKB 小助手集成到 Halo 中: faq/maxkb_In_halo.md
-            #- MaxKB 和 Dify 有什么区别: faq/MaxKB VS.Dify.md
             - 知识库文档如何合理分段: faq/doc_segment.md
-  #- 教学视频: instructional_video
     - 联系我们: contact.md
     
 markdown_extensions:
@@ -162,7 +156,6 @@ markdown_extensions:
     - pymdownx.tilde
     - pymdownx.betterem
     - pymdownx.progressbar
-#    - lightgallery
     - pymdownx.tabbed
 
 extra_css:

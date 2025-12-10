@@ -74,6 +74,7 @@ nav:
                     - 对接Ollama: user_manual/model/ollama_model.md
                     - 对接vLLM: user_manual/model/vllm_model.md
                     - 对接Xorbits Inference: user_manual/model/X-Infer_model.md
+                    - 对接Docker AI: user_manual/model/dockerai_model.md
               - 模型参数配置: user_manual/model/model_param.md
         - 工具: user_manual/tool/tool.md
         - 知识库:

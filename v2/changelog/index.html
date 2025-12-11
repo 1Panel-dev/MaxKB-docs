@@ -171,11 +171,13 @@
                             style="display: none;">
                             <div class="mega-nav-body">
                                 <ul class="mega-nav-ul">
+                                    <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的 AI CRM 系统</a></li>
                                     <li><a href="https://1panel.cn/" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
-                                    <li><a href="https://maxkb.cn" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
                                     <li><a href="https://jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
-                                    <li><a href="https://dataease.cn" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
-                                    <li><a href="https://www.fit2cloud.com/metersphere/index.html" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                    <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>                       
+                                    <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                    <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的智能问数系统</a></li>
+                                    <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
                                     <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
                                 </ul>
                             </div>
@@ -496,6 +498,17 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.4.0
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v231" class="md-nav__link">
@@ -1069,6 +1082,8 @@
   
     
     
+      
+        
       
         
       
@@ -1697,6 +1712,34 @@
     
   
     对接Xorbits Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/model/dockerai_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对接Docker AI
   
 
     
@@ -3517,6 +3560,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.4.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v231" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3663,6 +3717,56 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v240">v2.4.0<a class="headerlink" href="#v240" title="Permanent link">&para;</a></h3>
+<p>2025 年 12 月 11 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复系统文件被覆盖导致的权限绕过问题（<a href="https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-5xx2-3q9w-jpgf">CVE-2025-66446</a>）；</li>
+<li>安全漏洞：修复特定并发情况下导致的权限绕过问题（<a href="https://github.com/1Panel-dev/MaxKB/security/advisories/GHSA-f9qm-2pxq-fx6c">CVE-2025-66419</a>）。</li>
+</ul>
+<p>感谢 GitHub 用户（<a href="https://github.com/yck99">@yck99</a>）、（<a href="http://github.com/NikoCat233">@NikoCat233</a>）（<a href="https://github.com/Threonine">@Threonine</a>）发现并向MaxKB开源社区及时反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>工具：新增支持数据源工具；</li>
+<li>模型：新增支持 Docker AI 模型供应商；</li>
+<li>知识库：新增支持工作流知识库；</li>
+<li>登录认证（X-Pack）：支持 SAML2 单点登录。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>应用：在文件上传设置功能中，上传方式新增“URL 地址”方式；</li>
+<li>应用：概览页面的监控统计新增“用户消耗 Tokens ”和“用户提问次数”排名统计；</li>
+<li>应用：高级应用中 AI 对话节点的生成提示词不再携带应用名称和描述信息；</li>
+<li>应用：AI模型调用 MCP 工具时支持输出 request 参数；</li>
+<li>工具：导入工具支持工具、MCP、数据源三种类型；</li>
+<li>工具：工具商店入口调整至工具列表中；</li>
+<li>工具：取消系统内置工具，内置工具移动到工具商店中；</li>
+<li>工具：工具商店中的工具分为“工具”和“数据源”两种类型；</li>
+<li>模型：AWS 供应商新增视觉模型和重排模型；</li>
+<li>模型：OpenAI、Ollama、vLLM、Xinference、智谱 AI 供应商的视觉模型支持视频理解功能；</li>
+<li>资源授权：在按资源为用户授权应用、知识库、工具、模型时，支持按角色筛选用户。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>应用：修复执行详情中循环节点的执行时间显示错误的问题；</li>
+<li>应用：修复文档标签检索节点中变量值为空时，检索结果不正确的问题；</li>
+<li>模型：修复阿里云百炼供应商的 qwen-image 模型生成报错的问题；</li>
+<li>模型：修复 Azure OpenAI 供应商添加 gtp-5-codex 模型报错的问题；</li>
+<li>模型：修复 vLLM 模型部分参数设置错误的问题；</li>
+<li>角色：修复工作空间管理员、普通用户角色授权的“关于”权限未生效的问题；</li>
+<li>知识库：修复替换原文档后，再下载原文档无法打开的问题；</li>
+<li>问答页面：修复知识来源中未显示循环体内知识库检索节点的检索结果的问题；</li>
+<li>对话用户（X-Pack）：修复对话用户查询接口显示非必要信息的问题；</li>
+<li>接口文档（X-Pack）：修订若干 API 文档描述不准确的问题。</li>
+</ul>
+</div>
 <h3 id="v231">v2.3.1<a class="headerlink" href="#v231" title="Permanent link">&para;</a></h3>
 <p>2025 年 11 月 13 日</p>
 <div class="admonition warning">

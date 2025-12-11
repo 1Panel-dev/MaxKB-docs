@@ -171,11 +171,13 @@
                             style="display: none;">
                             <div class="mega-nav-body">
                                 <ul class="mega-nav-ul">
+                                    <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的 AI CRM 系统</a></li>
                                     <li><a href="https://1panel.cn/" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
-                                    <li><a href="https://maxkb.cn" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
                                     <li><a href="https://jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
-                                    <li><a href="https://dataease.cn" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
-                                    <li><a href="https://www.fit2cloud.com/metersphere/index.html" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                    <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>                       
+                                    <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                    <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的智能问数系统</a></li>
+                                    <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
                                     <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
                                 </ul>
                             </div>
@@ -931,6 +933,8 @@
       
         
       
+        
+      
     
     
     
@@ -1531,6 +1535,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/dockerai_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对接Docker AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1706,7 +1738,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 工具商店
+        4 创建数据源
       
     </span>
   </a>
@@ -1717,7 +1749,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 工具导出/导入
+        5 工具商店
       
     </span>
   </a>
@@ -1728,7 +1760,7 @@
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 复制工具
+        6 工具导出/导入
       
     </span>
   </a>
@@ -1739,7 +1771,18 @@
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7 删除工具
+        7 复制工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 删除工具
       
     </span>
   </a>
@@ -3533,7 +3576,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 工具商店
+        4 创建数据源
       
     </span>
   </a>
@@ -3544,7 +3587,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 工具导出/导入
+        5 工具商店
       
     </span>
   </a>
@@ -3555,7 +3598,7 @@
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 复制工具
+        6 工具导出/导入
       
     </span>
   </a>
@@ -3566,7 +3609,18 @@
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7 删除工具
+        7 复制工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 删除工具
       
     </span>
   </a>
@@ -3605,6 +3659,10 @@
 <p><strong>注意</strong>：共享资源为企业版 X-Pack 功能。</p>
 </div>
 <p><img alt="工具" src="../../../img/fx/tool.png" /></p>
+<div class="admonition abstract">
+<p>工具的创建支持创建工具、创建 MCP、创建数据源、导入创建和工具商店。</p>
+</div>
+<p><img alt="工具" src="../../../img/fx/tool1.png" /></p>
 <h2 id="2">2 自定义工具<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 依赖安装<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -3634,7 +3692,7 @@ pip install pymysql
 </div>
 <p><img alt="工具调试" src="../../../img/fx/tool_debug.png" /></p>
 <div class="admonition abstract">
-<p>已启用的工具，可以在【高级编排应用】的中，点击【添加组件】-&gt;【工具】中，以添加组件的方式调用工具；也可通过【AI 对话】组件的【工具】进行调用。</p>
+<p>已启用的工具，可以在【高级编排应用】中，点击【添加组件】-&gt;【工具】中，以添加组件的方式调用工具；也可通过【AI 对话】组件的【工具】进行调用。</p>
 </div>
 <p><img alt="添加工具节点" src="../../../img/fx/use_tool.png" /></p>
 <h2 id="3-mcp">3 创建 MCP<a class="headerlink" href="#3-mcp" title="Permanent link">&para;</a></h2>
@@ -3651,22 +3709,31 @@ pip install pymysql
 <p>已创建成功的 MCP，默认状态为【已禁用】。开启 MCP 后，可以在【高级编排应用】-&gt;【AI 对话】的 MCP 中进行引用。</p>
 </div>
 <p><img alt="MCP使用" src="../../../img/fx/use_MCP.png" /></p>
-<h2 id="4">4 工具商店<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="4">4 创建数据源<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>工具商店是 MaxKB 系统中的一个功能模块，帮助用户扩展系统的功能。  </p>
-</div>
-<p><img alt="工具商店" src="../../../img/fx/tool_shop.png" /></p>
-<div class="admonition abstract">
-<p>工具商店中的工具主要分为系统内置工具和工具商店两部分：</p>
-<p>系统内置：</p>
+<p>点击【创建数据源】，打开创建数据源页面。</p>
 <ul>
-<li>联网搜索：提供 Web 搜索功能，如 Google Search、博查搜索、LangSearch 等，帮助用户快速从互联网获取信息。</li>
-<li>数据库查询：支持连接不同类型的数据库并执行查询，如 MySQL 查询、PostgreSQL 查询等，方便用户管理和分析数据。</li>
+<li>名称：数据源的 logo 与数据源名称，便于识别。数据源 logo 在保存后可自定义上传。     </li>
+<li>描述：数据源详细说明以及使用注意事项，会显示在工作流知识库的组件列表中。</li>
+<li>启动参数：启用参数即数据源运行的必要参数，例如 Token、Secret 等。将启动参数与输入参数分离，在工作流中仅关注输入参数，同时也避免关键信息的泄露。</li>
+<li>输入参数：数据源的输入参数，参数的数据类别包括：string、int、float、array，可自定义赋值，也可引用参数。 </li>
+<li>函数内容：自定义编写 Python 数据源代码，可以引用输入变量。  </li>
+<li>输出参数：Python 代码执行返回的结果。</li>
 </ul>
+</div>
+<p><img alt="数据源" src="../../../img/fx/data_source.png" /></p>
+<div class="admonition abstract">
+<p>已创建成功的数据源，默认状态为【已禁用】。启用数据源工具后，可以在【工作流知识库】中，点击【添加组件】-&gt;【数据源】中，添加数据源进行知识库创建。</p>
+</div>
+<p><img alt="数据源使用" src="../../../img/fx/data_source_use.png" /></p>
+<h2 id="5">5 工具商店<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>工具商店是 MaxKB 系统中的一个功能模块，帮助用户扩展系统的功能。</p>
+<p>工具商店中的工具主要分为联网搜索、数据库查询、接口工具、内容处理、消息推送、翻译工具和数据源七大类。</p>
 </div>
 <p><img alt="工具商店" src="../../../img/fx/tool_sho_list.png" /></p>
 <div class="admonition abstract">
-<p>工具商店：用户可直接在商店中选择所需的工具，无需手动开发或进行复杂集成，可以显著提升工具的调用效率。</p>
+<p>用户可直接在商店中选择所需的工具，无需手动开发或进行复杂集成，可以显著提升工具的调用效率。</p>
 <p>为了丰富工具商店资源，推动产品生态持续发展，MaxKB 诚挚邀请广大社区用户参与工具贡献，共享技术成果：</p>
 <ul>
 <li>贡献路径：开发者可以按照官方提供的工具开发规范开发适用于 MaxKB 的工具（例如 API 对接类、本地功能类具等）；</li>
@@ -3674,14 +3741,13 @@ pip install pymysql
 <li>共建开发生态：社区贡献的工具不仅能帮助更多用户解决实际问题，也将促进 MaxKB 工具生态的多样化发展，形成“用户需求-工具开发-生态完善” 的正向循环。</li>
 </ul>
 </div>
-<p><img alt="工具商店" src="../../../img/fx/tool_shop_shop.png" /></p>
 <div class="admonition abstract">
-<p>内置工具添加后，在配置启动参数（例如数据库连接信息、API Key 等）并启用后，便可在高级编排应用中调用。</p>
+<p>工具添加后，在配置启动参数（例如数据库连接信息、API Key 等）并启用后，便可在高级编排应用中调用。</p>
 </div>
 <p><img alt="启动参数" src="../../../img/fx/sartup_parameters.png" /></p>
 <p><img alt="参数配置" src="../../../img/fx/fill_parameters.png" /></p>
 <p><img alt="高级编排应用" src="../../../img/fx/use_tool_shop.png" /></p>
-<h2 id="5">5 工具导出/导入<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="6">6 工具导出/导入<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>工具支持导出和导入，导出的文件后缀为 <code>.tool</code>。</p>
 </div>
@@ -3694,13 +3760,13 @@ pip install pymysql
 <p>工具将自动导入，导入的工具默认状态为【已禁用】，可以点击工具，进入编辑工具查看和修改工具。</p>
 </div>
 <p><img alt="函数导入成功" src="../../../img/fx/import_success_fx.png" /></p>
-<h2 id="6">6 复制工具<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h2 id="7">7 复制工具<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击工具面板的【复制】按钮，打开复制工具对话框，对原工具内容进行编辑修改后点击【创建】即可快速创建一个新工具。</p>
 </div>
-<p><img alt="复制工具" src="../../../img/fx/copy_tool.png" /></p>
+<p><img alt="复制工具" src="../../img/fx/copy_tool.png" /></p>
 <p><img alt="复制工具" src="../../../img/fx/copy_tool1.png" /></p>
-<h2 id="7">7 删除工具<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h2 id="8">8 删除工具<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击工具面板的【删除】按钮，即可对工具进行删除。</p>
 </div>

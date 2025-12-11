@@ -53,6 +53,7 @@
 ## 3 在线升级
 
 !!! Abstract ""
+    **注意：升级前请先对数据[进行备份](https://maxkb.cn/docs/v2/installation/backup/)。**
 
     根据以下步骤依次执行进行升级：
 

@@ -21,7 +21,7 @@
     * 飞书知识库：支持对接飞书的云文档和表格文档，将飞书文档内容导入到 MaxKB 中进行管理。
     * 工作流知识库：允许用户通过拖拽节点的方式自主编排从不同数据源到知识库写入的全流程，满足企业个性化知识管理需求。
 
-    **注意**：飞书知识库 X-Pack 功能，具体使用可参考[**飞书文档**](../../user_manual/X-Pack/feishu_doc/)。
+    **注意**：飞书知识库 X-Pack 功能，具体使用可参考[**飞书文档**](https://maxkb.cn/docs/v2/user_manual/X-Pack/feishu_doc/)。
 ![dataset](../../img/dataset/create_dataeset.png)
 
 ###  1.1 通用型知识库

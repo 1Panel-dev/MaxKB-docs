@@ -36,5 +36,9 @@
 ## 3 执行提示 "Exception:keyword 'eval(' is banned in the tool."
 
 !!! Abstract ""
+    ```
+    此限制在 v2.4.0 及之后版本已修改，不再限制 Python 代码内容，改成限制运行进程的边界。
+    ```
+
     为了加强的安全性，防止恶意执行脚步，MaxKB V2 版本在工具的脚本中禁止了 subprocess、system、eval 等语句。
     

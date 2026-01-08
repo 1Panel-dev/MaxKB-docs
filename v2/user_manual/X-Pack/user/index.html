@@ -1585,7 +1585,7 @@
   <span class="md-ellipsis">
     
   
-    模型参数配置
+    模型操作
   
 
     
@@ -1847,7 +1847,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -1863,7 +1863,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -1883,7 +1883,7 @@
   <span class="md-ellipsis">
     
   
-    应用概述
+    智能体概述
   
 
     
@@ -1928,7 +1928,7 @@
   <span class="md-ellipsis">
     
   
-    应用创建
+    智能体创建
   
 
     
@@ -1944,7 +1944,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用创建
+    智能体创建
   
 
           </label>
@@ -1964,7 +1964,7 @@
   <span class="md-ellipsis">
     
   
-    简单配置应用
+    简易智能体
   
 
     
@@ -1992,7 +1992,7 @@
   <span class="md-ellipsis">
     
   
-    高级编排应用
+    高级智能体
   
 
     
@@ -2028,7 +2028,7 @@
   <span class="md-ellipsis">
     
   
-    应用概览
+    智能体概览
   
 
     
@@ -2327,7 +2327,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 编辑用户
+        3 设置角色
       
     </span>
   </a>
@@ -2338,7 +2338,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 重置密码
+        4 编辑用户
       
     </span>
   </a>
@@ -2349,7 +2349,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 删除用户
+        5 重置密码
       
     </span>
   </a>
@@ -2360,7 +2360,18 @@
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 查询用户
+        6 删除用户
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 查询用户
       
     </span>
   </a>
@@ -2668,7 +2679,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2684,7 +2695,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2732,7 +2743,7 @@
   <span class="md-ellipsis">
     
   
-    应用接入
+    接入第三方
   
 
     
@@ -3183,7 +3194,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -3519,7 +3530,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 编辑用户
+        3 设置角色
       
     </span>
   </a>
@@ -3530,7 +3541,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 重置密码
+        4 编辑用户
       
     </span>
   </a>
@@ -3541,7 +3552,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 删除用户
+        5 重置密码
       
     </span>
   </a>
@@ -3552,7 +3563,18 @@
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 查询用户
+        6 删除用户
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 查询用户
       
     </span>
   </a>
@@ -3593,7 +3615,7 @@
 <li>姓名：用户姓名；</li>
 <li>邮箱：用户邮箱；</li>
 <li>手机号：用户手机号；</li>
-<li>默认密码：默认为<code>MaxKB@123..</code>。</li>
+<li>默认密码：默认为<code>MaxKB@123..</code> ；</li>
 <li>角色设置：<ul>
 <li>用户可以设置多个角色，至少设置 1 个角色；</li>
 <li>选择普通用户和工作空间角色时需要设置工作空间；</li>
@@ -3603,7 +3625,16 @@
 </ul>
 </div>
 <p><img alt="用户列表" src="../../../img/system/create_user.png" /></p>
-<h2 id="3">3 编辑用户<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>当创建用户为普通用户或继承普通用户的角色时，支持设置默认权限，即对所选工作空间下所有资源的默认权限进行设置。</p>
+</div>
+<p><img alt="用户列表" src="../../../img/system/create_user1.png" /></p>
+<h2 id="3">3 设置角色<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>勾选用户，点击【设置角色】，可批量给用户设置角色。</p>
+</div>
+<p><img alt="设置角色" src="../../../img/system/set_user_role.png" /></p>
+<h2 id="4">4 编辑用户<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>用户名不可以编辑，其他属性均可以编辑。</p>
 </div>
@@ -3612,20 +3643,24 @@
 <p>用户状态已禁用，则用户无法登录 MaxKB。</p>
 </div>
 <p><img alt="用户列表" src="../../../img/system/forbid_user.png" /></p>
-<h2 id="4">4 重置密码<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="5">5 重置密码<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>系统管理员可以给每个用户修改密码，在用户列表中，点击【修改密码】，弹出修改密码对话框，保存后修改成功。</p>
 </div>
 <p><img alt="用户列表" src="../../../img/system/edit_usermessges.png" /></p>
-<h2 id="5">5 删除用户<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="6">6 删除用户<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在用户列表中，点击【删除】，弹出提示框，确认后仅删除当前用户，不影响其创建的工作空间资源。<br />
+<p>在用户列表中，单独点击【删除】按钮，弹出提示框，确认后仅删除当前用户，不影响其创建的工作空间资源。<br />
 <strong>注意</strong>：系统内置 admin 用户不能被删除。</p>
 </div>
 <p><img alt="用户列表" src="../../../img/system/delete_user.png" /></p>
-<h2 id="6">6 查询用户<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>支持通过用户名、姓名、邮箱进行用户搜索。</p>
+<p>勾选用户，点击【删除】按钮，弹出提示框，确认可批量删除用户，不影响其创建的工作空间资源。</p>
+</div>
+<p><img alt="用户列表" src="../../../img/system/delete_user1.png" /></p>
+<h2 id="7">7 查询用户<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>支持通过用户名、姓名、邮箱、状态以及用户来源进行用户搜索。</p>
 </div>
 <p><img alt="用户列表" src="../../../img/system/search_user.png" /></p>
 

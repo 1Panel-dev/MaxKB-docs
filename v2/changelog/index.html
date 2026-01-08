@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.5.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v242" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1797,7 +1808,7 @@
   <span class="md-ellipsis">
     
   
-    模型参数配置
+    模型操作
   
 
     
@@ -2059,7 +2070,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2075,7 +2086,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2095,7 +2106,7 @@
   <span class="md-ellipsis">
     
   
-    应用概述
+    智能体概述
   
 
     
@@ -2140,7 +2151,7 @@
   <span class="md-ellipsis">
     
   
-    应用创建
+    智能体创建
   
 
     
@@ -2156,7 +2167,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用创建
+    智能体创建
   
 
           </label>
@@ -2176,7 +2187,7 @@
   <span class="md-ellipsis">
     
   
-    简单配置应用
+    简易智能体
   
 
     
@@ -2204,7 +2215,7 @@
   <span class="md-ellipsis">
     
   
-    高级编排应用
+    高级智能体
   
 
     
@@ -2240,7 +2251,7 @@
   <span class="md-ellipsis">
     
   
-    应用概览
+    智能体概览
   
 
     
@@ -2765,7 +2776,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2781,7 +2792,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2829,7 +2840,7 @@
   <span class="md-ellipsis">
     
   
-    应用接入
+    接入第三方
   
 
     
@@ -3280,7 +3291,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -3612,6 +3623,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.5.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v242" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3791,6 +3813,55 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">&para;</a></h3>
+<p>2026 年 1 月 8 日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>工具：添加参数对话中的组件类型新增 JSON 文本框和滑块组件；</li>
+<li>资源：知识库、工具、模型资源新增“查看关联资源”功能；</li>
+<li>智能体：“应用”模块升级为“智能体”模块；</li>
+<li>智能体：高级智能体所有 AI 能力节点新增异常分支输出；</li>
+<li>智能体：对话日志详情中支持显示用户填写的反馈信息；</li>
+<li>智能体：基本信息节点中用户输入参数组件支持多行文本框、单行选项卡、单行多选卡组件；</li>
+<li>智能体：自定义工具节点中输入参数支持 boolean 类型；</li>
+<li>知识库：工作流知识库新增导入/导出工作流功能；</li>
+<li>知识库：工作流知识库的导入文档过程支持取消操作；</li>
+<li>文件夹：支持按名称、创建时间和自定义拖拽顺序排序；</li>
+<li>问答页面：用户提交反馈时支持填写反馈信息；</li>
+<li>模板中心：提供智能体、知识库工作流模板，覆盖典型应用场景；</li>
+<li>用户管理：创建用户时支持默认的资源权限设置；</li>
+<li>用户管理（X-Pack）：支持新增批量设置角色和批量删除用户；</li>
+<li>系统设置：登录设置支持第三方用户默认角色分配以及登录失败锁定机制（X-Pack）。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>系统：优化系统UI界面；</li>
+<li>智能体：高级智能体中开始节点新增对话用户组 {{global.chat_user_group}}；</li>
+<li>知识库：优化命中测试的接口为 Post 请求；</li>
+<li>文件夹：文件夹支持按用户角色授权；</li>
+<li>API Key：系统 API Key 优化为按用户隔离；</li>
+<li>问答页面：历史聊天记录取消仅查看 20 条限制；</li>
+<li>问答页面：最后一个问题支持编辑后重新提问；</li>
+<li>问答页面（X-Pack）：第三方对话用户登录问答页面后都支持退出功能。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>工具：修复 smtp 协议发送邮件被误拦的问题；</li>
+<li>智能体：修复 MCP 节点选择工具下拉框滚动条无法滚动的问题；</li>
+<li>智能体：修复 MCP 调用和工具节点的执行详情超出屏幕的样式问题；</li>
+<li>智能体：修复子智能体无法接收父智能体的视频文件的问题；</li>
+<li>知识库：修复分段详情中视频组件会超出分段详情区域的样式问题；</li>
+<li>知识库：修复打开分段详情页面时会自动播放所有视频的问题；</li>
+<li>安全漏洞：修复上传文件会导致 XSS 漏洞的问题；</li>
+<li>安全漏洞：修复工具模块中 Python 代码加载动态链接库绕过安全限制的问题；</li>
+<li>安全漏洞：修复 Celery 中 pickle 反序列化不被信任的对象可能引起的 RCE 问题。</li>
+</ul>
+</div>
 <h3 id="v242">v2.4.2<a class="headerlink" href="#v242" title="Permanent link">&para;</a></h3>
 <p>2025 年 12 月 18 日</p>
 <div class="admonition abstract">

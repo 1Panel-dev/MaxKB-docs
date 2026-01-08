@@ -1585,7 +1585,7 @@
   <span class="md-ellipsis">
     
   
-    模型参数配置
+    模型操作
   
 
     
@@ -2089,7 +2089,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2105,7 +2105,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2125,7 +2125,7 @@
   <span class="md-ellipsis">
     
   
-    应用概述
+    智能体概述
   
 
     
@@ -2170,7 +2170,7 @@
   <span class="md-ellipsis">
     
   
-    应用创建
+    智能体创建
   
 
     
@@ -2186,7 +2186,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用创建
+    智能体创建
   
 
           </label>
@@ -2206,7 +2206,7 @@
   <span class="md-ellipsis">
     
   
-    简单配置应用
+    简易智能体
   
 
     
@@ -2234,7 +2234,7 @@
   <span class="md-ellipsis">
     
   
-    高级编排应用
+    高级智能体
   
 
     
@@ -2270,7 +2270,7 @@
   <span class="md-ellipsis">
     
   
-    应用概览
+    智能体概览
   
 
     
@@ -2795,7 +2795,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2811,7 +2811,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2859,7 +2859,7 @@
   <span class="md-ellipsis">
     
   
-    应用接入
+    接入第三方
   
 
     
@@ -3310,7 +3310,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -3857,12 +3857,12 @@
 <div class="admonition abstract">
 <p>命中处理方式：</p>
 <ul>
-<li>模型优化：提问时命中该文档下面的分段后，会按照应用的提示词生成 prompt 发送给模型优化后返回答案。</li>
+<li>模型优化：提问时命中该文档下面的分段后，会按照智能体的提示词生成 prompt 发送给模型优化后返回答案。</li>
 <li>直接回答：提问时命中该文档下面的分段后，若相似度符合设置则直接返回分段内容。对于需要将图片、链接等信息返回要求，建议使用此方式。     </li>
 </ul>
 </div>
 <div class="admonition abstract">
-<p>允许在知识库来源中下载： 通用知识库和飞书知识库的文档支持选择是否【允许在知识来源中下载】的设置功能，勾选后，包含该知识库文档的应用，回答内容将支持下载知识来源。</p>
+<p>允许在知识库来源中下载： 通用知识库和飞书知识库的文档支持选择是否【允许在知识来源中下载】的设置功能，勾选后，包含该知识库文档的智能体，回答内容将支持下载知识来源。</p>
 </div>
 <p><img alt="文档设置" src="../../../img/dataset/doc_setting.png" /></p>
 <h2 id="4">4 生成问题<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
@@ -3909,7 +3909,7 @@
 <p>注意：</p>
 <ul>
 <li>替换原文档仅更新文档本身，已向量化和分段的内容保持不变；</li>
-<li>替换后，应用开启显示知识来源时，引用分段中显示的文档将是更新后的文档。</li>
+<li>替换后，智能体开启显示知识来源时，引用分段中显示的文档将是更新后的文档。</li>
 </ul>
 </div>
 <p><img alt="文档替换原文件" src="../../../img/dataset/replay_doc.png" />
@@ -3931,7 +3931,7 @@
 <p><img alt="分段管理" src="../../../img/dataset/segmentation_management.png" /></p>
 <h3 id="121">12.1 添加分段<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>点击【添加】，弹出添加分段对话框，填写分段标题、分段内容（支持 Markdown 样式编辑分段内容）和关联问题，点击【提交】后则新增一个分段。         <br />
+<p>点击【添加分段】，弹出添加分段对话框，填写分段标题、分段内容（支持 Markdown 样式编辑分段内容）和关联问题，点击【提交】后则新增一个分段。         <br />
 <strong>建议：</strong> 为了能准确匹配到分段，建议为分段设置关联问题，这样会优先匹配关联问题，然后再映射分段内容，从而提高匹配效率和准确度。 </p>
 </div>
 <p><img alt="添加分段" src="../../../img/dataset/add_segmentation.png" /></p>
@@ -3940,7 +3940,6 @@
 <p>点击分段面板，在分段详情页面对已分段的信息进行编辑和关联问题操作。</p>
 </div>
 <p><img alt="分段详情" src="../../../img/dataset/edit_segmentation.png" /></p>
-<p><img alt="分段详情" src="../../../img/dataset/edit_segmentation1.png" /></p>
 <h3 id="123">12.3 迁移分段<a class="headerlink" href="#123" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>在分段面板中可以对选中分段迁移到其它知识库的文档中。</p>

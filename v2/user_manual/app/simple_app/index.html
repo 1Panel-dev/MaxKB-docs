@@ -29,7 +29,7 @@
     
     
       
-        <title>简单配置应用 - MaxKB 文档</title>
+        <title>简易智能体 - MaxKB 文档</title>
       
     
     
@@ -214,7 +214,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              简单配置应用
+              简易智能体
             
           </span>
         </div>
@@ -1585,7 +1585,7 @@
   <span class="md-ellipsis">
     
   
-    模型参数配置
+    模型操作
   
 
     
@@ -1849,7 +1849,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -1865,7 +1865,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -1885,7 +1885,7 @@
   <span class="md-ellipsis">
     
   
-    应用概述
+    智能体概述
   
 
     
@@ -1932,7 +1932,7 @@
   <span class="md-ellipsis">
     
   
-    应用创建
+    智能体创建
   
 
     
@@ -1948,7 +1948,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用创建
+    智能体创建
   
 
           </label>
@@ -1977,7 +1977,7 @@
   <span class="md-ellipsis">
     
   
-    简单配置应用
+    简易智能体
   
 
     
@@ -2006,7 +2006,7 @@
   <span class="md-ellipsis">
     
   
-    高级编排应用
+    高级智能体
   
 
     
@@ -2042,7 +2042,7 @@
   <span class="md-ellipsis">
     
   
-    应用概览
+    智能体概览
   
 
     
@@ -2567,7 +2567,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -2583,7 +2583,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    应用
+    智能体
   
 
           </label>
@@ -2631,7 +2631,7 @@
   <span class="md-ellipsis">
     
   
-    应用接入
+    接入第三方
   
 
     
@@ -3082,7 +3082,7 @@
   <span class="md-ellipsis">
     
   
-    应用
+    智能体
   
 
     
@@ -3404,32 +3404,35 @@
   
 
 
-<h1 id="_1">简单配置应用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">简易智能体配置<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
-<p>点击【创建应用】，输入应用名称以及应用描述，选择【简易配置】，点击【创建】，进入简易配置应用设置页面。</p>
+<p>点击【创建智能体】，输入智能体名称以及智能体描述，选择【简易配置】，点击【创建】，进入简易智能体配置设置页面。</p>
 </div>
-<p><img alt="选择应用类型" src="../../../img/app/selectAppType.png" /></p>
+<p><img alt="选择智能体类型" src="../../../img/app/selectAppType.png" /></p>
 <div class="admonition abstract">
-<p>左侧为应用信息，右侧为调试预览界面。   </p>
+<p>左侧为智能体信息，右侧为调试预览界面。   </p>
 <ul>
-<li>应用名称：提问时对话框的标题和名字。</li>
-<li>应用描述：对应用场景及用途的简要描述。</li>
-<li>AI 模型：可选择在【模型】中添加的大语言模型，也可直接添加。</li>
-<li>角色设定：通过给模型指定一个特定的角色或身份，来指导模型的输出更加符合特定的场景或任务需求，可在点击右侧【生成】按钮，生成所需提示词。</li>
-<li>提示词：系统默认有智能知识库的提示词，用户可以自定义通过调整提示词内容，可以引导大模型聊天方向，该提示词会被固定在上下文的开头。</li>
+<li>名称：用户提问时对话框的标题和名字。    </li>
+<li>描述：对智能体场景及用途的描述。    </li>
+<li>AI 模型：在【系统设置】-【模型管理】中添加的大语言模型。</li>
+<li>系统提示词：大语言模型回答的角色或身份设定。</li>
+<li>用户提示词：引导模型生成特定输出的详细描述。提示词可以引用前置节点的参数输出，如可以引用前置知识库检索的检索结果和开始节点的问题变量。</li>
 <li>历史聊天记录：大模型提交当前会话中最后 N 条对话内容，如果为 0，则仅向大模型提交当前问题。</li>
-<li>关联知识库：知识库可设置检索方式、知识库的相似度，引用分段数 Top-N 和最大引用字符数、无引用知识库分段时的回答策略以及是否进行问题优化等。</li>
-<li>开场白：打开对话时，系统弹出的默认引导说明。</li>
-<li>MCP：通过引用 MCP 和自定义 MCP Server Config 两种方式进行调用，支持添加多个MCP，大模型将根据提示词内容调用合适的工具。</li>
-<li>工具：可以根据实际场景灵活选用自定义工具，系统自动将工具能力封装为MCP服务并对接模型，AI 能够根据对话上下文智能判断是否调用工具。</li>
-<li>输出 MCP/工具执行过程：开启后，模型在生成最终答案前，会先输出一段置于标签内的推理过程，随后再给出正式回复。</li>
-<li>语音输入：在语音输入完成后会转化为文字后再发送提问，需要语音识别模型的支持。</li>
-<li>语音播放：将大模型生成的回答内容转换为语音进行播放，需要语音合成模型的支持。</li>
+<li>知识库：<ul>
+<li>用户提示词：引导模型生成特定输出的详细描述。提示词可以引用前置节点的参数输出，如可以引用前置知识库检索的检索结果和开始节点的问题变量。</li>
+<li>关联知识库：用户提问后将在关联的知识库中检索分段。   </li>
 </ul>
-<p><strong>应用信息设置完成后，点击【保存并发布】后，应用设置才生效。</strong></p>
+</li>
+<li>技能：支持调用MCP、工具、智能体。</li>
+<li>开场白：用户打开对话时，系统弹出的问候语。支持 Markdown 格式；[-]后的内容为快捷问题，一行一个。 </li>
+<li>输出思考：对大语言模型的思考过程是否输出进行配置。</li>
+<li>语音输入：开启后将支持语音方式进行提问，需要语音识别模型支持。</li>
+<li>语音播放：开启后可以通过语音进行播放回答，可以通过浏览器播放，也可以通选择语音合成模型。</li>
+</ul>
+<p><strong>智能体信息设置完成后，点击【保存并发布】后，智能体设置才生效。</strong></p>
 </div>
-<p><img alt="应用设置" src="../../../img/app/app_setting.png" />
-<img alt="应用设置" src="../../../img/app/app_setting1.png" /></p>
+<p><img alt="智能体设置" src="../../../img/app/app_setting.png" />
+<img alt="智能体设置" src="../../../img/app/app_setting1.png" /></p>
 <div class="admonition abstract">
 <p>提示词是在每次对话开始时固定注入的上下文指令，用于为模型确立身份、语气、知识边界及输出格式等前置规则，从而确保回复精准、风格一致且可控。</p>
 <ul>
@@ -3448,9 +3451,9 @@
 </li>
 </ul>
 <p>通过合理编排提示词，管理员可在不更换模型的前提下，实现多场景、多角色的快速切换，显著降低大模型幻觉风险并提升用户体验。</p>
-<p>简易应用的系统提示词支持基于用户输入的主题内容，自动生成高质量、结构完整的系统提示词，辅助用户快速构建适用于当前场景的提示文本。</p>
+<p>简易智能体的系统提示词支持基于用户输入的主题内容，自动生成高质量、结构完整的系统提示词，辅助用户快速构建适用于当前场景的提示文本。</p>
 </div>
-<p><img alt="应用设置" src="../../../img/app/app_prompt.png" /></p>
+<p><img alt="智能体设置" src="../../../img/app/app_prompt.png" /></p>
 <div class="admonition abstract">
 <p>开场白兼具“自我介绍”与“操作提示”的双重作用，能够在零打扰的前提下，告诉用户“我是谁、能做什么、该怎么问”。合理设计的开场白可显著降低首次使用门槛，提升后续问答效率。</p>
 <ul>
@@ -3459,9 +3462,9 @@
 </ul>
 <p>可参考 <a href="https://kb.fit2cloud.com/?p=14db4420-5ed4-4e49-b500-c36c36883c2d">MaxKB 开场白参考模板（基于 HTML 编写）</a>。</p>
 </div>
-<p><img alt="应用设置" src="../../../img/app/opening_remarks.png" width="500px" /><img alt="应用设置" src="../../../img/app/opening_remarks1.png" width="500px" /></p>
+<p><img alt="智能体设置" src="../../../img/app/opening_remarks.png" width="500px" /><img alt="智能体设置" src="../../../img/app/opening_remarks1.png" width="500px" /></p>
 <div class="admonition abstract">
-<p>当用户提问后，系统优先在已关联的知识库中执行分段检索，随后将命中的内容注入提示词，再交由大模型生成答案。应用设置时可以控制检索行为：</p>
+<p>当用户提问后，系统优先在已关联的知识库中执行分段检索，随后将命中的内容注入提示词，再交由大模型生成答案。智能体设置时可以控制检索行为：</p>
 <ul>
 <li>
 <p>检索模式</p>
@@ -3480,12 +3483,12 @@
 <li>问题优化开关：启用后，系统会先将用户问题改写为更利于检索的表述，再执行检索，提高命中率。</li>
 </ul>
 </div>
-<p><img alt="应用设置" src="../../../img/app/base_parameter_settings.png" width="500px" /></p>
+<p><img alt="智能体设置" src="../../../img/app/base_parameter_settings.png" width="500px" /></p>
 <div class="admonition abstract">
 <p>输出思考：开启后，模型在生成最终答案前，会先输出一段置于标签内的推理过程，随后再给出正式回复。</p>
 <p><strong>注意</strong>：部分模型只输出单标签，无法进行关闭控制，需对模型进行配置优化。如 DeepSeek-R1-Distill-Qwen-32B。</p>
 </div>
-<p><img alt="应用设置" src="../../../img/app/ctr_thkpro.png" /></p>
+<p><img alt="智能体设置" src="../../../img/app/ctr_thkpro.png" /></p>
 
 
 

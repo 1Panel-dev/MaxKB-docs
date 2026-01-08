@@ -14,7 +14,6 @@
 
 ![tencent apikey](../../img/model/tencent_apikey.png)
 
-![tencent apikey](../../img/model/tencent_view.png)
 
 !!! Abstract ""
 

@@ -75,19 +75,19 @@ nav:
                     - 对接vLLM: user_manual/model/vllm_model.md
                     - 对接Xorbits Inference: user_manual/model/X-Infer_model.md
                     - 对接Docker AI: user_manual/model/dockerai_model.md
-              - 模型参数配置: user_manual/model/model_param.md
+              - 模型操作: user_manual/model/model_param.md
         - 工具: user_manual/tool/tool.md
         - 知识库:
             - 知识库: user_manual/dataset/dataset.md
             - 文档: user_manual/dataset/doclist.md
             - 问题: user_manual/dataset/problem.md
             - 命中测试: user_manual/dataset/hit-testing.md
-        - 应用:
-            - 应用概述: user_manual/app/app.md
-            - 应用创建:
-                - 简单配置应用: user_manual/app/simple_app.md
-                - 高级编排应用: user_manual/app/workflow_app.md
-            - 应用概览: user_manual/app/app-view.md
+        - 智能体:
+            - 智能体概述: user_manual/app/app.md
+            - 智能体创建:
+                - 简易智能体: user_manual/app/simple_app.md
+                - 高级智能体: user_manual/app/workflow_app.md
+            - 智能体概览: user_manual/app/app-view.md
             - 对话日志: user_manual/app/log.md
         - 用户管理: user_manual/user_community.md
         - 资源授权: user_manual/X-Pack/authorization_resources.md
@@ -102,9 +102,9 @@ nav:
             - 知识库:
                 - 飞书文档知识库: user_manual/X-Pack/feishu_doc.md
                 - 对话用户: user_manual/X-Pack/dataset_chatuser.md
-            - 应用:
+            - 智能体:
                 - 显示设置: user_manual/X-Pack/app_logo_settting.md
-                - 应用接入: user_manual/X-Pack/app_integrate.md
+                - 接入第三方: user_manual/X-Pack/app_integrate.md
                 - 身份验证: user_manual/X-Pack/app_auth.md
                 - 对话用户: user_manual/X-Pack/app_chatueser.md
             - 系统设置:
@@ -117,7 +117,7 @@ nav:
         - 系统管理: faq/system_management.md
         - 工具: faq/function_library.md
         - 知识库: faq/knowledge_base.md
-        - 应用: faq/apply_setting.md
+        - 智能体: faq/apply_setting.md
     - 实践教程:
         - 通过 API KEY 进行对话: user_manual/chat_to_API.md
         - Ollama 离线部署 LLM 模型: faq/Offline_install_OllamaModel.md

@@ -9,7 +9,6 @@
     * API 域名：国外 Open API 的域名是`https://api.openai.com/v1`，国内代理的 API 域名格式一般是`反向代理地址/v1`。
     * API Key：访问 OpenAI 的 Key。
 
-![OpenAI 模型](../../img/model/add_openai.png)
 
 ## 2 配置样例
 

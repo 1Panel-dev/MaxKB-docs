@@ -13,9 +13,6 @@
 
 ![阿里云百炼 APIKEY](../../img/model/aliyun_bailian_apikey.png)
 
-![阿里云百炼 APIKEY](../../img/model/add_bailian.png)
-
-![阿里云百炼](../../img/model/bailian.png)
 
 ## 2 配置样例
 

@@ -24,11 +24,11 @@
 ![模型](../../img/model/create_model.png)
 
 !!! Abstract ""
-    支持编辑、模型参数设置和删除。
+    支持编辑、模型参数设置、资源授权、查看关联资源和删除。
 ![模型](../../img/model/edit_model.png)
 
 !!! Abstract ""
-    支持按模型名称、模型类型、创建者查询。
+    支持按创建者、模型类型、模型名称查询。
 
 ![模型](../../img/model/search_model.png)
 

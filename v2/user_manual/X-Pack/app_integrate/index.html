@@ -3830,15 +3830,20 @@
 <p>智能体主页地址的构造可以参考企业微信开发指南<a href="https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5">造网页授权链接——构造企业oauth2链接</a>。<br />
 链接格式即参数说明如下：</p>
 <ul>
-<li>链接格式：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=REDIRECT_URI/admin/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;appid=CorpID&amp;agentid=AgentID&amp;state=maxkb#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=REDIRECT_URI/admin/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;appid=CorpID&amp;agentid=AgentID&amp;state=maxkb#wechat_redirect</a></li>
-<li>CORPID： 企业的 CorpID</li>
-<li>REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可。</li>
+<li>链接格式：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect</a></li>
+<li>CORPID： 企业微信的 CorpID</li>
+<li>REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可</li>
+<li>ACCESSTOKEN：智能体 ID</li>
 <li>SCOPE：填 snsapi_privateinfo 即可</li>
-<li>AGENTID：智能体 ID</li>
+<li>AGENTID：企微应用 ID</li>
 </ul>
-<p>主页地址示例：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmaxkbk.fit2cloud.cn/admin/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;appid=ww5fad05aaa36d118c&amp;agentid=1000002&amp;state=maxkb#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmaxkbk.fit2cloud.cn/admin/api/wecom/oauth2&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;appid=ww5fad05aaa36d118c&amp;agentid=1000002&amp;state=maxkb#wechat_redirect</a></p>
+<p>主页地址示例：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&amp;redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000002&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&amp;redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000002&amp;state=STATE#wechat_redirect</a></p>
 </div>
 <p><img alt="企业微信配置" src="../../../img/system/weichat_oauth2.png" /></p>
+<div class="admonition abstract">
+<p>设置可信域名，在【应用管理】中点击【设置可信域名】，添加可信域名，并进行校验。可参考<a href="https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf">可信域名配置</a>。</p>
+</div>
+<p><img alt="企业微信配置" src="../../../img/system/trusted_domain.png" /></p>
 <div class="admonition abstract">
 <p>配置完成后，在企业微信工作台中找到 MaxKB 智能体，免登进行对话。</p>
 </div>

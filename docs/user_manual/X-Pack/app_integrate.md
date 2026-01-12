@@ -115,7 +115,7 @@
     链接格式即参数说明如下：
 
     - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&response_type=code&scope=snsapi_privateinfo&agentid=AGENTID&state=STATE#wechat_redirect
-    - CORPID： 企业的 CorpID
+    - CORPID： 企业微信的 CorpID
     - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可
     - ACCESSTOKEN：智能体 ID
     - SCOPE：填 snsapi_privateinfo 即可

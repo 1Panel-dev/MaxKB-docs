@@ -114,15 +114,21 @@
     智能体主页地址的构造可以参考企业微信开发指南[造网页授权链接——构造企业oauth2链接](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
     链接格式即参数说明如下：
 
-    - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=REDIRECT_URI/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=CorpID&agentid=AgentID&state=maxkb#wechat_redirect
+    - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&response_type=code&scope=snsapi_privateinfo&agentid=AGENTID&state=STATE#wechat_redirect
     - CORPID： 企业的 CorpID
-    - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可。
+    - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可
+    - ACCESSTOKEN：智能体 ID
     - SCOPE：填 snsapi_privateinfo 即可
-    - AGENTID：智能体 ID
+    - AGENTID：企微应用 ID
 
-    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?redirect_uri=https%3A%2F%2Fmaxkbk.fit2cloud.cn/admin/api/wecom/oauth2&response_type=code&scope=snsapi_privateinfo&appid=ww5fad05aaa36d118c&agentid=1000002&state=maxkb#wechat_redirect
+    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&response_type=code&scope=snsapi_privateinfo&agentid=1000002&state=STATE#wechat_redirect
 
 ![企业微信配置](../../img/system/weichat_oauth2.png)
+
+!!! Abstract ""
+    设置可信域名，在【应用管理】中点击【设置可信域名】，添加可信域名，并进行校验。可参考[可信域名配置](https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf)。
+
+![企业微信配置](../../img/system/trusted_domain.png)
 
 !!! Abstract ""
     配置完成后，在企业微信工作台中找到 MaxKB 智能体，免登进行对话。

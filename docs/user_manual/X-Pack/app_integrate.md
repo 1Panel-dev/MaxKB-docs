@@ -44,7 +44,6 @@
 
 
 ### 2 企业微信智能体
-#### 2.1 企业微信智能体对接
 
 !!! Abstract ""
     企业微信智能体对接后，可在【企业微信】-【工作台】的智能体中找到对应的智能体并进行对话
@@ -102,44 +101,11 @@
 
 ![企业微信对话](../../img/app/enter_wechat_dialog.png)
 
-#### 2.2 企业微信智能体免登设置
-
-!!! Abstract "" 
-    开启智能体免密登录需系统管理员在【系统管理】-【系统设置】-【登录认证】-【扫码登录】中，提前配置企业微信信息。
-
-    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选企业微信后，保存登录认证设置。
-![企业微信免密](../../img/app/wechat_login_auth.png)
-
-!!! Abstract ""
-    智能体主页地址的构造可以参考企业微信开发指南[造网页授权链接——构造企业oauth2链接](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
-    链接格式即参数说明如下：
-
-    - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&response_type=code&scope=snsapi_privateinfo&agentid=AGENTID&state=STATE#wechat_redirect
-    - CORPID： 企业微信的 CorpID
-    - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可
-    - ACCESSTOKEN：智能体 ID
-    - SCOPE：填 snsapi_privateinfo 即可
-    - AGENTID：企微应用 ID
-
-    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&response_type=code&scope=snsapi_privateinfo&agentid=1000002&state=STATE#wechat_redirect
-
-![企业微信配置](../../img/system/weichat_oauth2.png)
-
-!!! Abstract ""
-    设置可信域名，在【应用管理】中点击【设置可信域名】，添加可信域名，并进行校验。可参考[可信域名配置](https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf)。
-
-![企业微信配置](../../img/system/trusted_domain.png)
-
-!!! Abstract ""
-    配置完成后，在企业微信工作台中找到 MaxKB 智能体，免登进行对话。
-
-![企业微信配置](../../img/app/enter_wechat_dialog.png)
-
 
 ### 3 企业微信客服
 
 !!! Abstract ""
-    企业微信客服对接后，可以在群聊中@微信客服，通过跳转连接，实现客服一对一问答。
+    企业微信客服对接后，可以在群聊中 @微信客服，通过跳转连接，实现客服一对一问答。
 
 ![企业微信客服账号](../../img/app/dialog_cs.png){ width="500px" }
     
@@ -206,8 +172,6 @@
 
 ### 5 钉钉智能体
 
-#### 5.1 钉钉智能体对接
-
 !!! Abstract ""
     接入钉钉后，可在群聊中@机器人，进行问答对话。
 ![钉钉机器人对话](../../img/app/ding_dialog1.png)
@@ -242,46 +206,8 @@
 
 ![钉钉对话](../../img/app/dingding_dialog.png){ width="500px" }
 
-#### 5.2 钉钉智能体免登设置
-
-!!! Abstract ""
-    开启智能体免密登录需系统管理员在【系统管理】-【系统设置】-【登录认证】-【扫码登录】中，提前配置钉钉信息。
-
-    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选钉钉后，保存登录认证设置。
-![钉钉免密](../../img/app/dingding_login_auth.png)
-
-
-!!! Abstract ""
-    添加网页智能体能力。在钉钉开放平台的【智能体能力】中，添加【网页智能体】。
-
-
-![钉钉创建智能体](../../img/system/dingding_add_webapp.png)
-
-!!! Abstract ""
-    设置【智能体首页】和【PC 端首页地址】。
-
-    地址格式为：http(s)://xxx.xxx.xxx/admin/login?client=dingtalk=CORPID。注意 corpId=CORPID 需替换成真正的 CORPID。
-
-![钉钉智能体配置](../../img/system/dingding_webapp_config.png)
-
-!!! Abstract ""
-    安全设置。在【安全设置】中设置重定向 URL 和端内免登录地址。
-![钉钉安全配置](../../img/system/dingding_security_config.png)
-
-!!! Abstract ""
-    分享设置，在【接入登录】中设置【回调域名】。
-![钉钉安全配置](../../img/system/dingding_share_config.png)
-
-!!! Abstract ""
-    智能体发布后，即可在钉钉工作台免登录访问 MaxKB 智能体。
-
-![钉钉对话](../../img/app/dingding_dialog.png){ width="500px" }
-
-
 
 ### 6 飞书智能体
-
-#### 6.1 飞书智能体配置
 !!! Abstract ""
     接入飞书后，可在智能体中找到对应智能体，进行问答对话。
 ![飞书对话](../../img/app/feishu_dialog1.png){width="500px"}
@@ -345,32 +271,4 @@
     根据以上步骤完成配置后，即可打开飞书客户端搜索`MaxKB小助手`，点击【添加】后进行一对一对话。
 
 ![飞书对话](../../img/app/feishu_app_search.png){width="500px"}   ![飞书对话](../../img/app/feishu_dialog.png){width="500px"}
-
-
-#### 6.2 飞书智能体免登设置
-!!! Abstract ""
-    开启智能体免密登录需系统管理员在【系统管理】-【系统设置】-【登录认证】-【扫码登录】中，提前配置飞书信息。
-
-    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选飞书后，保存登录认证设置。
-![钉钉免密](../../img/app/feishu_login_auth.png)
-
-!!! Abstract ""
-    添加【页面智能体】能力。
-
-![飞书添加页面智能体](../../img/system/feishu_add_webapp.png)
-
-!!! Abstract ""
-    配置桌面主页，例如：配置中填写 桌面端主页地址，如：http(s)://xxx.xxx.xxx/admin/login?client=lark&appId=cli_a7e1c1ddexxxxx。
-![飞书页面智能体配置](../../img/system/feishu_webapp_config.png)
-
-!!! Abstract ""
-    在【安全设置】中添加重定向 URL。
-
-![飞书安全配置](../../img/system/feishu_security_config.png)
-
-!!! Abstract ""
-    智能体发布后，即可在飞书工作台免登录访问 MaxKB 智能体。
-
-![飞书对话](../../img/app/feishu_app_search.png){width="500px"}   ![飞书对话](../../img/app/feishu_dialog.png){width="500px"}
-
 

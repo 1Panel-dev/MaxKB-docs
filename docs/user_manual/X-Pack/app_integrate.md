@@ -229,7 +229,7 @@
     添加权限：打开【权限管理】，复制下面的权限配置并粘贴到【API 权限-权限配置】输入框，全选筛选出来的权限项，点击【批量开通】，最后点击【确认】。
 
     ```
-     m:message,im:message.group_at_msg:readonly,im:message.p2p_msg:readonly,im:message:send_as_bot,im:resource, contact:contact.base:readonly，contact:user.base:readonly
+     contact:contact.base:readonly,contact:user.base:readonly,im:message.group_at_msg:readonly, im:message.p2p_msg:readonly,im:message:send_as_bot,im:resource
     ```
 
 ![飞书权限](../../img/app/feishu_app_auth.png)

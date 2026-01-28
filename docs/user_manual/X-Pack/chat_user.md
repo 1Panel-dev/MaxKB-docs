@@ -105,10 +105,142 @@
 ![登录认证](../../img/system/chat_authentication2.png)
 
 !!! Abstract ""
-    如选择扫码登录方式（如钉钉、飞书或企业微信），当用户访问小助手进行对话时，系统将自动弹出所选平台的扫码界面。用户完成扫码后即可快速登录并开始对话
+    如选择扫码登录方式（如钉钉、飞书或企业微信），当用户访问小助手进行对话时，系统将自动弹出所选平台的扫码界面。用户完成扫码后即可快速登录并开始对话。
 
 ![登录认证](../../img/system/QR_code.png)
 
+### 3.1 企业微信智能体免密登录
+!!! Abstract ""
+    开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置企业微信信息。
+
+![登录认证](../../img/system/chat_authentication.png)
+
+!!! Abstract ""
+    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选企业微信后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。
+
+![企业微信免密](../../img/system/wechat_login_auth.png)
+
+!!! Abstract ""
+    智能体主页地址的构造可以参考企业微信开发指南[造网页授权链接——构造企业oauth2链接](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
+    
+    链接格式即参数说明如下：
+
+    - 链接格式：https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&response_type=code&scope=snsapi_privateinfo&agentid=AGENTID&state=STATE#wechat_redirect
+    - CORPID： 企业微信的 CorpID
+    - REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可
+    - ACCESSTOKEN：智能体 ID，如公开访问连接为 https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe，e113a4980984be3fe 即为相应的智能体 ID
+    - AGENTID：企微应用 ID，如 1000001
+
+    主页地址示例：https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&response_type=code&scope=snsapi_privateinfo&agentid=1000002&state=STATE#wechat_redirect
+
+![企业微信配置](../../img/system/weichat_oauth2.png)
+
+!!! Abstract ""
+    设置可信域名，在【应用管理】中点击【设置可信域名】，添加可信域名，并进行校验。可参考[可信域名配置](https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf)。
+
+![企业微信配置](../../img/system/trusted_domain.png)
+
+!!! Abstract ""
+    配置企业可信IP。在【企业可信IP】中配置可信ip。
+![配置可信IP](../../img/system/qiwei_ip.png)
+
+
+!!! Abstract ""
+    配置完成后，在企业微信工作台中找到 MaxKB 智能体，免登进行对话。
+
+
+![企业微信配置](../../img/system/qiwei_oauth2_login.png)
+
+
+### 3.2 钉钉智能体免密登录
+!!! Abstract ""
+    开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置钉钉信息。
+
+![登录认证](../../img/system/chat_authentication.png)
+
+!!! Abstract ""
+    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选钉钉后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。
+![钉钉免密](../../img/system/dingding_login_auth.png)
+
+!!! Abstract ""
+    添加网页应用能力。在钉钉开放平台的【应用能力】中，添加【网页应用】。
+
+![钉钉创建应用](../../img/system/dingding_add_webapp.png)
+
+!!! Abstract ""
+    设置【应用首页】和【PC 端首页地址】。
+
+    链接格式即参数说明如下：
+
+    - 链接格式：http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN?client=dingtalk&corpId=CORPID。
+    - ACCESSTOKEN：智能体 ID，例如，公开访问连接为 https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe，e113a4980984be3fe 即为相应的智能体 ID
+    - CORPID：钉钉企业的 CorpId，例如 dinge20bxxxxxxxxxxxxx53d9884
+
+![钉钉应用配置](../../img/system/dingding_url_set.png)
+
+!!! Abstract ""
+    安全设置。在【安全设置】中设置重定向 URL。
+
+    注意：该地址是在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，钉钉的回调地址。
+![钉钉安全配置](../../img/system/dingding_save_setting.png)
+
+!!! Abstract ""
+    分享设置，在【接入登录】中设置【回调域名】。
+
+    注意：该地址是在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，钉钉的回调地址。
+![钉钉安全配置](../../img/system/dingding_share_setting.png)
+
+!!! Abstract ""
+    权限管理，进入到【权限管理】中，添加如下图所示的权限。
+
+![钉钉应用信息](../../img/system/dingding_permissions.png)
+
+!!! Abstract ""
+    应用发布后，即可在钉钉工作台免登录访问 MaxKB。
+
+![钉钉安全配置](../../img/system/dingding_display.png)
+
+
+### 3.3 飞书智能体免密登录
+!!! Abstract ""
+    开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置飞书信息。
+
+![登录认证](../../img/system/chat_authentication.png)
+
+!!! Abstract ""
+    智能体开启【访问限制】-【身份验证】-【登录认证】并勾选飞书后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。
+
+![飞书免密](../../img/app/feishu_login_auth.png)
+
+!!! Abstract ""
+    添加【页面应用】能力。
+
+![飞书添加页面应用](../../img/system/feishu_add_webapp.png)
+
+!!! Abstract ""
+    配置网页应用。
+
+    链接格式即参数说明如下：
+
+    - 链接格式：http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN?client=lark&appId=AppID。
+    - ACCESSTOKEN：智能体 ID，例如，公开访问连接为 https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe，e113a4980984be3fe 即为相应的智能体 ID
+    - AppID：飞书应用的 App ID
+![飞书页面应用配置](../../img/system/feishu_web_set.png)
+
+!!! Abstract ""
+    在【安全设置】中添加重定向 URL。
+
+    链接格式即参数说明如下：
+
+    - 【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，飞书的回调地址：http(s)://xxx.xxx.xxx/chat/api/auth/lark
+    - http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN 。其中 ACCESSTOKEN 为智能体 ID，例如，公开访问连接为 https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe，e113a4980984be3fe 即为相应的 ACCESSTOKEN
+
+![飞书安全配置](../../img/system/feishu_security_set.png)
+
+!!! Abstract ""
+    应用发布后，即可在飞书工作台免登录访问 MaxKB。
+
+![飞书安全配置](../../img/system/feishu_display.png)
 
 ## 4 使用场景
 

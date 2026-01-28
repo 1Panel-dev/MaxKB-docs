@@ -2511,6 +2511,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3 登录认证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 企业微信智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 钉钉智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 飞书智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3610,6 +3649,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3 登录认证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 企业微信智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 钉钉智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 飞书智能体免密登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3735,9 +3813,120 @@
 </div>
 <p><img alt="登录认证" src="../../../img/system/chat_authentication2.png" /></p>
 <div class="admonition abstract">
-<p>如选择扫码登录方式（如钉钉、飞书或企业微信），当用户访问小助手进行对话时，系统将自动弹出所选平台的扫码界面。用户完成扫码后即可快速登录并开始对话</p>
+<p>如选择扫码登录方式（如钉钉、飞书或企业微信），当用户访问小助手进行对话时，系统将自动弹出所选平台的扫码界面。用户完成扫码后即可快速登录并开始对话。</p>
 </div>
 <p><img alt="登录认证" src="../../../img/system/QR_code.png" /></p>
+<h3 id="31">3.1 企业微信智能体免密登录<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置企业微信信息。</p>
+</div>
+<p><img alt="登录认证" src="../../../img/system/chat_authentication.png" /></p>
+<div class="admonition abstract">
+<p>智能体开启【访问限制】-【身份验证】-【登录认证】并勾选企业微信后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。</p>
+</div>
+<p><img alt="企业微信免密" src="../../../img/system/wechat_login_auth.png" /></p>
+<div class="admonition abstract">
+<p>智能体主页地址的构造可以参考企业微信开发指南<a href="https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5">造网页授权链接——构造企业oauth2链接</a>。  </p>
+<p>链接格式即参数说明如下：</p>
+<ul>
+<li>链接格式：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI/chat/api/auth/wecom/oauth2?accessToken=ACCESSTOKEN&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect</a></li>
+<li>CORPID： 企业微信的 CorpID</li>
+<li>REDIRECT_URI：授权后重定向的回调链接地址，需要使用 urlencode 对链接进行处理，例如：https%3A%2F%2Fmaxkbk.fit2cloud.cn，调整域名部分即可</li>
+<li>ACCESSTOKEN：智能体 ID，如公开访问连接为 <a href="https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe">https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe</a>，e113a4980984be3fe 即为相应的智能体 ID</li>
+<li>AGENTID：企微应用 ID，如 1000001</li>
+</ul>
+<p>主页地址示例：<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&amp;redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000002&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8ef82888c6f6e33&amp;redirect_uri=https%3A%2F%2Fmaxkb.fit2cloud.cn/chat/api/auth/wecom/oauth2?accessToken=e113a4980984be3fe&amp;response_type=code&amp;scope=snsapi_privateinfo&amp;agentid=1000002&amp;state=STATE#wechat_redirect</a></p>
+</div>
+<p><img alt="企业微信配置" src="../../../img/system/weichat_oauth2.png" /></p>
+<div class="admonition abstract">
+<p>设置可信域名，在【应用管理】中点击【设置可信域名】，添加可信域名，并进行校验。可参考<a href="https://kb.fit2cloud.com/?p=915e0151-5581-406f-ac2e-22afb9b3b4bf">可信域名配置</a>。</p>
+</div>
+<p><img alt="企业微信配置" src="../../../img/system/trusted_domain.png" /></p>
+<div class="admonition abstract">
+<p>配置企业可信IP。在【企业可信IP】中配置可信ip。</p>
+</div>
+<p><img alt="配置可信IP" src="../../../img/system/qiwei_ip.png" /></p>
+<div class="admonition abstract">
+<p>配置完成后，在企业微信工作台中找到 MaxKB 智能体，免登进行对话。</p>
+</div>
+<p><img alt="企业微信配置" src="../../../img/system/qiwei_oauth2_login.png" /></p>
+<h3 id="32">3.2 钉钉智能体免密登录<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置钉钉信息。</p>
+</div>
+<p><img alt="登录认证" src="../../../img/system/chat_authentication.png" /></p>
+<div class="admonition abstract">
+<p>智能体开启【访问限制】-【身份验证】-【登录认证】并勾选钉钉后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。</p>
+</div>
+<p><img alt="钉钉免密" src="../../../img/system/dingding_login_auth.png" /></p>
+<div class="admonition abstract">
+<p>添加网页应用能力。在钉钉开放平台的【应用能力】中，添加【网页应用】。</p>
+</div>
+<p><img alt="钉钉创建应用" src="../../../img/system/dingding_add_webapp.png" /></p>
+<div class="admonition abstract">
+<p>设置【应用首页】和【PC 端首页地址】。</p>
+<p>链接格式即参数说明如下：</p>
+<ul>
+<li>链接格式：http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN?client=dingtalk&amp;corpId=CORPID。</li>
+<li>ACCESSTOKEN：智能体 ID，例如，公开访问连接为 <a href="https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe">https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe</a>，e113a4980984be3fe 即为相应的智能体 ID</li>
+<li>CORPID：钉钉企业的 CorpId，例如 dinge20bxxxxxxxxxxxxx53d9884</li>
+</ul>
+</div>
+<p><img alt="钉钉应用配置" src="../../../img/system/dingding_url_set.png" /></p>
+<div class="admonition abstract">
+<p>安全设置。在【安全设置】中设置重定向 URL。</p>
+<p>注意：该地址是在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，钉钉的回调地址。</p>
+</div>
+<p><img alt="钉钉安全配置" src="../../../img/system/dingding_save_setting.png" /></p>
+<div class="admonition abstract">
+<p>分享设置，在【接入登录】中设置【回调域名】。</p>
+<p>注意：该地址是在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，钉钉的回调地址。</p>
+</div>
+<p><img alt="钉钉安全配置" src="../../../img/system/dingding_share_setting.png" /></p>
+<div class="admonition abstract">
+<p>权限管理，进入到【权限管理】中，添加如下图所示的权限。</p>
+</div>
+<p><img alt="钉钉应用信息" src="../../../img/system/dingding_permissions.png" /></p>
+<div class="admonition abstract">
+<p>应用发布后，即可在钉钉工作台免登录访问 MaxKB。</p>
+</div>
+<p><img alt="钉钉安全配置" src="../../../img/system/dingding_display.png" /></p>
+<h3 id="33">3.3 飞书智能体免密登录<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>开启智能体免密登录需系统管理员在【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，提前配置飞书信息。</p>
+</div>
+<p><img alt="登录认证" src="../../../img/system/chat_authentication.png" /></p>
+<div class="admonition abstract">
+<p>智能体开启【访问限制】-【身份验证】-【登录认证】并勾选飞书后，保存登录认证设置。同时在【对话用户】中，给相应的对话用户进行授权。</p>
+</div>
+<p><img alt="飞书免密" src="../../../img/app/feishu_login_auth.png" /></p>
+<div class="admonition abstract">
+<p>添加【页面应用】能力。</p>
+</div>
+<p><img alt="飞书添加页面应用" src="../../../img/system/feishu_add_webapp.png" /></p>
+<div class="admonition abstract">
+<p>配置网页应用。</p>
+<p>链接格式即参数说明如下：</p>
+<ul>
+<li>链接格式：http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN?client=lark&amp;appId=AppID。</li>
+<li>ACCESSTOKEN：智能体 ID，例如，公开访问连接为 <a href="https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe">https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe</a>，e113a4980984be3fe 即为相应的智能体 ID</li>
+<li>AppID：飞书应用的 App ID</li>
+</ul>
+</div>
+<p><img alt="飞书页面应用配置" src="../../../img/system/feishu_web_set.png" /></p>
+<div class="admonition abstract">
+<p>在【安全设置】中添加重定向 URL。</p>
+<p>链接格式即参数说明如下：</p>
+<ul>
+<li>【系统管理】-【对话用户】-【登录认证】-【扫码登录】中，飞书的回调地址：http(s)://xxx.xxx.xxx/chat/api/auth/lark</li>
+<li>http(s)://xxx.xxx.xxx/chat/login/ACCESSTOKEN 。其中 ACCESSTOKEN 为智能体 ID，例如，公开访问连接为 <a href="https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe">https://maxkb.fit2cloud.cn/chat/e113a4980984be3fe</a>，e113a4980984be3fe 即为相应的 ACCESSTOKEN</li>
+</ul>
+</div>
+<p><img alt="飞书安全配置" src="../../../img/system/feishu_security_set.png" /></p>
+<div class="admonition abstract">
+<p>应用发布后，即可在飞书工作台免登录访问 MaxKB。</p>
+</div>
+<p><img alt="飞书安全配置" src="../../../img/system/feishu_display.png" /></p>
 <h2 id="4">4 使用场景<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>系统管理员设置完用户对话用户，用户在创建智能体和知识库时，可以设置对话用户组来控制使用相关权限。</p>

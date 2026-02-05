@@ -77,9 +77,14 @@
 ## 7 导出 Excel/ZIP
 
 !!! Abstract ""  
-    选中文档，执行导出 Excel/导出 Zip 操作，将文档下载到本地客户端。
+    选中文档，支持单个文档导出 Excel/导出 Zip 操作，将文档下载到本地客户端。
 
 ![文档导出](../../img/dataset/dataset_file_export.png)
+
+!!! Abstract ""  
+    批量勾选文档，支持多个文档批量导出 Excel/导出 Zip 操作，将文档下载到本地客户端。
+
+![文档导出](../../img/dataset/dataset_file_export1.png)
 
 ## 8 下载原文档
 
@@ -149,7 +154,7 @@
 
 ### 12.4 移动位置
 !!! Abstract ""  
-    在分段面板中可以对选中分段进行上移或下移操作。
+    在分段面板中可以对选中分段进行移动到头部、末尾、上移或下移操作。
 ![移动位置](../../img/dataset/upanddown_segmentation.png)
 
 ### 12.5 删除分段

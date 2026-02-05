@@ -80,6 +80,7 @@ nav:
         - 知识库:
             - 知识库: user_manual/dataset/dataset.md
             - 文档: user_manual/dataset/doclist.md
+            - 工作流: user_manual/dataset/workflow.md
             - 问题: user_manual/dataset/problem.md
             - 命中测试: user_manual/dataset/hit-testing.md
         - 智能体:
@@ -89,6 +90,7 @@ nav:
                 - 高级智能体: user_manual/app/workflow_app.md
             - 智能体概览: user_manual/app/app-view.md
             - 对话日志: user_manual/app/log.md
+        - 触发器: user_manual/trigger/trigger.md
         - 用户管理: user_manual/user_community.md
         - 资源授权: user_manual/X-Pack/authorization_resources.md
         - 系统设置: user_manual/email.md

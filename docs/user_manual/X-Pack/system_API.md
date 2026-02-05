@@ -7,10 +7,11 @@
 
 ![API-key](../../img/system/apikey.png)  
 
-!!! Abstract "" 
-    创建 API Key 之后，点击【设置】下方可以配置是否允许跨域地址，默认不允许。
+!!! Abstract ""
+    系统 API Key 支持自定义 API Key 的有效时长和跨域设置，进一步强化 API 调用的安全性，降低密钥泄露带来的安全风险。
 
-![API-key](../../img/system/apikey_setting.png)  
+![编辑API-key](../../img/system/edit_apikey.png)
+
 
 ## 2 API 调试
 

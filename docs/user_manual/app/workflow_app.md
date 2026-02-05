@@ -535,6 +535,8 @@
     
     添加条件：添加终止当前循环的条件，当满足条件时，终止当前循环，执行下次的循环。
 
+    **注意**：Continue 不能作为结束节点。
+
 ![循环continue](../../img/app/continue.png){width="500px"}
 
 !!! Abstract ""

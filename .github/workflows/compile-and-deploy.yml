@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements/requirements.txt
           pip install mike==1.1.2
-          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --upgrade pip "setuptools<81" wheel
       - name: Config Git
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"

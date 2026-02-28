@@ -10,7 +10,7 @@
 !!! Abstract ""
     豆包大语言模型其它接入参数说明：
 
-    * 基础模型：在线推理的接入点ID。        
+    * 基础模型：在线推理的接入点 ID。        
     * API 域名：https://ark.cn-beijing.volces.com/api/v3
     * API Key：接入点-> API调用 -> 通过API Key授权 -> 选择 API Key 复制获取，如下图
 
@@ -19,15 +19,24 @@
 
 
 !!! Abstract "" 
-    语音识别和语音合成需要输入App ID、Access Token、Cluster ID。
+    语音识别和语音合成需要输入 App ID、Access Token、Cluster ID。
 
-    * App 域名：语音识别模型 API 域名为`wss://openspeech.bytedance.com/api/v2/asr`，语音合成模型 API 域名为`wss://openspeech.bytedance.com/api/v1/tts/ws_binary`
+    * API 域名：语音识别模型 API 域名为`wss://openspeech.bytedance.com/api/v2/asr`，语音合成模型 API 域名为`wss://openspeech.bytedance.com/api/v1/tts/ws_binary`
     * App ID：在火山引擎中创建的应用ID。 
     * Access Token：在火山引擎应用对应的认证信息。 
     * Cluster ID：在火山引擎应用对应的服务信息.
 
 ![火山引擎_语音识别](../../img/model/doubao_stt.png)
 ![火山引擎o_语音合成](../../img/model/doubao_tts.png)
+
+!!! Abstract ""
+    图片生成需要输入 Access Key ID 和 Secret Access Key 。
+
+    - 登录火山引擎控制台后，点击右上角账号下拉列表，选择【API 访问密钥】选项，点击【新建密钥】创建 API 密钥信息。
+    * Access Key ID：在火山引擎 API 访问密钥的服务信息。 
+    * Secret Access Key：在火山引擎 API 访问密钥的认证信息.
+
+![火山引擎_图片生成](../../img/model/doubao_API.png)
 
 ## 2 配置样例
 
@@ -52,7 +61,7 @@
 ![火山引擎 视觉模型](../../img/model/doubao_vision.png){ width="500px" }
 
 !!! Abstract ""
-    火山引擎-图片生成模型需要在火山引擎【控制台-访问控制-API访问密钥】新建密钥，样例图示如下：
+    火山引擎-图片生成模型配置样例图示如下：
 ![火山引擎 图片生成](../../img/model/doubao_gen1.png){ width="500px" }
 
 ![火山引擎 图片生成](../../img/model/doubao_gen2.png){ width="500px" }

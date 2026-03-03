@@ -31,8 +31,11 @@
 ![阿里云百炼 重排模型配置](../../img/model/bailian_reranker.png){ width="500px" }
 
 !!! Abstract ""
-    阿里云百炼语音识别模型支持实时语音识别-Fun-ASR/Gummy/Paraformer、录音文件识别-千问和 qwen-omni-turbo、qwen2.5-omni-7b 全模态模型。
+    阿里云百炼语音识别模型支持实时语音识别-Fun-ASR/Gummy/Paraformer、录音文件识别-千问和 Qwen-Omni 全模态非实时模型。具体模型名称可查看[阿里云百炼官方文档](https://help.aliyun.com/zh/model-studio/qwen-speech-recognition?spm=a2c4g.11186623.help-menu-2400256.d_0_3_3_3.7d011e212E2YgO&scm=20140722.H_2979031._.OR_help-T_cn~zh-V_1)。
 
+![阿里云百炼 语音识别模型配置](../../img/model/bailian_asr_support.png)
+
+!!! Abstract ""
     阿里云百炼-语音识别模型配置样例图示如下：
 ![阿里云百炼 语音识别模型配置](../../img/model/bailian_asr.png){ width="500px" }
 ![阿里云百炼 语音识别模型配置](../../img/model/bailian_asr1.png){ width="500px" }

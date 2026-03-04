@@ -180,7 +180,7 @@
 ![嵌入第三方](<img/index/embed.png>)
 
 !!! Abstract "" 
-    MaxKB 智能体也支持接入企业微信、公众号、钉钉和飞书等移动端智能体，详细说明见：[X-Pack功能-智能体接入 ](. /user_manual/X-Pack/app_integrate.md)。
+    MaxKB 智能体也支持接入企业微信、公众号、钉钉和飞书等移动端智能体，详细说明见：[X-Pack功能-智能体接入 ](./user_manual/X-Pack/app_integrate.md)。
 
     
 

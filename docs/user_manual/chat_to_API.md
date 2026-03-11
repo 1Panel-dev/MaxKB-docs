@@ -22,7 +22,7 @@
 
     curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/chat/completions \
         -H "Content-Type: application/json"  \
-        -H "Authorization: Bearer application-xxxxxxxxxx987f1bc06ab16e0ef"   \
+        -H "Authorization: Bearer agent-xxxxxxxxxx987f1bc06ab16e0ef"   \
         -d '{
             "model": "gpt-3.5-turbo",
             "messages": [

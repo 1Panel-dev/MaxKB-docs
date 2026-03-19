@@ -6,7 +6,7 @@
     选择模型供应商为`SILICONFLOW`，并在模型添加对话框中输入如下必要信息：
 
     * 模型名称：MaxKB 中自定义的模型名称。    
-    * 模型类型：大语言模型/向量模型/语音识别/语音合成/图片生成/重排模型。    
+    * 模型类型：大语言模型/向量模型/语音识别/语音合成/图片生成/重排模型/视觉模型。    
     * 基础模型：SILICONFLOW 支持的各类模型的基础模型名称，选项中显示了 SILICONFLOW 支持的部分常用大语言模型名称，支持手动输入，但需要与 SILICONFLOW 支持的模型名称保持一致，否则无法通过校验。    
     * API URL：https://api.siliconflow.cn/v1
     * API Key：创建的密钥 Key。
@@ -43,3 +43,7 @@
 !!! Abstract ""
     SILICONFLOW-重排模型配置样例图示如下：
 ![SILICONFLOW](../../img/model/siliconflow_rerank.png){ width="500px" }
+
+!!! Abstract ""
+    SILICONFLOW-视觉模型配置样例图示如下：
+![SILICONFLOW](../../img/model/siliconflow_vision.png){ width="500px" }

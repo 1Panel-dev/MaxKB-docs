@@ -22,6 +22,10 @@
     当选择导出为 PDF 时，支持选择导出为 PDF 或图片。
 ![问答](../../img/app/QA_down1.png)
 
+!!! Abstract ""
+    支持复制、换个答案、赞同、反对和分享聊天记录。
+
+![问答分享](../../img/app/QA_share.png)
 
 
 !!! Abstract ""

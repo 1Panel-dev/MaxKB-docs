@@ -18,5 +18,5 @@
     reload              重新加载 MaxKB 服务
     uninstall           卸载 MaxKB 服务（不会删除数据）
     version             查看 MaxKB 版本信息
-    clean-images        清理 MaxKB 旧版本的相关镜像
+    clear-images        清理 MaxKB 旧版本的相关镜像
     ```

@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v280" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.8.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v271" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1882,6 +1893,59 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    工具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../user_manual/tool/tool/" class="md-nav__link">
         
@@ -1899,6 +1963,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/tool/tool_param/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3439,6 +3539,8 @@
       
         
       
+        
+      
     
     
     
@@ -3478,6 +3580,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/choose_model_dataset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    问答页面自主选择模型或知识库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3784,6 +3914,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v280" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.8.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v271" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4018,6 +4159,58 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v280">v2.8.0<a class="headerlink" href="#v280" title="Permanent link">&para;</a></h3>
+<p>2026 年 4 月 10 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复通过 socket.sendto()+MSG_FASTOPEN 绕过沙箱 connect() 钩子的 SSRF 漏洞，防止访问内部受限服务（#CVE-2026-39418）；</li>
+<li>安全漏洞：修复通过 env -i LD_PRELOAD 清除环境变量实现沙箱逃逸的远程代码执行漏洞（#CVE-2026-39420）；</li>
+<li>安全漏洞：修复通过 sys.exit(0) 绕过沙箱结果验证，实现结果欺骗的沙箱绕过漏洞（#CVE-2026-39419）；</li>
+<li>安全漏洞：修复通过 ctypes 和未挂钩 SYS_pkey_mprotect 实现沙箱逃逸的关键远程代码执行漏洞（#CVE-2026-39421）；</li>
+<li>安全漏洞：修复 MCP 服务器配置校验缺失，通过恶意配置注入 Shell 命令的远程代码执行漏洞（#CVE-2026-39417）；</li>
+<li>安全漏洞：修复通用存储型跨站脚本（XSS）漏洞，强化全场景用户输入安全校验（#CVE-2026-39422）；</li>
+<li>安全漏洞：修复 iframe_render 因未过滤用户输入导致的存储型跨站脚本（XSS）漏洞（#CVE-2026-39426）；</li>
+<li>安全漏洞：修复 Markdown 渲染中 html_rander 未过滤 HTML 标签导致的存储型跨站脚本（XSS）漏洞（#CVE-2026-39425）；</li>
+<li>安全漏洞：修复 echarts_rander 组件通过 Eval 注入恶意代码的存储型跨站脚本（XSS）漏洞（#CVE-2026-39423）；</li>
+<li>安全漏洞：修复应用聊天导出 CSV 时，未转义特殊字符导致的 CSV 注入漏洞（CVE-2025-4546 变体）（#CVE-2026-39424）。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>工具：新增工作流类型工具；</li>
+<li>工具：支持自动生成 Python 代码；</li>
+<li>工具：支持批量选择后，将其转移至其他文件夹或执行批量删除操作；</li>
+<li>模型：百度千帆供应商新增支持重排模型（#4927）；</li>
+<li>系统：系统中显示用户名的字段统一优化为显示用户的姓名；</li>
+<li>知识库：支持导入导出知识库的所有元数据；</li>
+<li>知识库：支持批量选择后，将其转移至其他文件夹或执行批量删除操作；</li>
+<li>智能体：对话时支持选择模型与知识库；</li>
+<li>智能体：支持批量选择后，将其转移至其他文件夹或执行批量删除操作；</li>
+<li>智能体：高级智能体中的“图片理解”和“视频理解”节点新增思考过程开关设置；</li>
+<li>智能体：高级智能体中的“变量聚合”节点支持聚合为 dict 类型的变量（#4904）；</li>
+<li>智能体：优化高级智能体中“变量拆分”节点的拆分表达式组件（#4961）。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>模型：修复使用阿里百炼重排模型时，超出 Tokens 或余额不足时没有报错信息的问题（#4928）；</li>
+<li>模型（X-Pack）：修复普通用户角色点击共享模型时报错无权限的问题；</li>
+<li>角色（X-Pack）：修复自定义普通用户授权“关于”权限时，自动勾选了其他权限问题（#4954）；</li>
+<li>智能体：修复在 AI 对话节点使用 vLLM 模型配置系统提示词与技能 MCP 工具时，用户提问会报错问题；</li>
+<li>智能体：修复 vLLM 模型不兼容思考过程字段（reasoning）的问题；</li>
+<li>智能体：修复使用文档标签检索节点时，检索结果不正确的问题（#4942）；</li>
+<li>智能体：修复高级编排中循环节点折叠状态未保存的问题（#4996）；</li>
+<li>智能体：修复图片理解节点在多轮对话中，中途不传图，之后再次传图出现提问报错的问题（#4999）；</li>
+<li>智能体：修复使用 ECharts 渲染时出现空白的问题（#4966）；</li>
+<li>智能体（X-Pack）：修复在企业微信中发送图片提问，在 MaxKB 的对话日志中下载图片后打不开图片的问题；</li>
+<li>智能体（X-Pack）：修复高级智能体中子应用开启身份验证后，对话时未进行身份验证的问题；</li>
+<li>知识库：修复 Web 站点知识库中“允许在知识来源中预览”这一描述不准确的问题；</li>
+<li>资源管理（X-Pack）：修复在资源管理中给资源授权时，不显示用户角色的问题。</li>
+</ul>
+</div>
 <h3 id="v271">v2.7.1<a class="headerlink" href="#v271" title="Permanent link">&para;</a></h3>
 <p>2026 年 3 月 20 日</p>
 <div class="admonition abstract">

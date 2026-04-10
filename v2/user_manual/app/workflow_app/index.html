@@ -1615,6 +1615,59 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    工具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../tool/tool/" class="md-nav__link">
         
@@ -1632,6 +1685,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/tool_param/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3722,6 +3811,8 @@
       
         
       
+        
+      
     
     
     
@@ -3761,6 +3852,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../choose_model_dataset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    问答页面自主选择模型或知识库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4609,7 +4728,7 @@
 <img alt="开始节点-文件上传" src="../../../img/app/upload_config1.png" width="500px" /></p>
 <div class="admonition abstract">
 <ul>
-<li>用户输入：在会话开始时，需要在用户端提供的必要信息，例如，岗位角色等，以便后续流程可以根据不同输入进行不同的流程设计。</li>
+<li>用户输入：在会话开始时，需要在用户端提供的必要信息，例如，岗位角色、模型、知识库等，以便后续流程可以根据不同输入进行不同的流程设计。</li>
 </ul>
 </div>
 <p><img alt="开始节点-用户输入" src="../../../img/app/user_input.png" width="500px" /></p>
@@ -4670,7 +4789,7 @@
 <p>节点说明：如果智能体需要与 AI 大模型进行对话，则需要在编排中添加 AI 对话组件。</p>
 <p>节点设置：</p>
 <ul>
-<li>AI 模型：大语言模型的名称以及参数控制。</li>
+<li>AI 模型：支持引用变量或自定义选择模型，引用变量来源是用户输入中添加的模型参数。</li>
 <li>系统提示词：大语言模型回答的角色或身份设定。</li>
 <li>用户提示词：引导模型生成特定输出的详细描述。提示词可以引用前置节点的参数输出，如可以引用前置知识库检索的检索结果和开始节点的问题变量。</li>
 <li>
@@ -5095,17 +5214,18 @@
 <ul>
 <li>聚合策略：<ul>
 <li>返回每组的第一个非空值：取每组首个非空项作为该组结果，其余舍弃。</li>
-<li>结构化聚合每组变量：将同组内所有变量按字段名组装，保留完整结构输出。</li>
+<li>返回每组变量的数组（Array）：将同组内所有变量按字段名组装，保留完整结构输出。</li>
+<li>返回每组变量的字典（Dict）：将同组内所以变量按字典类型组装，需输入 Key 值。</li>
 </ul>
 </li>
 <li>分组：添加需要聚合为同个参数的变量，可修改分组名称，可添加多个分组。</li>
 </ul>
 <p>输出参数：</p>
 <ul>
-<li>Group1{Group1}：聚合后的参数名称，随聚合变量更新。</li>
+<li>显示名称{变量}：聚合后的参数名称，随聚合变量更新。</li>
 </ul>
 </div>
-<p><img alt="变量聚合" src="../../../img/app/aggregate_var.png" width="300px" /></p>
+<p><img alt="变量聚合" src="../../../img/app/aggregate_var.png" width="500px" /></p>
 <div class="admonition abstract">
 <p>变量聚合的主要功能是将多个变量整合为一个参数进行输出，能减少流程中变量传递的复杂度。</p>
 </div>
@@ -5116,12 +5236,12 @@
 <p>节点设置：</p>
 <ul>
 <li>输入变量：选择工作流中待拆分的 JSON 变量。</li>
-<li>拆分变量：设置拆分后的变量名称、显示名称以及 JSON Path 表达式。JSON Path 表达式参考格式：<code>$..document_name</code></li>
+<li>拆分变量：设置拆分后的变量名称、显示名称以及 JSON Path 表达式。JSON Path 表达式参考格式：<code>$.store.book</code>。</li>
 </ul>
 <p>输出参数：</p>
 <ul>
 <li>结果{result}：输出所有拆分变量的内容。</li>
-<li>拆分变量{变量名}：单个拆分变量的内容，随拆分变量更新。</li>
+<li>显示名称{拆分变量}：单个拆分变量的内容，随拆分变量更新。</li>
 </ul>
 </div>
 <p><img alt="变量拆分" src="../../../img/app/split_var.png" width="300px" />

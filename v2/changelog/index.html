@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v281" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.8.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v280" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3914,6 +3925,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v281" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.8.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v280" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4159,6 +4181,25 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v281">v2.8.1<a class="headerlink" href="#v281" title="Permanent link">&para;</a></h3>
+<p>2026 年 4 月 17 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复 OSS 文件服务 URL 获取接口存在的权限绕过及 SSRF 安全问题，完善应用权限校验、DNS 解析校验及 URL 解析一致性，防止越权访问与内网请求伪造。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>模型：修复使用阿里云百炼供应商的 wan 模型进行图生视频时，设置尾帧导致报错的问题；（#5111）</li>
+<li>模型：修复火山引擎图片生成模型参数配置中，图片数量设置不生效的问题；（#5089）</li>
+<li>知识库：修复文档分段迁移后，再调整文档顺序会出现文档顺序错乱的问题；（#5106）</li>
+<li>知识库：修复智能分段时，分段规则未排除代码块内 # 注释，导致分段异常的问题；</li>
+<li>智能体：修复 AI 对话节点开启思考过程并在技能中配置智能体后，对话调用模型技能报错的问题；</li>
+<li>API 文档：修复 Web 知识库同步接口文档中缺少 sync_type 参数的问题；</li>
+</ul>
+</div>
 <h3 id="v280">v2.8.0<a class="headerlink" href="#v280" title="Permanent link">&para;</a></h3>
 <p>2026 年 4 月 10 日</p>
 <div class="admonition warning">

@@ -55,7 +55,7 @@
 ### 5 SAML2
 
 !!! Abstract ""
-    配置 SAML2 的过程可参考下图（授权端以 github 为例），注意勾选下方"启用 OAHTU2 认证"后开启此功能。
+    配置 SAML2 的过程可参考下图（授权端以 github 为例），注意勾选下方"启用 SAML2 认证"后开启此功能。
 
 ![SAML2](../../img/system/saml2.png)
 

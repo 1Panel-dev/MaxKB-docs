@@ -44,7 +44,7 @@
 ![角色权限](../../img/system/workspace%20_admin_permissions.png){width=800px}
 
 !!! Abstract ""
-    内置系普通用户角色权限：
+    内置普通用户角色权限：
 
 ![角色权限](../../img/system/user_permissions.png){width=800px}
 

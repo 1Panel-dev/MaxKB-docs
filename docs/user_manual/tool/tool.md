@@ -177,9 +177,3 @@
 
 ![高级编排](../../img/fx/use_tool_shop.png)
 
-## 8 批量选择
-
-!!! Abstract ""
-    点击批量选择，可以批量选择工具进行移动或删除操作。
-
-![批量操作](../../img/fx/batch_operation_tool.png)

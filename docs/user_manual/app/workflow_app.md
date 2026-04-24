@@ -699,6 +699,7 @@
 
 
 ### 2.6 工具
+
 !!! Abstract ""
     在高级编排流程中，可以添加工具中的工具作为组件节点，以灵活处理复杂需求，工具的创建详细说明见：[工具](https://maxkb.cn/docs/v2/user_manual/tool/tool)。
 

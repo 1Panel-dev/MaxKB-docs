@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v290" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.9.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v281" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1226,6 +1237,8 @@
       
         
       
+        
+      
     
     
     
@@ -1841,6 +1854,34 @@
     
   
     对接Docker AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/model/minimax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对接MiniMax
   
 
     
@@ -3925,6 +3966,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v290" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.9.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v281" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4181,6 +4233,60 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v290">v2.9.0<a class="headerlink" href="#v290" title="Permanent link">&para;</a></h3>
+<p>2026 年 5 月 7 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复 Webhook 触发器端点身份验证缺失，导致未经认证的请求可绕过鉴权触发任意任务的安全漏洞。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>智能体：新增长期记忆功能，支持按对话轮次、时间周期生成记忆，可通过变量引用注入提示词，提升对话个性化与连续性；</li>
+<li>智能体：高级智能体工作流中的节点支持启用/禁用，无需删除节点即可调试和临时屏蔽流程逻辑；</li>
+<li>智能体：新增关联资源查看能力，可查看依赖资源与被依赖资源（#4859，#4872）；</li>
+<li>知识库：新增关联资源查看能力，支持双向追溯依赖与被依赖关系；</li>
+<li>工具：新增关联资源查看能力，支持双向追溯依赖与被依赖关系；</li>
+<li>工具：工作流工具中的节点支持启用/禁用，无需删除节点即可调试和临时屏蔽流程逻辑；</li>
+<li>模型：新增支持 MiniMax 大语言模型、文本转语音模型接入（#4876）；</li>
+<li>模型：阿里云百炼新增支持 MiniMax Speech 语音模型接入（#4950） 。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>智能体：用户输入和表单收集节点新增支持树形选择器组件（#4903）；</li>
+<li>智能体：变量赋值节点支持将变量显式赋值为空（null）（#4964，#5107）；</li>
+<li>智能体：高级智能体判断器节点新增正则表达式与通配符匹配模式（#4975）；</li>
+<li>智能体：高级智能体及工作流编排画布节点支持相互批量复制粘贴；</li>
+<li>智能体：循环体内节点支持跨循环体批量复制粘贴（#5128）；</li>
+<li>智能体：高级智能体「发布」权限从编辑权限中独立拆分，支持单独授权；</li>
+<li>智能体：内置节点变量参数格式新增提示指引；</li>
+<li>模型：模型选择框仅展示供应商图标与模型名称，精简界面展示；</li>
+<li>模型：所有模型供应商支持自定义 API Base URL，适配私有化部署场景；</li>
+<li>模型：模型参数变更后自动同步至所有关联引用资源（#5134）；</li>
+<li>工具：Skills 工具上传的 ZIP 安装包支持下载；</li>
+<li>系统：优化文件目录过多导致浏览器卡顿问题；</li>
+<li>系统：优化角色添加成员大数据量场景前端卡顿问题。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>智能体：修复循环体嵌套子智能体节点后后续节点无输出问题（#5197）；</li>
+<li>智能体：修复简易智能体流式回答刷新页面导致问答记录丢失问题（#5156）；</li>
+<li>智能体：修复智能体列表按创建者搜索无效问题（#5177）；</li>
+<li>智能体：修复未发布状态智能体可创建触发器问题（#5146）；</li>
+<li>智能体：修复技能工具内工作流工具图标显示异常问题；</li>
+<li>智能体：修复知识库检索节点删除关联知识库配置不生效问题（#5173）；</li>
+<li>模型：修复火山引擎图片生成模型参数配置异常问题（#5089）；</li>
+<li>模型：修复火山引擎多模态向量模型报错，支持自定义模型参数；</li>
+<li>模型：修复模型 Base URL 展示位置不正确问题；</li>
+<li>模型：修复重排模型偶发NaN报错问题。</li>
+</ul>
+</div>
 <h3 id="v281">v2.8.1<a class="headerlink" href="#v281" title="Permanent link">&para;</a></h3>
 <p>2026 年 4 月 17 日</p>
 <div class="admonition warning">

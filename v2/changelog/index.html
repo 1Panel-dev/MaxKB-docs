@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v291" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.9.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v290" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3966,6 +3977,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v291" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.9.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v290" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4233,6 +4255,32 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v291">v2.9.1<a class="headerlink" href="#v291" title="Permanent link">&para;</a></h3>
+<p>2026 年 5 月 14 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复 MaxKB reset_password 接口明文传输密码的高危安全漏洞；（#CVE-2026-45413）</li>
+<li>安全漏洞：修复工作流模板导入/更新流程中回调 URL 缺少校验导致的已认证 SSRF 风险。（#CVE-2026-45412）</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>智能体：修复有无限循环的智能体中，循环次数超过最大限制后回复信息被清空并显示 network error 的问题；</li>
+<li>智能体：修复通过 API 调用含无限循环节点的智能体时，stream=false 情况下接口无返回信息并报 readtime out 错误的问题；</li>
+<li>智能体：修复 Gemini 图片生成模型添加参数后图片生成失败的问题（#5233）；</li>
+<li>智能体：修复图片理解节点文案描述错误，以及图生视频节点尾帧图片应设为非必填的问题；</li>
+<li>智能体：修复从模板中心导入智能体时创建失败的问题（#5231）；</li>
+<li>智能体：修复知识库检索节点取消勾选已关联知识库并选择其他知识库保存后，已取消的知识库依然保留的问题；</li>
+<li>智能体：修复多路召回使用重排模型时，模型的被依赖资源列表中没有显示关联智能体的问题（#5249）；</li>
+<li>智能体：修复按住 Ctrl + 点击智能体面板，进入智能体页面时未新开标签页的问题；</li>
+<li>工具：修复新创建的工具启动参数必须手动保存后才能使用默认值的问题；</li>
+<li>工作空间：修复用户较多时，添加成员无法搜索到未展示用户的问题；</li>
+<li>资源管理：修复无法按照创建者搜索资源的问题；</li>
+<li>共享资源：修复无法按照创建者搜索资源的问题。</li>
+</ul>
+</div>
 <h3 id="v290">v2.9.0<a class="headerlink" href="#v290" title="Permanent link">&para;</a></h3>
 <p>2026 年 5 月 7 日</p>
 <div class="admonition warning">

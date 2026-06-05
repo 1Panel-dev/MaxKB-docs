@@ -500,6 +500,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v292" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3988,6 +3999,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v292" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4277,6 +4299,53 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v2100">v2.10.0<a class="headerlink" href="#v2100" title="Permanent link">&para;</a></h3>
+<p>2026 年 6 月 4 号</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复MaxKB存在的MCP权限绕过导致的Post-Auth RCE漏洞。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>系统：新增工作空间首页统计功能；</li>
+<li>系统：国际化支持自定义扩展语言包（#5120）；</li>
+<li>知识库：知识库支持自定义术语库（#5031）；</li>
+<li>智能体：智能体AI对话节点支持多模态输入（#5276）；</li>
+<li>智能体：高级智能体的用户输入新增支持外置参数设置与显隐设置功能。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>问答页面：新建会话时不再显示用户输入参数（#5298）；</li>
+<li>智能体：问答页面AI回答时显示正在执行的节点名称（ #5092 ）；</li>
+<li>智能体：表单收集节点的参数新增显隐设置功能；</li>
+<li>智能体：多路召回节点的输出参数新增“满足直接回答的结果列表”参数；</li>
+<li>知识库：上传文档分段预览时操作按钮冻结在右上角（#965）；</li>
+<li>知识库：上传文档分段预览时分段内容显示样式优化为Markdown格式；</li>
+<li>模型：MiniMax供应商新增支持文生图、文生视频、图生视频模型；</li>
+<li>模型：阿里百炼供应商新增支持多模态向量模型（#5142）；</li>
+<li>模型：阿里百炼供应商支持Wan2.7图生视频模型（#5232）；</li>
+<li>模型：所有供应商的重排模型支持模型参数设置；</li>
+<li>角色管理（X-Pack)：对智能体的创建权限和复制权限使用不同权限位控制（#5284）。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>知识库：修复工作流知识库中未授权工作流权限时无法上传文档的问题（#5296）；</li>
+<li>智能体：修复嵌入第三方的移动端模式、浮窗模式、分享样式异常的问题（#6130）；</li>
+<li>智能体：修复对话生成多个ECharts图表时，刷新后所有图表均被第一个图表覆盖的问题；</li>
+<li>智能体：修复高级智能体对话时上传文件，对话完成后刷新对话界面上传文件不再显示的问题（#5253）；</li>
+<li>智能体：修复历史对话日志导出后，对话用户仅展示用户名字段，未展示用户姓名字段，导致不方便用户匹配的问题；</li>
+<li>共享知识库（X-Pack）：修复导入创建共享知识库导入为空的问题（#5274）；</li>
+<li>用户管理：修复系统管理修改用户密码时校验报错的问题（#5301）；</li>
+<li>系统登录（X-Pack）：修复第三方用户登录系统时没有生成操作日志的问题。</li>
+</ul>
+</div>
 <h3 id="v292">v2.9.2<a class="headerlink" href="#v292" title="Permanent link">&para;</a></h3>
 <p>2026 年 5 月 20 日</p>
 <div class="admonition abstract">

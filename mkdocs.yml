@@ -85,6 +85,7 @@ nav:
             - 文档: user_manual/dataset/doclist.md
             - 工作流: user_manual/dataset/workflow.md
             - 问题: user_manual/dataset/problem.md
+            - 自定义分词: user_manual/dataset/word_tokenize.md
             - 命中测试: user_manual/dataset/hit-testing.md
         - 智能体:
             - 智能体概述: user_manual/app/app.md

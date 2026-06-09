@@ -12,13 +12,13 @@
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/X-Pack/app_chatueser/">
+        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/dataset/word_tokenize/">
       
       
-        <link rel="prev" href="../app_auth/">
+        <link rel="prev" href="../problem/">
       
       
-        <link rel="next" href="../theme_settings/">
+        <link rel="next" href="../hit-testing/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>对话用户 - MaxKB 文档</title>
+        <title>自定义分词 - MaxKB 文档</title>
       
     
     
@@ -214,7 +214,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              对话用户
+              自定义分词
             
           </span>
         </div>
@@ -1760,8 +1760,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1781,11 +1783,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1806,7 +1808,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1824,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/dataset/" class="md-nav__link">
+      <a href="../dataset/" class="md-nav__link">
         
   
   
@@ -1852,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/doclist/" class="md-nav__link">
+      <a href="../doclist/" class="md-nav__link">
         
   
   
@@ -1880,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/workflow/" class="md-nav__link">
+      <a href="../workflow/" class="md-nav__link">
         
   
   
@@ -1908,7 +1910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/problem/" class="md-nav__link">
+      <a href="../problem/" class="md-nav__link">
         
   
   
@@ -1933,10 +1935,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../dataset/word_tokenize/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自定义分词
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1952,6 +1981,176 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能价值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="功能价值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应用价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作指南
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 创建词语
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 执行分词索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技术原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技术原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        检索流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缓存机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适用检索模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1964,7 +2163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dataset/hit-testing/" class="md-nav__link">
+      <a href="../hit-testing/" class="md-nav__link">
         
   
   
@@ -2322,7 +2521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authorization_resources/" class="md-nav__link">
+      <a href="../../X-Pack/authorization_resources/" class="md-nav__link">
         
   
   
@@ -2375,10 +2574,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2408,11 +2605,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
         
           
           <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
@@ -2433,7 +2630,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2451,7 +2648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user/" class="md-nav__link">
+      <a href="../../X-Pack/user/" class="md-nav__link">
         
   
   
@@ -2479,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workspace/" class="md-nav__link">
+      <a href="../../X-Pack/workspace/" class="md-nav__link">
         
   
   
@@ -2507,7 +2704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../role/" class="md-nav__link">
+      <a href="../../X-Pack/role/" class="md-nav__link">
         
   
   
@@ -2535,7 +2732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resource_management/" class="md-nav__link">
+      <a href="../../X-Pack/resource_management/" class="md-nav__link">
         
   
   
@@ -2563,7 +2760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shared_resources/" class="md-nav__link">
+      <a href="../../X-Pack/shared_resources/" class="md-nav__link">
         
   
   
@@ -2591,7 +2788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chat_user/" class="md-nav__link">
+      <a href="../../X-Pack/chat_user/" class="md-nav__link">
         
   
   
@@ -2672,7 +2869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../feishu_doc/" class="md-nav__link">
+      <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
         
   
   
@@ -2700,7 +2897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset_chatuser/" class="md-nav__link">
+      <a href="../../X-Pack/dataset_chatuser/" class="md-nav__link">
         
   
   
@@ -2733,10 +2930,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2752,11 +2947,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9_8" >
         
           
           <label class="md-nav__link" for="__nav_6_9_8" id="__nav_6_9_8_label" tabindex="0">
@@ -2777,7 +2972,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_9_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_9_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_9_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2795,7 +2990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app_logo_settting/" class="md-nav__link">
+      <a href="../../X-Pack/app_logo_settting/" class="md-nav__link">
         
   
   
@@ -2823,7 +3018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app_integrate/" class="md-nav__link">
+      <a href="../../X-Pack/app_integrate/" class="md-nav__link">
         
   
   
@@ -2851,7 +3046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app_auth/" class="md-nav__link">
+      <a href="../../X-Pack/app_auth/" class="md-nav__link">
         
   
   
@@ -2876,19 +3071,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../X-Pack/app_chatueser/" class="md-nav__link">
         
   
   
@@ -2904,7 +3090,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2978,7 +3163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theme_settings/" class="md-nav__link">
+      <a href="../../X-Pack/theme_settings/" class="md-nav__link">
         
   
   
@@ -3006,7 +3191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../login_auth/" class="md-nav__link">
+      <a href="../../X-Pack/login_auth/" class="md-nav__link">
         
   
   
@@ -3042,7 +3227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operation_log/" class="md-nav__link">
+      <a href="../../X-Pack/operation_log/" class="md-nav__link">
         
   
   
@@ -3070,7 +3255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system_API/" class="md-nav__link">
+      <a href="../../X-Pack/system_API/" class="md-nav__link">
         
   
   
@@ -3682,6 +3867,164 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能价值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="功能价值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应用价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作指南
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 创建词语
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 执行分词索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技术原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技术原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        检索流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缓存机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适用检索模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3700,25 +4043,96 @@
   
 
 
-<h1 id="_1">对话用户<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">自定义分词<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">功能概述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>支持设置允许进入当前应用问答页面进行提问的用户组及用户。</p>
+<p>自定义分词功能允许管理员为知识库添加专业术语词典，避免专业术语在检索时被错误拆分，从而提升全文检索和混合检索的精准度与召回率。</p>
 </div>
+<h2 id="_3">功能价值<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">核心问题<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>在中文分词中，专业术语常常被错误拆分：</p>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>错误拆分</th>
+<th>正确处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小米手机</td>
+<td>小米、手机</td>
+<td>小米手机（作为整体）</td>
+</tr>
+<tr>
+<td>苹果手机</td>
+<td>苹果、手机</td>
+<td>苹果手机（作为整体）</td>
+</tr>
+<tr>
+<td>人工智能</td>
+<td>人工、智能</td>
+<td>人工智能（作为整体）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">应用价值<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>精准匹配</strong>：确保专业术语作为完整单元进行检索</li>
+<li><strong>召回率提升</strong>：避免因术语拆分导致的漏检</li>
+<li><strong>行业适配</strong>：支持企业自定义行业术语词典</li>
+</ul>
+<h2 id="_6">操作指南<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 创建词语<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>若对话用户属于多个用户组，任一用户组被授权即可进入应用提问。 用户被移出用户组后，对应授权将被取消。<br />
-自动授权规则：</p>
-<ul>
-<li>开启：当前用户组及后续新增成员自动授权，可进入应用提问。</li>
-<li>关闭：需手动为用户组成员授权，新增成员默认未授权。</li>
-</ul>
-<p><strong>注意</strong>：</p>
-<ul>
-<li>在应用中仅支持查看和授权用户组，用户组和成员管理需要空间管理员或系统管理员在【系统管理】中进行。</li>
-<li>应用未在【身份验证】中启用登录认证，应用关联的全部知识库可被任意用户检索。</li>
-<li><strong>应用开启登录认证后，若应用中的知识库未配置对话用户，将无法获取知识库的内容，需在知识库中授权指定对话用户。</strong></li>
-</ul>
+<p>点击「创建词语」按钮，输入需要保留的专业术语，支持快速创建多个词语（一行一个）。</p>
 </div>
-<p><img alt="对话用户" src="../../../img/app/userteam_auth.png" /></p>
+<p><img alt="img.png" src="../../../img/dataset/create_word.png" /></p>
+<h3 id="2">2. 执行分词索引<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>添加术语后，点击「分词索引」按钮，系统将重新生成文档的分词索引。</p>
+</div>
+<p><img alt="img.png" src="../../../img/dataset/word_index.png" /></p>
+<h3 id="_7">注意事项<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>自定义词语生效范围：仅对**全文检索**和**混合检索**生效</li>
+<li>添加新术语后需重新执行分词索引才能生效</li>
+<li>词语支持范围：建议使用纯中文术语，避免包含空格、特殊字符</li>
+</ul>
+<h2 id="_8">技术原理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">检索流程<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>用户提问 → 读取术语库 → 配置分词器 → 分词处理 → 匹配检索
+</code></pre></div>
+<h3 id="_10">缓存机制<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>系统会缓存已配置的分词器实例（有效期1小时），避免重复创建，提升检索性能。</p>
+<h3 id="_11">适用检索模式<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>检索模式</th>
+<th>是否生效</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全文检索</td>
+<td>✓</td>
+<td>基于关键词匹配，使用分词器</td>
+</tr>
+<tr>
+<td>混合检索</td>
+<td>✓</td>
+<td>全文检索部分使用分词器</td>
+</tr>
+<tr>
+<td>向量检索</td>
+<td>✗</td>
+<td>基于语义相似度，不使用分词</td>
+</tr>
+</tbody>
+</table>
 
 
 

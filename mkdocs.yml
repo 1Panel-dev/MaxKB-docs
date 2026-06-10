@@ -51,6 +51,8 @@ nav:
         - 命令行工具: installation/cli.md
         - 备份还原: installation/backup.md
     - 功能手册:
+        - 首页: user_manual/index/index.md
+              - 概览:
         - 模型:
               - 模型概述: user_manual/model/model_summary.md
               - 模型对接:

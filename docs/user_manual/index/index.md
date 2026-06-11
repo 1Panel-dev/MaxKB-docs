@@ -133,6 +133,12 @@
     | 趋势标识 | 环比增减趋势指示 |
 ![first](../../img/first/user.png)
 
+#### 6.2.1 导出
+!!! Abstract ""
 
+    排行榜详情页支持按指定时间范围筛选数据后导出全量明细 Excel 文件，导出数据包含当前筛选条件下全部分页数据，不受页面 20 条 / 页展示限制。
+
+![first](../../img/first/export.png)
+![first](../../img/first/excel.png)
 
 

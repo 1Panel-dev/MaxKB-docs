@@ -80,7 +80,7 @@
 !!! Abstract ""
     标签设置：点击【标签设置】，即可查看、添加或删除文档已绑定的标签。
 
-![标签管理](../../img/dataset/tag_setting.png)
+![标签管理](../../img/dataset/tag_setting1.png)
 ![标签管理](../../img/dataset/tag_setting1.png)
 
 ## 7 导出 Excel/ZIP

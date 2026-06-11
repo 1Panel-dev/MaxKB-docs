@@ -30,7 +30,7 @@
 
 ## 3 界面展示
 
-![页面](img/index/index.gif)
+![页面](img/index/index1.gif)
 
 
 ## 4 案例展示

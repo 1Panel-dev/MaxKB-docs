@@ -29,7 +29,7 @@
     
     
       
-        <title>语言 - MaxKB 文档</title>
+        <title>自定义语言包 - MaxKB 文档</title>
       
     
     
@@ -214,7 +214,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              语言
+              自定义语言包
             
           </span>
         </div>
@@ -2463,7 +2463,7 @@
   <span class="md-ellipsis">
     
   
-    语言
+    自定义语言包
   
 
     
@@ -2481,7 +2481,7 @@
   <span class="md-ellipsis">
     
   
-    语言
+    自定义语言包
   
 
     
@@ -4089,15 +4089,18 @@
 </div>
 <h3 id="11">1.1 命名规则<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>语言包整体压缩包名称：国际语言代码.zip
-压缩包内部必须包含两个文件：国际语言代码.json、国际语言代码.po
-核心要求：ZIP 压缩包名称、JSON 文件名称、PO 文件名称必须完全一致</p>
+<p>1、语言包整体压缩包名称：国际语言代码.zip</p>
+<p>2、压缩包内部必须包含两个文件：国际语言代码.json、国际语言代码.po</p>
+<p>3、核心要求：ZIP 压缩包名称、JSON 文件名称、PO 文件名称必须完全一致</p>
 </div>
 <h3 id="12">1.2 示例说明<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>以德语为例，德语国际语言代码为 de：
-- 语言包压缩包：de.zip
-- 包内文件：de.json、de.po</p>
+<p>以德语为例，德语国际语言代码为 de：</p>
+<div class="codehilite"><pre><span></span><code>- 语言包压缩包：de.zip
+
+- 包内文件：de.json、de.po
+</code></pre></div>
+
 </div>
 <h3 id="13">1.3 语言代码查询方式<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -4106,33 +4109,47 @@
 <h2 id="_3">二、自定义语言包制作步骤<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>MaxKB 默认提供中文语言包，语言包：zh.zip， 可基于中文语言包快速制作任意国际语言包，具体步骤如下：</p>
-<p>步骤1：查询目标语言代码
-打开上方语言代码查询网址，查找需要适配的目标语言对应的纯字母国际语言代码（如英语：en、日语：ja、韩语：ko）。</p>
-<p>步骤2：解压并翻译源语言包
-解压 MaxKB 原始中文语言包，复制包内的 zh.json 和 zh.po 源文件，将文件内所有中文文本逐条翻译为目标语言文本，保证语义准确、适配系统界面场景。</p>
-<p>步骤3：重命名语言包文件
-将翻译完成的两个文件，重命名为目标语言国际代码格式，严格遵循命名规范：</p>
-<p>原文件：zh.json、zh.po</p>
-<p>修改后：xx.json、xx.po（xx 为目标语言代码）</p>
-<p>步骤4：打包生成自定义语言包
-将重命名后的 xx.json、xx.po 两个文件，压缩为同名 ZIP 压缩包，最终生成 xx.zip 格式的自定义语言包。</p>
+<p>步骤1：查询目标语言代码</p>
+<div class="codehilite"><pre><span></span><code>打开上方语言代码查询网址，查找需要适配的目标语言对应的纯字母国际语言代码（如英语：en、日语：ja、韩语：ko）。
+</code></pre></div>
+
+<p>步骤2：解压并翻译源语言包</p>
+<div class="codehilite"><pre><span></span><code>解压 MaxKB 原始中文语言包，复制包内的 zh.json 和 zh.po 源文件，将文件内所有中文文本逐条翻译为目标语言文本，保证语义准确、适配系统界面场景。
+</code></pre></div>
+
+<p>步骤3：重命名语言包文件</p>
+<div class="codehilite"><pre><span></span><code>将翻译完成的两个文件，重命名为目标语言国际代码格式，严格遵循命名规范：
+
+原文件：zh.json、zh.po
+
+修改后：xx.json、xx.po（xx 为目标语言代码）
+</code></pre></div>
+
+<p>步骤4：打包生成自定义语言包</p>
+<div class="codehilite"><pre><span></span><code>将重命名后的 xx.json、xx.po 两个文件，压缩为同名 ZIP 压缩包，最终生成 xx.zip 格式的自定义语言包。
+</code></pre></div>
+
 </div>
 <h2 id="_4">三、语言包部署安装方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>自定义语言包制作完成后，需放置到 MaxKB 指定的语言包目录，分为原生部署和Docker 容器部署两种场景。</p>
+<p>自定义语言包制作完成后，需放置到 MaxKB 指定的语言包目录，分为原生部署和 Docker 容器部署两种场景。</p>
 </div>
 <h3 id="31">3.1 原生部署（服务器直接安装）<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>进入 MaxKB 安装目录的语言包文件夹，默认路径：/opt/maxkb/local/locales
-若该目录不存在，可手动创建目录：mkdir -p /opt/maxkb/local/locales
-将制作好的 xx.zip 自定义语言包，放入该目录下</p>
+<p>1、进入 MaxKB 安装目录的语言包文件夹，默认路径：/opt/maxkb/local/locales</p>
+<p>2、若该目录不存在，可手动创建目录：mkdir -p /opt/maxkb/local/locales</p>
+<p>3、将制作好的 xx.zip 自定义语言包，放入该目录下</p>
 </div>
 <h3 id="32-docker">3.2 Docker 镜像部署<a class="headerlink" href="#32-docker" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>Docker 部署需通过目录映射，将宿主机语言包同步至容器内部指定目录，操作如下：
-在宿主机创建语言包目录（可自定义路径），放入自定义语言包 ZIP 文件
-启动/重启容器时，添加目录挂载参数，将宿主机目录映射至容器内： 容器固定语言包路径：/opt/maxkb/local/locales
-若容器内无 /opt/maxkb/local/locales 目录，可进入容器手动创建</p>
+<p>Docker 部署需通过目录映射，将宿主机语言包同步至容器内部指定目录，操作如下：</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1</span><span class="err">、</span><span class="n">在宿主机创建语言包目录</span><span class="err">（</span><span class="n">可自定义路径</span><span class="err">），</span><span class="n">放入自定义语言包</span><span class="w"> </span><span class="n">ZIP</span><span class="w"> </span><span class="n">文件</span>
+
+<span class="mf">2</span><span class="err">、</span><span class="n">启动</span><span class="o">/</span><span class="n">重启容器时</span><span class="err">，</span><span class="n">添加目录挂载参数</span><span class="err">，</span><span class="n">将宿主机目录映射至容器内</span><span class="err">：</span><span class="w"> </span><span class="n">容器固定语言包路径</span><span class="err">：</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">maxkb</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">locales</span>
+
+<span class="mf">3</span><span class="err">、</span><span class="n">若容器内无</span><span class="w"> </span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">maxkb</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">locales</span><span class="w"> </span><span class="n">目录</span><span class="err">，</span><span class="n">可进入容器手动创建</span>
+</code></pre></div>
+
 </div>
 <h2 id="_5">四、生效方式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">

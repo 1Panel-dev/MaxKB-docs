@@ -64,6 +64,7 @@ nav:
                     - 对接Gemini: user_manual/model/gemini_model.md
                     - 对接Kimi: user_manual/model/kimi_model.md
                     - 对接OpenAI: user_manual/model/openai_model.md
+                    - 对接1Panel AI 网关: user_manual/model/1panel_ai_gateway_model.md
                     - 对接Regolo: user_manual/model/Regolo_model.md
                     - 对接SILICONFLOW: user_manual/model/siliconflow_model.md
                     - 对接腾讯云: user_manual/model/tencentcloud_model.md

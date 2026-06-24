@@ -12,34 +12,34 @@
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/choose_model_dataset/">
+        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/model/1panel_ai_gateway_model/">
       
       
-        <link rel="prev" href="../../faq/apply_setting/">
+        <link rel="prev" href="../openai_model/">
       
       
-        <link rel="next" href="../chat_to_API/">
+        <link rel="next" href="../Regolo_model/">
       
       
         
       
       
-      <link rel="icon" href="../../img/facio.ico">
+      <link rel="icon" href="../../../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>问答页面自主选择模型或知识库 - MaxKB 文档</title>
+        <title>对接1Panel AI 网关 - MaxKB 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../css/lightgallery.min.css">
-    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../../css/lightgallery.min.css">
+    <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,10 +51,10 @@
     
       
     
-    <script src="../../js/lightgallery.min.js"></script>
-    <script src="../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/mega.js"></script>
+    <script src="../../../js/lightgallery.min.js"></script>
+    <script src="../../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/mega.js"></script>
     <script async defer src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=ba685e8f64e36ba9"></script>
 </script>
 
@@ -69,9 +69,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -121,12 +121,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the latest version.
-  <a href="../../..">
+  <a href="../../../..">
     <strong>Click here to go to latest.</strong>
   </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -148,7 +148,7 @@
             <div class="container">
                 <div class="mega-nav-banner-item">
                     <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img
-                            src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                            src="../../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -195,9 +195,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../../.." title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../img/logo-white.png" alt="logo">
+  <img src="../../../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -214,7 +214,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              问答页面自主选择模型或知识库
+              对接1Panel AI 网关
             
           </span>
         </div>
@@ -338,9 +338,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../../.." title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../img/logo-white.png" alt="logo">
+  <img src="../../../img/logo-white.png" alt="logo">
 
     </a>
     MaxKB 文档
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -394,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quick_start/" class="md-nav__link">
+      <a href="../../../quick_start/" class="md-nav__link">
         
   
   
@@ -421,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         
   
   
@@ -448,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../system_arch/" class="md-nav__link">
+      <a href="../../../system_arch/" class="md-nav__link">
         
   
   
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/offline_installtion/" class="md-nav__link">
+      <a href="../../../installation/offline_installtion/" class="md-nav__link">
         
   
   
@@ -566,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/online_installtion/" class="md-nav__link">
+      <a href="../../../installation/online_installtion/" class="md-nav__link">
         
   
   
@@ -594,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/1panel_installtion/" class="md-nav__link">
+      <a href="../../../installation/1panel_installtion/" class="md-nav__link">
         
   
   
@@ -622,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/aliyun/" class="md-nav__link">
+      <a href="../../../installation/aliyun/" class="md-nav__link">
         
   
   
@@ -650,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/migrate/" class="md-nav__link">
+      <a href="../../../installation/migrate/" class="md-nav__link">
         
   
   
@@ -678,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/cli/" class="md-nav__link">
+      <a href="../../../installation/cli/" class="md-nav__link">
         
   
   
@@ -706,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/backup/" class="md-nav__link">
+      <a href="../../../installation/backup/" class="md-nav__link">
         
   
   
@@ -738,8 +738,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -769,11 +771,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -794,7 +796,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -830,7 +832,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../index/" class="md-nav__link ">
+            <a href="../../index/" class="md-nav__link ">
               
   
   
@@ -874,8 +876,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -889,11 +893,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -914,7 +918,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -932,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/model_summary/" class="md-nav__link">
+      <a href="../model_summary/" class="md-nav__link">
         
   
   
@@ -957,8 +961,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1012,11 +1018,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_2" id="__nav_6_2_2_label" tabindex="0">
@@ -1037,7 +1043,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1055,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/bailian_model/" class="md-nav__link">
+      <a href="../bailian_model/" class="md-nav__link">
         
   
   
@@ -1083,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/anthropic_model/" class="md-nav__link">
+      <a href="../anthropic_model/" class="md-nav__link">
         
   
   
@@ -1111,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/amazon_bedrock_model/" class="md-nav__link">
+      <a href="../amazon_bedrock_model/" class="md-nav__link">
         
   
   
@@ -1139,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/azure_openai_model/" class="md-nav__link">
+      <a href="../azure_openai_model/" class="md-nav__link">
         
   
   
@@ -1167,7 +1173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/deepseek_model/" class="md-nav__link">
+      <a href="../deepseek_model/" class="md-nav__link">
         
   
   
@@ -1195,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/gemini_model/" class="md-nav__link">
+      <a href="../gemini_model/" class="md-nav__link">
         
   
   
@@ -1223,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/kimi_model/" class="md-nav__link">
+      <a href="../kimi_model/" class="md-nav__link">
         
   
   
@@ -1251,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/openai_model/" class="md-nav__link">
+      <a href="../openai_model/" class="md-nav__link">
         
   
   
@@ -1276,10 +1282,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../model/1panel_ai_gateway_model/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对接1Panel AI 网关
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1295,6 +1326,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 添加模型
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 配置样例
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1307,7 +1378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/Regolo_model/" class="md-nav__link">
+      <a href="../Regolo_model/" class="md-nav__link">
         
   
   
@@ -1335,7 +1406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/siliconflow_model/" class="md-nav__link">
+      <a href="../siliconflow_model/" class="md-nav__link">
         
   
   
@@ -1363,7 +1434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/tencentcloud_model/" class="md-nav__link">
+      <a href="../tencentcloud_model/" class="md-nav__link">
         
   
   
@@ -1391,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/hunyuan_model/" class="md-nav__link">
+      <a href="../hunyuan_model/" class="md-nav__link">
         
   
   
@@ -1419,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/doubao_model/" class="md-nav__link">
+      <a href="../doubao_model/" class="md-nav__link">
         
   
   
@@ -1447,7 +1518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/qianfan_model/" class="md-nav__link">
+      <a href="../qianfan_model/" class="md-nav__link">
         
   
   
@@ -1475,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/spark_model/" class="md-nav__link">
+      <a href="../spark_model/" class="md-nav__link">
         
   
   
@@ -1503,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/zhipu_model/" class="md-nav__link">
+      <a href="../zhipu_model/" class="md-nav__link">
         
   
   
@@ -1531,7 +1602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/local_model/" class="md-nav__link">
+      <a href="../local_model/" class="md-nav__link">
         
   
   
@@ -1559,7 +1630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/ollama_model/" class="md-nav__link">
+      <a href="../ollama_model/" class="md-nav__link">
         
   
   
@@ -1587,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/vllm_model/" class="md-nav__link">
+      <a href="../vllm_model/" class="md-nav__link">
         
   
   
@@ -1615,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/X-Infer_model/" class="md-nav__link">
+      <a href="../X-Infer_model/" class="md-nav__link">
         
   
   
@@ -1643,7 +1714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/dockerai_model/" class="md-nav__link">
+      <a href="../dockerai_model/" class="md-nav__link">
         
   
   
@@ -1671,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/minimax/" class="md-nav__link">
+      <a href="../minimax/" class="md-nav__link">
         
   
   
@@ -1707,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/model_param/" class="md-nav__link">
+      <a href="../model_param/" class="md-nav__link">
         
   
   
@@ -1796,7 +1867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tool/tool/" class="md-nav__link">
+      <a href="../../tool/tool/" class="md-nav__link">
         
   
   
@@ -1824,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tool/tool_param/" class="md-nav__link">
+      <a href="../../tool/tool_param/" class="md-nav__link">
         
   
   
@@ -1921,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/dataset/" class="md-nav__link">
+      <a href="../../dataset/dataset/" class="md-nav__link">
         
   
   
@@ -1949,7 +2020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/doclist/" class="md-nav__link">
+      <a href="../../dataset/doclist/" class="md-nav__link">
         
   
   
@@ -1977,7 +2048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/workflow/" class="md-nav__link">
+      <a href="../../dataset/workflow/" class="md-nav__link">
         
   
   
@@ -2005,7 +2076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/problem/" class="md-nav__link">
+      <a href="../../dataset/problem/" class="md-nav__link">
         
   
   
@@ -2033,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/word_tokenize/" class="md-nav__link">
+      <a href="../../dataset/word_tokenize/" class="md-nav__link">
         
   
   
@@ -2061,7 +2132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/hit-testing/" class="md-nav__link">
+      <a href="../../dataset/hit-testing/" class="md-nav__link">
         
   
   
@@ -2154,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/app/" class="md-nav__link">
+      <a href="../../app/app/" class="md-nav__link">
         
   
   
@@ -2235,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/simple_app/" class="md-nav__link">
+      <a href="../../app/simple_app/" class="md-nav__link">
         
   
   
@@ -2263,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/workflow_app/" class="md-nav__link">
+      <a href="../../app/workflow_app/" class="md-nav__link">
         
   
   
@@ -2299,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/app-view/" class="md-nav__link">
+      <a href="../../app/app-view/" class="md-nav__link">
         
   
   
@@ -2327,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/log/" class="md-nav__link">
+      <a href="../../app/log/" class="md-nav__link">
         
   
   
@@ -2363,7 +2434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trigger/trigger/" class="md-nav__link">
+      <a href="../../trigger/trigger/" class="md-nav__link">
         
   
   
@@ -2391,7 +2462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user_community/" class="md-nav__link">
+      <a href="../../user_community/" class="md-nav__link">
         
   
   
@@ -2419,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/authorization_resources/" class="md-nav__link">
+      <a href="../../X-Pack/authorization_resources/" class="md-nav__link">
         
   
   
@@ -2447,7 +2518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../email/" class="md-nav__link">
+      <a href="../../email/" class="md-nav__link">
         
   
   
@@ -2475,7 +2546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Customlanguage/" class="md-nav__link">
+      <a href="../../Customlanguage/" class="md-nav__link">
         
   
   
@@ -2574,7 +2645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/user/" class="md-nav__link">
+      <a href="../../X-Pack/user/" class="md-nav__link">
         
   
   
@@ -2602,7 +2673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/workspace/" class="md-nav__link">
+      <a href="../../X-Pack/workspace/" class="md-nav__link">
         
   
   
@@ -2630,7 +2701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/role/" class="md-nav__link">
+      <a href="../../X-Pack/role/" class="md-nav__link">
         
   
   
@@ -2658,7 +2729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/resource_management/" class="md-nav__link">
+      <a href="../../X-Pack/resource_management/" class="md-nav__link">
         
   
   
@@ -2686,7 +2757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/shared_resources/" class="md-nav__link">
+      <a href="../../X-Pack/shared_resources/" class="md-nav__link">
         
   
   
@@ -2714,7 +2785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/chat_user/" class="md-nav__link">
+      <a href="../../X-Pack/chat_user/" class="md-nav__link">
         
   
   
@@ -2795,7 +2866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/feishu_doc/" class="md-nav__link">
+      <a href="../../X-Pack/feishu_doc/" class="md-nav__link">
         
   
   
@@ -2823,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/dataset_chatuser/" class="md-nav__link">
+      <a href="../../X-Pack/dataset_chatuser/" class="md-nav__link">
         
   
   
@@ -2916,7 +2987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_logo_settting/" class="md-nav__link">
+      <a href="../../X-Pack/app_logo_settting/" class="md-nav__link">
         
   
   
@@ -2944,7 +3015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_integrate/" class="md-nav__link">
+      <a href="../../X-Pack/app_integrate/" class="md-nav__link">
         
   
   
@@ -2972,7 +3043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_auth/" class="md-nav__link">
+      <a href="../../X-Pack/app_auth/" class="md-nav__link">
         
   
   
@@ -3000,7 +3071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_chatueser/" class="md-nav__link">
+      <a href="../../X-Pack/app_chatueser/" class="md-nav__link">
         
   
   
@@ -3089,7 +3160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/theme_settings/" class="md-nav__link">
+      <a href="../../X-Pack/theme_settings/" class="md-nav__link">
         
   
   
@@ -3117,7 +3188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/login_auth/" class="md-nav__link">
+      <a href="../../X-Pack/login_auth/" class="md-nav__link">
         
   
   
@@ -3153,7 +3224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/operation_log/" class="md-nav__link">
+      <a href="../../X-Pack/operation_log/" class="md-nav__link">
         
   
   
@@ -3181,7 +3252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/system_API/" class="md-nav__link">
+      <a href="../../X-Pack/system_API/" class="md-nav__link">
         
   
   
@@ -3283,7 +3354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/install_configuration/" class="md-nav__link">
+      <a href="../../../faq/install_configuration/" class="md-nav__link">
         
   
   
@@ -3311,7 +3382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/system_management/" class="md-nav__link">
+      <a href="../../../faq/system_management/" class="md-nav__link">
         
   
   
@@ -3339,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/function_library/" class="md-nav__link">
+      <a href="../../../faq/function_library/" class="md-nav__link">
         
   
   
@@ -3367,7 +3438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/knowledge_base/" class="md-nav__link">
+      <a href="../../../faq/knowledge_base/" class="md-nav__link">
         
   
   
@@ -3395,7 +3466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/apply_setting/" class="md-nav__link">
+      <a href="../../../faq/apply_setting/" class="md-nav__link">
         
   
   
@@ -3427,10 +3498,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -3454,11 +3523,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -3479,7 +3548,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3494,37 +3563,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    问答页面自主选择模型或知识库
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../choose_model_dataset/" class="md-nav__link">
         
   
   
@@ -3540,48 +3582,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        模型切换配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        知识库切换配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3594,7 +3594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chat_to_API/" class="md-nav__link">
+      <a href="../../chat_to_API/" class="md-nav__link">
         
   
   
@@ -3622,7 +3622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/Offline_install_OllamaModel/" class="md-nav__link">
+      <a href="../../../faq/Offline_install_OllamaModel/" class="md-nav__link">
         
   
   
@@ -3650,7 +3650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/GPU_runOllama/" class="md-nav__link">
+      <a href="../../../faq/GPU_runOllama/" class="md-nav__link">
         
   
   
@@ -3678,7 +3678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/wps_contract_review/" class="md-nav__link">
+      <a href="../../../faq/wps_contract_review/" class="md-nav__link">
         
   
   
@@ -3706,7 +3706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/maxkb_multimodal_workflow/" class="md-nav__link">
+      <a href="../../../faq/maxkb_multimodal_workflow/" class="md-nav__link">
         
   
   
@@ -3734,7 +3734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/maxkb_In_halo/" class="md-nav__link">
+      <a href="../../../faq/maxkb_In_halo/" class="md-nav__link">
         
   
   
@@ -3762,7 +3762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/doc_segment/" class="md-nav__link">
+      <a href="../../../faq/doc_segment/" class="md-nav__link">
         
   
   
@@ -3797,7 +3797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Skills/MaxKB_Skills" class="md-nav__link">
+      <a href="../../../Skills/MaxKB_Skills" class="md-nav__link">
         
   
   
@@ -3824,7 +3824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contact/" class="md-nav__link">
+      <a href="../../../contact/" class="md-nav__link">
         
   
   
@@ -3861,8 +3861,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3871,10 +3869,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        模型切换配置
+        1 添加模型
       
     </span>
   </a>
@@ -3882,10 +3880,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        知识库切换配置
+        2 配置样例
       
     </span>
   </a>
@@ -3912,36 +3910,26 @@
   
 
 
-<h1 id="_1">问答页面自主选择模型或知识库<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+  <h1>对接1Panel AI 网关</h1>
+
+<h2 id="1">1 添加模型<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在 MaxKB v2.8.0 及以上版本，高级智能体的用户输入功能中新增模型与知识库组件。用户在问答页面对话时，可以自主选择配置的模型及待检索的知识库，从而有效提升对话的精准度与灵活性。</p>
+<p>对接 1Panel AI 网关之前，需要先在 1Panel 的 <code>AI</code> &gt; <code>AI 网关</code> &gt; <code>API Key</code> 页面获取外部连接地址和 API Key，参考下图：</p>
+<p>选择模型供应商为<code>OpenAI</code>，并在模型添加对话框中输入如下必要信息：</p>
+<ul>
+<li>模型名称：MaxKB 中自定义的模型名称。</li>
+<li>模型类型：大语言模型。</li>
+<li>基础模型：1Panel AI 网关中可用的模型名称。</li>
+<li>API 域名：1Panel AI 网关的外部连接地址，例如 <code>http://&lt;1Panel 服务器 IP&gt;:4000/v1</code>。</li>
+<li>API Key：1Panel AI 网关 API Key 页面创建的 Key。</li>
+</ul>
 </div>
-<h2 id="_2">模型切换配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><img alt="1Panel AI 网关 API Key" src="../../../img/model/1panel_ai_gateway_api_keys.jpg" width="800px" /></p>
+<h2 id="2">2 配置样例<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为模型，设置模型类型后，配置可选择的模型和默认模型。</p>
+<p>OpenAI-大语言模型配置样例图示：</p>
 </div>
-<p><img alt="添加用户输入" src="../../img/system/add_parameter.png" width="500px" /></p>
-<div class="admonition abstract">
-<p>可在 AI 对话或其他需要添加模型的组件中，切换 AI 模型为引用变量，选择全局变量中已创建的用户输入参数。</p>
-</div>
-<p><img alt="设置模型参数" src="../../img/system/set_model.png" /></p>
-<div class="admonition abstract">
-<p>保存工作流后，在问答页面中，用户可以随时切换不同模型进行问答。</p>
-</div>
-<p><img alt="切换模型" src="../../img/system/switch_model.png" /></p>
-<h2 id="_3">知识库切换配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为知识库，设置可选知识库和默认知识库（可多选）。</p>
-</div>
-<p><img alt="添加用户输入" src="../../img/system/add_parameter_dataset.png" width="600px" /></p>
-<div class="admonition abstract">
-<p>可在文档标签检索、知识库检索组件中，切换知识库为引用变量，选择用户全局变量中已创建的用户输入参数。</p>
-</div>
-<p><img alt="设置知识库参数" src="../../img/system/set_dataset.png" /></p>
-<div class="admonition abstract">
-<p>保存工作流后，在问答页面中，用户可以随时切换不同知识库进行问答。</p>
-</div>
-<p><img alt="切换知识库" src="../../img/system/switch_dataset.png" /></p>
+<p><img alt="OpenAI 模型" src="../../../img/model/openai_llm.png" width="500px" /></p>
 
 
 
@@ -4031,11 +4019,11 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
     
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
     <script>

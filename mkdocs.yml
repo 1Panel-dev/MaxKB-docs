@@ -4,6 +4,7 @@ site_description: 'MaxKB 在线文档'
 site_author: '飞致云'
 repo_name: 'MaxKB'
 repo_url: 'https://github.com/1Panel-dev/MaxKB'
+use_directory_urls: false
 
 edit_uri: https://github.com/1Panel-dev/MaxKB-docs
 theme:
@@ -186,6 +187,10 @@ plugins:
               - en
               - ja
           separator: '[\s\-\.]+'
+    - print-site:
+          enumerate_headings: false
+          enumerate_figures: false
+          toc_title: "目录"
 extra:
     version:
       provider: mike

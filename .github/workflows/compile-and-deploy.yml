@@ -12,7 +12,7 @@ jobs:
       matrix:
         version: ['v1', 'v2']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token:  ${{ secrets.GH_TOKEN }}
           ref: ${{ matrix.version }}
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: complie
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ secrets.GH_TOKEN }}
           ref: deploy

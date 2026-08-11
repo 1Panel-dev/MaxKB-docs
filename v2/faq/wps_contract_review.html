@@ -12,34 +12,34 @@
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://maxkb.cn/docs/v2/user_manual/index/index.html">
+        <link rel="canonical" href="https://maxkb.cn/docs/v2/faq/wps_contract_review.html">
       
       
-        <link rel="prev" href="../../installation/backup.html">
+        <link rel="prev" href="GPU_runOllama.html">
       
       
-        <link rel="next" href="../model/model_summary.html">
+        <link rel="next" href="maxkb_multimodal_workflow.html">
       
       
         
       
       
-      <link rel="icon" href="../../img/facio.ico">
+      <link rel="icon" href="../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>概览 - MaxKB 文档</title>
+        <title>WPS合同审核助手的设计与实现 - MaxKB 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../css/lightgallery.min.css">
-    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/lightgallery.min.css">
+    <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,10 +51,10 @@
     
       
     
-    <script src="../../js/lightgallery.min.js"></script>
-    <script src="../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/mega.js"></script>
+    <script src="../js/lightgallery.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mega.js"></script>
     <script async defer src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=ba685e8f64e36ba9"></script>
 </script>
 
@@ -69,13 +69,13 @@
       
     
     
-      <link rel="stylesheet" href="../../css/print-site.css">
+      <link rel="stylesheet" href="../css/print-site.css">
     
-      <link rel="stylesheet" href="../../css/print-site-material.css">
+      <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -110,7 +110,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -125,12 +125,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the latest version.
-  <a href="../../..">
+  <a href="../..">
     <strong>Click here to go to latest.</strong>
   </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -152,7 +152,7 @@
             <div class="container">
                 <div class="mega-nav-banner-item">
                     <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img
-                            src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                            src="../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -199,9 +199,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../index.html" title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../index.html" title="MaxKB 文档" class="md-header__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../img/logo-white.png" alt="logo">
+  <img src="../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -218,7 +218,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              概览
+              WPS合同审核助手的设计与实现
             
           </span>
         </div>
@@ -342,9 +342,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
+    <a href="../index.html" title="MaxKB 文档" class="md-nav__button md-logo" aria-label="MaxKB 文档" data-md-component="logo">
       
-  <img src="../../img/logo-white.png" alt="logo">
+  <img src="../img/logo-white.png" alt="logo">
 
     </a>
     MaxKB 文档
@@ -371,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -398,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quick_start.html" class="md-nav__link">
+      <a href="../quick_start.html" class="md-nav__link">
         
   
   
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog.html" class="md-nav__link">
+      <a href="../changelog.html" class="md-nav__link">
         
   
   
@@ -452,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../system_arch.html" class="md-nav__link">
+      <a href="../system_arch.html" class="md-nav__link">
         
   
   
@@ -542,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/offline_installtion.html" class="md-nav__link">
+      <a href="../installation/offline_installtion.html" class="md-nav__link">
         
   
   
@@ -570,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/online_installtion.html" class="md-nav__link">
+      <a href="../installation/online_installtion.html" class="md-nav__link">
         
   
   
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/1panel_installtion.html" class="md-nav__link">
+      <a href="../installation/1panel_installtion.html" class="md-nav__link">
         
   
   
@@ -626,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/aliyun.html" class="md-nav__link">
+      <a href="../installation/aliyun.html" class="md-nav__link">
         
   
   
@@ -654,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/migrate.html" class="md-nav__link">
+      <a href="../installation/migrate.html" class="md-nav__link">
         
   
   
@@ -682,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/cli.html" class="md-nav__link">
+      <a href="../installation/cli.html" class="md-nav__link">
         
   
   
@@ -710,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/backup.html" class="md-nav__link">
+      <a href="../installation/backup.html" class="md-nav__link">
         
   
   
@@ -742,10 +742,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -775,11 +773,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -800,7 +798,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -815,8 +813,6 @@
                 
   
   
-    
-  
   
   
     
@@ -830,15 +826,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="../user_manual/index/index.html" class="md-nav__link ">
               
   
   
@@ -857,7 +853,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -940,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/model_summary.html" class="md-nav__link">
+      <a href="../user_manual/model/model_summary.html" class="md-nav__link">
         
   
   
@@ -1063,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/bailian_model.html" class="md-nav__link">
+      <a href="../user_manual/model/bailian_model.html" class="md-nav__link">
         
   
   
@@ -1091,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/anthropic_model.html" class="md-nav__link">
+      <a href="../user_manual/model/anthropic_model.html" class="md-nav__link">
         
   
   
@@ -1119,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/amazon_bedrock_model.html" class="md-nav__link">
+      <a href="../user_manual/model/amazon_bedrock_model.html" class="md-nav__link">
         
   
   
@@ -1147,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/azure_openai_model.html" class="md-nav__link">
+      <a href="../user_manual/model/azure_openai_model.html" class="md-nav__link">
         
   
   
@@ -1175,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/deepseek_model.html" class="md-nav__link">
+      <a href="../user_manual/model/deepseek_model.html" class="md-nav__link">
         
   
   
@@ -1203,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/gemini_model.html" class="md-nav__link">
+      <a href="../user_manual/model/gemini_model.html" class="md-nav__link">
         
   
   
@@ -1231,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/kimi_model.html" class="md-nav__link">
+      <a href="../user_manual/model/kimi_model.html" class="md-nav__link">
         
   
   
@@ -1259,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/openai_model.html" class="md-nav__link">
+      <a href="../user_manual/model/openai_model.html" class="md-nav__link">
         
   
   
@@ -1287,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/1panel_ai_gateway_model.html" class="md-nav__link">
+      <a href="../user_manual/model/1panel_ai_gateway_model.html" class="md-nav__link">
         
   
   
@@ -1315,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/Regolo_model.html" class="md-nav__link">
+      <a href="../user_manual/model/Regolo_model.html" class="md-nav__link">
         
   
   
@@ -1343,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/siliconflow_model.html" class="md-nav__link">
+      <a href="../user_manual/model/siliconflow_model.html" class="md-nav__link">
         
   
   
@@ -1371,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/tencentcloud_model.html" class="md-nav__link">
+      <a href="../user_manual/model/tencentcloud_model.html" class="md-nav__link">
         
   
   
@@ -1399,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/hunyuan_model.html" class="md-nav__link">
+      <a href="../user_manual/model/hunyuan_model.html" class="md-nav__link">
         
   
   
@@ -1427,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/doubao_model.html" class="md-nav__link">
+      <a href="../user_manual/model/doubao_model.html" class="md-nav__link">
         
   
   
@@ -1455,7 +1451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/qianfan_model.html" class="md-nav__link">
+      <a href="../user_manual/model/qianfan_model.html" class="md-nav__link">
         
   
   
@@ -1483,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/spark_model.html" class="md-nav__link">
+      <a href="../user_manual/model/spark_model.html" class="md-nav__link">
         
   
   
@@ -1511,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/zhipu_model.html" class="md-nav__link">
+      <a href="../user_manual/model/zhipu_model.html" class="md-nav__link">
         
   
   
@@ -1539,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/local_model.html" class="md-nav__link">
+      <a href="../user_manual/model/local_model.html" class="md-nav__link">
         
   
   
@@ -1567,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/ollama_model.html" class="md-nav__link">
+      <a href="../user_manual/model/ollama_model.html" class="md-nav__link">
         
   
   
@@ -1595,7 +1591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/vllm_model.html" class="md-nav__link">
+      <a href="../user_manual/model/vllm_model.html" class="md-nav__link">
         
   
   
@@ -1623,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/X-Infer_model.html" class="md-nav__link">
+      <a href="../user_manual/model/X-Infer_model.html" class="md-nav__link">
         
   
   
@@ -1651,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/dockerai_model.html" class="md-nav__link">
+      <a href="../user_manual/model/dockerai_model.html" class="md-nav__link">
         
   
   
@@ -1679,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/minimax.html" class="md-nav__link">
+      <a href="../user_manual/model/minimax.html" class="md-nav__link">
         
   
   
@@ -1715,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model/model_param.html" class="md-nav__link">
+      <a href="../user_manual/model/model_param.html" class="md-nav__link">
         
   
   
@@ -1804,7 +1800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tool/tool.html" class="md-nav__link">
+      <a href="../user_manual/tool/tool.html" class="md-nav__link">
         
   
   
@@ -1832,7 +1828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tool/tool_param.html" class="md-nav__link">
+      <a href="../user_manual/tool/tool_param.html" class="md-nav__link">
         
   
   
@@ -1929,7 +1925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/dataset.html" class="md-nav__link">
+      <a href="../user_manual/dataset/dataset.html" class="md-nav__link">
         
   
   
@@ -1957,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/doclist.html" class="md-nav__link">
+      <a href="../user_manual/dataset/doclist.html" class="md-nav__link">
         
   
   
@@ -1985,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/workflow.html" class="md-nav__link">
+      <a href="../user_manual/dataset/workflow.html" class="md-nav__link">
         
   
   
@@ -2013,7 +2009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/problem.html" class="md-nav__link">
+      <a href="../user_manual/dataset/problem.html" class="md-nav__link">
         
   
   
@@ -2041,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/word_tokenize.html" class="md-nav__link">
+      <a href="../user_manual/dataset/word_tokenize.html" class="md-nav__link">
         
   
   
@@ -2069,7 +2065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset/hit-testing.html" class="md-nav__link">
+      <a href="../user_manual/dataset/hit-testing.html" class="md-nav__link">
         
   
   
@@ -2162,7 +2158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/app.html" class="md-nav__link">
+      <a href="../user_manual/app/app.html" class="md-nav__link">
         
   
   
@@ -2243,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/simple_app.html" class="md-nav__link">
+      <a href="../user_manual/app/simple_app.html" class="md-nav__link">
         
   
   
@@ -2271,7 +2267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/workflow_app.html" class="md-nav__link">
+      <a href="../user_manual/app/workflow_app.html" class="md-nav__link">
         
   
   
@@ -2307,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/app-view.html" class="md-nav__link">
+      <a href="../user_manual/app/app-view.html" class="md-nav__link">
         
   
   
@@ -2335,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/log.html" class="md-nav__link">
+      <a href="../user_manual/app/log.html" class="md-nav__link">
         
   
   
@@ -2371,7 +2367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trigger/trigger.html" class="md-nav__link">
+      <a href="../user_manual/trigger/trigger.html" class="md-nav__link">
         
   
   
@@ -2399,7 +2395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user_community.html" class="md-nav__link">
+      <a href="../user_manual/user_community.html" class="md-nav__link">
         
   
   
@@ -2427,7 +2423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/authorization_resources.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/authorization_resources.html" class="md-nav__link">
         
   
   
@@ -2455,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../email.html" class="md-nav__link">
+      <a href="../user_manual/email.html" class="md-nav__link">
         
   
   
@@ -2483,7 +2479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Customlanguage.html" class="md-nav__link">
+      <a href="../user_manual/Customlanguage.html" class="md-nav__link">
         
   
   
@@ -2582,7 +2578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/user.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/user.html" class="md-nav__link">
         
   
   
@@ -2610,7 +2606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/workspace.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/workspace.html" class="md-nav__link">
         
   
   
@@ -2638,7 +2634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/role.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/role.html" class="md-nav__link">
         
   
   
@@ -2666,7 +2662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/resource_management.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/resource_management.html" class="md-nav__link">
         
   
   
@@ -2694,7 +2690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/shared_resources.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/shared_resources.html" class="md-nav__link">
         
   
   
@@ -2722,7 +2718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/chat_user.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/chat_user.html" class="md-nav__link">
         
   
   
@@ -2803,7 +2799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/feishu_doc.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/feishu_doc.html" class="md-nav__link">
         
   
   
@@ -2831,7 +2827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/dataset_chatuser.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/dataset_chatuser.html" class="md-nav__link">
         
   
   
@@ -2924,7 +2920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_logo_settting.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/app_logo_settting.html" class="md-nav__link">
         
   
   
@@ -2952,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_integrate.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/app_integrate.html" class="md-nav__link">
         
   
   
@@ -2980,7 +2976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_auth.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/app_auth.html" class="md-nav__link">
         
   
   
@@ -3008,7 +3004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/app_chatueser.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/app_chatueser.html" class="md-nav__link">
         
   
   
@@ -3097,7 +3093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/theme_settings.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/theme_settings.html" class="md-nav__link">
         
   
   
@@ -3125,7 +3121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/login_auth.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/login_auth.html" class="md-nav__link">
         
   
   
@@ -3161,7 +3157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/operation_log.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/operation_log.html" class="md-nav__link">
         
   
   
@@ -3189,7 +3185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../X-Pack/system_API.html" class="md-nav__link">
+      <a href="../user_manual/X-Pack/system_API.html" class="md-nav__link">
         
   
   
@@ -3291,7 +3287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/install_configuration.html" class="md-nav__link">
+      <a href="install_configuration.html" class="md-nav__link">
         
   
   
@@ -3319,7 +3315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/system_management.html" class="md-nav__link">
+      <a href="system_management.html" class="md-nav__link">
         
   
   
@@ -3347,7 +3343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/function_library.html" class="md-nav__link">
+      <a href="function_library.html" class="md-nav__link">
         
   
   
@@ -3375,7 +3371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/knowledge_base.html" class="md-nav__link">
+      <a href="knowledge_base.html" class="md-nav__link">
         
   
   
@@ -3403,7 +3399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/apply_setting.html" class="md-nav__link">
+      <a href="apply_setting.html" class="md-nav__link">
         
   
   
@@ -3435,8 +3431,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -3460,11 +3458,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -3485,7 +3483,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3503,7 +3501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../choose_model_dataset.html" class="md-nav__link">
+      <a href="../user_manual/choose_model_dataset.html" class="md-nav__link">
         
   
   
@@ -3531,7 +3529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chat_to_API.html" class="md-nav__link">
+      <a href="../user_manual/chat_to_API.html" class="md-nav__link">
         
   
   
@@ -3559,7 +3557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/Offline_install_OllamaModel.html" class="md-nav__link">
+      <a href="Offline_install_OllamaModel.html" class="md-nav__link">
         
   
   
@@ -3587,7 +3585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/GPU_runOllama.html" class="md-nav__link">
+      <a href="GPU_runOllama.html" class="md-nav__link">
         
   
   
@@ -3612,10 +3610,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../faq/wps_contract_review.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WPS合同审核助手的设计与实现
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="wps_contract_review.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3631,6 +3654,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 方案设计
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 插件安装
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 插件安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 macOS操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Windows操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 实现步骤与效果展示
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3643,7 +3745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/maxkb_multimodal_workflow.html" class="md-nav__link">
+      <a href="maxkb_multimodal_workflow.html" class="md-nav__link">
         
   
   
@@ -3671,7 +3773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/maxkb_In_halo.html" class="md-nav__link">
+      <a href="maxkb_In_halo.html" class="md-nav__link">
         
   
   
@@ -3699,7 +3801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/doc_segment.html" class="md-nav__link">
+      <a href="doc_segment.html" class="md-nav__link">
         
   
   
@@ -3734,7 +3836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Skills/MaxKB_Skills.html" class="md-nav__link">
+      <a href="../Skills/MaxKB_Skills.html" class="md-nav__link">
         
   
   
@@ -3761,7 +3863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contact.html" class="md-nav__link">
+      <a href="../contact.html" class="md-nav__link">
         
   
   
@@ -3798,8 +3900,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3811,7 +3911,7 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 概述
+        1 方案设计
       
     </span>
   </a>
@@ -3822,10 +3922,38 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 页面布局
+        2 插件安装
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2 插件安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 macOS操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Windows操作系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3833,233 +3961,10 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 快捷创建
+        3 实现步骤与效果展示
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3 快捷创建">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1 功能说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 资源概览
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4 资源概览">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.1 功能说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.2 统计内容
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 监控统计
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5 监控统计">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 功能说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 统计指标、趋势图表
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.2 统计指标、趋势图表">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        核心指标卡片
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3 时间范围选择
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.4 筛选功能
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 使用排行榜
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6 使用排行榜">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.1 功能说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#62" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.2 排名统计
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6.2 排名统计">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens-top" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tokens 消耗 - TOP 智能体
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#-top" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        对话次数 - TOP 智能体
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tokens-top_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tokens 消耗 - TOP 用户
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#621" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.2.1 导出
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4083,226 +3988,91 @@
   
 
 
-<h1 id="_1">工作空间首页<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="1">1 概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+  <h1>WPS合同审核助手的设计与实现</h1>
+
 <div class="admonition abstract">
-<p>工作空间首页统计功能，提供全面的资源管理和运营数据可视化。首页由 <strong>快捷创建</strong>、<strong>资源概览</strong>、<strong>监控统计</strong>、<strong>使用排行榜</strong> 四大模块组成，为管理员提供资源调度与运营决策支持。</p>
+<p>通过 MaxKB 开源智能体平台对接 WPS Office，打造一款“智能合同审核助手”的具体方法。</p>
+<p>将企业的合同知识库能力直接集成到日常办公环境中，让合同审核从原本需要数天的人工流程，转变为几分钟内就能完成的智能化操作，在保持审核标准统一的同时，大幅提升了合同审核的效率和准确性。</p>
 </div>
-<hr />
-<h2 id="2">2 页面布局<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="1">1 方案设计<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>首页采用模块化设计，主要包含四个核心区域：</p>
-<table>
-<thead>
-<tr>
-<th>模块</th>
-<th>功能定位</th>
-<th>核心内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>快捷创建</strong></td>
-<td>快速操作入口</td>
-<td>一键创建智能体、知识库、工具、模型</td>
-</tr>
-<tr>
-<td><strong>资源概览</strong></td>
-<td>资源统计展示</td>
-<td>智能体、知识库、工具、模型的总量与分类</td>
-</tr>
-<tr>
-<td><strong>监控统计</strong></td>
-<td>运营数据追踪</td>
-<td>活跃用户、对话量、Token 消耗、满意度走势</td>
-</tr>
-<tr>
-<td><strong>使用排行榜</strong></td>
-<td>数据排名统计</td>
-<td>TOP 智能体、TOP 用户的 Token 消耗和对话次数</td>
-</tr>
-</tbody>
-</table>
+<p>MaxKB WPS合同审核工作流的核心是实现分类选择知识库、文档预处理，以及利用SSE（‌即Server-Sent Events，服务器发送事件‌）技术实时推送审核结果。</p>
+<p>用户在MaxKB中预先配置合同审核工作流并发布，然后在WPS中安装MaxKB WPS插件，并接入合同审核工作流，即可在WPS内实现高效的合同审核。</p>
+<p>整体流程说明如下:</p>
+<p>(1) 配置管理：用户首次使用时，配置MaxKB服务地址、APP Key和销售人员姓名；</p>
+<p>(2) 分类选择：根据合同所属产品线（例如DataEase、JumpServer等）和类型（订阅、授权、维保等）选择对应的知识库；</p>
+<p>(3) 文档预处理：自动接受所有修订痕迹、删除批注，确保文档干净整洁；</p>
+<p>(4) 导出PDF：为文件名添加时间戳后缀，将Word文档转换为PDF格式；</p>
+<p>(5) 上传文件：将PDF文件上传至MaxKB文件服务；</p>
+<p>(6) 智能审核：MaxKB智能体根据选择的分类，调用对应的企业知识库进行合同分析；</p>
+<p>(7) 流式返回：采用SSE技术实时推送审核结果，用户可以看到分析过程；</p>
+<p>(8) 实时渲染：将返回的Markdown内容实时渲染，并展示在任务窗格中；</p>
+<p>(9) 导出报告：将审核结果生成专业的PDF报告，保存在原合同相同的目录中；</p>
+<p>(10) 恢复文档：删除临时文件，重新打开原始合同文档。</p>
+<p>MaxKB WPS合同审核助手的实现采用前后端分离的架构，前端负责文档处理和界面展示，后端提供AI审核服务。
+用户在前端上传文件后，文档在MaxKB中经过文档合并、PDF转换、解析及判断器分类等，随后交由AI结合知识库检索结果进行审核，最终将审核结果返回前端并将渲染的结果展现给用户。</p>
 </div>
-<hr />
-<h2 id="3">3 快捷创建<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<h3 id="31">3.1 功能说明<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%8A%A9%E6%89%8B%E6%9E%B6%E6%9E%84%E5%9B%BE.jpeg" />
+<img alt="wps_contract" src="../img/FAQ/MaxKB%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%91%A8%E6%89%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.png" /></p>
+<h2 id="2">2 插件安装<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21-macos">2.1 macOS操作系统<a class="headerlink" href="#21-macos" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>快捷创建模块提供常用资源的一键创建入口，支持快速创建或导入智能体、知识库、工具和模型。</p>
+<p>打开终端，执行以下命令：
+'''
+curl -sSL <a href="https://east.dataease.cn/maxkb_wps_quick_start.sh">https://east.dataease.cn/maxkb_wps_quick_start.sh</a> | bash
+'''</p>
+<p>该脚本会自动下载并安装插件至WPS的插件目录：~/Library/Containers/com.kingsoft.wpsoffice.mac/Data/.kingsoft/wps/jsaddons。</p>
 </div>
-<p><img alt="first" src="../../img/first/quick_create.png" /></p>
-<h2 id="4">4 资源概览<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<h3 id="41">4.1 功能说明<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/macOS_MaxKB%20WPS%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85.png" /></p>
+<h3 id="22-windows">2.2 Windows操作系统<a class="headerlink" href="#22-windows" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>资源概览模块展示工作空间内各类型资源的总量统计与分类信息，帮助管理员快速了解资源分布状况。</p>
+<p>在网页中下载插件：<a href="https://maxkb-tools-1323865188.cos.ap-guangzhou.myqcloud.com/maxkb-wps.exe">https://maxkb-tools-1323865188.cos.ap-guangzhou.myqcloud.com/maxkb-wps.exe</a>。</p>
+<p>运行后，插件将被自动安装至：C:\Users${Your_Name}\AppData\Roaming\kingsoft\wps\jsaddons。</p>
 </div>
-<p><img alt="first" src="../../img/first/source_show.png" /></p>
-<h3 id="42">4.2 统计内容<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
-<h2 id="5">5 监控统计<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<h3 id="51">5.1 功能说明<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/Windows_MaxKB%20WPS%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85.png" /></p>
+<h2 id="3">3 实现步骤与效果展示<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>监控统计模块追踪工作空间的运营数据，包含活跃用户、对话量、Token消耗量以及用户满意度的走势图表。</p>
+<p>通过MaxKB WPS合同审核助手，用户几分钟内就可以搞定以往需要数小时的合同审核工作。以下是详细的操作步骤与效果说明：</p>
+<p>(1) 配置系统</p>
+<p>首次使用时，在WPS上方工具栏找到“MaxKB WPS插件”选项，然后点击“合同审核”按钮，在页面右侧的工具栏点击右上角的齿轮图标进行初始化配置，填入MaxKB服务的Base URL、APP Key以及销售姓名等审核信息。</p>
+<ul>
+<li>Base URL：MaxKB服务地址</li>
+<li>APP Key：应用级别的认证密钥</li>
+<li>销售姓名：审核人员信息</li>
+</ul>
 </div>
-<p><img alt="first" src="../../img/first/see.png" /></p>
-<h3 id="52">5.2 统计指标、趋势图表<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E6%8F%92%E4%BB%B6%E8%8F%9C%E5%8D%95.png" />
+<img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%88%9D%E5%A7%8B%E5%8C%96_01.png" />
+<img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%88%9D%E5%A7%8B%E5%8C%96_02.png" /></p>
 <div class="admonition abstract">
-<h4 id="_2">核心指标卡片<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>活跃用户</strong></td>
-<td>统计周期内的活跃用户数量及环比变化</td>
-</tr>
-<tr>
-<td><strong>对话次数</strong></td>
-<td>统计周期内的对话交互总次数</td>
-</tr>
-<tr>
-<td><strong>Tokens 总数</strong></td>
-<td>统计周期内消耗的 Tokens 总量</td>
-</tr>
-<tr>
-<td><strong>用户满意度</strong></td>
-<td>用户对对话结果的满意与不满意评价统计</td>
-</tr>
-</tbody>
-</table>
+<p>(2) 选择合同分类   </p>
+<p>根据合同内容选择对应的知识库，先选择产品线（例如DataEase、MaxKB等），再选择合同类型（例如订阅、授权、维保等）。</p>
+<p>系统会根据所选分类自动匹配对应的知识库，确保审核逻辑与企业标准一致。</p>
 </div>
+<p><img alt="wps_contract" src="../img/FAQ/WPS%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%8A%A9%E6%89%8B%E7%9F%A5%E8%AF%86%E5%BA%93%E9%80%89%E6%8B%A9.png" /></p>
 <div class="admonition abstract">
-<table>
-<thead>
-<tr>
-<th>图表</th>
-<th>展示内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>活跃用户趋势</strong></td>
-<td>活跃用户与新增用户的每日变化趋势</td>
-</tr>
-<tr>
-<td><strong>对话次数趋势</strong></td>
-<td>每日对话次数的变化趋势</td>
-</tr>
-<tr>
-<td><strong>Tokens 消耗趋势</strong></td>
-<td>每日 Tokens 消耗量的变化趋势</td>
-</tr>
-<tr>
-<td><strong>用户满意度趋势</strong></td>
-<td>每日满意与不满意评价的变化趋势</td>
-</tr>
-</tbody>
-</table>
+<p>(3) 一键审核   </p>
+<p>上传一份合同文件，系统自动完成文档的预处理（例如接受修订、删除批注等）、导出PDF文件、调用智能体分析合同等操作，并实时展示审核结果。</p>
 </div>
-<h3 id="53">5.3 时间范围选择<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%8A%A9%E6%89%8B%E5%AE%A1%E6%A0%B8%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA.png" /></p>
 <div class="admonition abstract">
-<p>支持选择不同的统计周期，包括过去7天、30天、90天等选项。</p>
+<p>(4) 查看审核报告</p>
+<p>审核完成后，系统会在任务窗格中展示完整的审核报告，内容包括：</p>
+<p>■ 审核概览：合同的基本信息、审核人员、审核时间； </p>
+<p>■ 风险评估：高风险、中风险、低风险条款；</p>
+<p>■ 条款分析：逐条审查合同条款，标注潜在问题； </p>
+<p>■ 合规性检查：与企业标准对照，指出不合规项；</p>
+<p>■ 修改建议：具体的修改意见和参考文本。</p>
 </div>
-<p><img alt="first" src="../../img/first/day.png" /></p>
-<h3 id="54">5.4 筛选功能<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p><img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%8A%A9%E6%89%8B%E5%AE%A1%E6%A0%B8%E6%8A%A5%E5%91%8A.png" /></p>
 <div class="admonition abstract">
-<p>支持按智能体筛选统计数据，查看特定智能体的运营情况。</p>
+<p>(5) 导出PDF报告</p>
+<p>系统自动将审核报告导出为PDF文件，保存在原合同同目录下。PDF报告遵循的规范包括：</p>
+<p>■ 文件名格式：原合同名_合同审查结果_20241210_153045.pdf</p>
+<p>■ 格式完整保留：Markdown格式、表格、列表等； </p>
+<p>■ 智能分页：避免标题、表格、代码块被截断。</p>
 </div>
-<p><img alt="first" src="../../img/first/agent.png" /></p>
-<h2 id="6">6 使用排行榜<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<h3 id="61">6.1 功能说明<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>使用排行榜模块按照 Token 消耗和对话次数分别统计 TOP 智能体和 TOP 用户，为管理员提供资源调度依据。</p>
-</div>
-<p><img alt="first" src="../../img/first/top.png" /></p>
-<h3 id="62">6.2 排名统计<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<h4 id="tokens-top">Tokens 消耗 - TOP 智能体<a class="headerlink" href="#tokens-top" title="Permanent link">&para;</a></h4>
-<table>
-<thead>
-<tr>
-<th>排名</th>
-<th>展示内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>排名列表</td>
-<td>按 Tokens 消耗量降序排列的智能体</td>
-</tr>
-<tr>
-<td>消耗数值</td>
-<td>每个智能体的 Tokens 消耗总量</td>
-</tr>
-<tr>
-<td>趋势标识</td>
-<td>环比增减趋势指示</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><img alt="first" src="../../img/first/token.png" /></p>
-<div class="admonition abstract">
-<h4 id="-top">对话次数 - TOP 智能体<a class="headerlink" href="#-top" title="Permanent link">&para;</a></h4>
-<table>
-<thead>
-<tr>
-<th>排名</th>
-<th>展示内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>排名列表</td>
-<td>按对话次数降序排列的智能体</td>
-</tr>
-<tr>
-<td>对话数值</td>
-<td>每个智能体的对话次数</td>
-</tr>
-<tr>
-<td>趋势标识</td>
-<td>环比增减趋势指示</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><img alt="first" src="../../img/first/times.png" /></p>
-<div class="admonition abstract">
-<h4 id="tokens-top_1">Tokens 消耗 - TOP 用户<a class="headerlink" href="#tokens-top_1" title="Permanent link">&para;</a></h4>
-<table>
-<thead>
-<tr>
-<th>排名</th>
-<th>展示内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>排名列表</td>
-<td>按 Tokens 消耗量降序排列的用户</td>
-</tr>
-<tr>
-<td>消耗数值</td>
-<td>每个用户的 Tokens 消耗总量</td>
-</tr>
-<tr>
-<td>趋势标识</td>
-<td>环比增减趋势指示</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><img alt="first" src="../../img/first/user.png" /></p>
-<h4 id="621">6.2.1 导出<a class="headerlink" href="#621" title="Permanent link">&para;</a></h4>
-<div class="admonition abstract">
-<p>排行榜详情页支持按指定时间范围筛选数据后导出全量明细 Excel 文件，导出数据包含当前筛选条件下全部分页数据，不受页面 20 条 / 页展示限制。</p>
-</div>
-<p><img alt="first" src="../../img/first/export.png" />
-<img alt="first" src="../../img/first/excel.png" /></p>
+<p><img alt="wps_contract" src="../img/FAQ/MaxKB%20WPS%E5%90%88%E5%90%8C%E5%AE%A1%E6%A0%B8%E5%8A%A9%E6%89%8B%E5%AE%A1%E6%A0%B8%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA.png" /></p>
 
 
 
@@ -4392,13 +4162,13 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "warning": false}}</script>
     
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../js/print-site.js"></script>
+        <script src="../js/print-site.js"></script>
       
     
     <script>

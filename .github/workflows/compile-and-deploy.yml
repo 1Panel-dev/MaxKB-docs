@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements/requirements.txt
           pip install mike==1.1.2
+          pip install mkdocs-print-site-plugin
           python -m pip install --upgrade pip "setuptools<81" wheel
       - name: Config Git
         run: |

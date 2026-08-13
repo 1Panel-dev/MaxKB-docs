@@ -5299,6 +5299,40 @@
 </ul>
 </div>
 <hchangelog-2 id="changelog-2">2 更新内容<a class="headerlink" href="#changelog-2" title="Permanent link">&para;</a></h2>
+<h3 id="changelog-v2105-lts">v2.10.5-lts<a class="headerlink" href="#changelog-v2105-lts" title="Permanent link">&para;</a></h3>
+<p>2026 年 8 月 6 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复聊天分享链接端点缺少所有者检查，聊天令牌可以分享其他用户的对话内容的安全漏洞；</li>
+<li>安全漏洞：修复普通用户可以通过 API 接口获取其他工作空间用户信息的越权问题；（#6576）</li>
+<li>安全漏洞：修复使用任何用户的 apikey 都可以删除任何文件的越权问题；</li>
+<li>安全漏洞：修复普通用户可以通过 API 接口获取其他用户邮箱等敏感信息的问题。（#6577）</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>知识库：修复知识库返回的图片，在对话中加载失败的问题；</li>
+<li>知识库：修复上传 PDF 文档时，当文档内容中的标题与正文有相同内容时，段落内容会错误的问题（#6543）</li>
+<li>知识库：修复 Web 知识库的导入文档弹窗中错误展示了” 允许在只是来源中预览 “选项的问题；</li>
+<li>智能体：修复对话内容较长时，复制对话内容被截断的问题；（#6568）</li>
+<li>智能体：修复智能体嵌入第三方时，AI 回复的图片无法访问的问题；</li>
+<li>智能体：修复智能体图片生成节点生成的图片无法访问的问题；</li>
+<li>智能体：修复智能体调试完成后会弹出一个错误提示，导致无法查看执行详情的问题；</li>
+<li>智能体：修复简易智能体可以使用未发布的知识库检索配置进行检索的问题；（#6519）</li>
+<li>智能体：修复文件内容提取节点，提取文件中图片后加载失败的问题；</li>
+<li>智能体：修复智能体触发器任务执行失败的问题；</li>
+<li>智能体：修复智能体中工作流工具节点的输出内容未写入对话日志的问题；</li>
+<li>智能体：修复智能体开场白使用 sendMessage 方法传递用户参数失败，丢失了用户问题的问题； </li>
+<li>智能体：修复用户在问答界面的知识来源中，无权限预览或下载文件失败的问题；</li>
+<li>智能体：修复智能体对话上传多个文件，在对话日志中下载文件，部分文件提示无权限的问题；</li>
+<li>智能体：修复对话日志清除时，没有部分数据未清除导致概览中活跃用户统计错误的问题；</li>
+<li>角色（X-Pack）：修复部分功能缺少权限位控制的问题；</li>
+<li>共享资源（X-Pack）：修复系统管理员在共享知识库中点击“上传文档”跳转页面错误的问题；</li>
+<li>共享资源（X-Pack）：修复在工作空间中的共享知识库可以查看命中测试的问题。</li>
+</ul>
+</div>
 <h3 id="changelog-v2104-lts">v2.10.4-lts<a class="headerlink" href="#changelog-v2104-lts" title="Permanent link">&para;</a></h3>
 <p>2026 年 7 月 16 日</p>
 <div class="admonition abstract">
@@ -10093,7 +10127,7 @@ pip install pymysql
 </div>
 <h2 id="user_manual-customlanguage-_3">二、自定义语言包制作步骤<a class="headerlink" href="#user_manual-customlanguage-_3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>MaxKB 默认提供中文语言包，语言包：<img alt="自定义语言包" src="../img/package/zh.zip" />， 可基于中文语言包快速制作任意国际语言包，具体步骤如下：</p>
+<p>MaxKB 默认提供中文语言包，语言包：<a href="https://maxkb-apps-1323865188.cos.ap-shanghai.myqcloud.com/zh.zip">自定义语言包</a>， 可基于中文语言包快速制作任意国际语言包，具体步骤如下：</p>
 <p>步骤1：查询目标语言代码</p>
 <div class="codehilite"><pre><span></span><code>打开上方语言代码查询网址，查找需要适配的目标语言对应的纯字母国际语言代码（如英语：en、日语：ja、韩语：ko）。
 </code></pre></div>

@@ -2,386 +2,386 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://maxkb.cn/docs/v2/index.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/changelog.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/contact.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/instructional_video.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/quick_start.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/system_arch.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/Skills/MaxKB_Skills.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/dev_manual/APIKey_chat.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/dev_manual/dev_environment.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/GPU_runOllama.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/MaxKB%20VS.Dify.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/Offline_install_OllamaModel.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/apply_setting.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/doc_segment.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/function_library.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/install_configuration.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/knowledge_base.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/maxkb_In_halo.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/maxkb_multimodal_workflow.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/system_management.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/faq/wps_contract_review.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/1panel_installtion.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/aliyun.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/backup.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/cli.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/migrate.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/offline_installtion.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/online_installtion.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/installation/tencent.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/Customlanguage.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/chat_to_API.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/choose_model_dataset.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/email.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/user_community.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_auth.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_chatueser.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_integrate.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/app_logo_settting.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/authorization_resources.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/chat_authentication.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/chat_user.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/dataset_chatuser.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/feishu_doc.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/login_auth.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/operation_log.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/resource_management.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/role.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/shared_resources.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/system_API.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/theme_settings.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/user.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/X-Pack/workspace.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/app-view.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/app.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/hit-testing.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/log.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/serialization.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/simple_app.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/app/workflow_app.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/dataset.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/doclist.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/hit-testing.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/problem.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/word_tokenize.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/dataset/workflow.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/index/index.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/1panel_ai_gateway_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/Regolo_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/X-Infer_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/amazon_bedrock_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/anthropic_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/azure_openai_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/bailian_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/deepseek_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/dockerai_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/doubao_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/gemini_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/hunyuan_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/kimi_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/local_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/minimax.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/model_param.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/model_summary.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/ollama_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/openai_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/qianfan_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/siliconflow_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/spark_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/tencentcloud_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/tongyi_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/vllm_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/model/zhipu_model.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/team/team.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/tool/tool.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/tool/tool_param.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
     <url>
          <loc>https://maxkb.cn/docs/v2/user_manual/trigger/trigger.html</loc>
-         <lastmod>2026-08-11</lastmod>
+         <lastmod>2026-08-13</lastmod>
     </url>
 </urlset>

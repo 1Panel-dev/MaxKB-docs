@@ -7,7 +7,7 @@
 
 !!! Abstract ""
     MaxKB 应用兼容 OpenAI API 格式，在 OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。
-![api示例](../../img/system/api_example.png)
+![api示例](../img/system/api_example.png)
 
 !!! Abstract ""
     **注意：**
@@ -39,21 +39,21 @@
 ### 2.1 打开 API 文档
 !!! Abstract ""
     在应用【概览】中，点击访问 MaxKB API 地址，在 API Key 中创建 API Key。
-![打开文档](../../img/system/open_api_doc.png)
-![打开文档](../../img/system/open_api_doc1.png)
+![打开文档](../img/system/open_api_doc.png)
+![打开文档](../img/system/open_api_doc1.png)
 ### 2.2 API Key 认证
 !!! Abstract ""
     点击【Authorize】，输入已创建的 API Key。
-![API 认证](../../img/system/api_auth.png)
+![API 认证](../img/system/api_auth.png)
 
 ### 2.3 获取会话信息
 !!! Abstract ""
     通过调用 open 接口，可以生成会话 id。
-![会话ID](../../img/system/api_chatid.png)
+![会话ID](../img/system/api_chatid.png)
 
 ### 2.4 进行会话
 !!! Abstract ""
     调用对话接口，填入已获取的会话 id，输入问题等参数信息，即可进行对话。
-![对话](../../img/system/api_chat.png)
-![对话](../../img/system/api_chat1.png)
+![对话](../img/system/api_chat.png)
+![对话](../img/system/api_chat1.png)
 

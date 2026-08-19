@@ -3177,14 +3177,14 @@
 <p>创建一个名为 Modelfile 的文件，内容如下：
 <div class="highlight"><pre><span></span><code>FROM ./qwen1_5-0_5b-chat-q5_k_m.gguf
 
-TEMPLATE &quot;&quot;&quot;{{ if .System }}&lt;|im_start|&gt;system
+TEMPLATE """{{ if .System }}&lt;|im_start|&gt;system
 {{ .System }}&lt;|im_end|&gt;{{ end }}&lt;|im_start|&gt;user
 {{ .Prompt }}&lt;|im_end|&gt;
 &lt;|im_start|&gt;assistant
-&quot;&quot;&quot;
+"""
 
-PARAMETER stop &quot;&lt;|im_start|&gt;&quot;
-PARAMETER stop &quot;&lt;|im_end|&gt;&quot;
+PARAMETER stop "&lt;|im_start|&gt;"
+PARAMETER stop "&lt;|im_end|&gt;"
 </code></pre></div>
 说明：不同模型的 Modelfile 内容不同，可参考 Ollama 官网 <a href="https://ollama.com/library/qwen:0.5b">参数设置</a> 。</p>
 </div>

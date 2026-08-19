@@ -9,17 +9,17 @@
 !!! Abstract ""
     在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为模型，设置模型类型后，配置可选择的模型和默认模型。
 
-![添加用户输入](../../img/system/add_parameter.png){width="500px"}
+![添加用户输入](../img/system/add_parameter.png){width="500px"}
 
 !!! Abstract ""
     可在 AI 对话或其他需要添加模型的组件中，切换 AI 模型为引用变量，选择全局变量中已创建的用户输入参数。
 
-![设置模型参数](../../img/system/set_model.png)
+![设置模型参数](../img/system/set_model.png)
 
 !!! Abstract ""
     保存工作流后，在问答页面中，用户可以随时切换不同模型进行问答。
 
-![切换模型](../../img/system/switch_model.png)
+![切换模型](../img/system/switch_model.png)
 
 
 ## 知识库切换配置
@@ -27,15 +27,15 @@
 !!! Abstract ""
     在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为知识库，设置可选知识库和默认知识库（可多选）。
 
-![添加用户输入](../../img/system/add_parameter_dataset.png){width="600px"}
+![添加用户输入](../img/system/add_parameter_dataset.png){width="600px"}
 
 !!! Abstract ""
     可在文档标签检索、知识库检索组件中，切换知识库为引用变量，选择用户全局变量中已创建的用户输入参数。
 
-![设置知识库参数](../../img/system/set_dataset.png)
+![设置知识库参数](../img/system/set_dataset.png)
 
 !!! Abstract ""
     保存工作流后，在问答页面中，用户可以随时切换不同知识库进行问答。
 
-![切换知识库](../../img/system/switch_dataset.png)
+![切换知识库](../img/system/switch_dataset.png)
 

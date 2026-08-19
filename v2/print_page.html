@@ -9789,9 +9789,9 @@ pip install pymysql
 <div class="admonition abstract">
 <div class="highlight"><pre><span></span><code>MCP Server Config 格式参考如下
 {
-    &quot;amap-maps&quot;: {
-      &quot;url&quot;: &quot;http://IP:端口/MCPserver名称&quot;,
-      &quot;transport&quot;:&quot;sse&quot;               # 如果使用 Streamable_HTTP 协议，需将&quot;sse&quot;替换成&quot;streamable_http&quot;
+    "amap-maps": {
+      "url": "http://IP:端口/MCPserver名称",
+      "transport":"sse"               # 如果使用 Streamable_HTTP 协议，需将"sse"替换成"streamable_http"
     }
 }
 </code></pre></div>
@@ -10101,7 +10101,7 @@ pip install pymysql
 <div class="admonition abstract">
 <p>支持系统管理员配置邮件服务器的相关信息，以便系统可以通过电子邮件进行通知或其他邮件相关的操作。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/email.png" /></p></section><section class="print-page" id="user_manual-customlanguage" heading-number="6.10"><h1 id="user_manual-customlanguage-_1">自定义语言包<a class="headerlink" href="#user_manual-customlanguage-_1" title="Permanent link">&para;</a></h1>
+<p><img alt="用户列表" src="img/system/email.png" /></p></section><section class="print-page" id="user_manual-customlanguage" heading-number="6.10"><h1 id="user_manual-customlanguage-_1">自定义语言包<a class="headerlink" href="#user_manual-customlanguage-_1" title="Permanent link">&para;</a></h1>
 <h2 id="user_manual-customlanguage-_2">一、语言包格式规范<a class="headerlink" href="#user_manual-customlanguage-_2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>MaxKB v2.10.0-lts 支持自定义国际语言包，语言包统一为 ZIP 压缩包格式，拥有严格的命名与文件结构规范，所有文件名称必须保持一致，否则语言包无法生效。</p>
@@ -11393,7 +11393,7 @@ V2:/opt/maxkb
 <div class="highlight"><pre><span></span><code>\c maxkb;
 </code></pre></div>
 连接到数据库后，执行下面的 SQL 语句可以将用户 admin 的密码重置为 MaxKB@123..
-<div class="highlight"><pre><span></span><code>update  &quot;public&quot;.&quot;user&quot; set password=&#39;d880e722c47a34d8e9fce789fc62389d&#39; where username=&#39;admin&#39;;
+<div class="highlight"><pre><span></span><code>update  "public"."user" set password='d880e722c47a34d8e9fce789fc62389d' where username='admin';
 </code></pre></div></p>
 <p><strong>注意：找回 admin 密码后优先配置邮箱，以便下次忘记密码时能直接使用【忘记密码】功能进行找回。</strong></p>
 </div>
@@ -11602,28 +11602,28 @@ MaxKB 容器需要可正常访问 Ollama 服务。在 MaxKB 容器中访问 Olla
 <div class="admonition abstract">
 <p>在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为模型，设置模型类型后，配置可选择的模型和默认模型。</p>
 </div>
-<p><img alt="添加用户输入" src="../img/system/add_parameter.png" width="500px" /></p>
+<p><img alt="添加用户输入" src="img/system/add_parameter.png" width="500px" /></p>
 <div class="admonition abstract">
 <p>可在 AI 对话或其他需要添加模型的组件中，切换 AI 模型为引用变量，选择全局变量中已创建的用户输入参数。</p>
 </div>
-<p><img alt="设置模型参数" src="../img/system/set_model.png" /></p>
+<p><img alt="设置模型参数" src="img/system/set_model.png" /></p>
 <div class="admonition abstract">
 <p>保存工作流后，在问答页面中，用户可以随时切换不同模型进行问答。</p>
 </div>
-<p><img alt="切换模型" src="../img/system/switch_model.png" /></p>
+<p><img alt="切换模型" src="img/system/switch_model.png" /></p>
 <h2 id="user_manual-choose_model_dataset-_3">知识库切换配置<a class="headerlink" href="#user_manual-choose_model_dataset-_3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>在高级智能体工作流中，在基本信息中添加用户输入参数，选择组件类型为知识库，设置可选知识库和默认知识库（可多选）。</p>
 </div>
-<p><img alt="添加用户输入" src="../img/system/add_parameter_dataset.png" width="600px" /></p>
+<p><img alt="添加用户输入" src="img/system/add_parameter_dataset.png" width="600px" /></p>
 <div class="admonition abstract">
 <p>可在文档标签检索、知识库检索组件中，切换知识库为引用变量，选择用户全局变量中已创建的用户输入参数。</p>
 </div>
-<p><img alt="设置知识库参数" src="../img/system/set_dataset.png" /></p>
+<p><img alt="设置知识库参数" src="img/system/set_dataset.png" /></p>
 <div class="admonition abstract">
 <p>保存工作流后，在问答页面中，用户可以随时切换不同知识库进行问答。</p>
 </div>
-<p><img alt="切换知识库" src="../img/system/switch_dataset.png" /></p></section><section class="print-page" id="user_manual-chat_to_api" heading-number="8.2"><h1 id="user_manual-chat_to_api-api-key">通过API KEY进行对话<a class="headerlink" href="#user_manual-chat_to_api-api-key" title="Permanent link">&para;</a></h1>
+<p><img alt="切换知识库" src="img/system/switch_dataset.png" /></p></section><section class="print-page" id="user_manual-chat_to_api" heading-number="8.2"><h1 id="user_manual-chat_to_api-api-key">通过API KEY进行对话<a class="headerlink" href="#user_manual-chat_to_api-api-key" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p>MaxKB 创建的应用支持通过 OpenAI SDK 格式以及提供系统 SDK 接入，专业版在社区版本基础上提供平台级别的完整 SDK，详细情况见：<a href="https://maxkb.cn/docs/v2/user_manual/X-Pack/system_API/">系统API</a>。</p>
 </div>
@@ -11631,7 +11631,7 @@ MaxKB 容器需要可正常访问 Ollama 服务。在 MaxKB 容器中访问 Olla
 <div class="admonition abstract">
 <p>MaxKB 应用兼容 OpenAI API 格式，在 OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。</p>
 </div>
-<p><img alt="api示例" src="../img/system/api_example.png" /></p>
+<p><img alt="api示例" src="img/system/api_example.png" /></p>
 <div class="admonition abstract">
 <p><strong>注意：</strong></p>
 <ul>
@@ -11647,17 +11647,17 @@ MaxKB 容器需要可正常访问 Ollama 服务。在 MaxKB 容器中访问 Olla
 <div class="highlight"><pre><span></span><code># 将 url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 
 curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/chat/completions \
-    -H &quot;Content-Type: application/json&quot;  \
-    -H &quot;Authorization: Bearer agent-xxxxxxxxxx987f1bc06ab16e0ef&quot;   \
-    -d &#39;{
-        &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,
-        &quot;messages&quot;: [
+    -H "Content-Type: application/json"  \
+    -H "Authorization: Bearer agent-xxxxxxxxxx987f1bc06ab16e0ef"   \
+    -d '{
+        "model": "gpt-3.5-turbo",
+        "messages": [
             {
-              &quot;role&quot;: &quot;你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。&quot;,
-              &quot;content&quot;: &quot;MaxKB 是什么？&quot;
+              "role": "你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。",
+              "content": "MaxKB 是什么？"
             }
         ]
-    }&#39;
+    }'
 </code></pre></div>
 </div>
 <h2 id="user_manual-chat_to_api-2-api">2 系统 API<a class="headerlink" href="#user_manual-chat_to_api-2-api" title="Permanent link">&para;</a></h2>
@@ -11665,24 +11665,24 @@ curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/c
 <div class="admonition abstract">
 <p>在应用【概览】中，点击访问 MaxKB API 地址，在 API Key 中创建 API Key。</p>
 </div>
-<p><img alt="打开文档" src="../img/system/open_api_doc.png" />
-<img alt="打开文档" src="../img/system/open_api_doc1.png" /></p>
+<p><img alt="打开文档" src="img/system/open_api_doc.png" />
+<img alt="打开文档" src="img/system/open_api_doc1.png" /></p>
 <h3 id="user_manual-chat_to_api-22-api-key">2.2 API Key 认证<a class="headerlink" href="#user_manual-chat_to_api-22-api-key" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>点击【Authorize】，输入已创建的 API Key。</p>
 </div>
-<p><img alt="API 认证" src="../img/system/api_auth.png" /></p>
+<p><img alt="API 认证" src="img/system/api_auth.png" /></p>
 <h3 id="user_manual-chat_to_api-23">2.3 获取会话信息<a class="headerlink" href="#user_manual-chat_to_api-23" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>通过调用 open 接口，可以生成会话 id。</p>
 </div>
-<p><img alt="会话ID" src="../img/system/api_chatid.png" /></p>
+<p><img alt="会话ID" src="img/system/api_chatid.png" /></p>
 <h3 id="user_manual-chat_to_api-24">2.4 进行会话<a class="headerlink" href="#user_manual-chat_to_api-24" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>调用对话接口，填入已获取的会话 id，输入问题等参数信息，即可进行对话。</p>
 </div>
-<p><img alt="对话" src="../img/system/api_chat.png" />
-<img alt="对话" src="../img/system/api_chat1.png" /></p></section><section class="print-page" id="faq-offline_install_ollamamodel" heading-number="8.3"><h1 id="faq-offline_install_ollamamodel-ollama-llm">如何使用 Ollama 离线部署 LLM 大语言模型<a class="headerlink" href="#faq-offline_install_ollamamodel-ollama-llm" title="Permanent link">&para;</a></h1>
+<p><img alt="对话" src="img/system/api_chat.png" />
+<img alt="对话" src="img/system/api_chat1.png" /></p></section><section class="print-page" id="faq-offline_install_ollamamodel" heading-number="8.3"><h1 id="faq-offline_install_ollamamodel-ollama-llm">如何使用 Ollama 离线部署 LLM 大语言模型<a class="headerlink" href="#faq-offline_install_ollamamodel-ollama-llm" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p>以 qwen:0.5b 模型为例，详细说明 Ollama 离线部署 LLM 大语言模型的过程和步骤。</p>
 </div>
@@ -11702,14 +11702,14 @@ curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/c
 <p>创建一个名为 Modelfile 的文件，内容如下：
 <div class="highlight"><pre><span></span><code>FROM ./qwen1_5-0_5b-chat-q5_k_m.gguf
 
-TEMPLATE &quot;&quot;&quot;{{ if .System }}&lt;|im_start|&gt;system
+TEMPLATE """{{ if .System }}&lt;|im_start|&gt;system
 {{ .System }}&lt;|im_end|&gt;{{ end }}&lt;|im_start|&gt;user
 {{ .Prompt }}&lt;|im_end|&gt;
 &lt;|im_start|&gt;assistant
-&quot;&quot;&quot;
+"""
 
-PARAMETER stop &quot;&lt;|im_start|&gt;&quot;
-PARAMETER stop &quot;&lt;|im_end|&gt;&quot;
+PARAMETER stop "&lt;|im_start|&gt;"
+PARAMETER stop "&lt;|im_end|&gt;"
 </code></pre></div>
 说明：不同模型的 Modelfile 内容不同，可参考 Ollama 官网 <a href="https://ollama.com/library/qwen:0.5b">参数设置</a> 。</p>
 </div>
@@ -11736,7 +11736,7 @@ PARAMETER stop &quot;&lt;|im_end|&gt;&quot;
 <li>配置 apt 源
 <div class="highlight"><pre><span></span><code>curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
 &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
-    sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 </code></pre></div></li>
 <li>更新源
@@ -11880,12 +11880,12 @@ curl -sSL <a href="https://east.dataease.cn/maxkb_wps_quick_start.sh">https://ea
 <div class="highlight"><pre><span></span><code>def image(data):
     try:
         # 1. 使用f-string将data变量嵌入到图片路径中，生成完整的Markdown图片语法字符串
-        markdown_img = f&#39;![](./oss/file/{data})&#39;
+        markdown_img = f'![](./oss/file/{data})'
         # 2. 返回包含图片字符串的列表
         return markdown_img
     except Exception as e:
         # 3. 异常处理，返回错误信息
-        return [f&quot;【错误】处理图片URL失败：{str(e)}&quot;]
+        return [f"【错误】处理图片URL失败：{str(e)}"]
 </code></pre></div>
 </div>
 <div class="admonition abstract">
@@ -11911,7 +11911,7 @@ curl -sSL <a href="https://east.dataease.cn/maxkb_wps_quick_start.sh">https://ea
 def all_content(content: str,content_name: str,content_id: str) -&gt; str:
     result = [
         {
-            &#39;id&#39;: content_id, &#39;name&#39;: content_name, &#39;content&#39;: content
+            'id': content_id, 'name': content_name, 'content': content
         }
     ]
     # 添加返回语句，将构造的列表返回
@@ -11929,11 +11929,11 @@ def all_content(content: str,content_name: str,content_id: str) -&gt; str:
     try:
         # 1. 使用f-string将data变量嵌入到语音路径中，生成HTML的audio标签字符串
         # controls属性显示播放控件，可根据需要添加autoplay（自动播放，部分浏览器限制）等属性
-        audio_html = f&#39;&lt;audio src=&quot;./oss/file/{data}&quot; controls&gt;&lt;/audio&gt;&#39;
+        audio_html = f'&lt;audio src="./oss/file/{data}" controls&gt;&lt;/audio&gt;'
         return audio_html
     except Exception as e:
         # 2. 异常处理，返回错误信息
-        return [f&quot;【错误】处理语音URL失败：{str(e)}&quot;]
+        return [f"【错误】处理语音URL失败：{str(e)}"]
 </code></pre></div></p>
 </div>
 <h3 id="faq-maxkb_multimodal_workflow-23">2.3 视频工作流内部逻辑<a class="headerlink" href="#faq-maxkb_multimodal_workflow-23" title="Permanent link">&para;</a></h3>
@@ -11947,12 +11947,12 @@ def all_content(content: str,content_name: str,content_id: str) -&gt; str:
     try:
         # 1. 使用f-string将data变量嵌入到视频路径中，生成HTML的video标签字符串（支持本地/oss视频文件）
         # controls属性表示显示播放控件，width可以根据需要调整（如100%、600px等）
-        video_html = f&#39;&lt;video src=&quot;./oss/file/{data}&quot; controls width=500 height=300&gt;&lt;/video&gt;&#39;
+        video_html = f'&lt;video src="./oss/file/{data}" controls width=500 height=300&gt;&lt;/video&gt;'
 
         return video_html
     except Exception as e:
         # 2. 异常处理，返回错误信息
-        return [f&quot;【错误】处理视频URL失败：{str(e)}&quot;]
+        return [f"【错误】处理视频URL失败：{str(e)}"]
 </code></pre></div></p>
 </div>
 <h2 id="faq-maxkb_multimodal_workflow-3">3 效果展示<a class="headerlink" href="#faq-maxkb_multimodal_workflow-3" title="Permanent link">&para;</a></h2>

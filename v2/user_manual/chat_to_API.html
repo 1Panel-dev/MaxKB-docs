@@ -4024,7 +4024,7 @@
 <div class="admonition abstract">
 <p>MaxKB 应用兼容 OpenAI API 格式，在 OpenAI API 原有调用方式的基础上替换为 MaxKB 应用提供的 Base URL 以及 API Key 即可。</p>
 </div>
-<p><img alt="api示例" src="../../img/system/api_example.png" /></p>
+<p><img alt="api示例" src="../img/system/api_example.png" /></p>
 <div class="admonition abstract">
 <p><strong>注意：</strong></p>
 <ul>
@@ -4040,17 +4040,17 @@
 <div class="highlight"><pre><span></span><code># 将 url 和 Authorization 替换为 MaxKB 应用实际真实的 Base URL 和 API Key。
 
 curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/chat/completions \
-    -H &quot;Content-Type: application/json&quot;  \
-    -H &quot;Authorization: Bearer agent-xxxxxxxxxx987f1bc06ab16e0ef&quot;   \
-    -d &#39;{
-        &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,
-        &quot;messages&quot;: [
+    -H "Content-Type: application/json"  \
+    -H "Authorization: Bearer agent-xxxxxxxxxx987f1bc06ab16e0ef"   \
+    -d '{
+        "model": "gpt-3.5-turbo",
+        "messages": [
             {
-              &quot;role&quot;: &quot;你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。&quot;,
-              &quot;content&quot;: &quot;MaxKB 是什么？&quot;
+              "role": "你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。",
+              "content": "MaxKB 是什么？"
             }
         ]
-    }&#39;
+    }'
 </code></pre></div>
 </div>
 <h2 id="2-api">2 系统 API<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h2>
@@ -4058,24 +4058,24 @@ curl https://maxkb.fit2cloud.com/chat/api/xxxxxxxx-3fdf-7941-a6f4-0572478f57f6/c
 <div class="admonition abstract">
 <p>在应用【概览】中，点击访问 MaxKB API 地址，在 API Key 中创建 API Key。</p>
 </div>
-<p><img alt="打开文档" src="../../img/system/open_api_doc.png" />
-<img alt="打开文档" src="../../img/system/open_api_doc1.png" /></p>
+<p><img alt="打开文档" src="../img/system/open_api_doc.png" />
+<img alt="打开文档" src="../img/system/open_api_doc1.png" /></p>
 <h3 id="22-api-key">2.2 API Key 认证<a class="headerlink" href="#22-api-key" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>点击【Authorize】，输入已创建的 API Key。</p>
 </div>
-<p><img alt="API 认证" src="../../img/system/api_auth.png" /></p>
+<p><img alt="API 认证" src="../img/system/api_auth.png" /></p>
 <h3 id="23">2.3 获取会话信息<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>通过调用 open 接口，可以生成会话 id。</p>
 </div>
-<p><img alt="会话ID" src="../../img/system/api_chatid.png" /></p>
+<p><img alt="会话ID" src="../img/system/api_chatid.png" /></p>
 <h3 id="24">2.4 进行会话<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>调用对话接口，填入已获取的会话 id，输入问题等参数信息，即可进行对话。</p>
 </div>
-<p><img alt="对话" src="../../img/system/api_chat.png" />
-<img alt="对话" src="../../img/system/api_chat1.png" /></p>
+<p><img alt="对话" src="../img/system/api_chat.png" />
+<img alt="对话" src="../img/system/api_chat1.png" /></p>
 
 
 

@@ -3914,17 +3914,17 @@
 <div class="highlight"><pre><span></span><code># 将 url 和 Authorization 替换为 MaxKB 智能体实际真实的 Base URL 和 API Key。
 
 curl https://maxkb.fit2cloud.com/api/application/xxxxxxxx-8c56-11ef-a99e-0242ac140003/chat/completions \
-    -H &quot;Content-Type: application/json&quot; \
-    -H &quot;Authorization: Bearer application-xxxxxxxxf00e21a7530d1177c20967&quot;  \
-    -d &#39;{
-        &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,
-        &quot;messages&quot;: [
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer application-xxxxxxxxf00e21a7530d1177c20967"  \
+    -d '{
+        "model": "gpt-3.5-turbo",
+        "messages": [
             {
-              &quot;role&quot;: &quot;你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。&quot;,
-              &quot;content&quot;: &quot;MaxKB 是什么？&quot;
+              "role": "你是杭州飞致云信息科技有限公司旗下产品 MaxKB 知识库问答系统的智能小助手，你的工作是帮助 MaxKB 用户解答使用中遇到的问题，用户找你回答问题时，你要把主题放在 MaxKB 知识库问答系统身上。",
+              "content": "MaxKB 是什么？"
             }
         ]
-    }&#39;
+    }'
 </code></pre></div>
 </div>
 <h2 id="2-api">2 系统 API<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h2>

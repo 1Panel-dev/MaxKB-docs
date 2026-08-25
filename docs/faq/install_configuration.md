@@ -10,14 +10,14 @@
 !!! Abstract ""
     默认配置进行安装时，为了安全性，pgsql 容器只对宿主机提供 5432 的访问端口，其它地址都无法访问。
 
-![pgsl默认访问规则](../../img/FAQ/lcoal_pgsql.png)
+![pgsl默认访问规则](../img/FAQ/lcoal_pgsql.png)
 
 !!! Abstract ""
     如果需要将 pgsql 暴露给其它服务器访问，可在 /opt/maxkb/.env 中配置，然后执行`mkctl reload`，重新加载配置即可。
 
-![pgsl默认访问规则](../../img/FAQ/expose_pgsql_config.png)
+![pgsl默认访问规则](../img/FAQ/expose_pgsql_config.png)
 
-![pgsl默认访问规则](../../img/FAQ/expose_pgsql.png)
+![pgsl默认访问规则](../img/FAQ/expose_pgsql.png)
 
 
 ## 3 升级过程提示 ModuleNotFoundError: No module named 'XXX'
@@ -51,7 +51,7 @@
 
 ## 5 迁移常见问题
 ### 5.1 无法执行 PowerShell 脚本
-![无法执行powershell脚本](../../img/FAQ/error1.png)
+![无法执行powershell脚本](../img/FAQ/error1.png)
 !!! Abstract ""
     如果无法执行 PowerShell 脚本，可能需要修改执行策略：
 
@@ -65,18 +65,18 @@
     ```
 
 ### 5.2 执行脚本后出现乱码报错
-![执行powershell脚本乱码](../../img/FAQ/error2.png)
+![执行powershell脚本乱码](../img/FAQ/error2.png)
 !!! Abstract ""
     用记事本打开文件，将文件另存为 ANSI 格式的文本。
-![解决方法](../../img/FAQ/solution1.png)
+![解决方法](../img/FAQ/solution1.png)
 !!! Abstract ""
     重新执行 PowerShell 即可正常执行迁移命令。
-![解决方法](../../img/FAQ/solution2.png)
+![解决方法](../img/FAQ/solution2.png)
 
 ### 5.3 Docker Desktop 安装的 MaxKB 迁移后目录路径内容为空，但 MaxKB 能正常运行
 !!! Abstract ""
     Docker Desktop 安装的 MaxKB 迁移后挂载路径内容为空，但 MaxKB 能正常运行。
-![解决方法](../../img/FAQ/Path missing.png)
+![解决方法](../img/FAQ/Path missing.png)
 !!! Abstract ""
     安装 MaxKB V2 时，容器数据的挂载目录为 /opt/maxkb，修改挂载目录即可。
     
@@ -85,4 +85,4 @@
     V2:/opt/maxkb
     ```
 
-![解决方法](../../img/FAQ/solution3.png)
+![解决方法](../img/FAQ/solution3.png)

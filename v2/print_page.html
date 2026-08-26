@@ -3731,9 +3731,26 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="Skills/MaxKB_Skills.html" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -3747,7 +3764,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MaxKB Skills 技能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Skills/MaxKB_Skills.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MaxKB Skills
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user_manual/workbuddy_maxkb_skills.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WorkBuddy + MaxKB 技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -4983,13 +5072,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#skills-maxkb_skills" class="md-nav__link">
+  <a href="#section-9" class="md-nav__link">
     <span class="md-ellipsis">
       
         MaxKB Skills 技能
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="MaxKB Skills 技能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skills-maxkb_skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxKB Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user_manual-workbuddy_maxkb_skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WorkBuddy + MaxKB 技能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -12035,7 +12152,11 @@ MaxKB 默认按照智能分段以及高级分段这两种规则上传的文档�
 <p>为了有效分段，需要在分段标识手动输入分段标识的正则表达式 <code>[第][一二三四五六七八九十]+[条]</code>（注意：输入后需要回车才生效），长度设置为单个段落的最大长度，然后点击生成预览。
 从预览结果可以看到，每一条都完整地切分为一个段落，保证了语义的完整性。</p>
 </div>
-<p><img alt="doc" src="img/FAQ/doc_re_split.png" /></p></section></section><section class="print-page" id="skills-maxkb_skills" heading-number="9"><h1 id="skills-maxkb_skills-maxkb-skills">速来体验 | MaxKB Skills 技能正式发布<a class="headerlink" href="#skills-maxkb_skills-maxkb-skills" title="Permanent link">&para;</a></h1>
+<p><img alt="doc" src="img/FAQ/doc_re_split.png" /></p></section></section>
+                    <section class='print-page md-section' id='section-9' heading-number='9'>
+                        <h1>MaxKB Skills 技能<a class='headerlink' href='#section-9' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="skills-maxkb_skills" heading-number="9.1"><h1 id="skills-maxkb_skills-maxkb-skills">速来体验 | MaxKB Skills 技能正式发布<a class="headerlink" href="#skills-maxkb_skills-maxkb-skills" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p>2026年，伴随着 OpenClaw 的快速窜红，AI助理完成了从“对话式问答”到“生产力实干”的跨越。企业用户逐渐意识到，单纯拥有一个静态的软件系统还远远不够，能够被 AI 助理随时调用的 Skills 技能将在企业数智化转型的进程中发挥重要作用。2026年3月，MaxKB 开源项目组正式发布 MaxKB Skills 技能。</p>
 <p>MaxKB Skills 能够赋予 OpenClaw 强大的企业知识库调用能力。通常情况下，AI 助理的知识查询受限于通用知识库，无法触达企业内部私有资产。借助 MaxKB Skills，用户可以将企业内部文档、技术手册、业务流程等封装为 AI 可直接调用的知识检索技能，让 OpenClaw 能够精准调用这些懂业务的“外挂大脑”，员工通过自然语言查询即可快速获取企业的专有知识。</p>
@@ -12155,7 +12276,148 @@ MAXKB_PASSWORD=&lt;密码&gt;
 <li>精准的自动化分发：利用智能体的查询技能，AI 助理可以自主识别最匹配的知识源，将“人找知识”转变为“知识主动支撑业务”，确保专业响应的准确度；</li>
 <li>简化 AI 化改造成本：用户不需要对现有的 MaxKB 平台进行调整，通过 Skills 接口即可让 AI 助理进行快速调用，是企业快速落地 AI 应用的更优路径。</li>
 </ul>
-</div></section><section class="print-page" id="contact" heading-number="10"><h1 id="contact-contact">联系我们</h1><h2 id="1">1 项目地址<a class="headerlink" href="#contact-1" title="Permanent link">&para;</a></h2>
+</div></section><section class="print-page" id="user_manual-workbuddy_maxkb_skills" heading-number="9.2"><h1 id="user_manual-workbuddy_maxkb_skills-workbuddy-maxkb">WorkBuddy + MaxKB 技能使用指南<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-workbuddy-maxkb" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p>WorkBuddy 是 AI 智能体开发平台，通过「MaxKB 技能」（maxkb-platform-pro），可将 MaxKB 平台的常见操作收敛为自然语言指令。用户在 WorkBuddy 对话框中以一句话描述需求，技能自动识别意图并调用 MaxKB 接口完成操作，无需记忆命令或 API 细节。</p>
+<p>本技能将 MaxKB 常见运维操作收敛为四大能力：</p>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 知识库导入</td>
+<td>将文档写入 MaxKB 知识库（支持 DOCX 智能分段）</td>
+</tr>
+<tr>
+<td>② 创建智能体</td>
+<td>创建普通（SIMPLE）或工作流（WORK_FLOW）智能体</td>
+</tr>
+<tr>
+<td>③ 智能查询 / 执行</td>
+<td>调用智能体对话、执行任务（如群消息通知）</td>
+</tr>
+<tr>
+<td>④ 智能出报表</td>
+<td>采集统计数据并生成 Excel / HTML 可视化看板</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">适用范围提示</p>
+<p>本技能依赖 MaxKB 平台 API，<strong>仅适用于 MaxKB 商业版（PE 版）部署，不适用 MaxKB 社区版</strong>。</p>
+<p>MaxKB 社区版未开放知识库 API，仅开放三类智能体相关 API：</p>
+<ul>
+<li>① 获取智能体会话 ID；</li>
+<li>② 查询智能体详情；</li>
+<li>③ 与智能体对话（发送消息并获取回答）。</li>
+</ul>
+<p>社区版不支持创建智能体、知识库导入、后台统计等能力，因此大部分指令无法在社区版上正常使用。</p>
+</div>
+<h2 id="user_manual-workbuddy_maxkb_skills-skill">二、安装 Skill<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-skill" title="Permanent link">&para;</a></h2>
+<h3 id="user_manual-workbuddy_maxkb_skills-21">2.1 前置条件<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-21" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>安装并执行本指南任一项操作前，应确认下列条件均已满足：</p>
+<ul>
+<li>WorkBuddy 客户端已安装并成功登录；</li>
+<li>本机可正常访问内网 MaxKB 地址；</li>
+<li>操作人员持有 MaxKB 平台账号（用于在后台核对结果）。</li>
+<li>MaxKB 连接信息（地址与 API Key）通常由管理员预先配置到技能中。如未配置，首次使用时 WorkBuddy 会提示提供。</li>
+</ul>
+</div>
+<h3 id="user_manual-workbuddy_maxkb_skills-22">2.2 下载与安装<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-22" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>本技能以 ZIP 安装包形式提供：<a href="https://maxkb-apps-1323865188.cos.ap-shanghai.myqcloud.com/maxkb-platform-pro.zip">maxkb-platform-pro-skills</a></p>
+<p>下载完成后，在 WorkBuddy 中按以下步骤安装：</p>
+<ol>
+<li>打开 WorkBuddy，点击左侧「专家 · 技能 · 连接器」入口；</li>
+<li>在顶部标签中切换到「技能」页签；</li>
+<li>点击右上角「导入技能」按钮；</li>
+<li>在弹出的对话框中，将技能 ZIP 文件拖入（或点击「选择 ZIP 文件」按钮选择文件）；</li>
+<li>等待安装完成，在「我安装的」列表中确认技能已出现。</li>
+</ol>
+<p><strong>预期结果</strong>：「我安装的」技能列表中可见 maxkb-platform-pro，技能描述显示「WorkBuddy 与 MaxKB v2 对接的统一操作入口」。</p>
+</div>
+<p><img alt="导入技能" src="img/Skills/workbuddy_import_skill.png" /></p>
+<h2 id="user_manual-workbuddy_maxkb_skills-skill_1">三、使用 Skill<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-skill_1" title="Permanent link">&para;</a></h2>
+<h3 id="user_manual-workbuddy_maxkb_skills-31">3.1 调用方式<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-31" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>安装完成后，在对话窗口中通过 + 技能即可调用。</p>
+</div>
+<p><img alt="调用技能" src="img/Skills/workbuddy_invoke_skill.png" /></p>
+<h2 id="user_manual-workbuddy_maxkb_skills-_1">四、典型场景<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-_1" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>以下列出 4 个典型场景，作为指令编写参考。实际操作时按需求调整指令即可，以下为示例而非固定模板。</p>
+</div>
+<h3 id="user_manual-workbuddy_maxkb_skills-41">4.1 把文件上传到知识库<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-41" title="Permanent link">&para;</a></h3>
+<p><strong>指令示例：</strong></p>
+<blockquote>
+<p>上传一个文件到知识库，用新建的名字为 workbuddy 测试 的知识库 @MaxKB文档研发工作流参考.docx</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code>执行效果：自动新建知识库 → 上传文档 → 智能分段 → 写入知识库。
+</code></pre></div>
+
+<p><img alt="WorkBuddy 侧：上传完成，显示新建知识库信息" src="img/Skills/workbuddy_kb_upload.png" /></p>
+<p><img alt="MaxKB 后台：确认文档已入库" src="img/Skills/workbuddy_kb_doc.png" /></p>
+<h3 id="user_manual-workbuddy_maxkb_skills-42">4.2 生成使用报表<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-42" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>执行效果：从 MaxKB 后台采集统计 → 生成 HTML 看板 + Excel 明细 → 在 WorkBuddy 中呈现。
+</code></pre></div>
+
+<p><img alt="MaxKB 报表显示" src="img/Skills/workbuddy_show.png" /></p>
+<h3 id="user_manual-workbuddy_maxkb_skills-43">4.3 创建智能体<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-43" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>执行效果：创建 WORK_FLOW 工作流智能体 → 绑定知识库 → 发布上线。
+</code></pre></div>
+
+<p><img alt="创建高级（工作流）智能体（WorkBuddy 侧）" src="img/Skills/workbuddy_create_agent.png" /></p>
+<p><img alt="MaxKB 后台：新建智能体的工作流画布" src="img/Skills/workbuddy_workflow_editor.png" /></p>
+<h3 id="user_manual-workbuddy_maxkb_skills-44">4.4 向智能体提问<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-44" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>执行效果：智能体检索知识库 → AI 生成回答 → 回答标注引用来源。
+</code></pre></div>
+
+<p><img alt="MaxKB 后台：向智能体提问并查看回答" src="img/Skills/workbuddy_maxkb_chat.png" /></p>
+<h2 id="user_manual-workbuddy_maxkb_skills-_2">五、总结<a class="headerlink" href="#user_manual-workbuddy_maxkb_skills-_2" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>本技能将 MaxKB 平台的常见运维操作收敛为自然语言指令，用户无需记忆命令或 API 细节，只需在 WorkBuddy 对话框中描述需求即可。以下是常用指令速查表：</p>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>推荐指令（示例）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上传文档到知识库</td>
+<td><code>@maxkb-platform-pro 上传 XX.docx 到 XX 知识库</code></td>
+</tr>
+<tr>
+<td>新建知识库</td>
+<td><code>@maxkb-platform-pro 新建一个名称为 XX 的知识库</code></td>
+</tr>
+<tr>
+<td>执行某智能体任务</td>
+<td><code>@maxkb-platform-pro 执行 XX 智能体</code></td>
+</tr>
+<tr>
+<td>生成使用报表</td>
+<td><code>@maxkb-platform-pro 展示 XX 类智能体的使用报表</code></td>
+</tr>
+<tr>
+<td>创建可查文档的智能体</td>
+<td><code>@maxkb-platform-pro 创建一个高级智能体，用于查询 XX 文档</code></td>
+</tr>
+<tr>
+<td>向智能体提问</td>
+<td><code>@maxkb-platform-pro XX 要求是什么</code></td>
+</tr>
+</tbody>
+</table>
+<p>在指令中应使用自然、明确的语言描述「要做什么」（含目标对象与期望结果），由 WorkBuddy 将其转化为对 MaxKB 的具体操作。指令越明确，执行结果越准确。</p>
+</div></section></section><section class="print-page" id="contact" heading-number="10"><h1 id="contact-contact">联系我们</h1><h2 id="1">1 项目地址<a class="headerlink" href="#contact-1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <ul>
 <li><a href="https://github.com/1Panel-dev/MaxKB/issues">MaxKB</a> <img alt="MaxKB stars" src="https://img.shields.io/github/stars/1Panel-dev/MaxKB" /></li>
@@ -12456,13 +12718,16 @@ MAXKB_PASSWORD=&lt;密码&gt;
                 .print-site-enumerate-headings #faq-doc_segment h2:before { content: '8.8.' counter(counter-faq-doc_segment-2) ' ' }
                 .print-site-enumerate-headings #faq-doc_segment h2 {  counter-increment: counter-faq-doc_segment-2 }
             
-.print-site-enumerate-headings #skills-maxkb_skills > h1:before { content: '9 ' }
+.print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
+.print-site-enumerate-headings #skills-maxkb_skills > h1:before { content: '9.1 ' }
 
-                .print-site-enumerate-headings #skills-maxkb_skills h2:before { content: '9.' counter(counter-skills-maxkb_skills-2) ' ' }
-                .print-site-enumerate-headings #skills-maxkb_skills h2 {  counter-reset: counter-skills-maxkb_skills-3 ;  counter-increment: counter-skills-maxkb_skills-2 }
+                .print-site-enumerate-headings #skills-maxkb_skills h2:before { content: '9.1.' counter(counter-skills-maxkb_skills-2) ' ' }
+                .print-site-enumerate-headings #skills-maxkb_skills h2 {  counter-increment: counter-skills-maxkb_skills-2 }
             
-                .print-site-enumerate-headings #skills-maxkb_skills h3:before { content: '9.' counter(counter-skills-maxkb_skills-2) '.' counter(counter-skills-maxkb_skills-3) ' ' }
-                .print-site-enumerate-headings #skills-maxkb_skills h3 {  counter-increment: counter-skills-maxkb_skills-3 }
+.print-site-enumerate-headings #user_manual-workbuddy_maxkb_skills > h1:before { content: '9.2 ' }
+
+                .print-site-enumerate-headings #user_manual-workbuddy_maxkb_skills h2:before { content: '9.2.' counter(counter-user_manual-workbuddy_maxkb_skills-2) ' ' }
+                .print-site-enumerate-headings #user_manual-workbuddy_maxkb_skills h2 {  counter-increment: counter-user_manual-workbuddy_maxkb_skills-2 }
             
 .print-site-enumerate-headings #contact > h1:before { content: '10 ' }
 

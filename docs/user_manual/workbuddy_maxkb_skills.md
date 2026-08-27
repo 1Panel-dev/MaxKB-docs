@@ -1,5 +1,7 @@
 # WorkBuddy + MaxKB 技能使用指南
 
+
+## 一、介绍
 !!! Abstract ""
 
     WorkBuddy 是 AI 智能体开发平台，通过「MaxKB 技能」（maxkb-platform-pro），可将 MaxKB 平台的常见操作收敛为自然语言指令。用户在 WorkBuddy 对话框中以一句话描述需求，技能自动识别意图并调用 MaxKB 接口完成操作，无需记忆命令或 API 细节。
@@ -15,7 +17,7 @@
 
 !!! warning "适用范围提示"
 
-    本技能依赖 MaxKB 平台 API，**仅适用于 MaxKB 商业版（PE 版）部署，不适用 MaxKB 社区版**。
+    本技能依赖 MaxKB 平台 API，**仅适用于 MaxKB 商业版部署，不适用 MaxKB 社区版**。
 
     MaxKB 社区版未开放知识库 API，仅开放三类智能体相关 API：
 
@@ -101,7 +103,7 @@
 
     执行效果：智能体检索知识库 → AI 生成回答 → 回答标注引用来源。
 
-![MaxKB 后台：向智能体提问并查看回答](../img/Skills/workbuddy_maxkb_chat.png)
+![MaxKB 后台：向智能体提问并查看回答](../img/Skills/workbuddy_maxkb_chat1.png)
 
 ## 五、总结
 

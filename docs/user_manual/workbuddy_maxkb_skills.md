@@ -17,7 +17,7 @@
 
 !!! warning "适用范围提示"
 
-    本技能依赖 MaxKB 平台 API，**仅适用于 MaxKB 商业版（PE 版）部署，不适用 MaxKB 社区版**。
+    本技能依赖 MaxKB 平台 API，**仅适用于 MaxKB 商业版部署，不适用 MaxKB 社区版**。
 
     MaxKB 社区版未开放知识库 API，仅开放三类智能体相关 API：
 

@@ -5,7 +5,7 @@
 !!! Abstract ""
     系统管理员可以创建及管理用户。
 
-![用户列表](../../img/system/userlist.png)
+![用户列表](../img/system/userlist.png)
 
 ## 2 创建用户
 
@@ -21,7 +21,7 @@
 
     **注意**：角色管理为企业版 X-Pack 功能。
 
-![用户列表](../../img/system/create_user.png)
+![用户列表](../img/system/create_user.png)
 
 
 
@@ -31,11 +31,11 @@
     用户名不可以编辑，其他属性均可以编辑。  
     **注意**：角色管理为企业版 X-Pack 功能。
 
-![用户列表](../../img/system/edit_userinfo.png)
+![用户列表](../img/system/edit_userinfo.png)
 !!! Abstract ""
     用户状态已禁用，则用户无法登录 MaxKB。
 
-![用户列表](../../img/system/forbid_user.png)
+![用户列表](../img/system/forbid_user.png)
 
 
 ## 4 重置密码
@@ -43,7 +43,7 @@
 !!! Abstract ""
     系统管理员可以给每个用户修改密码，在用户列表中，点击【修改密码】，弹出修改密码对话框，保存后修改成功。
 
-![用户列表](../../img/system/edit_usermessges.png)
+![用户列表](../img/system/edit_usermessges.png)
 
 ## 5 删除用户
 
@@ -51,13 +51,13 @@
     在用户列表中，点击【删除】，弹出提示框，确认后仅删除当前用户。  
     **注意**：系统内置 admin 用户不能被删除。
 
-![用户列表](../../img/system/delete_user.png)
+![用户列表](../img/system/delete_user.png)
 
 ## 6 查询用户
 
 !!! Abstract ""
     支持通过用户名、姓名、邮箱进行用户搜索。
 
-![用户列表](../../img/system/search_user.png)
+![用户列表](../img/system/search_user.png)
 
 

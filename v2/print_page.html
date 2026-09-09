@@ -5416,6 +5416,66 @@
 </ul>
 </div>
 <hchangelog-2 id="changelog-2">2 更新内容<a class="headerlink" href="#changelog-2" title="Permanent link">&para;</a></h2>
+<h3 id="changelog-v2106-lts">v2.10.6-lts<a class="headerlink" href="#changelog-v2106-lts" title="Permanent link">&para;</a></h3>
+<p>2026 年 9 月 3 日</p>
+<div class="admonition warning">
+<p class="admonition-title">安全漏洞修复</p>
+<ul>
+<li>安全漏洞：修复 Chat 文件上传可伪造 APPLICATION 归属且可匿名读取，导致可向应用命名空间投放内容的安全漏洞；</li>
+<li>安全漏洞：修复文档/段落迁移仅校验源知识库权限，导致跨租户内容注入与RAG投毒的安全漏洞；</li>
+<li>安全漏洞：修复 XLSX 嵌入图片解压缺少像素数上限，导致已认证用户可触发内存耗尽拒绝服务（DoS）的安全漏洞；</li>
+<li>安全漏洞：修复 problem/batch_association 缺少归属校验，导致跨租户段落内容泄露（IDOR）的安全漏洞；</li>
+<li>安全漏洞：修复匿名应用资料接口过度序列化，导致敏感配置泄露（/chat/api/application/profile）的安全漏洞；</li>
+<li>安全漏洞：修复密码重置验证码接口缺少猜解次数限制，导致未授权账户接管的安全漏洞；</li>
+<li>安全漏洞：修复函数库沙箱绕过漏洞（dlopen栈检查可绕过+dlsym(RTLD_NEXT)未拦截）的安全漏洞（CVE-2026-79919）；</li>
+<li>安全漏洞：修复利用 Python 对文件描述符形式 os.execve(fd,…)的支持进入 libc fexecve 调用路径，导致沙箱绕过的安全漏洞（NVDB-CAIVD-2026208648）；</li>
+<li>安全漏洞：修复访客会话归属校验缺失，导致跨访客会话写入（Session Integrity Violation）的安全漏洞；</li>
+<li>安全漏洞：修复默认硬编码 Django SECRET_KEY，导致签名令牌可离线伪造并造成未授权文件访问的安全漏洞。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>工作流支持默认模型设置
+在 MaxKB v2.10.6 LTS 社区版本中，智能体工作流、知识库工作流及工作流工具中新增工作流默认模型设置功能。此前，多 AI 节点工作流需逐个打开节点修改模型配置，操作相对繁琐。现在，只需一处配置即可全局生效模型配置信息，显著了降低维护成本，提升了模型批量切换的一致性与效率。默认模型设置的核心功能包括：</li>
+</ul>
+<p>● 提供工作流级别的默认模型配置入口；
+● 新建节点自动继承默认模型；
+● 节点支持灵活的模型选择模式（默认模型/自定义/引用变量，视节点类型自行调整）；
+● 默认模型支持一键应用到所有节点，可将全部节点的模型来源统一切换为默认模型；
+● 默认模型一处变更，多处联动；
+● 发布前保证配置完整性。</p>
+<ul>
+<li>原腾讯混元、腾讯云供应商合并为新腾讯云供应商（对接腾讯云的 TokenHub）</li>
+</ul>
+<p>由于腾讯云官方调整，在 MaxKB v2.10.6 LTS 社区版本中，腾讯混元、腾讯云供应商合并为新的“腾讯云”供应商。所有原先基于腾讯混元或旧腾讯云供应商对接方式配置的模型，升级后无法继续使用。模型升级后，用户请前往“模型供应商”页面，在供应商列表中选择“腾讯云”选项，按TokenHub对接要求重新配置模型接入信息，配置完成后即可恢复使用。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>知识库：在迁移文档/分段时，选择知识库/文档列表组件支持搜索功能；</li>
+<li>智能体：用户输入区域的知识库组件支持搜索功能；</li>
+<li>智能体：对话日志页面“添加到知识库”功能中，知识库和文档列表的选择器支持搜索。</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>知识库：修复导入单元格内容过大的 CSV 文件时，读取内容为空且后台报“field larger than field limit (131072)”错误的问题（#6756）；</li>
+<li>知识库：修复导入 Excel 表格时，未识别数据边界导致大量空列被导入、进而引发导入超时的问题（#6355）；</li>
+<li>知识库：修复命中测试中，全文检索方式下输入连续 33 个“-”符号时检索报错的问题；</li>
+<li>智能体：修复对话输出内容包含空字符（\u0000、\x00等）时，对话报错的问题（#6722）；</li>
+<li>智能体：修复高级智能体 AI 节点使用昇腾 MindIE 大模型时，无法接收前面节点传递数据的问题（#6681）；</li>
+<li>智能体：修复高级编排AI节点“角色设定”为空时，调用模型报错的问题（#6662）；</li>
+<li>智能体：修复调用工具后，查看工具执行记录时执行来源显示为工具名称而非智能体名称的问题（#6647）；</li>
+<li>智能体：修复工作流知识库上传的文件为临时文件，导致文件被清理后无法预览和下载的问题（#6785）；</li>
+<li>智能体：修复智能体作为 AI 对话节点的技能时，无法传递除 message 之外参数的问题；</li>
+<li>智能体：修复高级智能体中，用户输入参数的组件类型修改为知识库后无法设置默认知识库的问题；</li>
+<li>智能体：修复清理聊天日志时报错的问题（#6690）；</li>
+<li>智能体：修复配置了技能的简易智能体，在接入的企业微信中进行对话时会报错的问题；</li>
+<li>模型：修复 MiniMax H3 文生视频模型对接成功后，使用时报错的问题。</li>
+</ul>
+</div>
 <h3 id="changelog-v2105-lts">v2.10.5-lts<a class="headerlink" href="#changelog-v2105-lts" title="Permanent link">&para;</a></h3>
 <p>2026 年 8 月 6 日</p>
 <div class="admonition warning">
@@ -10135,7 +10195,7 @@ pip install pymysql
 <div class="admonition abstract">
 <p>系统管理员可以创建及管理用户。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/userlist.png" /></p>
+<p><img alt="用户列表" src="img/system/userlist.png" /></p>
 <huser_manual-user_community-2 id="user_manual-user_community-2">2 创建用户<a class="headerlink" href="#user_manual-user_community-2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>支持系统管理员创建用户：</p>
@@ -10149,33 +10209,33 @@ pip install pymysql
 </ul>
 <p><strong>注意</strong>：角色管理为企业版 X-Pack 功能。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/create_user.png" /></p>
+<p><img alt="用户列表" src="img/system/create_user.png" /></p>
 <h2 id="user_manual-user_community-3">3 编辑用户<a class="headerlink" href="#user_manual-user_community-3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>用户名不可以编辑，其他属性均可以编辑。<br />
 <strong>注意</strong>：角色管理为企业版 X-Pack 功能。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/edit_userinfo.png" /></p>
+<p><img alt="用户列表" src="img/system/edit_userinfo.png" /></p>
 <div class="admonition abstract">
 <p>用户状态已禁用，则用户无法登录 MaxKB。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/forbid_user.png" /></p>
+<p><img alt="用户列表" src="img/system/forbid_user.png" /></p>
 <h2 id="user_manual-user_community-4">4 重置密码<a class="headerlink" href="#user_manual-user_community-4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>系统管理员可以给每个用户修改密码，在用户列表中，点击【修改密码】，弹出修改密码对话框，保存后修改成功。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/edit_usermessges.png" /></p>
+<p><img alt="用户列表" src="img/system/edit_usermessges.png" /></p>
 <h2 id="user_manual-user_community-5">5 删除用户<a class="headerlink" href="#user_manual-user_community-5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>在用户列表中，点击【删除】，弹出提示框，确认后仅删除当前用户。<br />
 <strong>注意</strong>：系统内置 admin 用户不能被删除。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/delete_user.png" /></p>
+<p><img alt="用户列表" src="img/system/delete_user.png" /></p>
 <h2 id="user_manual-user_community-6">6 查询用户<a class="headerlink" href="#user_manual-user_community-6" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>支持通过用户名、姓名、邮箱进行用户搜索。</p>
 </div>
-<p><img alt="用户列表" src="../img/system/search_user.png" /></p></section><section class="print-page" id="user_manual-x-pack-authorization_resources" heading-number="6.8"><h1 id="user_manual-x-pack-authorization_resources-_1">资源授权<a class="headerlink" href="#user_manual-x-pack-authorization_resources-_1" title="Permanent link">&para;</a></h1>
+<p><img alt="用户列表" src="img/system/search_user.png" /></p></section><section class="print-page" id="user_manual-x-pack-authorization_resources" heading-number="6.8"><h1 id="user_manual-x-pack-authorization_resources-_1">资源授权<a class="headerlink" href="#user_manual-x-pack-authorization_resources-_1" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p>资源授权功能用于管理用户对工作空间内资源的访问权限。</p>
 <ul>
